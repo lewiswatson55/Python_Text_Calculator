@@ -8,6 +8,7 @@ def Calculator():
         Calculator();
 
     elif calc == "*":
+        print("")
         number1 = int(input("Please select the first number: "))
         number2 = int(input("Please select the second number: "))
         print("Answer: ", number1 * number2)
@@ -15,6 +16,7 @@ def Calculator():
         Calculator();
 
     elif calc == "/":
+        print("")
         number1 = int(input("Please select the first number: "))
         number2 = int(input("Please select the second number: "))
 
@@ -23,6 +25,7 @@ def Calculator():
         Calculator();
 
     elif calc == "-":
+        print("")
         number1 = int(input("Please select the first number: "))
         number2 = int(input("Please select the second number: "))
 
@@ -31,6 +34,7 @@ def Calculator():
         Calculator();
 
     elif calc == "+":
+        print("")
         number1 = int(input("Please select the first number: "))
         number2 = int(input("Please select the second number: "))
 
@@ -40,6 +44,7 @@ def Calculator():
         
         
     elif calc == "%":
+        print("")
         try:
             number1 = int(input("Please select the first number(greater): "))
             number2 = int(input("Please select the second number(smaller): "))
@@ -50,6 +55,7 @@ def Calculator():
         if(abs(number1)<abs(number2)):
            print("")
            print("The second number entered is greater than the bigger number")
+           print("")
            Calculator();
         print("Answer: ", number1-number2*int(number1/number2))
         print("")
@@ -61,7 +67,7 @@ def Calculator():
 	
     else:
         print("")
-        print("Sorry, I dont understand your request. Currently supported calculations: *, /, - and +. Sorry for the inconvenience!")
+        print("Sorry, I dont understand your request. Currently supported calculations: *, /, -, + and % (MODULO). Sorry for the inconvenience!")
         print("")
         Calculator();
 
