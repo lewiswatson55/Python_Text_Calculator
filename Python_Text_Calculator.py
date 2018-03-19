@@ -3,7 +3,7 @@ def Calculator():
     calc = input("What kind of calculation do you wish to do? (type ? for help): ")
 
     if calc == "?":
-        print("Currently supported: multiplication(*), division(/), addition(+),square (sq) and subtraction (-)")
+        print("Currently supported: addition(+), subtraction(-), multiplication(*), division(/), square(sq) and power(pow)")
         print("")
         Calculator();
 
@@ -22,7 +22,16 @@ def Calculator():
         print("")
         Calculator();
 
-
+    elif calc == "pow":
+        print()
+        number1 = int(input("Please select the first number: "))
+        number2 = int(input("Please select the second number: "))
+        ans = 1
+        while(number2 > 0):
+            number2 -= 1
+            ans *= number1
+        print("Answer: ", ans)
+        print()
 
     elif calc == "/":
         print("")
