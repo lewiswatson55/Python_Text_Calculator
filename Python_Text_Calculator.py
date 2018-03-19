@@ -15,7 +15,7 @@ def Calculator():
         print("")
         Calculator();
 
-        elif calc == "sq":
+    elif calc == "sq":
         print("")
         number1 = int(input("Please select the first number: "))
         print("Answer: ", number1 * number1)
