@@ -1,86 +1,78 @@
+from operations import *
+
+
 def calculator():
     global number2, number1
-    calc = input("What kind of calculation do you wish to do? (type ? for help): ")
+    calc = input(
+        f"\nWhat kind of calculation do you wish to do? "
+        f"(type {OP_HELP} for help): "
+    )
 
-    if calc == "?":
-        print("Currently supported: multiplication(*), division(/), addition(+),square (sq) and subtraction (-)")
-        print("")
+    if calc == OP_HELP:
+        display_help()
         calculator()
 
-    elif calc == "*":
-        print("")
-        number1 = int(input("Please select the first number: "))
-        number2 = int(input("Please select the second number: "))
+    elif calc == OP_MULT:
+        number1 = get_input()
+        number2 = get_input()
         print("Answer: ", number1 * number2)
-        print("")
-        calculator()
 
-    elif calc == "sq":
-        print("")
-        number1 = int(input("Please select the first number: "))
+    elif calc == OP_SQUARE:
+        number1 = get_input()
         print("Answer: ", number1 * number1)
-        print("")
-        calculator()
 
-    elif calc == "/":
-        print("")
-        number1 = int(input("Please select the first number: "))
-        number2 = int(input("Please select the second number: "))
-
+    elif calc == OP_DIV:
+        number1 = get_input()
+        number2 = get_input()
         print("Answer: ", number1 / number2)
-        print("")
-        calculator()
 
-    elif calc == "-":
-        print("")
-        number1 = int(input("Please select the first number: "))
-        number2 = int(input("Please select the second number: "))
-
+    elif calc == OP_SUB:
+        number1 = get_input()
+        number2 = get_input()
         print("Answer: ", number1 - number2)
-        print("")
-        calculator()
 
-    elif calc == "+":
-        print("")
-        number1 = int(input("Please select the first number: "))
-        number2 = int(input("Please select the second number: "))
-
+    elif calc == OP_ADD:
+        number1 = get_input()
+        number2 = get_input()
         print("Answer: ", number1 + number2)
-        print("")
-        calculator()
 
-    elif calc == "%":
-        print("")
-        try:
-            number1 = int(input("Please select the first number(greater): "))
-            number2 = int(input("Please select the second number(smaller): "))
-        except (TypeError, ValueError):
-            print("Invalid input")
-            print("")
-            calculator()
+    elif calc == OP_MOD:
+        number1 = get_input()
+        number2 = get_input()
 
         if number1 < number2:
-            print("")
             print("The second number entered is greater than the bigger number")
-            print("")
-            calculator()
 
         print("Answer: ", number1 - number2 * int(number1 / number2))
-        print("")
-        calculator()
 
-    elif calc == "exit":
+    elif calc == OP_EXIT:
         exit()
 
     else:
-        print("")
-        print(
-            "Sorry, I dont understand your request. Currently "
-            "supported calculations: *, /, -, + and % (MODULO). "
-            "Sorry for the inconvenience!"
-        )
-        print("")
-        calculator()
+        print("Sorry, I dont understand your request. ")
+        display_help()
+        print("Sorry for the inconvenience!")
+
+    print()
+    calculator()
+
+
+def display_help():
+    print(f'Currently supported: {", ".join(sorted(ALLOWED_OPERATIONS))}')
+
+
+def get_input() -> int:
+    nb = 0
+    invalid = True
+
+    while invalid:
+        invalid = False
+        try:
+            nb = int(input("Please select the first number(greater): "))
+        except (TypeError, ValueError):
+            print("Invalid input")
+
+    return nb
 
 
 if __name__ == '__main__':
