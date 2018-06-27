@@ -1,4 +1,5 @@
 def calculator():
+    global number2, number1
     calc = input("What kind of calculation do you wish to do? (type ? for help): ")
 
     if calc == "?":
@@ -58,7 +59,7 @@ def calculator():
             print("")
             calculator()
 
-        if abs(number1) < abs(number2):
+        if number1 < number2:
             print("")
             print("The second number entered is greater than the bigger number")
             print("")
@@ -84,4 +85,4 @@ def calculator():
 
 if __name__ == '__main__':
     print("")
-calculator()
+    calculator()
