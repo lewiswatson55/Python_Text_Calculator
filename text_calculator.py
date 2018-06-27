@@ -25,6 +25,9 @@ def calculator():
         if calc == OP_SQUARE:
             res *= res
 
+        elif calc == OP_SQROOT:
+            res **= .5
+
         # operations with two numbers
         else:
             number2 = get_input(index=2)

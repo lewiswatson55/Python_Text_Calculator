@@ -2,6 +2,7 @@ OP_ADD = '+'
 OP_DIV = '/'
 OP_EXIT = 'exit'
 OP_HELP = '?'
+OP_SQROOT = 'sr'
 OP_SUB = '-'
 OP_MOD = '%'
 OP_MULT = '*'
@@ -12,6 +13,7 @@ ALLOWED_OPERATIONS = [
     OP_DIV,
     OP_EXIT,
     OP_HELP,
+    OP_SQROOT,
     OP_SUB,
     OP_MOD,
     OP_MULT,
