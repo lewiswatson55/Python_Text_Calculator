@@ -76,7 +76,7 @@ def Calculator():
 
     else:
         print("")
-        print("Sorry, I dont understand your request. Currently supported calculations: *, /, -, + and % (MODULO). Sorry for the inconvenience!")
+        print("Sorry, I don't understand your request. Currently supported calculations: *, /, -, + and % (MODULO). Sorry for the inconvenience!")
         print("")
         Calculator();
 
