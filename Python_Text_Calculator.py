@@ -1,11 +1,11 @@
-print("TheTechRobo Version: 0.2")
+print("TheTechRobo Version: 0.2.1")
 #SETUP
 import os
 #make a new command called Calculator()
 def Calculator():
     while True: 
 #CALCULATION CHOICE
-        calc = input("What kind of calculation do you wish to do? (type ? for help): ")
+        calc = input("Calculation?  (type ? for help): ")
 #HELP
         if calc == "?":
             print('''
@@ -16,12 +16,14 @@ def Calculator():
             print()
             number1 = int(input("Please select the first number: "))
             number2 = int(input("Please select the second number: "))
+            print()
             print(number1 * number2)
             print()
 #SQUARE
         elif calc == "sq":
             print()
             number1 = int(input("Please select the first number: "))
+            print()
             print(number1 * number1)
             print()
 #DIVISION
@@ -29,6 +31,7 @@ def Calculator():
             print()
             number1 = int(input("Please select the first number: "))
             number2 = int(input("Please select the second number: "))
+            print()
             print(number1 / number2)
             print()
 #SUBTRACTION
@@ -36,6 +39,7 @@ def Calculator():
             print()
             number1 = int(input("Please select the first number: "))
             number2 = int(input("Please select the second number: "))
+            print()
             print(number1 - number2)
             print()
 #ADDITION
@@ -43,6 +47,7 @@ def Calculator():
             print()
             number1 = int(input("Please select the first number: "))
             number2 = int(input("Please select the second number: "))
+            print()
             print(number1 + number2)
             print()
 #MODULO
