@@ -1,2 +1,1 @@
 @python area.py
-exit
