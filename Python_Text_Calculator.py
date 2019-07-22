@@ -1,73 +1,83 @@
-print("TheTechRobo Version: 0.1")
+print("TheTechRobo Version: 0.2")
+#SETUP
+import os
+#make a new command called Calculator()
 def Calculator():
     while True: 
-
+#CALCULATION CHOICE
         calc = input("What kind of calculation do you wish to do? (type ? for help): ")
-
+#HELP
         if calc == "?":
-            print("Currently supported: multiplication(*), division(/), addition(+), square (sq), subtraction (-) and modulo (%)")
-            print("")
-
+            print('''
+            Currently supported: multiplication(*), division(/), addition(+), square (sq), subtraction (-), modulo (%), and area (ar). Type exit to exit. Commands are case-sensitive")
+            ''')
+#MULTIPLICATION
         elif calc == "*":
-            print("")
+            print()
             number1 = int(input("Please select the first number: "))
             number2 = int(input("Please select the second number: "))
-            print("Answer: ", number1 * number2)
-            print("")
-
+            print(number1 * number2)
+            print()
+#SQUARE
         elif calc == "sq":
-            print("")
+            print()
             number1 = int(input("Please select the first number: "))
-            print("Answer: ", number1 * number1)
-            print("")
-
-
-
+            print(number1 * number1)
+            print()
+#DIVISION
         elif calc == "/":
-            print("")
+            print()
             number1 = int(input("Please select the first number: "))
             number2 = int(input("Please select the second number: "))
-            print("Answer: ", number1 / number2)
-            print("")
-
+            print(number1 / number2)
+            print()
+#SUBTRACTION
         elif calc == "-":
-            print("")
+            print()
             number1 = int(input("Please select the first number: "))
             number2 = int(input("Please select the second number: "))
-            print("Answer: ", number1 - number2)
-            print("")
-
+            print(number1 - number2)
+            print()
+#ADDITION
         elif calc == "+":
-            print("")
+            print()
             number1 = int(input("Please select the first number: "))
             number2 = int(input("Please select the second number: "))
-            print("Answer: ", number1 + number2)
-            print("")
-
-
+            print(number1 + number2)
+            print()
+#MODULO
         elif calc == "%":
-            print("")
+            print()
             try:
                 number1 = int(input("Please select the first number(greater): "))
                 number2 = int(input("Please select the second number(smaller): "))
             except (TypeError, ValueError):
-                print("Invalid input")
-                print("")
+                print("Error!")
+                print("Invalid input (code 1)")
+                print()
             if(abs(number1)<abs(number2)):
-                print("")
+                print()
                 print("The second number entered is greater than the bigger number")
-                print("")
-                Calculator();
-                print("Answer: ", number1-number2*int(number1/number2))
-                print("")
+                print()
+                Calculator()
+                print(number1-number2*int(number1/number2))
+                print()
+        
+        elif calc == "ar":
+            win = input("Is your OS the following: Windows? (y/n, case-sensitive)")
+            if win == "y":
+                print()
+                os.run(start python Area.py)
+            else: 
+                print("Then this command is useless to you")
                 
         elif calc == "exit":
-            exit();
+            exit()
 
         else:
-            print("")
-            print("Sorry, I don't understand your request. Currently supported calculations: *, /, -, + and % (MODULO). Sorry for the inconvenience!")
-            print("")
+            print('''
+            print("Sorry, I don't understand your request. Currently supported calculations: *, /, -, +, % (modulo), sq (square) and ar (area). Sorry for the inconvenience")
+            ''')
 
-print("")
-Calculator();
+print()
+Calculator() #run the Calculator() command above
