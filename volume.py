@@ -6,8 +6,7 @@ from math import pi, sqrt
 #CUBE
 def vol_cube(a: int) -> 'volume':
     '''
-    Takes 'a' As The Side Of The Cube.
-    Returns The Volume
+    Takes 'a' as the side of the cube. Returns the volume
     :param a: int
     :return: volume
     '''
@@ -158,4 +157,4 @@ def vol_hexa_pyramid(a: int, h: int) -> 'volume':
     '''
     volume = (1 / 3 * h) * (2.5981 * pow(a, 2))
     return volume
-print('Forked version 0.2')
+print('Forked version 0.2.1')
