@@ -1,8 +1,8 @@
-print("TheTechRobo Version: 0.2.3")
+print("TheTechRobo Version: 0.2.4")
 #SETUP
 import os
 #make a new command called Calculator()
-def Calculator():
+def Calc():
     while True: 
 #CALCULATION CHOICE
         calc = input("Calculation?  (type ? for help): ")
@@ -64,7 +64,7 @@ def Calculator():
                 print()
                 print("The second number entered is greater than the bigger number")
                 print()
-                Calculator()
+                Calc()
                 print(number1-number2*int(number1/number2))
                 print()
         
@@ -85,4 +85,4 @@ def Calculator():
             ''')
 
 print()
-Calculator() #run the Calculator() command above
+Calc() #run the Calc() command above
