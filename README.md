@@ -8,8 +8,5 @@ learning this is very interesting, and I make my forked repositories better
 thanks for visiting!! 
 
 
-JUST RENAMED TO python-text-calculator from Python_Text_Calculator
-
-
 ###### Forked Version 0.2.1
-###### README.md version 0.1.2b
+###### README.md version 0.1.3
