@@ -1,4 +1,4 @@
-print("TheTechRobo Version: 0.2.1")
+print("TheTechRobo Version: 0.2.3")
 #SETUP
 import os
 #make a new command called Calculator()
