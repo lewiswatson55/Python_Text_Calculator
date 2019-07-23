@@ -1,4 +1,4 @@
-print("TheTechRobo Version: 0.3")
+print("TheTechRobo Version: 0.3.1")
 #SETUP
 import os
 #make a new command called Calc()
@@ -129,7 +129,7 @@ def Calc():
             win = input("Is your OS the following: Windows? (Y/n, case-sensitive)")
             if win == "Y":
                 print()
-                os.run(start Area.bat)
+                os.system(start Area.bat)
             else: 
                 print()
                 print("Then this command is useless to you")
@@ -138,7 +138,7 @@ def Calc():
             win = input("Is your OS the following: Windows? (Y/n, case-sensitive)")
             if win == "Y":
                 print()
-                os.run(start Area.bat)
+                os.system(start Area.bat)
             else: 
                 print()
                 print("Then this command is useless to you")
