@@ -21,7 +21,13 @@ Why:
 Other: 
 
 
-## Real Issue [PLACEHOLDER]
+## Issue #1 [PLACEHOLDER]
+
+Details:
+
+Screenshots:
+
+Other: 
 
 
 
@@ -29,4 +35,4 @@ Other:
 
 
 
-###### issues v.0.1.1
+###### issues v.0.1.2
