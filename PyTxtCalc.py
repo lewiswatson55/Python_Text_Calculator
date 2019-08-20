@@ -1,8 +1,9 @@
 #SETUP
 import os
-#make a new command called Calc()
-def Calc():
+#make a new command called palc()
+def palc():
     while True: 
+        print("Welcome to Palc!")
 #CALCULATION CHOICE
         calc = input("Calculation?  (type ? for help): ")
 #HELP
@@ -143,7 +144,8 @@ def Calc():
                 os.system(start Area.bat)
             else: 
                 print()
-                print("Then this command is useless to you")
+                print("Mac or Linux, I assume, then")
+                os.system('python3 area.py')
                 print()
 #VOLUME
         elif calc == "vol":
@@ -153,7 +155,8 @@ def Calc():
                 os.run(start Volume.bat)
             else: 
                 print()
-                print("Then this command is useless to you")
+                print("Then we're going to assume Mac or Linux.")
+                os.system('python3 volume.py')
                 print()
 #CUBE
         elif calc == "{}":
@@ -171,4 +174,4 @@ def Calc():
             ''')
 
 print()
-Calc() #run the Calc() command above
+palc() #run the Calc() command above
