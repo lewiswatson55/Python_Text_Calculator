@@ -157,4 +157,3 @@ def vol_hexa_pyramid(a: int, h: int) -> 'volume':
     '''
     volume = (1 / 3 * h) * (2.5981 * pow(a, 2))
     return volume
-print('Forked version 0.2.1')
