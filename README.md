@@ -15,4 +15,4 @@ PLEASE, leave feature requests and bug reports in the Issues [section](https://g
 **The only time you should ever use my email is if you need to contact me personally.**
 
 
-###### Forked Version 0.2.5
+###### Forked Version 0.2.6
