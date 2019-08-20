@@ -16,4 +16,3 @@ PLEASE, leave feature requests and bugs in the **issues.md** file, even if you k
 
 
 ###### Forked Version 0.2.5
-###### README.md version 0.1.9
