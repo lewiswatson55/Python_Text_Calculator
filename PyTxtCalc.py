@@ -1,4 +1,3 @@
-print("TheTechRobo Version: 0.3.1")
 #SETUP
 import os
 #make a new command called Calc()
