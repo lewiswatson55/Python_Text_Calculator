@@ -104,6 +104,7 @@ def palc():
                 print()
             if(abs(number1)<abs(number2)):
                 print()
+                print("Error!")
                 print("The second number entered is greater than the first number")
                 print()
                 Calc()
@@ -121,6 +122,7 @@ def palc():
                 print()
             if(abs(number1)<abs(number2)):
                 print()
+                print("Error!")
                 print("The second number entered is greater than the first number")
                 print()
                 Calc()
@@ -132,16 +134,17 @@ def palc():
             win = input("Is your OS the following: Windows? (Y/n, case-sensitive)")
             if win == "Y":
                 print()
-                os.system(start Area.bat)
+                os.system(start python area.py)
             else: 
                 print()
-                print("Then this command is useless to you")
+                print("Mac or Linux, I assume, then")
+                os.system('python3 area.py')
                 print()
         elif calc == "#":
             win = input("Is your OS the following: Windows? (Y/n, case-sensitive)")
             if win == "Y":
                 print()
-                os.system(start Area.bat)
+                os.system(start python area.py)
             else: 
                 print()
                 print("Mac or Linux, I assume, then")
@@ -152,7 +155,7 @@ def palc():
             win = input("Is your OS the following: Windows? (Y/n, case-sensitive)")
             if win == "y":
                 print()
-                os.run(start Volume.bat)
+                os.run(start python volume.py)
             else: 
                 print()
                 print("Then we're going to assume Mac or Linux.")
