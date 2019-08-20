@@ -10,7 +10,7 @@ I always make my forked repositories better
 thanks for visiting!! 
 
 
-PLEASE, leave feature requests and bugs in the **issues.md** file, even if you know my email. 
+PLEASE, leave feature requests and bug reports in the Issues [section](https://github.com/thetechrobo/python-text-calculator/issues) file, even if you know my email. 
 
 **The only time you should ever use my email is if you need to contact me personally.**
 
