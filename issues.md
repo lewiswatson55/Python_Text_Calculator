@@ -35,4 +35,4 @@ Other:
 
 
 
-###### issues v.0.1.2
+###### issues.md is now discontinued
