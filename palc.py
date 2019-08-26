@@ -1,15 +1,20 @@
 #SETUP
 import os
+print("Please wait")
 #make a new command called palc()
 def palc():
-    while True: 
+    while True:
+        print()
         print("Welcome to Palc!")
+        print()
 #CALCULATION CHOICE
         calc = input("Calculation?  (type ? for help): ")
 #HELP
         if calc == "?":
             print('''
-            Currently supported: multiplication (* or x), division (/ or div), addition (+), square (sq), subtraction (-), modulo (%), area (ar), volume (vol), and cube ([]). Type exit to exit. Commands are case-sensitive")
+            Currently supported: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), and cube twice ({2}). Type exit to exit. Commands are case-sensitive
+            To access support: go to https://github.com/thetechrobo/support/
+            To modify Palc: go to https://github.com/thetechrobo/python-text-calculator/
             ''')
 #MULTIPLICATION
         elif calc == "*":
@@ -125,7 +130,6 @@ def palc():
                 print("Error!")
                 print("The second number entered is greater than the first number")
                 print()
-                Calc()
             else: 
                 print(number1-number2*int(number1/number2))
                 print()
@@ -170,10 +174,15 @@ def palc():
             print()
         elif calc == "exit":
             exit()
-
+#CUBE TWICE
+        elif calc == "{2}":
+            print()
+            cubedNumber = int(input("Number?"))
+            print()
+            print(cubedNumber * cubedNumber * cubedNumber * cubedNumber * cubedNumber * cubedNumber)
         else:
             print('''
-            print("Sorry, I don't understand your request. Currently supported calculations: * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); and {} (cube). Sorry for the inconvenience")
+            print("I don't understand your request. Here are the currently supported calculations: * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); and {2} (cube twice). Sorry for the inconvenience")
             ''')
 
 print()
