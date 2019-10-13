@@ -1,5 +1,6 @@
 #SETUP
 import os
+from ex import *
 print("Please wait")
 #make a new command called palc()
 def palc():
@@ -24,7 +25,7 @@ def palc():
             print()
             print(number1 * number2)
             print()
-            
+        
         elif calc == "x":
             print()
             number1 = int(input("First number? "))
@@ -101,20 +102,20 @@ def palc():
         elif calc == "%":
             print()
             try:
-                number1 = int(input("Type the first number(greater): "))
-                number2 = int(input("Type the second number(smaller): "))
+                bigger = int(input("Type the first number(greater): "))
+                smaller = int(input("Type the second number(smaller): "))
             except (TypeError, ValueError):
                 print("Error!")
                 print("Invalid input (code 1)")
                 print()
-            if(abs(number1)<abs(number2)):
+            if(abs(bigger)<abs(smaller)):
                 print()
                 print("Error!")
                 print("The second number entered is greater than the first number")
                 print()
                 Calc()
-            else: 
-                print(number1-number2*int(number1/number2))
+            else:
+                print(bigger-smaller*int(bigger/smaller))
                 print()
         elif calc == "mod":
             print()
@@ -130,26 +131,19 @@ def palc():
                 print("Error!")
                 print("The second number entered is greater than the first number")
                 print()
-            else: 
+            else:
                 print(number1-number2*int(number1/number2))
                 print()
-#AREA        
+#AREA
         elif calc == "ar":
-            win = input("Is your OS the following: Windows? (Y/n, case-sensitive)")
-            if win == "Y":
-                print()
-                os.system(start python area.py)
-            else: 
-                print()
-                print("Mac or Linux, I assume, then")
-                os.system('python3 area.py')
-                print()
+            print("If struggling in Python 2, in the code, look at the following line (there's a comment)")
+            exec("area.py")    #If struggling in python 2, change to execfile("area.py")
         elif calc == "#":
             win = input("Is your OS the following: Windows? (Y/n, case-sensitive)")
             if win == "Y":
                 print()
-                os.system(start python area.py)
-            else: 
+                os.system('start python area.py')
+            else:
                 print()
                 print("Mac or Linux, I assume, then")
                 os.system('python3 area.py')
@@ -159,8 +153,8 @@ def palc():
             win = input("Is your OS the following: Windows? (Y/n, case-sensitive)")
             if win == "y":
                 print()
-                os.run(start python volume.py)
-            else: 
+                os.system('start python volume.py')
+            else:
                 print()
                 print("Then we're going to assume Mac or Linux.")
                 os.system('python3 volume.py')
@@ -172,6 +166,7 @@ def palc():
             print()
             print(cubedNumber * cubedNumber * cubedNumber)
             print()
+#EXIT
         elif calc == "exit":
             exit()
 #CUBE TWICE
@@ -180,10 +175,27 @@ def palc():
             cubedNumber = int(input("Number?"))
             print()
             print(cubedNumber * cubedNumber * cubedNumber * cubedNumber * cubedNumber * cubedNumber)
+#EXPONENTS (had the idea during bike ride on 18/9/2019 19hsomething after the BBQ)
+        elif calc == "ex":
+            exponent2Use = int(input("Exponent? (Coded: 2,3,4)"))
+            if exponent2Use == 2:
+                ex2()
+            elif exponent2Use == 3:
+                ex3()
+            elif exponent2Use == 4:
+                ex4()
+            else:
+                print("ERROR: not coded. (Coded: 2 3 4)")
+#ROOTS
+        elif calc == "root":
+            rootedNumber = input("Type the number to be rooted")
+            root = input("Square root or cube root or 4 root?(square/cube/4 case-sensitive)")
+            if root == "":
+#OTHERWISE
         else:
             print('''
-            print("I don't understand your request. Here are the currently supported calculations: * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); and {2} (cube twice). Sorry for the inconvenience")
+            I don't understand your request. Here are the currently supported calculations: * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); and {2} (cube twice). Sorry for the inconvenience
             ''')
-
 print()
 palc() #run the Calc() command above
+#EOF
