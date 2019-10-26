@@ -164,8 +164,8 @@ def palc():
 #EXIT
         elif calc == "exit":
             exit()
-		elif calc == "EXIT":
-			exit()
+        elif calc == "EXIT":
+            exit()
 #CUBE TWICE
         elif calc == "{2}":
             print()
@@ -181,8 +181,8 @@ def palc():
                 ex3()
             elif exponent2Use == 4:
                 ex4()
-			elif exponent2Use == 5:
-				ex5()
+            elif exponent2Use == 5:
+                ex5()
             else:
                 print("ERROR: not coded. (Coded: 2 3 4 5)")
 #ROOTS
