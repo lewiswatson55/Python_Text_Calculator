@@ -189,7 +189,7 @@ def palc():
                 print("ERROR: not coded. (Coded: 2 3 4)")
 #ROOTS
         elif calc == "root":
-            root = input("Square root or cube root or 4 root?(square/cube/4 case-sensitive)")
+            root = input("Square root or cube root?(square/cube case-sensitive)")
             if root == "square":
                 sq()
             elif root == "cube":
