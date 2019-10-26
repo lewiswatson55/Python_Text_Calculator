@@ -4,6 +4,8 @@ from ex import *
 from root import *
 print("Please wait")
 #make a new command called palc()
+def e():
+	exit()
 def palc():
     while True:
         print()
@@ -36,17 +38,9 @@ def palc():
             print()
 #SQUARE
         elif calc == "sq":
-            print()
-            squaredNumber = int(input("Type the number to be squared: "))
-            print()
-            print(squaredNumber * squaredNumber)
-            print()
+            ex2()
         elif calc == "[]":
-            print()
-            squaredNumber = int(input("Type the number to be squared: "))
-            print()
-            print(squaredNumber * squaredNumber)
-            print()
+            ex2()
 #DIVISION
         elif calc == "/":
             print()
@@ -170,23 +164,27 @@ def palc():
 #EXIT
         elif calc == "exit":
             exit()
+		elif calc == "EXIT":
+			exit()
 #CUBE TWICE
         elif calc == "{2}":
             print()
             cubedNumber = int(input("Number?"))
             print()
-            print(cubedNumber * cubedNumber * cubedNumber * cubedNumber * cubedNumber * cubedNumber)
+            print((cubedNumber * cubedNumber * cubedNumber) + (cubedNumber * cubedNumber * cubedNumber))
 #EXPONENTS (had the idea during bike ride on 18/9/2019 19hsomething after the BBQ)
         elif calc == "ex":
-            exponent2Use = int(input("Exponent? (Coded: 2,3,4)"))
+            exponent2Use = int(input("Exponent? (Coded: 2,3,4,5)"))
             if exponent2Use == 2:
                 ex2()
             elif exponent2Use == 3:
                 ex3()
             elif exponent2Use == 4:
                 ex4()
+			elif exponent2Use == 5:
+				ex5()
             else:
-                print("ERROR: not coded. (Coded: 2 3 4)")
+                print("ERROR: not coded. (Coded: 2 3 4 5)")
 #ROOTS
         elif calc == "root":
             root = input("Square root or cube root?(square/cube case-sensitive)")
