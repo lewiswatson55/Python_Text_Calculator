@@ -1,6 +1,7 @@
 #SETUP
 import os
 from ex import *
+from root import *
 print("Please wait")
 #make a new command called palc()
 def palc():
@@ -13,7 +14,7 @@ def palc():
 #HELP
         if calc == "?":
             print('''
-            Currently supported: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), and cube twice ({2}). Type exit to exit. Commands are case-sensitive
+            Currently supported: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), and root (root). Type exit to exit. Commands are case-sensitive
             To access support: go to https://github.com/thetechrobo/support/
             To modify Palc: go to https://github.com/thetechrobo/python-text-calculator/
             ''')
@@ -190,7 +191,8 @@ def palc():
         elif calc == "root":
             rootedNumber = input("Type the number to be rooted")
             root = input("Square root or cube root or 4 root?(square/cube/4 case-sensitive)")
-            if root == "":
+            if root == "square":
+                sq()
 #OTHERWISE
         else:
             print('''
