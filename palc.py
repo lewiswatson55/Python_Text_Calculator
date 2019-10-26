@@ -38,10 +38,10 @@ def palc():
             print()
 #SQUARE
         elif calc == "sq":
-			print("Please note this is the same as running [] or ex")
+            print("Please note this is the same as running [] or ex")
             ex2()
         elif calc == "[]":
-			print("Please note it's the same as running sq or ex")
+            print("Please note it's the same as running sq or ex")
             ex2()
 #DIVISION
         elif calc == "/":
@@ -178,7 +178,7 @@ def palc():
         elif calc == "ex":
             exponent2Use = int(input("Exponent? (Coded: 2,3,4,5)"))
             if exponent2Use == 2:
-				print("Please Note; this is the same as running sq or []")
+                print("Please Note; this is the same as running sq or []")
                 ex2()
             elif exponent2Use == 3:
                 ex3()
