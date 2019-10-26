@@ -193,7 +193,7 @@ def palc():
             if root == "square":
                 sq()
             elif root == "cube":
-				cu()
+                cu()
 #OTHERWISE
         else:
             print('''
