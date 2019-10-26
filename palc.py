@@ -192,7 +192,7 @@ def palc():
             root = input("Square root or cube root or 4 root?(square/cube/4 case-sensitive)")
             if root == "square":
                 sq()
-			elif root == "cube":
+            elif root == "cube":
 				cu()
 #OTHERWISE
         else:
