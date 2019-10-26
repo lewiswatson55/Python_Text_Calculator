@@ -1,5 +1,5 @@
 def sq():
-    from math import *
+    from math import sqrt
     num2Root = input("Number to be rooted? ")
     print(sqrt(num2Root))
 def cubeInternal(x):
