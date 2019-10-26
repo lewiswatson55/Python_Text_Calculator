@@ -8,4 +8,3 @@ def cubeInternal(x):
     return -(-x)**(1./3.)
 def cu():
     print(cubeInternal(int(input("Number to be rooted? "))))
-	
