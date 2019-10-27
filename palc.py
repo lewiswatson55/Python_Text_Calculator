@@ -4,12 +4,34 @@ from ex import *
 from root import *
 print("Please wait")
 print()
+macwin = input("Is your os the following: Windows? (Y/n)")
+if macwin == "Y":
+    print("Ok, OS set to: Windows")
+    os.system('cls')
+elif macwin == "y":
+    print("Set os to: Windows")
+    os.system('cls')
+elif macwin == "N":
+    print("Set os to: linux")
+    os.system('clear')
+elif macwin == "n":
+    print("Set os to: Linux")
+    os.system('clear')
+else:
+    print("Please, Type in the answer to the question (y/n)")
 #make a new command called palc()
 def e():
 	exit()
 def palc():
     while True:
-        print()
+        if macwin == "y":
+            os.system('cls')
+        elif macwin == "Y":
+            os.system('cls')
+        elif macwin == "n":
+            os.system('clear')
+        elif macwin == "N":
+            os.system('clear')
 #CALCULATION CHOICE
         calc = input("Calculation?  (type ? for help): ")
 #HELP
