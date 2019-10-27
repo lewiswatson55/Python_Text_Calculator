@@ -25,18 +25,18 @@ def e():
 def palc():
     while True:
        for i in range (1, 13):
-		   print()
+            print()
 #CALCULATION CHOICE
-        calc = input("Calculation?  (type ? for help): ")
+       calc = input("Calculation?  (type ? for help): ")
 #HELP
-        if calc == "?":
-            print('''
-            Currently supported: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), and root (root). Type exit to exit. Commands are case-sensitive
+       if calc == "?":
+           print('''
+            Currently supported: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), and equals (=). Type exit to exit. Commands are case-sensitive
             To access support: go to https://github.com/thetechrobo/support/
             To modify Palc: go to https://github.com/thetechrobo/python-text-calculator/
             ''')
 #MULTIPLICATION
-        elif calc == "*":
+       elif calc == "*":
             print()
             number1 = int(input("Type the first number: "))
             number2 = int(input("Type the second number: "))
@@ -44,7 +44,7 @@ def palc():
             print(number1 * number2)
             print()
         
-        elif calc == "x":
+       elif calc == "x":
             print()
             number1 = int(input("First number? "))
             number2 = int(input("Second number? "))
@@ -52,21 +52,21 @@ def palc():
             print(number1 * number2)
             print()
 #SQUARE
-        elif calc == "sq":
+       elif calc == "sq":
             print("Please note this is the same as running [] or ex")
             ex2()
-        elif calc == "[]":
+       elif calc == "[]":
             print("Please note it's the same as running sq or ex")
             ex2()
 #DIVISION
-        elif calc == "/":
+       elif calc == "/":
             print()
             number1 = int(input("type the first number: "))
             number2 = int(input("Type the second number: "))
             print()
             print(number1 / number2)
             print()
-        elif calc == "div":
+       elif calc == "div":
             print()
             number1 = int(input("Type the first number: "))
             number2 = int(input("Type the second number: "))
@@ -74,21 +74,21 @@ def palc():
             print(number1 / number2)
             print()
 #SUBTRACTION
-        elif calc == "-":
+       elif calc == "-":
             print()
             number1 = int(input("Type the first number: "))
             number2 = int(input("type the second number: "))
             print()
             print(number1 - number2)
             print()
-        elif calc == "sub":
+       elif calc == "sub":
             print()
             number1 = int(input("Type the first number: "))
             number2 = int(input("type the second number: "))
             print()
             print(number1 - number2)
             print()
-        elif calc == "min":
+       elif calc == "min":
             print()
             number1 = int(input("Type the first number: "))
             number2 = int(input("type the second number: "))
@@ -96,14 +96,14 @@ def palc():
             print(number1 - number2)
             print()
 #ADDITION
-        elif calc == "+":
+       elif calc == "+":
             print()
             number1 = int(input("Type the first number: "))
             number2 = int(input("Type the second number: "))
             print()
             print(number1 + number2)
             print()
-        elif calc == "add":
+       elif calc == "add":
             print()
             number1 = int(input("Type the first number: "))
             number2 = int(input("Type the second number: "))
@@ -111,7 +111,7 @@ def palc():
             print(number1 + number2)
             print()
 #MODULO
-        elif calc == "%":
+       elif calc == "%":
             print()
             try:
                 bigger = int(input("Type the first number(greater): "))
@@ -129,7 +129,7 @@ def palc():
             else:
                 print(bigger-smaller*int(bigger/smaller))
                 print()
-        elif calc == "mod":
+       elif calc == "mod":
             print()
             try:
                 number1 = int(input("Type the first number(greater): "))
@@ -147,28 +147,28 @@ def palc():
                 print(number1-number2*int(number1/number2))
                 print()
 #AREA
-        elif calc == "ar":
+       elif calc == "ar":
             print("If struggling in Python 2, in the code, look at the following line (there's a comment)")
             exec("area.py")    #If struggling in python 2, change to execfile("area.py")
-        elif calc == "#":
+       elif calc == "#":
             exec("area.py")
 #VOLUME
-        elif calc == "vol":
+       elif calc == "vol":
             exec("volume.py") #More secure than os.system but currently doesn't work because it doesnt call any functions FROM volume.py
 #CUBE
-        elif calc == "{}":
+       elif calc == "{}":
             print()
             cubedNumber = int(input("Type the number to be cubed: "))
             print()
             print(cubedNumber * cubedNumber * cubedNumber)
             print()
 #EXIT
-        elif calc == "exit":
+       elif calc == "exit":
             exit()
-        elif calc == "EXIT":
+       elif calc == "EXIT":
             exit()
 #EXPONENTS (had the idea during bike ride on 18/9/2019 19hsomething after the BBQ)
-        elif calc == "ex":
+       elif calc == "ex":
             exponent2Use = int(input("Exponent? (Coded: 2,3,4,5)"))
             if exponent2Use == 2:
                 print("Please Note; this is the same as running sq or []")
@@ -186,24 +186,24 @@ def palc():
             else:
                 print("ERROR: not coded. (Coded: 1 2 3 4 5 6)")
 #ROOTS
-        elif calc == "root":
+       elif calc == "root":
             root = input("Square root or cube root?(square/cube case-sensitive)")
             if root == "square":
                 sq()
             elif root == "cube":
                 cu()
 #EASTER EGG!
-        elif calc == "=":
+       elif calc == "=":
             print()
-            number = int(input("Type in a number:"))
+            number = int(input("Type in a number: "))
             if number == 42:
                 print("=42 -- the answer to life, the universe, and everything")
             else:
                 print("=" +number)
 #OTHERWISE
-        else:
+       else:
             print('''
-            I don't understand your request. Here are the currently supported calculations: * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); and root (roots). Sorry for the inconvenience
+            I don't understand your request. Here are the currently supported calculations: * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); and = (equals). Sorry for the inconvenience
             ''')
 print()
 print("Welcome to Palc!")
