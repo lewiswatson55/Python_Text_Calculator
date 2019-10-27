@@ -3,13 +3,12 @@ import os
 from ex import *
 from root import *
 print("Please wait")
+print()
 #make a new command called palc()
 def e():
 	exit()
 def palc():
     while True:
-        print()
-        print("Welcome to Palc!")
         print()
 #CALCULATION CHOICE
         calc = input("Calculation?  (type ? for help): ")
@@ -195,17 +194,18 @@ def palc():
                 cu()
 #EASTER EGG!
         elif calc == "=":
-		    print()
+            print()
             number = int(input("Type in a number:"))
             if number == 42:
                 print("42 -- the answer to life, the universe, and everything")
-			else:
-				print("=" +number)
+            else:
+                print("=" +number)
 #OTHERWISE
         else:
             print('''
             I don't understand your request. Here are the currently supported calculations: * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); and root (roots). Sorry for the inconvenience
             ''')
 print()
+print("Welcome to Palc!")
 palc() #run the Calc() command above
 #EOF
