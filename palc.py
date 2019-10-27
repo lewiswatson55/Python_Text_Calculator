@@ -16,7 +16,7 @@ def palc():
 #HELP
         if calc == "?":
             print('''
-            Currently supported: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), and root (root). Type exit to exit. Commands are case-sensitive
+            Currently supported: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), and root (root). Type exit to exit. Commands are case-sensitive
             To access support: go to https://github.com/thetechrobo/support/
             To modify Palc: go to https://github.com/thetechrobo/python-text-calculator/
             ''')
@@ -186,8 +186,10 @@ def palc():
                 ex4()
             elif exponent2Use == 5:
                 ex5()
+            elif exponent2Use == 1:
+                ex1()
             else:
-                print("ERROR: not coded. (Coded: 2 3 4 5)")
+                print("ERROR: not coded. (Coded: 1 2 3 4 5 6)")
 #ROOTS
         elif calc == "root":
             root = input("Square root or cube root?(square/cube case-sensitive)")
@@ -198,7 +200,7 @@ def palc():
 #OTHERWISE
         else:
             print('''
-            I don't understand your request. Here are the currently supported calculations: * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); and {2} (cube twice). Sorry for the inconvenience
+            I don't understand your request. Here are the currently supported calculations: * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); and root (roots). Sorry for the inconvenience
             ''')
 print()
 palc() #run the Calc() command above
