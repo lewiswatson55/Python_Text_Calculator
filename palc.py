@@ -140,11 +140,11 @@ def palc():
             try:
                 number1 = int(input("Type the first number(greater): "))
                 number2 = int(input("Type the second number(smaller): "))
-            except (TypeError, ValueError):
+            except (TypeError, ValueError): #If you inputted wrong
                 print("Error!")
                 print("Invalid input (code 1)")
                 print()
-            if(abs(number1)<abs(number2)):
+            if(abs(number1)<abs(number2)): #If you put the numbers in wrong order
                 print()
                 print("Error!")
                 print("The second number entered is greater than the first number")
@@ -157,26 +157,10 @@ def palc():
             print("If struggling in Python 2, in the code, look at the following line (there's a comment)")
             exec("area.py")    #If struggling in python 2, change to execfile("area.py")
         elif calc == "#":
-            win = input("Is your OS the following: Windows? (Y/n, case-sensitive)")
-            if win == "Y":
-                print()
-                os.system('start python area.py')
-            else:
-                print()
-                print("Mac or Linux, I assume, then")
-                os.system('python3 area.py')
-                print()
+            exec("area.py")
 #VOLUME
         elif calc == "vol":
-            win = input("Is your OS the following: Windows? (Y/n, case-sensitive)")
-            if win == "y":
-                print()
-                os.system('start python volume.py')
-            else:
-                print()
-                print("Then we're going to assume Mac or Linux.")
-                os.system('python3 volume.py')
-                print()
+            exec("volume.py") #More secure than os.system but currently doesn't work because it doesnt call any functions FROM volume.py
 #CUBE
         elif calc == "{}":
             print()
@@ -219,7 +203,7 @@ def palc():
             print()
             number = int(input("Type in a number:"))
             if number == 42:
-                print("42 -- the answer to life, the universe, and everything")
+                print("=42 -- the answer to life, the universe, and everything")
             else:
                 print("=" +number)
 #OTHERWISE
