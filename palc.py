@@ -4,6 +4,7 @@ from ex import *
 from root import *
 print("Please wait")
 print()
+calc = ""
 macwin = input("Is your os the following: Windows? (Y/n)")
 if macwin == "Y":
     print("Ok, OS set to: Windows")
@@ -24,14 +25,17 @@ def e():
 	exit()
 def palc():
     while True:
-        if macwin == "y":
-            os.system('cls')
-        elif macwin == "Y":
-            os.system('cls')
-        elif macwin == "n":
-            os.system('clear')
-        elif macwin == "N":
-            os.system('clear')
+        if calc == "?":
+			print()
+        else:
+		    if macwin == "y":
+                os.system('cls')
+            elif macwin == "Y":
+                os.system('cls')
+            elif macwin == "n":
+                os.system('clear')
+            elif macwin == "N":
+                os.system('clear')
 #CALCULATION CHOICE
         calc = input("Calculation?  (type ? for help): ")
 #HELP
