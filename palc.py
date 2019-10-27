@@ -24,14 +24,8 @@ def e():
 	exit()
 def palc():
     while True:
-       if macwin == "y":
-            os.system('cls')
-       elif macwin == "Y":
-            os.system('cls')
-       elif macwin == "n":
-            os.system('clear')
-       elif macwin == "N":
-            os.system('clear')
+       for i in range (1, 13):
+		   print()
 #CALCULATION CHOICE
         calc = input("Calculation?  (type ? for help): ")
 #HELP
