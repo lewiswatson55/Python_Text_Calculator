@@ -9,7 +9,7 @@ I always make my forked repositories better.
 
 Thanks for visiting!
 
-** Note that morassuttia3 is me (TheTechRobo) on my MacBook Air. **
+**Note that morassuttia3 is me (TheTechRobo) on my MacBook Air.**
 
 
 PLEASE, leave feature requests and bug reports in the Issues [section](https://github.com/thetechrobo/python-text-calculator/issues), even if you know my email.
