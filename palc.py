@@ -195,10 +195,10 @@ def palc():
                 cu()
 #EASTER EGG!
         elif calc == "=":
-			print()
-			number = int(input("Type in a number:"))
-			if number == 42:
-				print("42 -- the answer to life, the universe, and everything")
+		    print()
+            number = int(input("Type in a number:"))
+            if number == 42:
+                print("42 -- the answer to life, the universe, and everything")
 			else:
 				print("=" +number)
 #OTHERWISE
