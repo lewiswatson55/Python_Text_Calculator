@@ -26,9 +26,9 @@ def e():
 def palc():
     while True:
         if calc == "?":
-			print()
+            print()
         else:
-		    if macwin == "y":
+            if macwin == "y":
                 os.system('cls')
             elif macwin == "Y":
                 os.system('cls')
