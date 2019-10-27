@@ -168,12 +168,6 @@ def palc():
             exit()
         elif calc == "EXIT":
             exit()
-#CUBE TWICE
-        elif calc == "{2}":
-            print()
-            cubedNumber = int(input("Number?"))
-            print()
-            print((cubedNumber * cubedNumber * cubedNumber) + (cubedNumber * cubedNumber * cubedNumber))
 #EXPONENTS (had the idea during bike ride on 18/9/2019 19hsomething after the BBQ)
         elif calc == "ex":
             exponent2Use = int(input("Exponent? (Coded: 2,3,4,5)"))
@@ -188,6 +182,8 @@ def palc():
                 ex5()
             elif exponent2Use == 1:
                 ex1()
+            elif exponent2Use == 6:
+                ex6()
             else:
                 print("ERROR: not coded. (Coded: 1 2 3 4 5 6)")
 #ROOTS
