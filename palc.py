@@ -31,7 +31,7 @@ def palc():
 #HELP
        if calc == "?":
            print('''
-            Currently supported: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), and equals (=). Type exit to exit. Commands are case-sensitive
+            Currently supported: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), and convert number systems (base). Type exit to exit. Commands are case-sensitive
             To access support: go to https://github.com/thetechrobo/support/
             To modify Palc: go to https://github.com/thetechrobo/python-text-calculator/
             ''')
@@ -200,10 +200,27 @@ def palc():
                 print("=42 -- the answer to life, the universe, and everything")
             else:
                 print("=" +number)
+#NUMBER SYSTEMS
+       elif calc == "base":
+            base = int(input('''What base would you like to use?
+Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)
+Type 2, 8, 10, or 16: '''))
+            if base == 2:
+                result = bin(int(input("Type the original number: ")
+                print(result)
+            elif base == 8:
+                result = oct(int(input("Type the original number: ")
+                print(result)
+            elif base == 10:
+                result = bin(int(input("Type the original number: ")
+                print(result)
+            elif base == 16:
+                result = bin(int(input("Type the original number: ")
+                print(result)
 #OTHERWISE
        else:
             print('''
-            I don't understand your request. Here are the currently supported calculations: * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); and = (equals). Sorry for the inconvenience
+            I don't understand your request. Here are the currently supported calculations: * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); and base (convert number system). Sorry for the inconvenience
             ''')
 print()
 print("Welcome to Palc!")
