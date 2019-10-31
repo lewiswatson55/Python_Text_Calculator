@@ -209,21 +209,26 @@ def palc():
 Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)
 Type 2, 8, 10, or 16: '''))
             if base == 2:
-                result = bin(int(input("Type the original number: ")
-                print(result)
+                result = bin(input("Type the original number: ")
+                print("=" +result)
             elif base == 8:
-                result = oct(int(input("Type the original number: ")
-                print(result)
+                result = oct(input("Type the original number: ")
+                print("=" +result)
             elif base == 10:
-                result = bin(int(input("Type the original number: ")
-                print(result)
+                result = bin(input("Type the original number: ")
+                print("=" +result)
             elif base == 16:
-                result = bin(int(input("Type the original number: ")
-                print(result)
+                result = bin(input("Type the original number: ")
+                print("=" +result)
+#ORD
+       elif calc == "ord":
+           result = ord(input("Type in the number to ord: "))
+           print("=" +result)
 #OTHERWISE
        else:
             print('''
-            I don't understand your request. Here are the currently supported calculations: * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); and base (convert number system). Sorry for the inconvenience
+            I don't understand your request. Here are the currently supported calculations: 
+            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); and base (convert number system). Sorry for the inconvenience
             ''')
 print()
 print("Welcome to Palc!")
