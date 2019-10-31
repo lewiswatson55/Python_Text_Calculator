@@ -177,7 +177,10 @@ def palc():
             print(cubedNumber * cubedNumber * cubedNumber * cubedNumber * cubedNumber * cubedNumber)
 #EXPONENTS (had the idea during bike ride on 18/9/2019 19hsomething after the BBQ)
         elif calc == "ex":
-            exponent2Use = int(input("Exponent? (Coded: 2,3,4)"))
+            try:
+                exponent2Use = int(input("Exponent? (Coded: 2,3,4)"))
+            except ValueError:
+                print("ERROR: try typing in a number!")
             if exponent2Use == 2:
                 ex2()
             elif exponent2Use == 3:
