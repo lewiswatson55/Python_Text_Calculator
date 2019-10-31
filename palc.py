@@ -169,7 +169,10 @@ def palc():
             exit()
 #EXPONENTS (had the idea during bike ride on 18/9/2019 19hsomething after the BBQ)
        elif calc == "ex":
-            exponent2Use = int(input("Exponent? (Coded: 2,3,4,5)"))
+            try:
+                exponent2Use = int(input("Exponent? (Coded: 2,3,4,5)"))
+            except ValueError:
+                print("ERROR: try typing in a number!")
             if exponent2Use == 2:
                 print("Please Note; this is the same as running sq or []")
                 ex2()
