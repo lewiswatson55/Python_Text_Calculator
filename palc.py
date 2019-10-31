@@ -209,16 +209,16 @@ def palc():
 Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)
 Type 2, 8, 10, or 16: '''))
             if base == 2:
-                result = bin(input("Type the original number: ")
+                result = str(bin(input("Type the original number: "))
                 print("=" +result)
             elif base == 8:
-                result = oct(input("Type the original number: ")
+                result = str(oct(input("Type the original number: "))
                 print("=" +result)
             elif base == 10:
-                result = bin(input("Type the original number: ")
+                result = str(bin(input("Type the original number: "))
                 print("=" +result)
             elif base == 16:
-                result = bin(input("Type the original number: ")
+                result = str(hex(input("Type the original number: "))
                 print("=" +result)
 #ORD
        elif calc == "ord":
