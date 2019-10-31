@@ -210,16 +210,20 @@ Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)
 Type 2, 8, 10, or 16: '''))
             if base == 2:
                 result = bin(input("Type the original number: ")
-                print("=" +str(result))
+                printThis = "=" +str(result)
+                print(printThis)
             elif base == 8:
                 result = oct(input("Type the original number: ")
-                print("=" +str(result))
+                printThis = "=" +str(result)
+                print(printThis)
             elif base == 10:
                 result = bin(input("Type the original number: ")
-                print("=" +str(result))
+                printThis = "=" +str(result)
+                print(printThis)
             elif base == 16:
                 result = hex(input("Type the original number: ")
-                print("=" +str(result))
+                printThis = "=" +str(result)
+                print(printThis)
 #ORD
        elif calc == "ord":
            result = ord(input("Type in the number to ord: "))
