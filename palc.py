@@ -1,7 +1,12 @@
 #SETUP
 import os
-from ex import *
-from root import *
+try:
+    from ex import *
+    from root import *
+except IOError:
+    print('''There was an error with importing the necessary elements: ex.py and/or root.py
+    Make sure you're in the correct directory and the files exist.
+    You cannot use the following commands: ex and/or root''')
 print("Please wait")
 print()
 macwin = input("Is your os the following: Windows? (Y/n)")
@@ -236,5 +241,11 @@ Type 2, 8, 10, or 16: '''))
             ''')
 print()
 print("Welcome to Palc!")
-palc() #run the Calc() command above
+try:
+    palc() #run the Calc() command above
+except KeyboardInterrupt:
+    print("Note that you CAN type exit instead of the interrupt key")
+    exit()
+except:
+    print("An unknown error occured.")
 #EOF
