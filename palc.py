@@ -1,15 +1,16 @@
 #SETUP
-import os
+import os #import os
 try:
-    from ex import *
-    from root import *
+    from ex import * #import file
+    from root import * #import other file
 except IOError:
     print('''There was an error with importing the necessary elements: ex.py and/or root.py
     Make sure you're in the correct directory and the files exist.
     You cannot use the following commands: ex and/or root''')
 print("Please wait")
 print()
-macwin = input("Is your os the following: Windows? (Y/n)")
+def .():
+    macwin = input("Is your os the following: Windows? (Y/n)")
 if macwin == "Y":
     print("Ok, OS set to: Windows")
     os.system('cls')
@@ -24,12 +25,12 @@ elif macwin == "n":
     os.system('clear')
 else:
     print("Please, Type in the answer to the question (y/n)")
-#make a new command called palc()
+    .()
 def e():
 	exit()
 def palc():
     while True:
-       for i in range (1, 13):
+       for i in range (1, 13): #print blank line 13 times
             print()
 #CALCULATION CHOICE
        calc = input("Calculation?  (type ? for help): ")
@@ -159,13 +160,13 @@ def palc():
             exec("area.py")
 #VOLUME
        elif calc == "vol":
-            exec("volume.py") #More secure than os.system but currently doesn't work because it doesnt call any functions FROM volume.py
+            exec("volume.py") #More secure than os.system but currently doesn't work because it doesnt call any functions FROM volume.py, os.system had the same problem
 #CUBE
        elif calc == "{}":
             print()
             cubedNumber = int(input("Type the number to be cubed: "))
             print()
-            print(cubedNumber * cubedNumber * cubedNumber)
+            print(cubedNumber * cubedNumber * cubedNumber) #Manually cube number
             print()
 #EXIT
        elif calc == "exit":
@@ -214,24 +215,34 @@ def palc():
 Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)
 Type 2, 8, 10, or 16: '''))
             if base == 2:
-                result = bin(int(input("Type the original number: ")))
+                result = bin(int(input("Type the original number: "))) #bin() the number
                 printThis = "=" +str(result)
                 print(printThis)
             elif base == 8:
-                result = oct(int(input("Type the original number: ")))
+                result = oct(int(input("Type the original number: "))) #oct() teh number
                 printThis = "=" +str(result)
                 print(printThis)
             elif base == 10:
-                result = int(input("Type the original number: "))
+                whichType = input("Which type is the Number (ord, binary, octo, or hex): ")
+                if whichType == "ord":
+                    result = int(ord(input("Type the original number: "))) #int() the number
+                elif whichType == "binary":
+                    result = int(bin(input("Type the original number: "))) #int() the number
+                elif whichType == "octo":
+                    result = int(oct(input("Type the original number: "))) #int() the number
+                elif whichType == "hex":
+                    result = int(hex(input("Type the original number: "))) #int() the number
+                else:
+                    print("type ord, binary, octo, hex")
                 printThis = "=" +str(result)
                 print(printThis)
             elif base == 16:
-                result = hex(int(input("Type the original number: ")))
+                result = hex(int(input("Type the original number: "))) #
                 printThis = "=" +str(result)
                 print(printThis)
 #ORD
        elif calc == "ord":
-           result = ord(input("Type in the number to ord: "))
+           result = ord(int(input("Type in the number to ord: "))
            print("=" +result)
 #OTHERWISE
        else:
@@ -248,6 +259,6 @@ except KeyboardInterrupt:
     exit()
 except ValueError:
     print("You typed in an invalid integer / float")
-#except:
- #   print("An unknown error occured.")
+except:
+    print("An unknown error occured.") #It was commented because I was debugging
 #EOF
