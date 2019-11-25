@@ -214,19 +214,19 @@ def palc():
 Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)
 Type 2, 8, 10, or 16: '''))
             if base == 2:
-                result = bin(input("Type the original number: ")
+                result = bin(int(input("Type the original number: ")))
                 printThis = "=" +str(result)
                 print(printThis)
             elif base == 8:
-                result = oct(input("Type the original number: ")
+                result = oct(int(input("Type the original number: ")))
                 printThis = "=" +str(result)
                 print(printThis)
             elif base == 10:
-                result = bin(input("Type the original number: ")
+                result = int(input("Type the original number: "))
                 printThis = "=" +str(result)
                 print(printThis)
             elif base == 16:
-                result = hex(input("Type the original number: ")
+                result = hex(int(input("Type the original number: ")))
                 printThis = "=" +str(result)
                 print(printThis)
 #ORD
@@ -244,8 +244,10 @@ print("Welcome to Palc!")
 try:
     palc() #run the Calc() command above
 except KeyboardInterrupt:
-    print("Note that you CAN type exit instead of the interrupt key")
+    print("\nNote that you CAN type exit instead of the interrupt key")
     exit()
-except:
-    print("An unknown error occured.")
+except ValueError:
+    print("You typed in an invalid integer / float")
+#except:
+ #   print("An unknown error occured.")
 #EOF
