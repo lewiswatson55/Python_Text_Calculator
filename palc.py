@@ -9,7 +9,7 @@ except IOError:
     You cannot use the following commands: ex and/or root''')
 print("Please wait")
 print()
-def .():
+def os():
     macwin = input("Is your os the following: Windows? (Y/n)")
 if macwin == "Y":
     print("Ok, OS set to: Windows")
