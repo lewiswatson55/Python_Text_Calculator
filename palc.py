@@ -11,21 +11,21 @@ print("Please wait")
 print()
 def os():
     macwin = input("Is your os the following: Windows? (Y/n)")
-if macwin == "Y":
-    print("Ok, OS set to: Windows")
-    os.system('cls')
-elif macwin == "y":
-    print("Set os to: Windows")
-    os.system('cls')
-elif macwin == "N":
-    print("Set os to: linux")
-    os.system('clear')
-elif macwin == "n":
-    print("Set os to: Linux")
-    os.system('clear')
-else:
-    print("Please, Type in the answer to the question (y/n)")
-    .()
+    if macwin == "Y":
+        print("Ok, OS set to: Windows")
+        os.system('cls')
+    elif macwin == "y":
+        print("Set os to: Windows")
+        os.system('cls')
+    elif macwin == "N":
+        print("Set os to: linux")
+        os.system('clear')
+    elif macwin == "n":
+        print("Set os to: Linux")
+        os.system('clear')
+    else:
+        print("Please, Type in the answer to the question (y/n)")
+        os()
 def e():
 	exit()
 def palc():
