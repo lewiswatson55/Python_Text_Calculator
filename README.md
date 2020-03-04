@@ -22,5 +22,4 @@ Support questions belong at my [Support](https://github.com/thetechrobo/support)
 Thank you for your cooperation -- I get too much spam :wink:
 
 
-###### Forked Version 0.3.2
-###### Forked prerelease 0.4-omega.3
+###### Current Version: 0.4-stable
