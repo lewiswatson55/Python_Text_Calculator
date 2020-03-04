@@ -1,4 +1,7 @@
 #SETUP
+import time
+print("Loading...............\n")
+time.sleep(2)
 import os #import os
 try:
     from ex import * #import file
@@ -7,26 +10,6 @@ except IOError:
     print('''There was an error with importing the necessary elements: ex.py and/or root.py
     Make sure you're in the correct directory and the files exist.
     You cannot use the following commands: ex and/or root''')
-print("Please wait")
-print()
-def os():
-    macwin = input("Is your os the following: Windows? (Y/n)")
-    if macwin == "Y":
-        print("Ok, OS set to: Windows")
-        os.system('cls')
-    elif macwin == "y":
-        print("Set os to: Windows")
-        os.system('cls')
-    elif macwin == "N":
-        print("Set os to: linux")
-        os.system('clear')
-    elif macwin == "n":
-        print("Set os to: Linux")
-        os.system('clear')
-    else:
-        print("Please, Type in the answer to the question (y/n)")
-        os()
-def e():
 	exit()
 def palc():
     while True:
@@ -176,31 +159,27 @@ def palc():
 #EXPONENTS (had the idea during bike ride on 18/9/2019 19hsomething after the BBQ)
        elif calc == "ex":
             try:
-                exponent2Use = int(input("Exponent? (Coded: 2,3,4,5)"))
+                exponent2Use = int(input("Exponent?"))
             except ValueError:
                 print("ERROR: try typing in a number!")
             if exponent2Use == 2:
                 print("Please Note; this is the same as running sq or []")
-                ex2()
             elif exponent2Use == 3:
-                ex3()
-            elif exponent2Use == 4:
-                ex4()
-            elif exponent2Use == 5:
-                ex5()
-            elif exponent2Use == 1:
-                ex1()
-            elif exponent2Use == 6:
-                ex6()
-            else:
-                print("ERROR: not coded. (Coded: 1 2 3 4 5 6)")
+                print("this is the same as running cu or {}")
+            try:
+                origin = int(input("Original number?"))
+                print("That equals.......\n", origin ** exponent2Use)
+            except ValueError:
+                print("ERROR: try typing in a Number!")
 #ROOTS
        elif calc == "root":
             root = input("Square root or cube root?(square/cube case-sensitive)")
             if root == "square":
-                sq()
+                num = input("Number to be rooted?")
+                print("That equals.....\n", num / num)
             elif root == "cube":
-                cu()
+                num = input("Number to be rooted?")
+                print("That equals......\n", num / num)
 #EASTER EGG!
        elif calc == "=":
             print()
@@ -260,5 +239,5 @@ except KeyboardInterrupt:
 except ValueError:
     print("You typed in an invalid integer / float")
 except:
-    print("An unknown error occured.") #It was commented because I was debugging
+    print("An unknown error occured. For debugging info, see Line 242") #To debug, comment lines 241 and 242
 #EOF
