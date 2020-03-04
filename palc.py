@@ -3,14 +3,6 @@ import time
 print("Loading...............\n")
 time.sleep(2)
 import os #import os
-try:
-    from ex import * #import file
-    from root import * #import other file
-except IOError:
-    print('''There was an error with importing the necessary elements: ex.py and/or root.py
-    Make sure you're in the correct directory and the files exist.
-    You cannot use the following commands: ex and/or root''')
-	exit()
 def palc():
     while True:
        for i in range (1, 13): #print blank line 13 times
@@ -221,8 +213,8 @@ Type 2, 8, 10, or 16: '''))
                 print(printThis)
 #ORD
        elif calc == "ord":
-           result = ord(int(input("Type in the number to ord: "))
-           print("=" +result)
+           result = str(ord(int(input("Type in the number to ord: "))))
+           print("=", result)
 #OTHERWISE
        else:
             print('''
