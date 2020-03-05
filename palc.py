@@ -5,7 +5,7 @@ time.sleep(2)
 import os #import os
 def palc():
     while True:
-       for i in range (1, 13): #print blank line 13 times
+       for i in range (0, 13): #print blank line 13 times
             print()
 #CALCULATION CHOICE
        calc = input("Calculation?  (type ? for help): ")
@@ -168,10 +168,7 @@ def palc():
             root = input("Square root or cube root?(square/cube case-sensitive)")
             if root == "square":
                 num = input("Number to be rooted?")
-                print("That equals.....\n", num / num)
-            elif root == "cube":
-                num = input("Number to be rooted?")
-                print("That equals......\n", num / num)
+                print("That equals.....\n", num ** 0.5)
 #EASTER EGG!
        elif calc == "=":
             print()
