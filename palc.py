@@ -34,11 +34,9 @@ def palc():
             print()
 #SQUARE
        elif calc == "sq":
-            print("Please note this is the same as running [] or ex")
-            ex2()
+            print("UNDER CONSTRUCTION")
        elif calc == "[]":
-            print("Please note it's the same as running sq or ex")
-            ex2()
+            print("UNDER CONSTRUCTION")
 #DIVISION
        elif calc == "/":
             print()
