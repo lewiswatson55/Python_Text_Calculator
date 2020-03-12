@@ -1,4 +1,8 @@
 #SETUP
+try:
+    from root import *
+except:
+    print("are you sure you the file root.py exists???? You cant use command 'root'")
 import time
 print("Loading...............\n")
 time.sleep(2)
@@ -167,6 +171,8 @@ def palc():
             if root == "square":
                 num = input("Number to be rooted?")
                 print("That equals.....\n", num ** 0.5)
+            elif root == "cube":
+                cu()
 #EASTER EGG!
        elif calc == "=":
             print()
