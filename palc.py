@@ -154,16 +154,9 @@ def palc():
 #EXPONENTS (had the idea during bike ride on 18/9/2019 19hsomething after the BBQ)
        elif calc == "ex":
             try:
-                exponent2Use = int(input("Exponent?"))
-            except ValueError:
-                print("ERROR: try typing in a number!")
-            if exponent2Use == 2:
-                print("Please Note; this is the same as running sq or []")
-            elif exponent2Use == 3:
-                print("this is the same as running cu or {}")
-            try:
                 origin = int(input("Original number?"))
-                print("That equals.......\n", origin ** exponent2Use)
+                ex = int(input("Exponent? ")
+                print("That equals.......\n", origin ** ex)
             except ValueError:
                 print("ERROR: try typing in a Number!")
 #ROOTS
