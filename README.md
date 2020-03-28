@@ -1,5 +1,6 @@
 # python-text-calculator
 
+**Please, if you make a pull request add your username to CONTRIBUTORS.md**
 
 This is a Python script I forked when I wanted to learn math in Python.
 
