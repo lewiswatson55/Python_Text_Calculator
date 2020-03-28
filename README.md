@@ -23,4 +23,4 @@ Support questions belong at my [Support](https://github.com/thetechrobo/support)
 Thank you for your cooperation -- I get too much spam :wink:
 
 
-###### Current Version: 0.4-stable
+###### Current Version: 0.4.3-stable
