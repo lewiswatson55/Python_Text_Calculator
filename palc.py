@@ -2,7 +2,7 @@
 try:
     from root import *
 except:
-    print("are you sure you the file root.py exists???? You cant use command 'root'")
+    print("Are you sure that the file root.py exists? You can't use command 'root'")
 import time
 print("Loading...............\n")
 time.sleep(2)
@@ -38,9 +38,11 @@ def palc():
             print()
 #SQUARE
        elif calc == "sq":
-            print("UNDER CONSTRUCTION")
+            n = int(input("Number? "))
+            print(n * n)
        elif calc == "[]":
-            print("UNDER CONSTRUCTION")
+            n = int(input("Number? "))
+            print(n * n)
 #DIVISION
        elif calc == "/":
             print()
@@ -131,8 +133,7 @@ def palc():
                 print()
 #AREA
        elif calc == "ar":
-            print("If struggling in Python 2, in the code, look at the following line (there's a comment)")
-            exec("area.py")    #If struggling in python 2, change to execfile("area.py")
+            exec("area.py") 
        elif calc == "#":
             exec("area.py")
 #VOLUME
@@ -232,5 +233,5 @@ except KeyboardInterrupt:
 except ValueError:
     print("You typed in an invalid integer / float")
 except:
-    print("An unknown error occured. For debugging info, see Line 242") #To debug, comment lines 241 and 242
+    print("An unknown error occured. For debugging info, see Line 236") #To debug, comment lines 235 and 236
 #EOF
