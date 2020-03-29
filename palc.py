@@ -103,35 +103,7 @@ def palc():
                 print("=" +number)
 #NUMBER SYSTEMS
        elif calc == "base":
-            base = int(input('''What base would you like to use?
-Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)
-Type 2, 8, 10, or 16: '''))
-            if base == 2:
-                result = bin(int(input("Type the original number: "))) #bin() the number
-                printThis = "=" +str(result)
-                print(printThis)
-            elif base == 8:
-                result = oct(int(input("Type the original number: "))) #oct() teh number
-                printThis = "=" +str(result)
-                print(printThis)
-            elif base == 10:
-                whichType = input("Which type is the Number (ord, binary, octo, or hex): ")
-                if whichType == "ord":
-                    result = int(ord(input("Type the original number: "))) #int() the number
-                elif whichType == "binary":
-                    result = int(bin(input("Type the original number: "))) #int() the number
-                elif whichType == "octo":
-                    result = int(oct(input("Type the original number: "))) #int() the number
-                elif whichType == "hex":
-                    result = int(hex(input("Type the original number: "))) #int() the number
-                else:
-                    print("type ord, binary, octo, hex")
-                printThis = "=" +str(result)
-                print(printThis)
-            elif base == 16:
-                result = hex(int(input("Type the original number: "))) #
-                printThis = "=" +str(result)
-                print(printThis)
+            base()
 #ORD
        elif calc == "ord":
            result = str(ord(int(input("Type in the number to ord: "))))
