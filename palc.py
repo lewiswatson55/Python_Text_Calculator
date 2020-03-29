@@ -81,7 +81,7 @@ def palc():
                 origin = int(input("Original number?"))
                 ex = int(input("Exponent? ")
                 print("That equals.......\n", origin ** ex)
-            except ValueError:
+            except ValueError or TypeError:
                 print("ERROR: try typing in a Number!")
 #ROOTS
        elif calc == "root":
@@ -91,6 +91,8 @@ def palc():
                 print("That equals.....\n", num ** 0.5)
             elif root == "cube":
                 cu()
+            else:
+                print("Currently I don't support any other roots. Hopefully this will change :)")
 #EASTER EGG!
        elif calc == "=":
             print()
