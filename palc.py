@@ -18,13 +18,12 @@ def palc():
             print()
 #CALCULATION CHOICE
        calc = input("Calculation?  (type ? for help): ")
+       calc.lower() #make variable "calc" lowercase
 #HELP
-       if calc == "?":
-           print('''
-            Currently supported: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), and convert number systems (base). Type exit to exit. Commands are case-sensitive
-            To access support: go to https://github.com/thetechrobo/support/
-            To contribute: go to https://github.com/thetechrobo/python-text-calculator/
-            ''')
+        if calc == "?":
+            help()
+        elif calc == "help":
+            help()
 #MULTIPLICATION
        elif calc == "*":
             multi()
@@ -56,57 +55,25 @@ def palc():
             add()
 #MODULO
        elif calc == "%":
-            try:
-                bigger = int(input("\nType the first number(greater): "))
-                smaller = int(input("Type the second number(smaller): "))
-            except (TypeError, ValueError):
-                print("Error!")
-                print("Invalid input (code 1)\n")
-            if(abs(bigger)<abs(smaller)):
-                print()
-                print("Error!")
-                print("The second number entered is greater than the first number")
-                print()
-                palc()
-            else:
-                print(bigger-smaller*int(bigger/smaller))
-                print()
+            mod()
        elif calc == "mod":
-            print()
-            try:
-                number1 = int(input("Type the first number(greater): "))
-                number2 = int(input("Type the second number(smaller): "))
-            except (TypeError, ValueError): #If you inputted wrong
-                print("Error!")
-                print("Invalid input (code 1)")
-                print()
-            if(abs(number1)<abs(number2)): #If you put the numbers in wrong order
-                print()
-                print("Error!")
-                print("The second number entered is greater than the first number")
-                print()
-            else:
-                print(number1-number2*int(number1/number2))
-                print()
+            mod()
 #AREA
        elif calc == "ar":
-            exec("area.py") 
+            print("Under construction")
        elif calc == "#":
-            exec("area.py")
+            print("Under construction")
 #VOLUME
        elif calc == "vol":
-            exec("volume.py") #More secure than os.system but currently doesn't work because it doesnt call any functions FROM volume.py, os.system had the same problem
+            print("Under construction")
 #CUBE
        elif calc == "{}":
-            print()
-            cubedNumber = int(input("Type the number to be cubed: "))
+            cubedNumber = int(input("\nType the number to be cubed: "))
             print()
             print(cubedNumber * cubedNumber * cubedNumber) #Manually cube number
             print()
 #EXIT
        elif calc == "exit":
-            exit()
-       elif calc == "EXIT":
             exit()
 #EXPONENTS (had the idea during bike ride on 18/9/2019 19hsomething after the BBQ)
        elif calc == "ex":

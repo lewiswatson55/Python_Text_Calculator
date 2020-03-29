@@ -18,3 +18,17 @@ def add(): #addition
     2num()
     print("\nThat equals...")
     print(n1 + n2)
+def mod(): #modulo
+    try:
+        bigger = int(input("\nType the first number (greater): "))
+        smaller = int(input("Type the second number (smaller): "))
+    except (TypeError, ValueError):
+        print("\nError!")
+        print("Invalid input (code 1)\n")
+    if(abs(bigger)<abs(smaller)):
+        print("\nError!")
+        print("The second number entered is greater than the first number (code 2)\n")
+    else:
+        print("\nThat equals...")
+        print(bigger-smaller*int(bigger/smaller))
+        print()
