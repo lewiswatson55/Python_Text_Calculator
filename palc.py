@@ -7,7 +7,7 @@ try:
 except:
     print("I can't find file root.py, and thus you cannot run roots.")
 try:
-    from func inport *
+    from func import *
 except:
     exit("I can't access the file func.py. This file is necessary for proper function of the Software.")
 print("Loading...............\n")
