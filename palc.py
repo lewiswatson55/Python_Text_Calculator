@@ -6,10 +6,10 @@ except:
 import time
 print("Loading...............\n")
 time.sleep(2)
-import os #import os
+import os
 def palc():
     while True:
-       for i in range (0, 13): #print blank line 13 times
+       for i in range (0, 13): #13 blank lines
             print()
 #CALCULATION CHOICE
        calc = input("Calculation?  (type ? for help): ")
@@ -216,11 +216,10 @@ Type 2, 8, 10, or 16: '''))
             I don't understand your request. Here are the currently supported calculations: 
             * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); and base (convert number system). Sorry for the inconvenience
             ''')
-print()
-print("Welcome to Palc!")
+print("\nWelcome to Palc!")
 try:
-    palc() #run the Calc() command above
-except KeyboardInterrupt:
+    palc() #run all that code
+except KeyboardInterrupt: #if ^C
     print("\nNote that you CAN type exit instead of the interrupt key")
     exit()
 except ValueError:
