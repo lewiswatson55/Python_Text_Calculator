@@ -1,6 +1,6 @@
 # DON'T BE A DICK PUBLIC LICENSE
 
-[Original](https://github.com/philsturgeon/dbad)
+[Source](https://github.com/philsturgeon/dbad)
 
 > Version 1.1, December 2016
 
