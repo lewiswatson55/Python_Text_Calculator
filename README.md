@@ -24,3 +24,4 @@ Thank you for your cooperation -- I get too much spam :wink:
 
 
 ###### Current Version: 0.4.3-stable
+###### Current Preview: 0.5-beta.1
