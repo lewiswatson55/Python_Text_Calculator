@@ -4,8 +4,8 @@ def getNum(): #ask for two numbers and then return to function
     return n1, n2
 def help():
     print('''
-     Currently supported: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), and convert number systems (base). Type exit to exit.
-     To access support: go to https://github.com/thetechrobo/support/
+     Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), and convert number systems (base). Type exit to exit.
+     Bugs? Head over to https://github.com/thetechrobo/support/
      To contribute: go to https://github.com/thetechrobo/python-text-calculator/
      ''')
 def multi(): #multiplication
