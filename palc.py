@@ -1,12 +1,17 @@
 #SETUP
+from sys import exit
+import time
+import os
 try:
     from root import *
 except:
-    print("Are you sure that the file root.py exists? You can't use command 'root'")
-import time
+    print("I can't find file root.py, and thus you cannot run roots.")
+try:
+    from func inport *
+except:
+    exit("I can't access the file func.py. This file is necessary for proper function of the Software.")
 print("Loading...............\n")
 time.sleep(2)
-import os
 def palc():
     while True:
        for i in range (0, 13): #13 blank lines
@@ -22,20 +27,9 @@ def palc():
             ''')
 #MULTIPLICATION
        elif calc == "*":
-            print()
-            number1 = int(input("Type the first number: "))
-            number2 = int(input("Type the second number: "))
-            print()
-            print(number1 * number2)
-            print()
-        
+            multi()
        elif calc == "x":
-            print()
-            number1 = int(input("First number? "))
-            number2 = int(input("Second number? "))
-            print()
-            print(number1 * number2)
-            print()
+            multi()
 #SQUARE
        elif calc == "sq":
             n = int(input("Number? "))
@@ -45,72 +39,35 @@ def palc():
             print(n * n)
 #DIVISION
        elif calc == "/":
-            print()
-            number1 = int(input("type the first number: "))
-            number2 = int(input("Type the second number: "))
-            print()
-            print(number1 / number2)
-            print()
+            div()
        elif calc == "div":
-            print()
-            number1 = int(input("Type the first number: "))
-            number2 = int(input("Type the second number: "))
-            print()
-            print(number1 / number2)
-            print()
+            div()
 #SUBTRACTION
        elif calc == "-":
-            print()
-            number1 = int(input("Type the first number: "))
-            number2 = int(input("type the second number: "))
-            print()
-            print(number1 - number2)
-            print()
+            sub()
        elif calc == "sub":
-            print()
-            number1 = int(input("Type the first number: "))
-            number2 = int(input("type the second number: "))
-            print()
-            print(number1 - number2)
-            print()
+            sub()
        elif calc == "min":
-            print()
-            number1 = int(input("Type the first number: "))
-            number2 = int(input("type the second number: "))
-            print()
-            print(number1 - number2)
-            print()
+            sub()
 #ADDITION
        elif calc == "+":
-            print()
-            number1 = int(input("Type the first number: "))
-            number2 = int(input("Type the second number: "))
-            print()
-            print(number1 + number2)
-            print()
+            add()
        elif calc == "add":
-            print()
-            number1 = int(input("Type the first number: "))
-            number2 = int(input("Type the second number: "))
-            print()
-            print(number1 + number2)
-            print()
+            add()
 #MODULO
        elif calc == "%":
-            print()
             try:
-                bigger = int(input("Type the first number(greater): "))
+                bigger = int(input("\nType the first number(greater): "))
                 smaller = int(input("Type the second number(smaller): "))
             except (TypeError, ValueError):
                 print("Error!")
-                print("Invalid input (code 1)")
-                print()
+                print("Invalid input (code 1)\n")
             if(abs(bigger)<abs(smaller)):
                 print()
                 print("Error!")
                 print("The second number entered is greater than the first number")
                 print()
-                Calc()
+                palc()
             else:
                 print(bigger-smaller*int(bigger/smaller))
                 print()
