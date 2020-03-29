@@ -7,7 +7,7 @@ try:
 except:
     print("I can't find file root.py, and thus you cannot run roots.")
 try:
-    from func import *
+from func import *
 except:
     exit("I can't access the file func.py. This file is necessary for proper function of the Software.")
 print("Loading...............\n")
@@ -20,10 +20,10 @@ def palc():
        calc = input("Calculation?  (type ? for help): ")
        calc.lower() #make variable "calc" lowercase
 #HELP
-        if calc == "?":
-            help()
-        elif calc == "help":
-            help()
+       if calc == "?":
+           help()
+       elif calc == "help":
+           help()
 #MULTIPLICATION
        elif calc == "*":
             multi()
@@ -79,8 +79,8 @@ def palc():
        elif calc == "ex":
             try:
                 origin = int(input("Original number?"))
-                ex = int(input("Exponent? ")
-                print("That equals.......\n", origin ** ex)
+                ex = int(input("Exponent? "))
+                print(origin ** ex)
             except ValueError or TypeError:
                 print("ERROR: try typing in a Number!")
 #ROOTS

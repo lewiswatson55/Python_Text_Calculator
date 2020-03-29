@@ -1,4 +1,4 @@
-def 2num(): #ask for two numbers and then return to function
+def getNum(): #ask for two numbers and then return to function
     n1 = int(input("Please enter the first number: "))
     n2 = int(input("Please enter the second number: "))
     return n1, n2
@@ -9,19 +9,19 @@ def help():
      To contribute: go to https://github.com/thetechrobo/python-text-calculator/
      ''')
 def multi(): #multiplication
-    2num()
+    getNum()
     print("\nThat equals...")
     print(n1 * n2)
 def div(): #division
-    2num()
+    getNum()
     print("\nThat equals...")
     print(n1 / n2)
 def sub(): #subtraction
-    2num()
+    getNum()
     print("\nThat equals...")
     print(n1 - n2)
 def add(): #addition
-    2num()
+    getNum()
     print("\nThat equals...")
     print(n1 + n2)
 def mod(): #modulo
@@ -46,11 +46,11 @@ def base():
         result = bin(int(input("Type the original number: "))) #bin() the number
         printThis = "=" +str(result)
         print(printThis)
-        elif base == 8:
+    elif base == 8:
             result = oct(int(input("Type the original number: "))) #oct() teh number
             printThis = "=" +str(result)
             print(printThis)
-        elif base == 10:
+    elif base == 10:
             whichType = input("Which type is the Number (ord, binary, octo, or hex): ")
             if whichType == "ord":
                 result = int(ord(input("Type the original number: "))) #int() the number
@@ -64,8 +64,7 @@ def base():
                 printThis = "type ord, binary, octo, hex"
             printThis = "=" +str(result)
             print(printThis)
-        elif base == 16:
-            result = hex(int(input("Type the original number: "))) #
-            printThis = "=" +str(result)
-            print(printThis)
-def 
+    elif base == 16:
+        result = hex(int(input("Type the original number: "))) #
+        printThis = "=" +str(result)
+        print(printThis)
