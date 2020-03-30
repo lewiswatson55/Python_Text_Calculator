@@ -65,6 +65,6 @@ def base():
             printThis = "=" +str(result)
             print(printThis)
     elif base == 16:
-        result = hex(int(input("Type the original number: "))) #
+        result = hex(int(input("Type the original number: "))) #ask for original number
         printThis = "=" +str(result)
         print(printThis)
