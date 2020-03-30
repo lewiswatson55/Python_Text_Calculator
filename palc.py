@@ -118,8 +118,9 @@ print("\nWelcome to Palc!")
 try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
-    print("\nNote that you CAN type exit instead of the interrupt key")
-    exit()
+    exit("\nNote that you CAN type exit instead of the interrupt key")
+except EOFError: #if ^D
+    exit("\nWhy ^D? Why not just type `exit'?")
 except ValueError:
     print("You typed in an invalid integer / float")
 #except:
