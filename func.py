@@ -9,19 +9,19 @@ def help():
      To contribute: go to https://github.com/thetechrobo/python-text-calculator/
      ''')
 def multi(): #multiplication
-    getNum()
+    n1, n2 = getNum()
     print("\nThat equals...")
     print(n1 * n2)
 def div(): #division
-    getNum()
+    n1, n2 = getNum()
     print("\nThat equals...")
     print(n1 / n2)
 def sub(): #subtraction
-    getNum()
+    n1, n2 = getNum()
     print("\nThat equals...")
     print(n1 - n2)
 def add(): #addition
-    getNum()
+    n1, n2 = getNum()
     print("\nThat equals...")
     print(n1 + n2)
 def mod(): #modulo
@@ -68,3 +68,5 @@ def base():
         result = hex(int(input("Type the original number: "))) #ask for original number
         printThis = "=" +str(result)
         print(printThis)
+def uc():
+    print("Under construction -- This feature currently has not been made interactive.")

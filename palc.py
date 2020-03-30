@@ -60,17 +60,17 @@ def palc():
             mod()
 #AREA
        elif calc == "ar":
-            print("Under construction")
+            uc()
        elif calc == "#":
-            print("Under construction")
+            uc()
 #VOLUME
        elif calc == "vol":
-            print("Under construction")
+            uc()
 #CUBE
        elif calc == "{}":
             cubedNumber = int(input("\nType the number to be cubed: "))
             print()
-            print(cubedNumber * cubedNumber * cubedNumber) #Manually cube number
+            print(cubedNumber ** 3) #Manually cube number
             print()
 #EXIT
        elif calc == "exit":
@@ -122,6 +122,6 @@ except KeyboardInterrupt: #if ^C
     exit()
 except ValueError:
     print("You typed in an invalid integer / float")
-except:
-    print("An unknown error occured. For debugging info, see Line 236") #To debug, comment lines 235 and 236
+#except:
+    #print("An unknown error occured. For debugging info, see Line 236") #To debug, comment lines 235 and 236
 #EOF
