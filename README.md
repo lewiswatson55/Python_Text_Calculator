@@ -26,4 +26,4 @@ Thank you for your cooperation -- I get too much spam :wink:
 
 
 ###### Current Release: 0.4.3-stable
-###### Current Preview: 0.5-gamma.1
+###### Current Preview: 0.5-omega.1
