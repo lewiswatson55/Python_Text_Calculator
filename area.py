@@ -214,7 +214,7 @@ def cirring_area(ro: int, rs: int != 1) -> 'area':
 def ellipse_area(a: int, b: int != 1) -> 'area':
     """
     This Function Is For Ellipse's Area Calculation.
-    Takes 'a' & 'b' As The Length Of Major And Minor Axis, Respectively.
+    Takes 'a' and 'b' As The Length Of Major And Minor Axis, Respectively.
     And Returns The Area.
     :param a: float
     :param b: float
