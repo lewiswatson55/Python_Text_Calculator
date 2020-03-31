@@ -69,4 +69,4 @@ def base():
         printThis = "=" +str(result)
         print(printThis)
 def uc():
-    print("Under construction -- This feature currently has not been made interactive.\n")
+    print("Under construction -- This feature currently has not been made interactive.")
