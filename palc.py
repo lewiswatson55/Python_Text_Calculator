@@ -60,9 +60,9 @@ def palc():
             mod()
 #AREA
        elif calc == "ar":
-            uc()
+            area()
        elif calc == "#":
-            uc()
+            area()
 #VOLUME
        elif calc == "vol":
             uc()

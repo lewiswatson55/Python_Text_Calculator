@@ -70,3 +70,5 @@ def base():
         print(printThis)
 def uc():
     print("Under construction -- This feature currently has not been made interactive.")
+def area():
+    exec('areaInteractive.py')
