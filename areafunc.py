@@ -1,4 +1,3 @@
-from area import *
 def equ_triangle():
     a = input("What length is the side of the triangle? ")
     equtri_area(a)

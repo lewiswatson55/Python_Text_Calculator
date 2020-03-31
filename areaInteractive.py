@@ -1,4 +1,5 @@
 from areafunc import *
+from area import *
 done = False
 def true():
     done = True
