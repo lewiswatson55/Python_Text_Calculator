@@ -131,11 +131,11 @@ def rhombus_area(do: int, ds: int) -> 'area':
     print(area)
     return area
 
-
+#Trapezium
 def trapezium_area(a: int, b: int, h: int) -> 'area':
     '''
     This Function Is For Trapezium's Area Calculation.
-    Takes 'a'&'b' As The Length Of The Parallel Sides And 'h' As The Height.
+    Takes 'a' and 'b' as the length of the parallel sides and 'h' as rhe height.
     And Returns The Area.
     :param a: int
     :param b: int
@@ -178,7 +178,7 @@ def semicircle_area(r: int) -> 'area':
     print(area)
     return area
 
-
+#Circular sector
 def cirsector_area(r: int, a: int) -> 'area':
     """
     This Function Is For Circular Sector's Area Calculation.
@@ -214,7 +214,7 @@ def cirring_area(ro: int, rs: int != 1) -> 'area':
 def ellipse_area(a: int, b: int != 1) -> 'area':
     """
     This Function Is For Ellipse's Area Calculation.
-    Takes 'a' & 'b' As The Length Of Major And Minor Axis Respectively.
+    Takes 'a' & 'b' As The Length Of Major And Minor Axis, Respectively.
     And Returns The Area.
     :param a: float
     :param b: float
