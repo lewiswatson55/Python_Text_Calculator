@@ -1,7 +1,6 @@
 #SETUP
 from sys import exit
 import time
-import os
 try:
     from root import *
 except:

@@ -44,7 +44,7 @@ def semicircle():
 def sector():
     r = input("What is the radius of the circular sector? ")
     cirsector_area(r)
-def ring()
+def ring():
     ro = input("What is the radius of the outer circle? ")
     rs = input("What is the radius of the inner circle? ")
     cirring_area(ro, rs)

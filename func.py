@@ -71,4 +71,5 @@ def base():
 def uc():
     print("Under construction -- This feature currently has not been made interactive.")
 def area():
-    exec('areaInteractive.py')
+    import runpy
+    runpy.run_path(path_name='areaInteractive.py')
