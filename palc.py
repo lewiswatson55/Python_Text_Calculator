@@ -81,7 +81,7 @@ def palc():
                 origin = int(input("Original number?"))
                 ex = int(input("Exponent? "))
                 print(origin ** ex)
-            except ValueError or TypeError:
+            except (ValueError, TypeError):
                 print("ERROR: try typing in a Number!")
 #ROOTS
        elif calc == "root":
