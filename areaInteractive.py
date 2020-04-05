@@ -17,7 +17,10 @@ print('''Options:
 14 - Ring
 15 - Ellipse''')
 while done == 0:
-    choice = input("Please type one:")
+    try:
+        choice = int(input("Please type one:"))
+    except (ValueError, TypeError):
+        print("Please type an integer")
     if choice == 7:
         print("I was too lazy to change 7.")
     elif choice == 1:
