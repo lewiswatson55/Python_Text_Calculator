@@ -1,6 +1,4 @@
 from areafunc import *
-from area import *
-done = 0
 print('''Options:
 1 - Equilateral triangle
 2 - Right angle triangle
@@ -16,54 +14,52 @@ print('''Options:
 13 - Circular sector
 14 - Ring
 15 - Ellipse''')
-while done == 0:
+while True:
     try:
-        choice = int(input("Please type one:"))
+        choice = int(input("Please type one: "))
     except (ValueError, TypeError):
         print("Please type an integer")
     if choice == 7:
         print("I was too lazy to change 7.")
     elif choice == 1:
-        global done
-        done = 1
         equ_triangle()
+        break
     elif choice == 2:
-        global done
-        done = 1
         right_triangle()
+        break
     elif choice == 3:
-        done = 1
         acute_triangle()
+        break
     elif choice == 4:
-        done = 1
         obtuse_triangle()
+        break
     elif choice == 5:
-        done = 1
         square()
+        break
     elif choice == 6:
-        done = 1
         rectangle()
+        break
     elif choice == 8:
-        done = 1
         parallelogram()
+        break
     elif choice == 9:
-        done = 1
         rhombus()
+        break
     elif choice == 10:
-        done = 1
         trapezium()
+        break
     elif choice == 11:
-        done = 1
         circle()
+        break
     elif choice == 12:
-        done = 1
         semicircle()
+        break
     elif choice == 13:
-        done = 1
         sector()
+        break
     elif choice == 14:
-        done = 1
         ring()
+        break
     elif choice == 15:
-        done = 1
         ellipse()
+        break   
