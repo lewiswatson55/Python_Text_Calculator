@@ -17,13 +17,13 @@ Thanks for visiting!
 **And Retals is me on my [Elive](https://elivecd.org) PCs**
 
 
-PLEASE, leave feature requests and bug reports in the Issues [section](https://github.com/thetechrobo/python-text-calculator/issues), even if you know my email.
+PLEASE, leave feature requests in the Issues [section](https://github.com/thetechrobo/python-text-calculator/issues), even if you know my email.
 
-Support questions belong at my [Support](https://github.com/thetechrobo/support) repo.
+Bug reports and questions belong at my [Support](https://github.com/thetechrobo/support) repo.
 
 **The only time you should ever use my email is if you need to contact me personally.** Even though it sounds obvious.
 Thank you for your cooperation -- I get too much spam :wink:
 
 
 ###### Current Release: v.0.5-stable
-###### There are currently no previews for Palc
+###### There are currently no previews available for testing
