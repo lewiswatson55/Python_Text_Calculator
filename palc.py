@@ -122,6 +122,6 @@ except EOFError: #if ^D
     exit("\nWhy ^D? Why not just type `exit'?")
 except ValueError:
     print("You typed in an invalid integer / float")
-#except:
-    #print("An unknown error occured. For debugging info, see Line 236") #To debug, comment lines 235 and 236
+except:
+    print("An unknown error occured. For debugging info, see Line 236") #To debug, comment lines 235 and 236
 #EOF
