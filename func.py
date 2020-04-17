@@ -51,17 +51,23 @@ def base():
             printThis = "=" +str(result)
             print(printThis)
     elif base == 10:
+        goodanswer = False
+        while goodanswer = False:
             whichType = input("Which type is the Number (ord, binary, octo, or hex): ")
             if whichType == "ord":
+                goodanswer = True
                 result = int(ord(input("Type the original number: "))) #int() the number
             elif whichType == "binary":
+                goodanswer = True
                 result = int(bin(input("Type the original number: "))) #int() the number
             elif whichType == "octo":
+                goodanswer = True
                 result = int(oct(input("Type the original number: "))) #int() the number
             elif whichType == "hex":
+                goodanswer = True
                 result = int(hex(input("Type the original number: "))) #int() the number
             else:
-                printThis = "type ord, binary, octo, hex"
+                print("That was an invalid answer. Try again.")
             printThis = "=" +str(result)
             print(printThis)
     elif base == 16:
