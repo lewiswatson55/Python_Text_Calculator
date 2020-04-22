@@ -5,7 +5,7 @@ def getNum(): #ask for two numbers and then return to function
 def help():
     print('''
      Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), and convert number systems (base). Type exit to exit.
-     Bugs? Head over to https://github.com/thetechrobo/support/
+     Bugs? Head on over to https://github.com/thetechrobo/support/
      To contribute: go to https://github.com/thetechrobo/python-text-calculator/
      ''')
 def multi(): #multiplication
@@ -47,12 +47,12 @@ def base():
         printThis = "=" +str(result)
         print(printThis)
     elif base == 8:
-            result = oct(int(input("Type the original number: "))) #oct() teh number
+            result = oct(int(input("Type the original number: "))) #oct() the number
             printThis = "=" +str(result)
             print(printThis)
     elif base == 10:
         goodanswer = False
-        while goodanswer = False:
+        while goodanswer is False:
             whichType = input("Which type is the Number (ord, binary, octo, or hex): ")
             if whichType == "ord":
                 goodanswer = True
