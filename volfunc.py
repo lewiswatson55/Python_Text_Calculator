@@ -49,8 +49,9 @@ def hexaprism():
     hexy(r, h)
 def squiramid():
     from volume import vol_sqr_pyramid as sqp
-    r = int(input("What is the radius of the semicircle? "))
-    sqp(r)
+    a = int(input("What is the length of the base? "))
+    h = int(input("What is the height of the pyramid? "))
+    sqp(a, h)
 def sector():
     from area import cirsector
     r = int(input("What is the radius of the circular sector? "))

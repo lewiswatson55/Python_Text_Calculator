@@ -128,7 +128,7 @@ def vol_sqr_pyramid(a: int, h: int) -> 'volume':
 #PYRAMID WITH A TRIANGULAR BASE
 def vol_tri_pyramid(a: int, h: int) -> 'volume':
     '''
-    Takes 'a' and 'h' as the length of the side of the triangle base, and height of the pyramid, respectively. Returns the volume
+    Takes 'a' and 'h' as the length of the side of the triangle base, and height of the pyramid, respectively. Returns the volume.
     :param a: int
     :param h: int
     :return: volume
