@@ -1,1 +1,4 @@
+#!/bin/zsh
 python3 palc.py
+
+echo "By now I am just wasting space to get to 28bytes"
