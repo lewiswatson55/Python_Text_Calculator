@@ -1,65 +1,65 @@
-from areafunc import *
+from volfunc import *
 print('''Options:
-1 - Equilateral triangle
-2 - Right angle triangle
-3 - Acute triangle
-4 - Obtuse triangle
-5 - Square
-6 - Rectangle
-8 - Parallelogram
-9 - Rhombus
-10 - Trapezium
-11 - Circle
-12 - Semicircle
-13 - Circular sector
-14 - Ring
-15 - Ellipse''')
+1 - Cube
+2 - Cuboid
+3 - Cylinder
+4 - Hollow cylinder
+5 - Cone
+6 - Sphere
+8 - Hollow sphere
+9 - Triangular prism
+10 - Pentagonal prism
+11 - Hexagonal prism
+12 - Square-based pyramid
+13 - Triangular pyramid
+14 - Pentagon-based pyramid
+15 - Hexagon-based pyramid''')
 while True:
     try:
         choice = int(input("Please type one: "))
     except (ValueError, TypeError):
         print("Please type an integer")
     if choice == 7:
-        print("I was too lazy to change 7.")
+        print("Sorry, that was not an option. >:)")
     elif choice == 1:
-        equ_triangle()
+        cuvol()
         break
     elif choice == 2:
-        right_triangle()
+        cuboid()
         break
     elif choice == 3:
-        acute_triangle()
+        cylindervol()
         break
     elif choice == 4:
-        obtuse_triangle()
+        hollow_cylinder()
         break
     elif choice == 5:
-        square()
+        cone()
         break
     elif choice == 6:
-        rectangle()
+        sphere()
         break
     elif choice == 8:
-        parallelogram()
+        hollow_sphere()
         break
     elif choice == 9:
-        rhombus()
+        triprism()
         break
     elif choice == 10:
-        trapezium()
+        pentprism()
         break
     elif choice == 11:
-        circle()
+        hexaprism()
         break
     elif choice == 12:
-        semicircle()
+        squiramid()
         break
     elif choice == 13:
-        sector()
+        trimarid()
         break
     elif choice == 14:
-        ring() #my precious!
+        pantapyr()
         break
     elif choice == 15:
-        ellipse()
+        hexramid()
         break   
