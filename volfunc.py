@@ -49,20 +49,21 @@ def hexaprism():
     hexy(r, h)
 def squiramid():
     from volume import vol_sqr_pyramid as sqp
-    a = int(input("What is the length of the base? "))
+    a = int(input("What is the length of the side of the base? "))
     h = int(input("What is the height of the pyramid? "))
     sqp(a, h)
-def sector():
-    from area import cirsector
-    r = int(input("What is the radius of the circular sector? "))
-    cirsector(r)
-def ring():
-    from area import ring
-    ro = int(input("What is the radius of the outer circle? "))
-    rs = int(input("What is the radius of the inner circle? "))
-    ring(ro, rs)
-def ellipse():
-    from area import ellipse
-    a = int(input("What is the length of the major axis? "))
-    b = int(input("What is the length of the minor axis? "))
-    ellipse(a, b)
+def triramid():
+    from volume import vol_tri_pyramid as trip
+    a = int(input("What is the length of the side of the base? "))
+    h = int(input("What is the height of the pyramid? "))
+    trip(a, h)
+def pentapyr():
+    from volume import vol_penta_pyramid as pentapenta
+    ro = int(input("What is the length of the side of the base? "))
+    rs = int(input("What is the height of the pyramid? "))
+    pentapenta(ro, rs)
+def hexramid():
+    from volume import vol_hexa_pyramid as hexyhexa
+    a = int(input("What is the length of the side of the base? "))
+    h = int(input("What is the height of the pyramid? "))
+    hexyhexa(a, h)

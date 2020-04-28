@@ -139,7 +139,7 @@ def vol_tri_pyramid(a: int, h: int) -> 'volume':
 #PYRAMID WITH A PENTAGON BASE
 def vol_penta_pyramid(a: int, h: int) -> 'volume':
     '''
-    Takes 'a' and 'h' as the length of the side of the pentagon base, and height of the pyramid, respectively. Returns the volume
+    Takes 'a' and 'h' as the length of the side of the pentagon base, and height of the pyramid, respectively. Returns the volume.
     :param a: int
     :param h: int
     :return: volume
@@ -150,7 +150,7 @@ def vol_penta_pyramid(a: int, h: int) -> 'volume':
 #PYRAMID WITH A HEXAGON BASE
 def vol_hexa_pyramid(a: int, h: int) -> 'volume':
     '''
-    Takes 'a' and 'h' as the length of the side of the hexagon base, and height of the pyramid, respectively. Returns the volume
+    Takes 'a' and 'h' as the length of the side of the hexagon base, and height of the pyramid, respectively. Returns the volume.
     :param a: int
     :param h: int
     :return: volume
