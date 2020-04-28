@@ -18,9 +18,9 @@ while True:
     try:
         choice = int(input("Please type one: "))
     except (ValueError, TypeError):
-        print("Please type an integer")
+        print("Please type an integer.")
     if choice == 7:
-        print("I was too lazy to change 7.")
+        print("Unknown option.")
     elif choice == 1:
         equ_triangle()
         break
