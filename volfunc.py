@@ -36,21 +36,21 @@ def triprism():
     from volume import vol_tri_prism as tripr
     a = int(input("What is the length of the side of the base? "))
     h = int(input("What is the height of the prism? "))
-    rh(a, h)
-def trapezium():
-    from area import trapezium
-    a = int(input("What is the length of the 1st set of parallel sides? "))
-    b = int(input("What is the length of the 2nd set of parallel sides? "))
-    h = int(input("What is the height of the trapezium? "))
-    trapezium(a, b, h)
-def circle():
-    from area import circle
-    r = int(input("What is the radius of the circle? "))
-    circle(r)
-def semicircle():
-    from area import semicircle
+    tripr(a, h)
+def pentprism():
+    from volume import vol_penta_prism as pentaprism
+    a = int(input("What is the length of the side of the base? "))
+    h = int(input("What is the height of the prism? "))
+    pentaprism(a, h)
+def hexaprism():
+    from volume import vol_hexa_prism as hexy
+    r = int(input("What is the length of the side of the base? "))
+    h = int(input("What is the height of the prism? "))
+    hexy(r, h)
+def squiramid():
+    from volume import vol_sqr_pyramid as sqp
     r = int(input("What is the radius of the semicircle? "))
-    semicircle(r)
+    sqp(r)
 def sector():
     from area import cirsector
     r = int(input("What is the radius of the circular sector? "))

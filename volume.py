@@ -106,7 +106,7 @@ def vol_penta_prism(a: int, h: int) -> 'volume':
 #PRISM WITH A HEXAGON BASE 
 def vol_hexa_prism(a: int, h: int) -> 'volume':
     '''
-    Takes 'a' and 'h' as the length of the side of the pentagon, and height of the prism, respectively. Returns the volume
+    Takes 'a' and 'h' as the length of the side of the hexagon, and height of the prism, respectively. Returns the volume.
     :param a: int
     :param h: int
     :return: volume
@@ -117,7 +117,7 @@ def vol_hexa_prism(a: int, h: int) -> 'volume':
 #PYRAMID WITH A SQUARE BASE
 def vol_sqr_pyramid(a: int, h: int) -> 'volume':
     '''
-    Takes 'a' and 'h' as the length of the side of the square base, and height of the pyramid, respectively. Returns the volume
+    Takes 'a' and 'h' as the length of the side of the square base, and height of the pyramid, respectively. Returns the volume.
     :param a: int
     :param h: int
     :return: volume
