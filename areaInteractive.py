@@ -55,7 +55,7 @@ while True:
         semicircle()
         break
     elif choice == 13:
-        sector()
+        print("I cannot figure out what variable `a' is for, line 182 in `area.py' if anyone wants to help")
         break
     elif choice == 14:
         ring() #my precious!
