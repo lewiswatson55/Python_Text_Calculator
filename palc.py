@@ -4,10 +4,12 @@ import time
 try:
     from root import *
 except:
+    log("Could not access file root.py")
     print("I can't find file root.py, and thus you cannot calculate roots.")
 try:
     from func import *
 except:
+    log("Could not access file func.py")
     exit("I can't access the file func.py. This file is necessary for proper function of the Software.")
 print("Loading...............\n")
 time.sleep(2)
@@ -32,8 +34,10 @@ def palc():
        elif calc == "sq":
             n = int(input("Number? "))
             print(n * n)
+            log(("User squared number ", n, " got result ", (n * n)))
        elif calc == "[]":
             n = int(input("Number? "))
+            log(("User squared number ", n, " got result ", (n * n)))
             print(n * n)
 #DIVISION
        elif calc == "/":
@@ -70,11 +74,13 @@ def palc():
             cubedNumber = int(input("\nType the number to be cubed: "))
             print()
             print(cubedNumber ** 3) #Manually cube number
+            log(("User cubed number ", cubedNumber, " got result ", (cubedNumber ** 3)))
             print()
 #EXIT
        elif calc == "exit":
+            log("User exited using `exit' command")
             exit("Looks like you exited.")
-#EXPONENTS (had the idea during bike ride on 18/9/2019 19hsomething after the BBQ)
+#EXPONENTS
        elif calc == "ex":
             try:
                 origin = int(input("Original number?"))
@@ -106,6 +112,7 @@ def palc():
             base()
 #ORD
        elif calc == "ord":
+           log(("User ord'ed to get result ", result))
            result = str(ord(int(input("Type in the number to ord: "))))
            print("=", result)
 #LOGARITHM
@@ -113,8 +120,10 @@ def palc():
            log()
 #OTHERWISE
        elif calc == "":
+            log("User attempted to type nothing as a command")
             print("Type something!")
        elif calc is None:
+            log("User attempted to type nothing as a command")
             print("Type something!")
        else:
             print('''
@@ -125,11 +134,13 @@ print("\nWelcome to Palc!")
 try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
+    log("KeyboardInterrupt")
     exit("\nNote that you CAN type `exit' instead of the interrupt key")
 except EOFError: #if ^D
+    log("EOFError")
     exit("\nWhy ^D? Why not just type `exit'?")
-except (ValueError, TypeError):
-    print("You typed in an invalid integer or float.")
-except:
-    print("An unknown error occured. For debugging info, see Line 129") #To debug, comment lines 128 and 129
+#except (ValueError, TypeError):
+    #print("You typed in an invalid integer or float.")
+except EOFError:
+    print("An unknown error occured. For debugging info, see Line 136") #To debug, comment lines 135 and 136
 #EOF
