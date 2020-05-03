@@ -107,11 +107,14 @@ def palc():
        elif calc == "ord":
            result = str(ord(int(input("Type in the number to ord: "))))
            print("=", result)
+#LOGARITHM
+       elif calc == "log":
+           log()
 #OTHERWISE
        else:
             print('''
             I don't understand your request. Here are the currently supported calculations: 
-            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); and base (convert number system). Sorry for the inconvenience
+            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); log (logarithm); and base (convert number system). Sorry for the inconvenience
             ''')
 print("\nWelcome to Palc!")
 try:
