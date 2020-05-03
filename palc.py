@@ -16,7 +16,7 @@ def palc():
        for i in range (0, 13): #13 blank lines
             print()
 #CALCULATION CHOICE
-       calc = input("What calculation do you wish to do? (Type `?' for a list of commands)")
+       calc = input("What calculation do you wish to do? (Type `?' for a list of commands)\nType: ")
        calc = calc.lower() #make variable "calc" lowercase
 #HELP
        if calc == "?":
@@ -84,7 +84,8 @@ def palc():
                 print("ERROR: try typing in a Number!")
 #ROOTS
        elif calc == "root":
-            root = input("Square root or cube root?(square/cube case-sensitive)")
+            root = input("Square root or cube root?(square/cube)")
+            root = root.lower()
             if root == "square":
                 num = input("Number to be rooted?")
                 print("That equals.....\n", num ** 0.5)
