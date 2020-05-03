@@ -112,6 +112,10 @@ def palc():
        elif calc == "log":
            log()
 #OTHERWISE
+       elif calc == "":
+            print("Type something!")
+       elif calc is None:
+            print("Type something!")
        else:
             print('''
             I don't understand your request. Here are the currently supported calculations: 
