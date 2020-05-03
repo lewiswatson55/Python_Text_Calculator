@@ -1,4 +1,59 @@
-from areafunc import *
+from area import *
+def equ_triangle():
+    a = int(input("What length is the side of the triangle? "))
+    equtri(a)
+def right_triangle():
+    b = int(input("What length is the base of the triangle? "))
+    h = int(input("What length is the height of the triangle? "))
+    righttri(b, h)
+def acute_triangle():
+    a = int(input("What is the length of the first side? "))
+    b = int(input("what is the length of the second side? "))
+    c = int(input("What is the length of the third side? "))
+    actri(a, b, c)
+def obtuse_triangle():
+    a = int(input("What is the length of the first side? "))
+    b = int(input("what is the length of the second side? "))
+    c = int(input("What is the length of the third side? "))
+    obtri(a, b, c)
+def square():
+    a = int(input("What is the length of the side of the square? "))
+    sq(a)
+def rectangle():
+    l = int(input("What is the length of the rectangle? "))
+    b = int(input("What is the height of the rectangle? "))
+    rectangle(l, b)
+def parallelogram():
+    b = int(input("What is the length of the base? "))
+    h = int(input("What is the height of the shape? "))
+    parallelogram(b, h)
+def rhombus():
+    do = int(input("What is the length of the first diagonal? "))
+    ds = int(input("What is the length of the 2nd diagonal? "))
+    rhombus(do, ds)
+def trapezium():
+    a = int(input("What is the length of the 1st set of parallel sides? "))
+    b = int(input("What is the length of the 2nd set of parallel sides? "))
+    h = int(input("What is the height of the trapezium? "))
+    trapezium(a, b, h)
+def circle():
+    r = int(input("What is the radius of the circle? "))
+    circle(r)
+def semicircle():
+    r = int(input("What is the radius of the semicircle? "))
+    semicircle(r)
+def sector():
+    r = int(input("What is the radius of the circular sector? "))
+    cirsector(r)
+def ring():
+    from area import ring
+    ro = int(input("What is the radius of the outer circle? "))
+    rs = int(input("What is the radius of the inner circle? "))
+    ring(ro, rs)
+def ellipse():
+    a = int(input("What is the length of the major axis? "))
+    b = int(input("What is the length of the minor axis? "))
+    ellipse(a, b)
 print('''Options:
 1 - Equilateral triangle
 2 - Right angle triangle
