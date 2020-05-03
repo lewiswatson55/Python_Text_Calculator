@@ -80,3 +80,20 @@ def uc():
 def area():
     import runpy
     runpy.run_path(path_name='areaInteractive.py')
+def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-python
+    import math
+    while True:
+        base = input("What base would you like to use? \nCurrentlysupported: 10 (base 10), e (natural)")
+        if base == "10":
+            print("Using base 10")
+            number = int(input("What is the number? "))
+            print(math.log10(number))
+            break
+        elif base.lower() == "e":
+            print("Using natural logarithm")
+            number = int(input("What is the number? "))
+            print(math.log(number))
+            break
+        else:
+            print("The logarithm you typed is not available.")
+            print("Try again.")
