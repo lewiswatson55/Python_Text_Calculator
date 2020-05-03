@@ -6,7 +6,7 @@ def getNum(): #ask for two numbers and then return to function
     return n1, n2
 def help():
     print('''
-     Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), and convert number systems (base). Type exit to exit.
+     Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm (log), and convert number systems (base). Type exit to exit.
      Bugs? Head on over to https://github.com/thetechrobo/support/
      To contribute: go to https://github.com/thetechrobo/python-text-calculator/
      ''')
@@ -82,3 +82,20 @@ def uc():
 def area():
     import runpy
     runpy.run_path(path_name='areaInteractive.py')
+def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-python
+    import math
+    while True:
+        base = input("What base would you like to use? \nCurrentlysupported: 10 (base 10), e (natural)")
+        if base == "10":
+            print("Using base 10")
+            number = int(input("What is the number? "))
+            print(math.log10(number))
+            break
+        elif base.lower() == "e":
+            print("Using natural logarithm")
+            number = int(input("What is the number? "))
+            print(math.log(number))
+            break
+        else:
+            print("The logarithm you typed is not available.")
+            print("Try again.")
