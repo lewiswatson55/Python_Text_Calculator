@@ -4,7 +4,7 @@ def getNum(): #ask for two numbers and then return to function
     return n1, n2
 def help():
     print('''
-     Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm (log), and convert number systems (base). Type exit to exit.
+     Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm (log), memory (mem), and convert number systems (base). Type exit to exit.
      Bugs? Head on over to https://github.com/thetechrobo/support/
      To contribute: go to https://github.com/thetechrobo/python-text-calculator/
      ''')
