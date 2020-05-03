@@ -16,7 +16,7 @@ def palc():
        for i in range (0, 13): #13 blank lines
             print()
 #CALCULATION CHOICE
-       calc = input("Calculation?  (type ? for help): ")
+       calc = input("What calculation do you wish to do? (Type `?' for a list of commands)")
        calc.lower() #make variable "calc" lowercase
 #HELP
        if calc == "?":
