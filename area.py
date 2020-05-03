@@ -1,5 +1,6 @@
 from math import sqrt, pi
-
+from sys import exit
+exit("Please do not run this file `area.py' directly. Use `import area' or `from area import <whatever>' instead.")
 
 # Contains Area Calculating Functions
 

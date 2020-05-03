@@ -1,3 +1,5 @@
+from sys import exit
+exit("Please do not run this file `func.py' directly. Use `import func' or `from func import <whatever>' instead.")
 def getNum(): #ask for two numbers and then return to function
     n1 = int(input("Please enter the first number: "))
     n2 = int(input("Please enter the second number: "))
