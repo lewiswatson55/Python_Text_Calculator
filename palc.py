@@ -86,8 +86,7 @@ def palc():
                 origin = int(input("Original number?"))
                 ex = int(input("Exponent? "))
                 print(origin ** ex)
-            except (ValueError, TypeError):
-                print("ERROR: try typing in a Number!")
+                logger("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex))
 #ROOTS
        elif calc == "root":
             root = input("Square root or cube root?(square/cube)")
@@ -95,6 +94,7 @@ def palc():
             if root == "square":
                 num = input("Number to be rooted?")
                 print("That equals.....\n", num ** 0.5)
+                logger(("user sqrooted number ", (num**0.5)))
             elif root == "cube":
                 cu()
             else:
@@ -105,14 +105,16 @@ def palc():
             number = int(input("Type in a number: "))
             if number == 42:
                 print("=42 -- the answer to life, the universe, and everything")
+                logger("User got the easter egg")
             else:
                 print("=" +number)
+                logger("User used the `=' feature for number ", number)
 #NUMBER SYSTEMS
        elif calc == "base":
             base()
 #ORD
        elif calc == "ord":
-           log(("User ord'ed to get result ", result))
+           logger(("User ord'ed to get result ", result))
            result = str(ord(int(input("Type in the number to ord: "))))
            print("=", result)
 #LOGARITHM
@@ -130,10 +132,10 @@ def palc():
                 print("You did not type an answer.\nAbort.")
 #OTHERWISE
        elif calc == "":
-            log("User attempted to type nothing as a command")
+            logger("User attempted to type nothing as a command")
             print("Type something!")
        elif calc is None:
-            log("User attempted to type nothing as a command")
+            logger("User attempted to type nothing as a command")
             print("Type something!")
        else:
             print('''
@@ -144,10 +146,10 @@ print("\nWelcome to Palc!")
 try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
-    log("KeyboardInterrupt")
+    logger("KeyboardInterrupt")
     exit("\nNote that you CAN type `exit' instead of the interrupt key")
 except EOFError: #if ^D
-    log("EOFError")
+    logger("EOFError")
     exit("\nWhy ^D? Why not just type `exit'?")
 #except (ValueError, TypeError):
     #print("You typed in an invalid integer or float.")
