@@ -111,6 +111,16 @@ def palc():
 #LOGARITHM
        elif calc == "log":
            log()
+#MEMORY
+       elif calc == "mem":
+            memOrRecall = input("Would you like to set the memory or recall? (set / recall)\nType: ")
+            #slot = input("What slot would you like to use? (Currently avaliable: 1)\nType: ") # For future, when I add memory slots
+            if memOrRecall.lower() == "set":
+                remember()
+            elif memOrRecall.lower() == "recall":
+                readMyMemory()
+            else:
+                print("You did not type an answer.\nAbort.")
 #OTHERWISE
        elif calc == "":
             print("Type something!")
@@ -119,7 +129,7 @@ def palc():
        else:
             print('''
             I don't understand your request. Here are the currently supported calculations: 
-            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); log (logarithm); and base (convert number system). Sorry for the inconvenience
+            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); log (logarithm); mem (memory); and base (convert number system). Sorry for the inconvenience
             ''')
 print("\nWelcome to Palc!")
 try:
