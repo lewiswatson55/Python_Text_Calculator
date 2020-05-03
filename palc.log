@@ -1,1 +1,7 @@
-User ran `area.py'. Log is currently unavailable for area and volume.
+CRITICAL:root:Could not access file func.py
+CRITICAL:root:Unknown Error
+CRITICAL:root:Unknown Error
+WARNING:root:User ran `area.py'. Log is currently unavailable for area and volume.
+INFO:root:('Palc got two numbers: ', 2, ' and ', 1)
+INFO:root:('User added ', 2, ' to ', 1, ' and got result ', 3)
+INFO:root:User exited using `exit' command
