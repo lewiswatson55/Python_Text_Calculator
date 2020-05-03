@@ -73,7 +73,7 @@ def palc():
             print()
 #EXIT
        elif calc == "exit":
-            exit()
+            exit("Looks like you exited.")
 #EXPONENTS (had the idea during bike ride on 18/9/2019 19hsomething after the BBQ)
        elif calc == "ex":
             try:
