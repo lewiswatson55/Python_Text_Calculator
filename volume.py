@@ -1,7 +1,4 @@
 from math import pi, sqrt
-from sys import exit
-exit("Please do not run this file `volume.py' directly. Use `import volume' or `from volume import <whatever>' instead.")
-
 # Contains Volume Calculating Functions
 
 #CUBE
