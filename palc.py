@@ -17,7 +17,7 @@ def palc():
             print()
 #CALCULATION CHOICE
        calc = input("What calculation do you wish to do? (Type `?' for a list of commands)")
-       calc.lower() #make variable "calc" lowercase
+       calc = calc.lower() #make variable "calc" lowercase
 #HELP
        if calc == "?":
            help()
