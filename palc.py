@@ -120,8 +120,8 @@ except KeyboardInterrupt: #if ^C
     exit("\nNote that you CAN type `exit' instead of the interrupt key")
 except EOFError: #if ^D
     exit("\nWhy ^D? Why not just type `exit'?")
-except (ValueError, TypeError):
-    print("You typed in an invalid integer or float.")
-except:
-    print("An unknown error occured. For debugging info, see Line 236") #To debug, comment lines 235 and 236
+#except (ValueError, TypeError):
+    #print("You typed in an invalid integer or float.")
+#except:
+    #print("An unknown error occured. For debugging info, see Line 236") #To debug, comment lines 235 and 236
 #EOF

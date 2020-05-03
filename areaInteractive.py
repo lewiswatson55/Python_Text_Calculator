@@ -20,40 +20,48 @@ def square():
     a = int(input("What is the length of the side of the square? "))
     sq(a)
 def rectangle():
+    from area import rectangle as rec
     l = int(input("What is the length of the rectangle? "))
     b = int(input("What is the height of the rectangle? "))
-    rectangle(l, b)
+    rec(l, b)
 def parallelogram():
+    from area import parallelogram as para
     b = int(input("What is the length of the base? "))
     h = int(input("What is the height of the shape? "))
-    parallelogram(b, h)
+    para(b, h)
 def rhombus():
+    from area import rhombus as rhombu
     do = int(input("What is the length of the first diagonal? "))
     ds = int(input("What is the length of the 2nd diagonal? "))
-    rhombus(do, ds)
+    rhombu(do, ds)
 def trapezium():
+    from area import trapezium as trapezi
     a = int(input("What is the length of the 1st set of parallel sides? "))
     b = int(input("What is the length of the 2nd set of parallel sides? "))
     h = int(input("What is the height of the trapezium? "))
-    trapezium(a, b, h)
+    trapezi(a, b, h)
 def circle():
+    from area import circle as circl
     r = int(input("What is the radius of the circle? "))
-    circle(r)
+    circl(r)
 def semicircle():
+    from area import semicircle as semi
     r = int(input("What is the radius of the semicircle? "))
-    semicircle(r)
+    semi(r)
 def sector():
-    r = int(input("What is the radius of the circular sector? "))
-    cirsector(r)
+    print("I can't figure out what `a' is for, it is cirsector() in area.py if anyone can help")
+    #r = int(input("What is the radius of the circular sector? "))
+    #cirsector(r)
 def ring():
-    from area import ring
+    from area import ring as myprecious
     ro = int(input("What is the radius of the outer circle? "))
     rs = int(input("What is the radius of the inner circle? "))
-    ring(ro, rs)
+    myprecious(ro, rs)
 def ellipse():
+    from area import ellipse as el
     a = int(input("What is the length of the major axis? "))
     b = int(input("What is the length of the minor axis? "))
-    ellipse(a, b)
+    el(a, b)
 print('''Options:
 1 - Equilateral triangle
 2 - Right angle triangle
