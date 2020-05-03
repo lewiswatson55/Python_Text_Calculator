@@ -45,10 +45,12 @@ def base():
     if base == 2:
         result = bin(int(input("Type the original number: "))) #bin() the number
         printThis = "=" +str(result)
+        log("User binaried number ", result, ", getting a result of ", printThis)
         print(printThis)
     elif base == 8:
             result = oct(int(input("Type the original number: "))) #oct() the number
             printThis = "=" +str(result)
+            log("User oct'ed number ", result, ", getting a result of ", printThis)
             print(printThis)
     elif base == 10:
         goodanswer = False
@@ -69,16 +71,20 @@ def base():
             else:
                 print("That was an invalid answer. Try again.")
             printThis = "=" +str(result)
+            log("User int'ed number ", result, ", getting a result of ", printThis)
             print(printThis)
     elif base == 16:
         result = hex(int(input("Type the original number: "))) #ask for original number
         printThis = "=" +str(result)
+        log("User hexed number ", result, ", getting a result of ", printThis)
         print(printThis)
 def uc():
     import runpy
+    log("User ran `volume.py'. Log is currently unavailable for area and volume.")
     runpy.run_path(path_name='volInteractive.py')
 def area():
     import runpy
+    log("User ran `area.py'. Log is currently unavailable for area and volume.")
     runpy.run_path(path_name='areaInteractive.py')
 def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-python
     import math
@@ -88,21 +94,25 @@ def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-
             print("Using base 10")
             number = int(input("What is the number? "))
             print(math.log10(number))
+            log("User used base 10 logarithm with number", number, ", getting a result of ", math.log10(number))
             break
         elif base.lower() == "e":
             print("Using natural logarithm")
             number = int(input("What is the number? "))
             print(math.log(number))
+            log("User used natural logarithm with number ", number, ", getting a result of ", math.log(number))
             break
         else:
             print("The logarithm you typed is not available.")
             print("Try again.")
+            log("User attempted to use a logarithm that is unavailable.")
 def remember():
     print("This is the memory function.\nIt will save a number into a file that can be used later with Palc... Or you can just read it with a text editor.")
     toRemember = float(input("\nPlease enter the number to be saved: "))
     toRemember = str(toRemember)
     memory = open("memory", "w+")
     memory.write(toRemember)
+    log("Saved number ", toRemember, " to file `memory'")
 def readMyMemory():
     print("This is the remember function.\nIt will read a number that was previously stored in a file.")
     try:
