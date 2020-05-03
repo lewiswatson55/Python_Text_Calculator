@@ -97,3 +97,16 @@ def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-
         else:
             print("The logarithm you typed is not available.")
             print("Try again.")
+def remember():
+    print("This is the memory function.\nIt will save a number into a file that can be used later with Palc... Or you can just read it with a text editor.")
+    toRemember = float(input("\nPlease enter the number to be saved: "))
+    toRemember = str(toRemember)
+    memory = open("memory", "w+")
+    memory.write(toRemember)
+def readMyMemory():
+    print("This is the remember function.\nIt will read a number that was previously stored in a file.")
+    try:
+        memory = open("memory", "r")
+        print("Number: ", memory.read())
+    except EOFError:
+        print("There was an error reading the file. Did you save the number by using the save function? Did you accidentally rename the file?")
