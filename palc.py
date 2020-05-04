@@ -9,20 +9,20 @@ try:
 except:
     couldNotFindRoot = True
     logging.error("Could not access file root.py")
-    print("I can't find file root.py, and therefore you cannot calculate roots.")
+    print(_("I can't find file root.py, and therefore you cannot calculate roots."))
 try:
     from func import *
 except:
     logging.critical("Could not access file func.py")
-    e("I can't access the file func.py. This file is necessary for proper function of the Software.")
-print("Loading...............\n")
+    e(_("I can't access the file func.py. This file is necessary for proper function of the Software."))
+print(_("Loading...............\n"))
 time.sleep(2)
 def palc():
     while True:
        for i in range (0, 13): #13 blank lines
             print()
 #CALCULATION CHOICE
-       calc = input("What calculation do you wish to do? (Type `?' for a list of commands)\nType: ")
+       calc = input(_("What calculation do you wish to do? (Type `?' for a list of commands)\nType: "))
        calc = calc.lower() #make variable "calc" lowercase
 #HELP
        if "?" in calc:
@@ -38,11 +38,11 @@ def palc():
             multi()
 #SQUARE
        elif "sq" in calc:
-            n = int(input("Number? "))
+            n = int(input(_("Number? ")))
             print(n * n)
             logging.info(("User squared number ", n, " got result ", (n * n)))
        elif "[]" in calc:
-            n = int(input("Number? "))
+            n = int(input(_("Number? ")))
             logging.info(("User squared number ", n, " got result ", (n * n)))
             print(n * n)
 #DIVISION
@@ -101,20 +101,20 @@ def palc():
                 root = root.lower()
                 if "square" in root:
                     num = input("Number to be rooted?")
-                    print("That equals.....\n", num ** 0.5)
+                    print(_("That equals.....\n", num ** 0.5))
                     logging.info(("user sqrooted number ", (num**0.5)))
                 elif "cube" in root:
                     cu()
                 else:
-                    print("Currently I don't support the root you chose. Hopefully this will change :)")
+                    print(_("Currently I don't support the root you chose. Hopefully this will change :)"))
             else:
-                print("The root.py file could not be found at startup. Therefore you cannot calculate roots.")
+                print(_("The root.py file could not be found at startup. Therefore you cannot calculate roots."))
 #EASTER EGG!
        elif "=" in calc:
             print()
             number = int(input("Type in a number: "))
             if number == 42:
-                print("=42 -- the answer to life, the universe, and everything")
+                print(_("=42 -- the answer to life, the universe, and everything"))
                 logging.info("User got the easter egg")
             else:
                 print("=" +number)
@@ -125,7 +125,7 @@ def palc():
 #ORD
        elif "ord" in calc:
            logging.info(("User ord'ed to get result ", result))
-           result = str(ord(int(input("Type in the number to ord: "))))
+           result = str(ord(int(input(_("Type in the number to ord: ")))))
            print("=", result)
 #LOGARITHM
        elif "log" in calc:
@@ -138,34 +138,34 @@ def palc():
             elif memOrRecall.lower() in "recall":
                 readMyMemory()
             else:
-                print("You did not type an answer.\nAbort.")
+                print(_("You did not type an answer.\nAbort."))
                 logging.error("User didn't type an answer in MEM function")
 #OTHERWISE
        elif calc == "":
             logging.error("User attempted to type nothing as a command")
-            print("Type something!")
+            print(_("Type something!"))
        elif calc is None:
             logging.error("User attempted to type nothing as a command")
-            print("Type something!")
+            print(_("Type something!"))
        else:
             logging.error("User typed an invalid command")
-            print('''
-            I don't understand your request. Here are the currently supported calculations: 
+            print(_('''
+            I don't understand your request. Here are the currently supported calculations:
             * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); log (logarithm); mem (memory); and base (convert number system). Sorry for the inconvenience
-            ''')
-print("\nWelcome to Palc!")
+            '''))
+print(_("\nWelcome to Palc!"))
 try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
     logging.info("KeyboardInterrupt")
-    e("\nNote that you CAN type `e' instead of the interrupt key")
+    e(_("\nNote that you CAN type `e' instead of the interrupt key"))
 except EOFError: #if ^D
     logging.info("EOFError")
-    e("\nWhy ^D? Why not just type `e'?")
+    e(_("\nWhy ^D? Why not just type `e'?"))
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
-    print("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error.")
+    print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
 except:
     logging.critical("Unknown Error")
-    print("An unknown error occured. For debugging info, see Line 164") #To debug, comment lines 162, 163 and 164
+    print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
 #EOF
