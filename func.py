@@ -118,14 +118,16 @@ def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-
 def remember():
     print("This is the memory function.\nIt will save a number into a file that can be used later with Palc... Or you can just read it with a text editor.")
     toRemember = float(input("\nPlease enter the number to be saved: "))
+    slot = str(int(input("What slot would you like to use? (Hint: you can use any integer you want as long as you remember it)\nType: ")))
     toRemember = str(toRemember)
-    memory = open("memory", "w+")
+    memory = open(slot, "w+")
     memory.write(toRemember)
-    logging.info(("Saved number ", toRemember, " to file `memory'"))
+    logging.info(("Saved number ", toRemember, " to memory slot ", slot))
 def readMyMemory():
     print("This is the remember function.\nIt will read a number that was previously stored in a file.")
     try:
-        memory = open("memory", "r")
+        slot = str(int(input("What slot number did you use? ")))
+        memory = open(slot, "r")
         print("Number: ", memory.read())
         logging.info(("Retrieved number ", memory.read(), " from memory."))
     except:

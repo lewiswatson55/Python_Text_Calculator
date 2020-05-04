@@ -126,7 +126,6 @@ def palc():
 #MEMORY
        elif calc == "mem":
             memOrRecall = input("Would you like to set the memory or recall? (set / recall)\nType: ")
-            #slot = input("What slot would you like to use? (Currently avaliable: 1)\nType: ") # For future, when I add memory slots
             if memOrRecall.lower() == "set":
                 remember()
             elif memOrRecall.lower() == "recall":
@@ -161,5 +160,5 @@ except (ValueError, TypeError):
     print("You typed in an invalid integer or float.")
 #except:
     #logging.critical("Unknown Error")
-    #print("An unknown error occured. For debugging info, see Line 165") #To debug, comment lines 163, 164 and 165
+    #print("An unknown error occured. For debugging info, see Line 164") #To debug, comment lines 162, 163 and 164
 #EOF
