@@ -1,4 +1,5 @@
 #SETUP
+couldNotFindRoot = False
 import logging
 logging.basicConfig(filename="palc.log", level=logging.DEBUG)
 from sys import exit
@@ -6,6 +7,7 @@ import time
 try:
     from root import *
 except:
+    couldNotFindRoot = True
     logging.error("Could not access file root.py")
     print("I can't find file root.py, and thus you cannot calculate roots.")
 try:
@@ -94,16 +96,19 @@ def palc():
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
 #ROOTS
        elif "root" in calc:
-            root = input("Square root or cube root?(square/cube)")
-            root = root.lower()
-            if "square" in root:
-                num = input("Number to be rooted?")
-                print("That equals.....\n", num ** 0.5)
-                logging.info(("user sqrooted number ", (num**0.5)))
-            elif "cube" in root:
-                cu()
+            if couldNotFindRoot is True:
+                root = input("Square root or cube root?(square/cube)")
+                root = root.lower()
+                if "square" in root:
+                    num = input("Number to be rooted?")
+                    print("That equals.....\n", num ** 0.5)
+                    logging.info(("user sqrooted number ", (num**0.5)))
+                elif "cube" in root:
+                    cu()
+                else:
+                    print("Currently I don't support the root you chose. Hopefully this will change :)")
             else:
-                print("Currently I don't support the root you chose. Hopefully this will change :)")
+                print("The root.py file could not be found at startup. Therefore you cannot calculate roots.")
 #EASTER EGG!
        elif "=" in calc:
             print()
