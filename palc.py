@@ -26,72 +26,72 @@ def palc():
        if calc == "?":
            logging.info("User needed help")
            help()
-       elif calc == "help":
+       elif "help" in calc:
            logging.info("User needed help")
            help()
 #MULTIPLICATION
-       elif calc == "*":
+       elif "*" in calc:
             multi()
-       elif calc == "x":
+       elif "x" in calc:
             multi()
 #SQUARE
-       elif calc == "sq":
+       elif "sq" in calc:
             n = int(input("Number? "))
             print(n * n)
             logging.info(("User squared number ", n, " got result ", (n * n)))
-       elif calc == "[]":
+       elif "[]" in calc:
             n = int(input("Number? "))
             logging.info(("User squared number ", n, " got result ", (n * n)))
             print(n * n)
 #DIVISION
-       elif calc == "/":
+       elif "/" in calc:
             div()
-       elif calc == "div":
+       elif "div" in calc:
             div()
 #SUBTRACTION
-       elif calc == "-":
+       elif calc in "-":
             sub()
-       elif calc == "sub":
+       elif calc in "sub":
             sub()
-       elif calc == "min":
+       elif calc in "min":
             sub()
 #ADDITION
-       elif calc == "+":
+       elif calc in "+":
             add()
-       elif calc == "add":
+       elif calc in "add":
             add()
 #MODULO
-       elif calc == "%":
+       elif calc in "%":
             mod()
-       elif calc == "mod":
+       elif calc in "mod":
             mod()
 #AREA
-       elif calc == "ar":
+       elif calc in "ar":
             area()
-       elif calc == "#":
+       elif calc in "#":
             area()
 #VOLUME
-       elif calc == "vol":
+       elif calc in "vol":
             uc()
 #CUBE
-       elif calc == "{}":
+       elif calc in "{}":
             cubedNumber = int(input("\nType the number to be cubed: "))
             print()
             print(cubedNumber ** 3) #Manually cube number
             logging.info(("User cubed number ", cubedNumber, " got result ", (cubedNumber ** 3)))
             print()
 #EXIT
-       elif calc == "exit":
+       elif calc in "exit":
             logging.info("User exited using `exit' command")
             exit("Looks like you exited.")
 #EXPONENTS
-       elif calc == "ex":
+       elif calc in "ex":
             origin = int(input("Original number?"))
             ex = int(input("Exponent? "))
             print(origin ** ex)
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
 #ROOTS
-       elif calc == "root":
+       elif calc in "root":
             root = input("Square root or cube root?(square/cube)")
             root = root.lower()
             if root == "square":
@@ -103,7 +103,7 @@ def palc():
             else:
                 print("Currently I don't support the root you chose. Hopefully this will change :)")
 #EASTER EGG!
-       elif calc == "=":
+       elif calc in "=":
             print()
             number = int(input("Type in a number: "))
             if number == 42:
@@ -113,28 +113,28 @@ def palc():
                 print("=" +number)
                 logging.info("User used the `=' feature for number ", number)
 #NUMBER SYSTEMS
-       elif calc == "base":
+       elif calc in "base":
             base()
 #ORD
-       elif calc == "ord":
+       elif calc in "ord":
            logging.info(("User ord'ed to get result ", result))
            result = str(ord(int(input("Type in the number to ord: "))))
            print("=", result)
 #LOGARITHM
-       elif calc == "log":
+       elif calc in "log":
            log()
 #MEMORY
-       elif calc == "mem":
+       elif calc in "mem":
             memOrRecall = input("Would you like to set the memory or recall? (set / recall)\nType: ")
-            if memOrRecall.lower() == "set":
+            if memOrRecall.lower() in "set":
                 remember()
-            elif memOrRecall.lower() == "recall":
+            elif memOrRecall.lower() in "recall":
                 readMyMemory()
             else:
                 print("You did not type an answer.\nAbort.")
                 logging.error("User didn't type an answer in MEM function")
 #OTHERWISE
-       elif calc == "":
+       elif calc in "":
             logging.error("User attempted to type nothing as a command")
             print("Type something!")
        elif calc is None:

@@ -1,0 +1,12 @@
+CRITICAL:root:ValueError or TypeError
+ERROR:root:User typed an invalid command
+ERROR:root:User typed an invalid command
+INFO:root:('Saved number ', '37.0', ' to memory slot ', '127')
+ERROR:root:User typed an invalid command
+INFO:root:EOFError
+ERROR:root:User didn't type an answer in MEM function
+ERROR:root:User typed an invalid command
+ERROR:root:User typed an invalid command
+ERROR:root:User typed an invalid command
+INFO:root:KeyboardInterrupt
+INFO:root:KeyboardInterrupt
