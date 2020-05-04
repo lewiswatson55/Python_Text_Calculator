@@ -1,8 +1,8 @@
 #SETUP
-couldNotFindRoot = False
-import logging
-logging.basicConfig(filename="palc.log", level=logging.DEBUG)
-from sys import exit
+couldNotFindRoot = False #so that I can prevent errors
+import logging #so that logs are possible
+logging.basicConfig(filename="palc.log", level=logging.DEBUG) #set up logging
+from sys import exit as e #so that we can exit later on
 import time
 try:
     from root import *
@@ -14,7 +14,7 @@ try:
     from func import *
 except:
     logging.critical("Could not access file func.py")
-    exit("I can't access the file func.py. This file is necessary for proper function of the Software.")
+    e("I can't access the file func.py. This file is necessary for proper function of the Software.")
 print("Loading...............\n")
 time.sleep(2)
 def palc():
@@ -25,7 +25,7 @@ def palc():
        calc = input("What calculation do you wish to do? (Type `?' for a list of commands)\nType: ")
        calc = calc.lower() #make variable "calc" lowercase
 #HELP
-       if calc == "?":
+       if "?" in calc:
            logging.info("User needed help")
            help()
        elif "help" in calc:
@@ -85,9 +85,9 @@ def palc():
             logging.info(("User cubed number ", cubedNumber, " got result ", (cubedNumber ** 3)))
             print()
 #EXIT
-       elif "exit" in calc:
-            logging.info("User exited using `exit' command")
-            exit("Looks like you exited.")
+       elif "e" in calc:
+            logging.info("User exited using `e' command")
+            e("Looks like you exited.")
 #EXPONENTS
        elif "ex" in calc:
             origin = int(input("Original number?"))
@@ -158,13 +158,13 @@ try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
     logging.info("KeyboardInterrupt")
-    exit("\nNote that you CAN type `exit' instead of the interrupt key")
+    e("\nNote that you CAN type `e' instead of the interrupt key")
 except EOFError: #if ^D
     logging.info("EOFError")
-    exit("\nWhy ^D? Why not just type `exit'?")
+    e("\nWhy ^D? Why not just type `e'?")
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
-    print("You typed in an invalid integer or float.")
+    print("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error.")
 except:
     logging.critical("Unknown Error")
     print("An unknown error occured. For debugging info, see Line 164") #To debug, comment lines 162, 163 and 164
