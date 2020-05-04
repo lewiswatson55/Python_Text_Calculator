@@ -133,3 +133,16 @@ def readMyMemory():
     except:
         logging.info("There was an error retrieving the file from memory.")
         print("There was an error reading the file. Did you save the number by using the save function? Did you accidentally rename the file?")
+def cosine():
+    which = input("Would you like cosine or inverse cosine? (cos / inverse)\nType: ")
+    which = which.lower()
+    if which == "cos":
+        print("Cosine it is!")
+        number = float(input("Enter the number: "))
+        import math
+        res = math.degrees(math.sin(number))
+        print(res)
+        logg.info(()"User cos'ed number ", number, " getting result of ", res))
+    elif which == "inverse":
+        print("Inverse it is!")
+        number = float(input("Enter the number: "))
