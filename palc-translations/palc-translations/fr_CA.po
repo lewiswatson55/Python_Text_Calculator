@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-04 16:20-0400\n"
-"PO-Revision-Date: 2020-05-04 16:32-0400\n"
+"POT-Creation-Date: 2020-05-04 18:32-0400\n"
+"PO-Revision-Date: 2020-05-04 18:42-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.3\n"
-"X-Poedit-Basepath: ../python-text-calculator\n"
+"X-Poedit-Basepath: ../..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: _\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -171,6 +171,171 @@ msgid ""
 msgstr ""
 "Je ne peux pas comprendre variable `a', ligne 182 en `area.py' si tu veux "
 "aider :)"
+
+#: func.py:3
+msgid "Please enter the first number: "
+msgstr "Premiere numero ? "
+
+#: func.py:4
+msgid "Please enter the second number: "
+msgstr "Deuxieme numero ? "
+
+#: func.py:8
+msgid ""
+"\n"
+"     Current list of commands: multiplication (*), division (/), addition "
+"(+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube "
+"({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm "
+"(log), memory (mem), and convert number systems (base). Type e to e.\n"
+"     Bugs? Head on over to https://github.com/thetechrobo/support/\n"
+"     To contribute: go to https://github.com/thetechrobo/python-text-"
+"calculator/\n"
+"     "
+msgstr ""
+"\n"
+"    Liste des calculs : multiplication (*), division (/), addition (+), "
+"carre (sq), soustraction (-), modulo (%), aire (#), volume (vol), cube ({}), "
+"exponents (ex), racine (root), egale (=), logarithme (log), memoire (mem), "
+"et convertir une nombre au une systeme different (base). Tappez exit pour "
+"exiter.\n"
+"    Erreurs ? Allez a https://github.com/thetechrobo/support\n"
+"    Si tu veux contribuer : https://github.com/thetechrobo/python-text-"
+"calculator\n"
+"    "
+
+#: func.py:15 func.py:20 func.py:25 func.py:30 func.py:46
+msgid ""
+"\n"
+"That equals..."
+msgstr ""
+"\n"
+"La reponse est..."
+
+#: func.py:35
+msgid ""
+"\n"
+"Type the first number (greater): "
+msgstr ""
+"\n"
+"Tappez le nombre premier (plus grand que la deuxieme) : "
+
+#: func.py:36
+msgid "Type the second number (smaller): "
+msgstr "Tappez le 2eme numero (plus petit) : "
+
+#: func.py:38 func.py:42
+msgid ""
+"\n"
+"Error!"
+msgstr ""
+"\n"
+"Erreure ! "
+
+#: func.py:39
+msgid "Invalid input (code 1)\n"
+msgstr "Nombre invalid (code 1)\n"
+
+#: func.py:43
+msgid "The second number entered is greater than the first number (code 2)\n"
+msgstr "Le nombre deuxieme est plus grand que la premiere nombre (code 2)\n"
+
+#: func.py:51
+msgid ""
+"What base would you like to use?\n"
+"    Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)\n"
+"    Type 2, 8, 10, or 16: "
+msgstr ""
+"quelle systeme est-ce-que tu veux ? \n"
+"   Il y a : 2 (binarie) ; 8 (oct) ; 10 (decimal (normal)) 16 (hex)\n"
+"   Tappe 2, 8, 10, ou 16 : "
+
+#: func.py:55 func.py:60 func.py:70 func.py:73 func.py:76 func.py:79 func.py:86
+msgid "Type the original number: "
+msgstr "Tappez le nombre original : "
+
+#: func.py:67
+msgid "Which type is the Number (ord, binary, octo, or hex): "
+msgstr "Quelle type est le numero (ord, binaire, oct, ou hec) : "
+
+#: func.py:81
+msgid "That was an invalid answer. Try again."
+msgstr "Reponse invalide, essaie encore ! "
+
+#: func.py:101
+msgid ""
+"What base would you like to use? \n"
+"Currentlysupported: 10 (base 10), e (natural)"
+msgstr ""
+"Quelle systeme est-ce-que tu veux utiliser ? \n"
+"10 (decimal) ou e (natural)"
+
+#: func.py:103
+msgid "Using base 10"
+msgstr "utilisant base 10"
+
+#: func.py:104 func.py:110
+msgid "What is the number? "
+msgstr "Quelle est la nombre ?"
+
+#: func.py:115
+msgid "The logarithm you typed is not available."
+msgstr "La reponse est invalide."
+
+#: func.py:116
+msgid "Try again."
+msgstr "Essaie encore."
+
+#: func.py:119
+msgid ""
+"This is the memory function.\n"
+"It will save a number into a file that can be used later with Palc... Or you "
+"can just read it with a text editor."
+msgstr ""
+"Ca c'est la fonction memoire. \n"
+"Ca va sauver une numero en une fichier que peux etre utiliser dans la futur "
+"avec Palc... Ou tu peux juste lire avec une editeur texte."
+
+#: func.py:121
+msgid ""
+"What slot would you like to use? (Hint: you can use any integer you want as "
+"long as you remember it)\n"
+"Type: "
+msgstr ""
+"Quelle slot memoire est-ce-que tu veux utiliser ? (Indice : tu peux utiliser "
+"n'importe quelle nombre si tu le souvient)\n"
+"Tappez : "
+
+#: func.py:127
+msgid ""
+"This is the remember function.\n"
+"It will read a number that was previously stored in a file."
+msgstr ""
+"Ca c'est le fonction lire memoire.\n"
+"Ca va lire une numero qui a ete sauve dans une fichier."
+
+#: func.py:129
+msgid "What slot number did you use? "
+msgstr "Quelle numero slot est-ce-que tu as utilise ? "
+
+#: func.py:131
+msgid "Number: "
+msgstr "Quelle est le nombre ? "
+
+#: func.py:137
+msgid ""
+"Would you like cosine or inverse cosine? (cos / inverse)\n"
+"Type: "
+msgstr ""
+"Est-ce-que tu veux cosine ou inverse cosine ? (cos/inverse)\n"
+"Tappez : "
+
+#: func.py:140
+msgid "Cosine it is!"
+msgstr "J'utilise cosine ! "
+
+#: func.py:141 func.py:148
+msgid "Enter the number: "
+msgstr "Tappez le nombre : "
 
 #: palc.py:12
 msgid "I can't find file root.py, and therefore you cannot calculate roots."
