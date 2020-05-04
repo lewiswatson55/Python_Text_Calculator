@@ -49,49 +49,51 @@ def palc():
        elif "div" in calc:
             div()
 #SUBTRACTION
-       elif calc in "-":
+       elif "-" in calc:
             sub()
-       elif calc in "sub":
+       elif "sub" in calc:
             sub()
-       elif calc in "min":
+       elif "min" in calc:
             sub()
 #ADDITION
-       elif calc in "+":
+       elif "+" in calc:
             add()
-       elif calc in "add":
+       elif "add" in calc:
             add()
 #MODULO
-       elif calc in "%":
+       elif "%" in calc:
             mod()
-       elif calc in "mod":
+       elif "mod" in calc:
             mod()
 #AREA
-       elif calc in "ar":
+       elif "ar" in calc:
             area()
-       elif calc in "#":
+       elif "#" in calc:
+            area()
+       elif "area" in calc:
             area()
 #VOLUME
-       elif calc in "vol":
+       elif "vol" in calc:
             uc()
 #CUBE
-       elif calc in "{}":
+       elif "{}" in calc:
             cubedNumber = int(input("\nType the number to be cubed: "))
             print()
             print(cubedNumber ** 3) #Manually cube number
             logging.info(("User cubed number ", cubedNumber, " got result ", (cubedNumber ** 3)))
             print()
 #EXIT
-       elif calc in "exit":
+       elif "exit" in calc:
             logging.info("User exited using `exit' command")
             exit("Looks like you exited.")
 #EXPONENTS
-       elif calc in "ex":
+       elif "ex" in calc:
             origin = int(input("Original number?"))
             ex = int(input("Exponent? "))
             print(origin ** ex)
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
 #ROOTS
-       elif calc in "root":
+       elif "root" in calc:
             root = input("Square root or cube root?(square/cube)")
             root = root.lower()
             if root == "square":
