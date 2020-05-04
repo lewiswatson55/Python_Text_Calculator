@@ -165,7 +165,7 @@ except EOFError: #if ^D
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
     print("You typed in an invalid integer or float.")
-#except:
-    #logging.critical("Unknown Error")
-    #print("An unknown error occured. For debugging info, see Line 164") #To debug, comment lines 162, 163 and 164
+except:
+    logging.critical("Unknown Error")
+    print("An unknown error occured. For debugging info, see Line 164") #To debug, comment lines 162, 163 and 164
 #EOF
