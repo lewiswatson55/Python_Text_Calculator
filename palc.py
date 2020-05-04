@@ -9,7 +9,7 @@ try:
 except:
     couldNotFindRoot = True
     logging.error("Could not access file root.py")
-    print("I can't find file root.py, and thus you cannot calculate roots.")
+    print("I can't find file root.py, and therefore you cannot calculate roots.")
 try:
     from func import *
 except:
