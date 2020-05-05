@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-05 09:38-0400\n"
-"PO-Revision-Date: 2020-05-05 09:43-0400\n"
+"POT-Creation-Date: 2020-05-05 18:15-0400\n"
+"PO-Revision-Date: 2020-05-05 18:17-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
-"X-Poedit-Basepath: ../..\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: _\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -336,13 +336,13 @@ msgstr "J'utilise cosine ! "
 msgid "Enter the number: "
 msgstr "Tappez le nombre : "
 
-#: palc.py:32
+#: palc.py:41
 msgid "I can't find file root.py, and therefore you cannot calculate roots."
 msgstr ""
 "Je ne peux pas trouver le fichier root.py, et donc tu ne peux pas calculer "
 "les racines."
 
-#: palc.py:37
+#: palc.py:46
 msgid ""
 "I can't access the file func.py. This file is necessary for proper function "
 "of the Software."
@@ -350,11 +350,15 @@ msgstr ""
 "Je ne peux pas trouver le fichier func.py. Cette fichier est necessaire pour "
 "la fonction propre de cette logiciel."
 
-#: palc.py:38
+#: palc.py:47
 msgid "Loading...............\n"
 msgstr "Chargement...\n"
 
-#: palc.py:45
+#: palc.py:51
+msgid "Press any key to continue..."
+msgstr "Appuyer sur une touche pour continuer…"
+
+#: palc.py:66
 msgid ""
 "What calculation do you wish to do? (Type `?' for a list of commands)\n"
 "Type: "
@@ -363,22 +367,22 @@ msgstr ""
 "calcules)\n"
 "Tappe : "
 
-#: palc.py:61 palc.py:65
+#: palc.py:82 palc.py:86
 msgid "Number? "
 msgstr "Quelle est le nombre ? "
 
-#: palc.py:124
+#: palc.py:145
 msgid "That equals.....\n"
 msgstr "La reponse est...\n"
 
-#: palc.py:129
+#: palc.py:150
 msgid ""
 "Currently I don't support the root you chose. Hopefully this will change :)"
 msgstr ""
 "Pour le moment je ne supporte pas la racine que vous voulez. J'espere que ca "
 "va changer :)"
 
-#: palc.py:131
+#: palc.py:152
 msgid ""
 "The root.py file could not be found at startup. Therefore you cannot "
 "calculate roots."
@@ -386,25 +390,26 @@ msgstr ""
 "A la commencement du logiciel, je ne pu pas trouver le fichier root.py. Donc "
 "tu ne peux pas calculer les racines."
 
-#: palc.py:137
+#: palc.py:158
 msgid "=42 -- the answer to life, the universe, and everything"
 msgstr "=42 -- la reponse au vie, l'universe, et tous les choses"
 
-#: palc.py:148
+#: palc.py:169
 msgid "Type in the number to ord: "
 msgstr "Tappez le nombre pour 'ord'er : "
 
-#: palc.py:161
+#: palc.py:182
 msgid ""
 "You did not type an answer.\n"
 "Abort."
 msgstr "Tu n'a pas tappez une reponse valide."
 
-#: palc.py:166 palc.py:169
+#: palc.py:187 palc.py:190
 msgid "Type something!"
 msgstr "Tappez une chose !"
 
-#: palc.py:172
+# don't know why there's an error but what the hell. it works.
+#: palc.py:193
 #, python-format
 msgid ""
 "\n"
@@ -427,7 +432,7 @@ msgstr ""
 "            converter les numeros a une autre systeme. Desole : /\n"
 "            "
 
-#: palc.py:176
+#: palc.py:197
 msgid ""
 "\n"
 "Welcome to Palc!"
@@ -435,7 +440,7 @@ msgstr ""
 "\n"
 "Bienvenue au Palc !"
 
-#: palc.py:181
+#: palc.py:202
 msgid ""
 "\n"
 "Note that you CAN type `exit' instead of the interrupt key"
@@ -443,7 +448,7 @@ msgstr ""
 "\n"
 "Tu peux tappez `exit' plutot que ^C... "
 
-#: palc.py:184
+#: palc.py:205
 msgid ""
 "\n"
 "Why ^D? Why not just type `exit'?"
@@ -451,17 +456,12 @@ msgstr ""
 "\n"
 "Pourquoi ^D ? Pourquoi pas juste `exit' ?"
 
-#: palc.py:187
+#: palc.py:208
 msgid ""
 "You typed in an invalid integer or float. Or maybe the program needs "
 "debugging. Either way, it's a pretty big error."
 msgstr ""
 "Erreure: Tu as tappez une nombre invalide, ou le logiciel a une probleme."
-
-# i got lazy
-#: palc.py:190
-msgid "An unknown error occured. For debugging info, see Line 164"
-msgstr "Erreure critical. "
 
 #: root.py:7
 msgid "Number to be rooted? "
@@ -569,6 +569,10 @@ msgstr "Desole, ce n'etais pas une option. >:)"
 #: volume.py:144 volume.py:157 volume.py:170 volume.py:183
 msgid "The volume is: "
 msgstr "La reponse est : "
+
+# i got lazy
+#~ msgid "An unknown error occured. For debugging info, see Line 164"
+#~ msgstr "Erreure critical. "
 
 #~ msgid "What is the radius of the rectangle? "
 #~ msgstr "Radius du rectangle ? "
