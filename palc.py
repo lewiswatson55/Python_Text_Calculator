@@ -1,7 +1,15 @@
 #SETUP
 #THANKS TO https://simpleit.rocks/python/how-to-translate-a-python-project-with-gettext-the-easy-way/ and https://inventwithpython.com/blog/2014/12/20/translate-your-python-3-program-with-the-gettext-module/ for their GETTEXT guides! :)
+# THANKS TO @ErdoğanOnal for their comment on this SO question: https://stackoverflow.com/questions/61621821/any-secure-alternatives-for-this?noredirect=1#comment109002742_61621821
+import sys, os
+try: 
+    import msvcrt 
+    _IS_WINDOWS = True 
+except ImportError: 
+    import tty 
+    import termios 
+    _IS_WINDOWS = False 
 import logging #so I can log
-import os #to clear the screen and do the Press any key to continue thing
 logging.basicConfig(filename="palc.log", level=logging.DEBUG) #set up logging
 import gettext #to translate Palc
 language = input("English or Francais? (do not add accents to letters/ne pas ajouter les accents aux lettres): ")
@@ -40,7 +48,17 @@ print(_("Loading...............\n"))
 time.sleep(2)
 def palc():
     while True:
-       os.system(_('pause' if os.name == 'nt' else 'read -sn 1 -p "Press any key to continue..."')) #Credit: stackoverflow.com/questions/2084508/clear-terminal-in-python/23075152
+       print(_("Press any key to continue..."), end='', flush=True) 
+       if _IS_WINDOWS: 
+           msvcrt.getch() 
+       else: 
+           fd = sys.stdin.fileno() 
+           settings = termios.tcgetattr(fd) 
+           try: 
+               tty.setraw(sys.stdin.fileno()) 
+               sys.stdin.read(1) 
+           finally: 
+               termios.tcsetattr(fd, termios.TCSADRAIN, settings)
        os.system('cls' if os.name == 'nt' else 'clear')
 #CALCULATION CHOICE
        calc = input(_("What calculation do you wish to do? (Type `?' for a list of commands)\nType: "))
