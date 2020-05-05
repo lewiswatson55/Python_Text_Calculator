@@ -1,14 +1,17 @@
 #SETUP
 #THANKS TO https://simpleit.rocks/python/how-to-translate-a-python-project-with-gettext-the-easy-way/ and https://inventwithpython.com/blog/2014/12/20/translate-your-python-3-program-with-the-gettext-module/ for their GETTEXT guides! :)
-import logging
-import gettext
+import logging #so I can log
+logging.basicConfig(filename="palc.log", level=logging.DEBUG) #set up logging
+import gettext #to translate Palc
 language = input("English or Francais? (do not add accents to letters/ne pas ajouter les accents aux lettres): ")
 language = language.lower()
 if language == "francais":
+    logging.info("Set language to French")
     global lang_translations
     gettext.bindtextdomain('base', localedir="locales")
     lang_translations = gettext.translation('base',localedir='locales', languages=["fr"])
 elif language == "english":
+    logging.info("Set language to English")
     global l_translations
     gettext.bindtextdomain('base', localedir="locales")
     l_translations = gettext.translation('base', localedir='locales', languages=["en"])
@@ -19,8 +22,6 @@ except:
     l_translations.install()
     _ = l_translations.gettext
 couldNotFindRoot = False #so that I can prevent errors
-import logging #so that logs are possible
-logging.basicConfig(filename="palc.log", level=logging.DEBUG) #set up logging
 from sys import exit as e #so that we can exit later on
 import time
 try:
