@@ -9,7 +9,7 @@ def vol_cube(a: int) -> 'volume':
     :return: volume
     '''
     volume = pow(a, 3)
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
@@ -24,7 +24,7 @@ def vol_cuboid(l: int, b: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = l * b * h
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
@@ -37,7 +37,7 @@ def vol_cylinder(r: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = pi * pow(r, 2) * h
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
@@ -51,7 +51,7 @@ def vol_hollow_cylinder(ro: int, rs: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = 2 * pi * (ro + rs) * h
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
@@ -64,7 +64,7 @@ def vol_cone(r: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = 1 / 3 * pi / pow(r, 2) * h
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
@@ -76,7 +76,7 @@ def vol_sphere(r: int) -> 'volume':
     :return: volume
     '''
     volume = 4 / 3 * pi * pow(r, 3)
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
@@ -89,7 +89,7 @@ def vol_hollow_sphere(ro: int, rs: int) -> 'volume':
     :return: volume
     '''
     volume = 4 / 3 * pi * (pow(ro, 3) - pow(rs, 3))
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
@@ -102,7 +102,7 @@ def vol_tri_prism(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = (sqrt(3) / 4 * pow(a, 2)) * h
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
@@ -115,11 +115,11 @@ def vol_penta_prism(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = (sqrt(3) * pow(a, 2)) * h
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
-#PRISM WITH A HEXAGON BASE 
+#PRISM WITH A HEXAGON BASE
 def vol_hexa_prism(a: int, h: int) -> 'volume':
     '''
     Takes 'a' and 'h' as the length of the side of the hexagon, and height of the prism, respectively. Returns the volume.
@@ -128,7 +128,7 @@ def vol_hexa_prism(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = (2.5981 * pow(a, 2)) * h
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
@@ -141,7 +141,7 @@ def vol_sqr_pyramid(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = (1 / 3 * h) * pow(a, 2)
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
@@ -154,7 +154,7 @@ def vol_tri_pyramid(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = 1 / 3 * h * (sqrt(3) / 4 * pow(a, 2))
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
@@ -167,7 +167,7 @@ def vol_penta_pyramid(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = 1 / 3 * h * (sqrt(3) * pow(a, 2))
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
 
@@ -180,6 +180,6 @@ def vol_hexa_pyramid(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = (1 / 3 * h) * (2.5981 * pow(a, 2))
-    print("The volume is: ")
+    print(_("The volume is: "))
     print(volume)
     return volume
