@@ -1,12 +1,15 @@
 #SETUP
 #THANKS TO https://simpleit.rocks/python/how-to-translate-a-python-project-with-gettext-the-easy-way/ and https://inventwithpython.com/blog/2014/12/20/translate-your-python-3-program-with-the-gettext-module/ for their GETTEXT guides! :)
 import gettext
-language = input("English or Francais? (do not add accents to letters/ne pas ajouter les accents aux lettres")
+language = input("English or Francais? (do not add accents to letters/ne pas ajouter les accents aux lettres): ")
 language = language.lower()
 if language == "francais":
-    lang_translations = gettext.translation('base', localedir='locales', languages=fr)
+    global lang_translations
+    gettext.bindtextdomain('base', localedir="locales")
+    lang_translations = gettext.translation('base',localedir='locales', languages=["fr"])
 elif language == "english":
-    lang_translations = gettext.translation('base', localedir='locales', languages=en)
+    pass
+    #lang_translations = gettext.translation(localedir='locales', languages="en")
 lang_translations.install()
 _ = lang_translations.gettext
 couldNotFindRoot = False #so that I can prevent errors
@@ -95,8 +98,8 @@ def palc():
             logging.info(("User cubed number ", cubedNumber, " got result ", (cubedNumber ** 3)))
             print()
 #EXIT
-       elif "e" in calc:
-            logging.info("User exited using `e' command")
+       elif "exit" in calc:
+            logging.info("User exited using `exit' command")
             e("Looks like you exited.")
 #EXPONENTS
        elif "ex" in calc:
@@ -168,10 +171,10 @@ try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
     logging.info("KeyboardInterrupt")
-    e(_("\nNote that you CAN type `e' instead of the interrupt key"))
+    e(_("\nNote that you CAN type `exit' instead of the interrupt key"))
 except EOFError: #if ^D
     logging.info("EOFError")
-    e(_("\nWhy ^D? Why not just type `e'?"))
+    e(_("\nWhy ^D? Why not just type `exit'?"))
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
     print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
