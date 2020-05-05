@@ -59,7 +59,9 @@ def palc():
                sys.stdin.read(1) 
            finally: 
                termios.tcsetattr(fd, termios.TCSADRAIN, settings)
-       os.system('cls' if os.name == 'nt' else 'clear')
+       print(chr(27)+'[2j') #First attempt at clearing the screen with ANSI escape codes.
+       print('\033c') #Second attempt at clearing the screen with ANSI escape codes.
+       print('\x1bc') #Third attempt at clearing the screen with ANSI escape codes.
 #CALCULATION CHOICE
        calc = input(_("What calculation do you wish to do? (Type `?' for a list of commands)\nType: "))
        calc = calc.lower() #make variable "calc" lowercase
