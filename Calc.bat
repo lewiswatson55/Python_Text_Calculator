@@ -1,3 +1,0 @@
-echo off
-echo Launching calculator...
-start python PyTxtCalc.py
