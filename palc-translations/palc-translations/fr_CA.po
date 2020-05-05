@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-05 09:24-0400\n"
-"PO-Revision-Date: 2020-05-05 09:28-0400\n"
+"POT-Creation-Date: 2020-05-05 09:38-0400\n"
+"PO-Revision-Date: 2020-05-05 09:38-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -118,7 +118,6 @@ msgid "What is the length of the minor axis? "
 msgstr "Longeur de l'axis minor ? "
 
 #: areaInteractive.py:65
-#, fuzzy
 msgid ""
 "Options:\n"
 "1 - Equilateral triangle\n"
@@ -473,7 +472,6 @@ msgid "What length is the side of the cube? "
 msgstr "Quelle est le longeur de la cote du cube ? "
 
 #: volInteractive.py:6
-#, fuzzy
 msgid "What length is the breadth of the cuboid? "
 msgstr "Largeur du parallélépipède rectangle ? "
 

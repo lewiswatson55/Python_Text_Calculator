@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-05 09:24-0400\n"
-"PO-Revision-Date: 2020-05-05 09:28-0400\n"
+"POT-Creation-Date: 2020-05-05 09:38-0400\n"
+"PO-Revision-Date: 2020-05-05 09:43-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -118,7 +118,6 @@ msgid "What is the length of the minor axis? "
 msgstr "Longeur de l'axis minor ? "
 
 #: areaInteractive.py:65
-#, fuzzy
 msgid ""
 "Options:\n"
 "1 - Equilateral triangle\n"
@@ -229,7 +228,7 @@ msgid ""
 "Error!"
 msgstr ""
 "\n"
-"Erreure ! "
+"Erreure !"
 
 #: func.py:39
 msgid "Invalid input (code 1)\n"
@@ -271,11 +270,11 @@ msgstr ""
 
 #: func.py:103
 msgid "Using base 10"
-msgstr "utilisant base 10"
+msgstr "utilisant base 10 "
 
 #: func.py:104 func.py:110
 msgid "What is the number? "
-msgstr "Quelle est la nombre ?"
+msgstr "Quelle est la nombre ? "
 
 #: func.py:115
 msgid "The logarithm you typed is not available."
@@ -366,7 +365,7 @@ msgstr ""
 
 #: palc.py:61 palc.py:65
 msgid "Number? "
-msgstr "Quelle est le nombre ?"
+msgstr "Quelle est le nombre ? "
 
 #: palc.py:124
 msgid "That equals.....\n"
@@ -442,7 +441,7 @@ msgid ""
 "Note that you CAN type `exit' instead of the interrupt key"
 msgstr ""
 "\n"
-"Tu peux tappez `exit' plutot que ^C..."
+"Tu peux tappez `exit' plutot que ^C... "
 
 #: palc.py:184
 msgid ""
@@ -462,7 +461,7 @@ msgstr ""
 # i got lazy
 #: palc.py:190
 msgid "An unknown error occured. For debugging info, see Line 164"
-msgstr "Erreure critical."
+msgstr "Erreure critical. "
 
 #: root.py:7
 msgid "Number to be rooted? "
@@ -473,7 +472,6 @@ msgid "What length is the side of the cube? "
 msgstr "Quelle est le longeur de la cote du cube ? "
 
 #: volInteractive.py:6
-#, fuzzy
 msgid "What length is the breadth of the cuboid? "
 msgstr "Largeur du parallélépipède rectangle ? "
 
@@ -491,7 +489,7 @@ msgstr "Radius du cylindre ? "
 
 #: volInteractive.py:12
 msgid "what is the height of the cylinder? "
-msgstr "Hauteur du cylindre ? "
+msgstr "hauteur du cylindre ? "
 
 #: volInteractive.py:15 volInteractive.py:28
 msgid "What is the radius of the hollow space? "
