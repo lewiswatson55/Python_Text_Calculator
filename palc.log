@@ -1,0 +1,13 @@
+INFO:root:Set language to French
+INFO:root:User needed help
+INFO:root:('User binaried number ', '0b11', ', getting a result of ', '=0b11')
+ERROR:root:User typed an invalid command
+CRITICAL:root:ValueError or TypeError
+INFO:root:Set language to English
+CRITICAL:root:ValueError or TypeError
+INFO:root:Set language to English
+CRITICAL:root:Unknown Error
+INFO:root:Set language to English
+INFO:root:Set language to English
+INFO:root:User needed help
+INFO:root:KeyboardInterrupt

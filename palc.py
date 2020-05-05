@@ -1,6 +1,7 @@
 #SETUP
 #THANKS TO https://simpleit.rocks/python/how-to-translate-a-python-project-with-gettext-the-easy-way/ and https://inventwithpython.com/blog/2014/12/20/translate-your-python-3-program-with-the-gettext-module/ for their GETTEXT guides! :)
 import logging #so I can log
+import os #to clear the screen and do the Press any key to continue thing
 logging.basicConfig(filename="palc.log", level=logging.DEBUG) #set up logging
 import gettext #to translate Palc
 language = input("English or Francais? (do not add accents to letters/ne pas ajouter les accents aux lettres): ")
@@ -39,8 +40,8 @@ print(_("Loading...............\n"))
 time.sleep(2)
 def palc():
     while True:
-       for i in range (0, 13): #13 blank lines
-            print()
+       os.system(_('pause' if os.name == 'nt' else 'read -sn 1 -p "Press any key to continue..."')) #Credit: stackoverflow.com/questions/2084508/clear-terminal-in-python/23075152
+       os.system('cls' if os.name == 'nt' else 'clear')
 #CALCULATION CHOICE
        calc = input(_("What calculation do you wish to do? (Type `?' for a list of commands)\nType: "))
        calc = calc.lower() #make variable "calc" lowercase
@@ -185,7 +186,7 @@ except EOFError: #if ^D
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
     print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
-except:
-    logging.critical("Unknown Error")
-    print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
+#except:
+    #logging.critical("Unknown Error")
+    #print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
 #EOF
