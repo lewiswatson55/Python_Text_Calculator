@@ -1,5 +1,6 @@
 #SETUP
 #THANKS TO https://simpleit.rocks/python/how-to-translate-a-python-project-with-gettext-the-easy-way/ and https://inventwithpython.com/blog/2014/12/20/translate-your-python-3-program-with-the-gettext-module/ for their GETTEXT guides! :)
+import logging
 import gettext
 language = input("English or Francais? (do not add accents to letters/ne pas ajouter les accents aux lettres): ")
 language = language.lower()
@@ -8,10 +9,15 @@ if language == "francais":
     gettext.bindtextdomain('base', localedir="locales")
     lang_translations = gettext.translation('base',localedir='locales', languages=["fr"])
 elif language == "english":
-    pass
-    #lang_translations = gettext.translation(localedir='locales', languages="en")
-lang_translations.install()
-_ = lang_translations.gettext
+    global l_translations
+    gettext.bindtextdomain('base', localedir="locales")
+    l_translations = gettext.translation('base', localedir='locales', languages=["en"])
+try:
+    lang_translations.install()
+    _ = lang_translations.gettext
+except:
+    l_translations.install()
+    _ = l_translations.gettext
 couldNotFindRoot = False #so that I can prevent errors
 import logging #so that logs are possible
 logging.basicConfig(filename="palc.log", level=logging.DEBUG) #set up logging
