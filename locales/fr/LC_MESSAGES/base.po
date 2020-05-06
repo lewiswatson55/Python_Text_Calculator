@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-06 18:51-0400\n"
-"PO-Revision-Date: 2020-05-06 18:53-0400\n"
+"POT-Creation-Date: 2020-05-06 19:11-0400\n"
+"PO-Revision-Date: 2020-05-06 19:13-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -171,6 +171,50 @@ msgstr ""
 "Je ne peux pas comprendre variable `a', ligne 182 en `area.py' si tu veux "
 "aider :)"
 
+#: fibonacci.py:6
+msgid "Press Control-C to stop."
+msgstr "Appuyez sur Ctrl-C pour arrêter."
+
+#: fibonacci.py:19
+msgid "Thanks for using Palc's FIBONACCI function!"
+msgstr "Merci d'utiliser le Fibonacci fonction de Palc !"
+
+#: fibonacci.py:21
+msgid "an error occured."
+msgstr "Une erreur est survenue."
+
+#: func.py:8
+msgid ""
+"\n"
+"     Current list of commands: multiplication (*), division (/), addition "
+"(+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube "
+"({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm "
+"(log), memory (mem), fibonacci sequence (fib), and convert number systems "
+"(base). Type e to e.\n"
+"     Bugs? Head on over to https://github.com/thetechrobo/support/\n"
+"     To contribute: go to https://github.com/thetechrobo/python-text-"
+"calculator/\n"
+"     "
+msgstr ""
+"\n"
+"    Liste des calculs : multiplication (*), division (/), addition (+), "
+"carre (sq), soustraction (-), modulo (%), aire (#), volume (vol), cube ({}), "
+"exponents (ex), racine (root), egale (=), logarithme (log), memoire (mem), "
+"et convertir une nombre au une systeme different (base). Tappez exit pour "
+"exiter.\n"
+"    Erreurs ? Allez a https://github.com/thetechrobo/support\n"
+"    Si tu veux contribuer : https://github.com/thetechrobo/python-text-"
+"calculator\n"
+"    "
+
+#: func.py:15 func.py:20 func.py:31 func.py:36 func.py:52
+msgid ""
+"\n"
+"That equals..."
+msgstr ""
+"\n"
+"La reponse est..."
+
 #: func.py:24
 msgid "Do not divide by zero!"
 msgstr "Ne divisez pas par zéro !"
@@ -179,9 +223,83 @@ msgstr "Ne divisez pas par zéro !"
 msgid "There was an unknown issue dividing your Numbers..."
 msgstr "Il y avait un problème inconnu divisant vos numéros. "
 
+#: func.py:44 func.py:48
+msgid ""
+"\n"
+"Error!"
+msgstr ""
+"\n"
+"Erreure !"
+
+#: func.py:45
+msgid "Invalid input (code 1)\n"
+msgstr "Nombre invalid (code 1)\n"
+
+#: func.py:49
+msgid "The second number entered is greater than the first number (code 2)\n"
+msgstr "Le nombre deuxieme est plus grand que la premiere nombre (code 2)\n"
+
+#: func.py:87
+msgid "That was an invalid answer. Try again."
+msgstr "Reponse invalide, essaie encore ! "
+
+#: func.py:109
+msgid "Using base 10"
+msgstr "utilisant base 10 "
+
+#: func.py:115
+msgid "Using natural logarithm"
+msgstr "Utilisant la logarithme naturel"
+
+#: func.py:121
+msgid "The logarithm you typed is not available."
+msgstr "La reponse est invalide."
+
+#: func.py:122
+msgid "Try again."
+msgstr "Essaie encore."
+
+#: func.py:125
+msgid ""
+"This is the memory function.\n"
+"It will save a number into a file that can be used later with Palc... Or you "
+"can just read it with a text editor."
+msgstr ""
+"Ca c'est la fonction memoire. \n"
+"Ca va sauver une numero en une fichier que peux etre utiliser dans la futur "
+"avec Palc... Ou tu peux juste lire avec une editeur texte."
+
+#: func.py:133
+msgid ""
+"This is the remember function.\n"
+"It will read a number that was previously stored in a file."
+msgstr ""
+"Ca c'est le fonction lire memoire.\n"
+"Ca va lire une numero qui a ete sauve dans une fichier."
+
+#: func.py:137
+msgid "Number: "
+msgstr "Quelle est le nombre ? "
+
+#: func.py:141
+msgid ""
+"There was an error reading the file. Did you save the number by using the "
+"save function? Did you accidentally rename the file?"
+msgstr ""
+"Il y etait une erreur pour lire le fichier. Est-ce-que tu as sauve le "
+"numero ? est-ce-que tu as par accident renommer le fichier ? "
+
 #: func.py:148
 msgid "Number to be rooted? "
 msgstr "Quelle est la nombre ? "
+
+#: func.py:156
+msgid "Sine it is!"
+msgstr "J'utilise cosine ! "
+
+#: func.py:163
+msgid "Inverse it is!"
+msgstr "J'utilise l'inverse cosine ! "
 
 #: palc.py:42
 msgid ""
@@ -247,7 +365,7 @@ msgstr "Tappez une chose !"
 
 # don't know why there's an error but what the hell. it works.
 #: palc.py:193
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "\n"
 "            I don't understand your request. Here are the currently "
@@ -264,8 +382,8 @@ msgstr ""
 "             * ou x pour la multiplication; -, min, ou sub pour la "
 "subtraction, + ou add pour l'addition; sq ou [] pour carre; ar, area, ou # "
 "pour l'aire; vol pour la volume; {} pour le cube; ex pour les exponents; "
-"root pour les racines; log pour le logarithme; mem pour la memoire; et base "
-"pour\n"
+"root pour les racines; log pour le logarithme; fib pour l'equation "
+"fibonacci; mem pour la memoire; et base pour\n"
 "            converter les numeros a une autre systeme. Desole : /\n"
 "            "
 
@@ -412,36 +530,6 @@ msgstr "La reponse est : "
 
 #~ msgid ""
 #~ "\n"
-#~ "     Current list of commands: multiplication (*), division (/), addition "
-#~ "(+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), "
-#~ "cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), "
-#~ "logarithm (log), memory (mem), and convert number systems (base). Type e "
-#~ "to e.\n"
-#~ "     Bugs? Head on over to https://github.com/thetechrobo/support/\n"
-#~ "     To contribute: go to https://github.com/thetechrobo/python-text-"
-#~ "calculator/\n"
-#~ "     "
-#~ msgstr ""
-#~ "\n"
-#~ "    Liste des calculs : multiplication (*), division (/), addition (+), "
-#~ "carre (sq), soustraction (-), modulo (%), aire (#), volume (vol), cube "
-#~ "({}), exponents (ex), racine (root), egale (=), logarithme (log), memoire "
-#~ "(mem), et convertir une nombre au une systeme different (base). Tappez "
-#~ "exit pour exiter.\n"
-#~ "    Erreurs ? Allez a https://github.com/thetechrobo/support\n"
-#~ "    Si tu veux contribuer : https://github.com/thetechrobo/python-text-"
-#~ "calculator\n"
-#~ "    "
-
-#~ msgid ""
-#~ "\n"
-#~ "That equals..."
-#~ msgstr ""
-#~ "\n"
-#~ "La reponse est..."
-
-#~ msgid ""
-#~ "\n"
 #~ "Type the first number (greater): "
 #~ msgstr ""
 #~ "\n"
@@ -449,20 +537,6 @@ msgstr "La reponse est : "
 
 #~ msgid "Type the second number (smaller): "
 #~ msgstr "Tappez le 2eme numero (plus petit) : "
-
-#~ msgid ""
-#~ "\n"
-#~ "Error!"
-#~ msgstr ""
-#~ "\n"
-#~ "Erreure !"
-
-#~ msgid "Invalid input (code 1)\n"
-#~ msgstr "Nombre invalid (code 1)\n"
-
-#~ msgid ""
-#~ "The second number entered is greater than the first number (code 2)\n"
-#~ msgstr "Le nombre deuxieme est plus grand que la premiere nombre (code 2)\n"
 
 #~ msgid ""
 #~ "What base would you like to use?\n"
@@ -479,9 +553,6 @@ msgstr "La reponse est : "
 #~ msgid "Which type is the Number (ord, binary, octo, or hex): "
 #~ msgstr "Quelle type est le numero (ord, binaire, oct, ou hec) : "
 
-#~ msgid "That was an invalid answer. Try again."
-#~ msgstr "Reponse invalide, essaie encore ! "
-
 #~ msgid ""
 #~ "What base would you like to use? \n"
 #~ "Currentlysupported: 10 (base 10), e (natural)"
@@ -489,26 +560,8 @@ msgstr "La reponse est : "
 #~ "Quelle systeme est-ce-que tu veux utiliser ? \n"
 #~ "10 (decimal) ou e (natural)"
 
-#~ msgid "Using base 10"
-#~ msgstr "utilisant base 10 "
-
 #~ msgid "What is the number? "
 #~ msgstr "Quelle est la nombre ? "
-
-#~ msgid "The logarithm you typed is not available."
-#~ msgstr "La reponse est invalide."
-
-#~ msgid "Try again."
-#~ msgstr "Essaie encore."
-
-#~ msgid ""
-#~ "This is the memory function.\n"
-#~ "It will save a number into a file that can be used later with Palc... Or "
-#~ "you can just read it with a text editor."
-#~ msgstr ""
-#~ "Ca c'est la fonction memoire. \n"
-#~ "Ca va sauver une numero en une fichier que peux etre utiliser dans la "
-#~ "futur avec Palc... Ou tu peux juste lire avec une editeur texte."
 
 #~ msgid ""
 #~ "What slot would you like to use? (Hint: you can use any integer you want "
@@ -519,18 +572,8 @@ msgstr "La reponse est : "
 #~ "utiliser n'importe quelle nombre si tu le souvient)\n"
 #~ "Tappez : "
 
-#~ msgid ""
-#~ "This is the remember function.\n"
-#~ "It will read a number that was previously stored in a file."
-#~ msgstr ""
-#~ "Ca c'est le fonction lire memoire.\n"
-#~ "Ca va lire une numero qui a ete sauve dans une fichier."
-
 #~ msgid "What slot number did you use? "
 #~ msgstr "Quelle numero slot est-ce-que tu as utilise ? "
-
-#~ msgid "Number: "
-#~ msgstr "Quelle est le nombre ? "
 
 #~ msgid ""
 #~ "Would you like cosine or inverse cosine? (cos / inverse)\n"
@@ -538,9 +581,6 @@ msgstr "La reponse est : "
 #~ msgstr ""
 #~ "Est-ce-que tu veux cosine ou inverse cosine ? (cos/inverse)\n"
 #~ "Tappez : "
-
-#~ msgid "Cosine it is!"
-#~ msgstr "J'utilise cosine ! "
 
 #~ msgid "Enter the number: "
 #~ msgstr "Tappez le nombre : "
