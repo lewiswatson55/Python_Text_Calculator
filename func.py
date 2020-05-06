@@ -6,7 +6,7 @@ def getNum(): #ask for two numbers and then return to function
     return n1, n2
 def h():
     print('''
-     Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm (log), memory (mem), and convert number systems (base). Type e to e.
+     Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm (log), memory (mem), fibonacci sequence (fib), and convert number systems (base). Type e to e.
      Bugs? Head on over to https://github.com/thetechrobo/support/
      To contribute: go to https://github.com/thetechrobo/python-text-calculator/
      ''')
@@ -146,6 +146,9 @@ def cubeInternal(x):
     return -(-x)**(1./3.)
 def cu():
     print(cubeInternal(int(input(_("Number to be rooted? ")))))
+def fib():
+    import runpy
+    runpy.run_path(path_name="fibonacci.py")
 def cosine():
     which = input("Would you like sine or inverse sine? (sin / inverse)\nType: ")
     which = which.lower()

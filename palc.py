@@ -131,6 +131,9 @@ def palc():
             ex = int(input("Exponent? "))
             print(origin ** ex)
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
+#CUBE TWICE
+       elif "{2}" in calc:
+            print(_("That feature was discontinued."))
 #ROOTS
        elif "root" in calc:
             root = input("Square root or cube root?(square/cube)")
@@ -174,6 +177,10 @@ def palc():
             else:
                 print(_("You did not type an answer.\nAbort."))
                 logging.error("User didn't type an answer in MEM function")
+#FIBONACCI
+       elif "fib" in calc:
+            print("Starting fibonacci sequence. Please wait.")
+            fib()
 #OTHERWISE
        elif calc == "":
             logging.error("User attempted to type nothing as a command")
@@ -185,7 +192,7 @@ def palc():
             logging.error("User typed an invalid command")
             print(_('''
             I don't understand your request. Here are the currently supported calculations:
-            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); log (logarithm); mem (memory); and base (convert number system). Sorry for the inconvenience
+            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); and base (convert number system). Sorry for the inconvenience
             '''))
 width = os.get_terminal_size().columns
 for i in range(0, width):
