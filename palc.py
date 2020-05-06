@@ -196,11 +196,11 @@ def palc():
             * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); log (logarithm); mem (memory); and base (convert number system). Sorry for the inconvenience
             '''))
 width = os.get_terminal_size().columns
-listbox = [chr(205),]
-width4Range = width - 2
+listbox = ["-",]
+width4Range = width - 1
 for i in range (0, width4Range):
-    listbox.append(chr(205))
-print(chr(201), listbox, chr(187), sep="")
+    listbox.append("-"))
+print(listbox, chr(187), sep="")
 print(_("Welcome to Palc!".center(width)))
 print(chr(200), listbox, chr(188), sep="")
 try:
