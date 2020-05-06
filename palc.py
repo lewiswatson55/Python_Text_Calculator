@@ -15,7 +15,7 @@ except ImportError:
     _IS_WINDOWS = False 
     logging.info("Imported tty, termios")
 import gettext #to translate Palc
-language = input("English or Francais? (do not add accents to letters/ne pas ajouter les accents aux lettres): ")
+language = input("English or Francais? (do not add accents to letters/ne pas ajouter les accents aux lettres): ")
 language = language.lower()
 if language == "francais":
     logging.info("Set language to French")
@@ -68,7 +68,7 @@ def palc():
 #CALCULATION CHOICE
        calc = input(_("What calculation do you wish to do? (Type `?' for a list of commands)\nType: "))
        calc = calc.lower() #make variable "calc" lowercase
-#HELP
+#HELP
        if "?" in calc:
            logging.info("User needed help")
            help()
@@ -80,7 +80,7 @@ def palc():
             multi()
        elif "x" in calc:
             multi()
-#SQUARE
+#SQUARE
        elif "sq" in calc:
             n = int(input(_("Number? ")))
             print(n * n)
@@ -89,7 +89,7 @@ def palc():
             n = int(input(_("Number? ")))
             logging.info(("User squared number ", n, " got result ", (n * n)))
             print(n * n)
-#DIVISION
+#DIVISION
        elif "/" in calc:
             div()
        elif "div" in calc:
@@ -101,12 +101,12 @@ def palc():
             sub()
        elif "min" in calc:
             sub()
-#ADDITION
+#ADDITION
        elif "+" in calc:
             add()
        elif "add" in calc:
             add()
-#MODULO
+#MODULO
        elif "%" in calc:
             mod()
        elif "mod" in calc:
@@ -133,7 +133,7 @@ def palc():
             logging.info("User exited using `exit' command")
             e("Looks like you exited.")
 #EXPONENTS
-       elif "ex" in calc:
+       elif "ex" in calc:
             origin = int(input("Original number?"))
             ex = int(input("Exponent? "))
             print(origin ** ex)
@@ -171,10 +171,10 @@ def palc():
            logging.info(("User ord'ed to get result ", result))
            result = str(ord(int(input(_("Type in the number to ord: ")))))
            print("=", result)
-#LOGARITHM
+#LOGARITHM
        elif "log" in calc:
            log()
-#MEMORY
+#MEMORY
        elif "mem" in calc:
             memOrRecall = input("Would you like to set the memory or recall? (set / recall)\nType: ")
             if memOrRecall.lower() in "set":
