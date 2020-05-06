@@ -33,15 +33,8 @@ try:
 except:
     l_translations.install()
     _ = l_translations.gettext
-couldNotFindRoot = False #so that I can prevent errors
 from sys import exit as e #so that we can exit later on
 import time
-try:
-    from root import *
-except ImportError:
-    couldNotFindRoot = True
-    logging.error("Could not access file root.py")
-    print(_("I can't find file root.py, and therefore you cannot calculate roots."))
 try:
     from func import *
 except ImportError:
@@ -140,19 +133,16 @@ def palc():
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
 #ROOTS
        elif "root" in calc:
-            if couldNotFindRoot is True:
-                root = input("Square root or cube root?(square/cube)")
-                root = root.lower()
-                if "square" in root:
-                    num = input("Number to be rooted?")
-                    print(_("That equals.....\n", num ** 0.5))
-                    logging.info(("user sqrooted number ", (num**0.5)))
-                elif "cube" in root:
-                    cu()
-                else:
-                    print(_("Currently I don't support the root you chose. Hopefully this will change :)"))
+            root = input("Square root or cube root?(square/cube)")
+            root = root.lower()
+            if "square" in root:
+                num = input("Number to be rooted?")
+                print(_("That equals.....\n", num ** 0.5))
+                logging.info(("user sqrooted number ", (num**0.5)))
+            elif "cube" in root:
+                cu()
             else:
-                print(_("The root.py file could not be found at startup. Therefore you cannot calculate roots."))
+                print(_("Currently I don't support the root you chose. Hopefully this will change :)"))
 #EASTER EGG!
        elif "=" in calc:
             print()
@@ -214,7 +204,7 @@ except EOFError: #if ^D
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
     print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
-except:
+except EOFError:
     logging.critical("Unknown Error")
     print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
 #EOF

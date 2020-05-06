@@ -133,6 +133,13 @@ def readMyMemory():
     except:
         logging.info("There was an error retrieving the file from memory.")
         print("There was an error reading the file. Did you save the number by using the save function? Did you accidentally rename the file?")
+def cubeInternal(x):
+    # all credit goes to user4466285's answer to "https://stackoverflow.com/questions/28014241/how-to-find-cube-root-using-python"
+    if 0 <= x:
+        return x**(1./3.)
+    return -(-x)**(1./3.)
+def cu():
+    print(cubeInternal(int(input(_("Number to be rooted? ")))))
 def cosine():
     which = input("Would you like sine or inverse sine? (sin / inverse)\nType: ")
     which = which.lower()
