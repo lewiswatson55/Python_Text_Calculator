@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-06 19:11-0400\n"
-"PO-Revision-Date: 2020-05-06 19:13-0400\n"
+"POT-Creation-Date: 2020-05-06 19:47-0400\n"
+"PO-Revision-Date: 2020-05-06 19:48-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -183,6 +183,14 @@ msgstr "Merci d'utiliser le Fibonacci fonction de Palc !"
 msgid "an error occured."
 msgstr "Une erreur est survenue."
 
+#: func.py:3
+msgid "Please enter the first number: "
+msgstr "Premiere numero ? "
+
+#: func.py:4
+msgid "Please enter the second number: "
+msgstr "Deuxieme numero ? "
+
 #: func.py:8
 msgid ""
 "\n"
@@ -223,6 +231,18 @@ msgstr "Ne divisez pas par zéro !"
 msgid "There was an unknown issue dividing your Numbers..."
 msgstr "Il y avait un problème inconnu divisant vos numéros. "
 
+#: func.py:41
+msgid ""
+"\n"
+"Type the first number (greater): "
+msgstr ""
+"\n"
+"Tappez le nombre premier (plus grand que la deuxieme) : "
+
+#: func.py:42
+msgid "Type the second number (smaller): "
+msgstr "Tappez le 2eme numero (plus petit) : "
+
 #: func.py:44 func.py:48
 msgid ""
 "\n"
@@ -239,13 +259,33 @@ msgstr "Nombre invalid (code 1)\n"
 msgid "The second number entered is greater than the first number (code 2)\n"
 msgstr "Le nombre deuxieme est plus grand que la premiere nombre (code 2)\n"
 
+#: func.py:61 func.py:66 func.py:76 func.py:79 func.py:82 func.py:85 func.py:92
+msgid "Type the original number: "
+msgstr "Tappez le nombre original : "
+
+#: func.py:73
+msgid "Which type is the Number (ord, binary, octo, or hex): "
+msgstr "Quelle type est le numero (ord, binaire, oct, ou hec) : "
+
 #: func.py:87
 msgid "That was an invalid answer. Try again."
 msgstr "Reponse invalide, essaie encore ! "
 
+#: func.py:107
+msgid ""
+"What base would you like to use? \n"
+"Currentlysupported: 10 (base 10), e (natural)"
+msgstr ""
+"Quelle systeme est-ce-que tu veux utiliser ? \n"
+"10 (decimal) ou e (natural)"
+
 #: func.py:109
 msgid "Using base 10"
 msgstr "utilisant base 10 "
+
+#: func.py:110 func.py:116
+msgid "What is the number? "
+msgstr "Quelle est la nombre ? "
 
 #: func.py:115
 msgid "Using natural logarithm"
@@ -269,6 +309,24 @@ msgstr ""
 "Ca va sauver une numero en une fichier que peux etre utiliser dans la futur "
 "avec Palc... Ou tu peux juste lire avec une editeur texte."
 
+#: func.py:126
+msgid ""
+"\n"
+"Please enter the number to be saved: "
+msgstr ""
+"\n"
+"Quelle numero est-ce-que tu veux etre sauve : "
+
+#: func.py:127
+msgid ""
+"What slot would you like to use? (Hint: you can use any integer you want as "
+"long as you remember it)\n"
+"Type: "
+msgstr ""
+"Quelle slot memoire est-ce-que tu veux utiliser ? (Indice : tu peux utiliser "
+"n'importe quelle nombre si tu le souvient)\n"
+"Tappez : "
+
 #: func.py:133
 msgid ""
 "This is the remember function.\n"
@@ -276,6 +334,10 @@ msgid ""
 msgstr ""
 "Ca c'est le fonction lire memoire.\n"
 "Ca va lire une numero qui a ete sauve dans une fichier."
+
+#: func.py:135
+msgid "What slot number did you use? "
+msgstr "Quelle numero slot est-ce-que tu as utilise ? "
 
 #: func.py:137
 msgid "Number: "
@@ -293,9 +355,19 @@ msgstr ""
 msgid "Number to be rooted? "
 msgstr "Quelle est la nombre ? "
 
+#: func.py:153
+msgid ""
+"Would you like sine or inverse sine? (sin / inverse)\n"
+"Type: "
+msgstr "WIP"
+
 #: func.py:156
 msgid "Sine it is!"
 msgstr "J'utilise cosine ! "
+
+#: func.py:157 func.py:164
+msgid "Enter the number: "
+msgstr "Tappez le nombre : "
 
 #: func.py:163
 msgid "Inverse it is!"
@@ -522,22 +594,6 @@ msgstr "Desole, ce n'etais pas une option. >:)"
 msgid "The volume is: "
 msgstr "La reponse est : "
 
-#~ msgid "Please enter the first number: "
-#~ msgstr "Premiere numero ? "
-
-#~ msgid "Please enter the second number: "
-#~ msgstr "Deuxieme numero ? "
-
-#~ msgid ""
-#~ "\n"
-#~ "Type the first number (greater): "
-#~ msgstr ""
-#~ "\n"
-#~ "Tappez le nombre premier (plus grand que la deuxieme) : "
-
-#~ msgid "Type the second number (smaller): "
-#~ msgstr "Tappez le 2eme numero (plus petit) : "
-
 #~ msgid ""
 #~ "What base would you like to use?\n"
 #~ "    Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)\n"
@@ -546,44 +602,6 @@ msgstr "La reponse est : "
 #~ "quelle systeme est-ce-que tu veux ? \n"
 #~ "   Il y a : 2 (binarie) ; 8 (oct) ; 10 (decimal (normal)) 16 (hex)\n"
 #~ "   Tappe 2, 8, 10, ou 16 : "
-
-#~ msgid "Type the original number: "
-#~ msgstr "Tappez le nombre original : "
-
-#~ msgid "Which type is the Number (ord, binary, octo, or hex): "
-#~ msgstr "Quelle type est le numero (ord, binaire, oct, ou hec) : "
-
-#~ msgid ""
-#~ "What base would you like to use? \n"
-#~ "Currentlysupported: 10 (base 10), e (natural)"
-#~ msgstr ""
-#~ "Quelle systeme est-ce-que tu veux utiliser ? \n"
-#~ "10 (decimal) ou e (natural)"
-
-#~ msgid "What is the number? "
-#~ msgstr "Quelle est la nombre ? "
-
-#~ msgid ""
-#~ "What slot would you like to use? (Hint: you can use any integer you want "
-#~ "as long as you remember it)\n"
-#~ "Type: "
-#~ msgstr ""
-#~ "Quelle slot memoire est-ce-que tu veux utiliser ? (Indice : tu peux "
-#~ "utiliser n'importe quelle nombre si tu le souvient)\n"
-#~ "Tappez : "
-
-#~ msgid "What slot number did you use? "
-#~ msgstr "Quelle numero slot est-ce-que tu as utilise ? "
-
-#~ msgid ""
-#~ "Would you like cosine or inverse cosine? (cos / inverse)\n"
-#~ "Type: "
-#~ msgstr ""
-#~ "Est-ce-que tu veux cosine ou inverse cosine ? (cos/inverse)\n"
-#~ "Tappez : "
-
-#~ msgid "Enter the number: "
-#~ msgstr "Tappez le nombre : "
 
 #~ msgid "I can't find file root.py, and therefore you cannot calculate roots."
 #~ msgstr ""

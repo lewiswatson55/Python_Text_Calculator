@@ -150,15 +150,15 @@ def fib():
     import runpy
     runpy.run_path(path_name="fibonacci.py")
 def cosine():
-    which = input("Would you like sine or inverse sine? (sin / inverse)\nType: ")
+    which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType: "))
     which = which.lower()
     if which == "sin":
         print(_("Sine it is!"))
-        number = float(input("Enter the number: "))
+        number = float(input(_("Enter the number: ")))
         import math
         res = math.degrees(math.sin(number))
         print(res)
         logging.info(("User cos'ed number ", number, " getting result of ", res))
     elif which == "inverse":
         print(_("Inverse it is!"))
-        number = float(input("Enter the number: "))
+        number = float(input(_("Enter the number: ")))
