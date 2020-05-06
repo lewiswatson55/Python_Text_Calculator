@@ -156,7 +156,7 @@ def circle(r: int) -> 'area':
     Takes 'r' As The Radius Of The Circle.
     And Returns The Area.
     :param r:
-    :return: Area
+    :return: area
     '''
     area = pi * (pow(r, 2))
     print(_("The area is: "))
