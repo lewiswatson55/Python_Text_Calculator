@@ -2,6 +2,7 @@
 #THANKS TO https://simpleit.rocks/python/how-to-translate-a-python-project-with-gettext-the-easy-way/ and https://inventwithpython.com/blog/2014/12/20/translate-your-python-3-program-with-the-gettext-module/ for their GETTEXT guides! :)
 # THANKS TO @ErdoganOnal for their comment on this SO question: https://stackoverflow.com/questions/61621821/any-secure-alternatives-for-this?noredirect=1#comment109002742_61621821
 import sys, os
+import os
 try: 
     import msvcrt 
     _IS_WINDOWS = True 
@@ -194,7 +195,14 @@ def palc():
             I don't understand your request. Here are the currently supported calculations:
             * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); log (logarithm); mem (memory); and base (convert number system). Sorry for the inconvenience
             '''))
-print(_("\nWelcome to Palc!"))
+width = os.get_terminal_size().columns
+listbox = [chr(205),]
+width4Range = width - 2
+for i in range (0, width4Range):
+    listbox.append(chr(205))
+print(chr(201), listbox, chr(187), sep="")
+print(_("Welcome to Palc!".center(width)))
+print(chr(200), listbox, chr(188), sep="")
 try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
@@ -206,7 +214,7 @@ except EOFError: #if ^D
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
     print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
-#except:
-    #logging.critical("Unknown Error")
-    #print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
+except:
+    logging.critical("Unknown Error")
+    print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
 #EOF
