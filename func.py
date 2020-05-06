@@ -1,7 +1,7 @@
 import logging
 def getNum(): #ask for two numbers and then return to function
-    n1 = int(input("Please enter the first number: "))
-    n2 = int(input("Please enter the second number: "))
+    n1 = int(input(_("Please enter the first number: ")))
+    n2 = int(input(_("Please enter the second number: ")))
     logging.info(("Palc got two numbers: ", n1, " and ", n2))
     return n1, n2
 def h():
@@ -38,8 +38,8 @@ def add(): #addition
     logging.info(("User added ", n1, " to ", n2, " and got result ", (n1 + n2)))
 def mod(): #modulo
     try:
-        bigger = int(input("\nType the first number (greater): "))
-        smaller = int(input("Type the second number (smaller): "))
+        bigger = int(input(_("\nType the first number (greater): ")))
+        smaller = int(input(_("Type the second number (smaller): ")))
     except (TypeError, ValueError):
         print(_("\nError!"))
         print(_("Invalid input (code 1)\n"))
@@ -58,38 +58,38 @@ def base():
     Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)
     Type 2, 8, 10, or 16: '''))
     if base == 2:
-        result = bin(int(input("Type the original number: "))) #bin() the number
+        result = bin(int(input(_("Type the original number: ")))) #bin() the number
         printThis = "=" +str(result)
         logging.info(("User binaried number ", result, ", getting a result of ", printThis))
         print(printThis)
     elif base == 8:
-            result = oct(int(input("Type the original number: "))) #oct() the number
+            result = oct(int(input(_("Type the original number: ")))) #oct() the number
             printThis = "=" +str(result)
             logging.info(("User oct'ed number ", result, ", getting a result of ", printThis))
             print(printThis)
     elif base == 10:
         goodanswer = False
         while goodanswer is False:
-            whichType = input("Which type is the Number (ord, binary, octo, or hex): ")
+            whichType = input(_("Which type is the Number (ord, binary, octo, or hex): "))
             if whichType == "ord":
                 goodanswer = True
-                result = int(ord(input("Type the original number: "))) #int() the number
+                result = int(ord(input(_("Type the original number: ")))) #int() the number
             elif whichType == "binary":
                 goodanswer = True
-                result = int(bin(input("Type the original number: "))) #int() the number
+                result = int(bin(input(_("Type the original number: ")))) #int() the number
             elif whichType == "octo":
                 goodanswer = True
-                result = int(oct(input("Type the original number: "))) #int() the number
+                result = int(oct(input(_("Type the original number: ")))) #int() the number
             elif whichType == "hex":
                 goodanswer = True
-                result = int(hex(input("Type the original number: "))) #int() the number
+                result = int(hex(input(_("Type the original number: ")))) #int() the number
             else:
                 print(_("That was an invalid answer. Try again."))
             printThis = "=" +str(result)
             logging.info(("User int'ed number ", result, ", getting a result of ", printThis))
             print(printThis)
     elif base == 16:
-        result = hex(int(input("Type the original number: "))) #ask for original number
+        result = hex(int(input(_("Type the original number: ")))) #ask for original number
         printThis = "=" +str(result)
         logging.info(("User hexed number ", result, ", getting a result of ", printThis))
         print(printThis)
@@ -104,16 +104,16 @@ def area():
 def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-python
     import math
     while True:
-        base = input("What base would you like to use? \nCurrentlysupported: 10 (base 10), e (natural)")
+        base = input(_("What base would you like to use? \nCurrentlysupported: 10 (base 10), e (natural)"))
         if base == "10":
             print(_("Using base 10"))
-            number = int(input("What is the number? "))
+            number = int(input(_("What is the number? ")))
             print(math.log10(number))
             logging.info(("User used base 10 logarithm with number", number, ", getting a result of ", math.log10(number)))
             break
         elif base.lower() == "e":
             print(_("Using natural logarithm"))
-            number = int(input("What is the number? "))
+            number = int(input(_("What is the number? ")))
             print(math.log(number))
             logging.info(("User used natural logarithm with number ", number, ", getting a result of ", math.log(number)))
             break
@@ -123,8 +123,8 @@ def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-
             logging.info(("User attempted to use a logarithm that is unavailable."))
 def remember():
     print(_("This is the memory function.\nIt will save a number into a file that can be used later with Palc... Or you can just read it with a text editor."))
-    toRemember = float(input("\nPlease enter the number to be saved: "))
-    slot = str(int(input("What slot would you like to use? (Hint: you can use any integer you want as long as you remember it)\nType: ")))
+    toRemember = float(input(_("\nPlease enter the number to be saved: ")))
+    slot = str(int(input(_("What slot would you like to use? (Hint: you can use any integer you want as long as you remember it)\nType: "))))
     toRemember = str(toRemember)
     memory = open(slot, "w+")
     memory.write(toRemember)
@@ -132,7 +132,7 @@ def remember():
 def readMyMemory():
     print(_("This is the remember function.\nIt will read a number that was previously stored in a file."))
     try:
-        slot = str(int(input("What slot number did you use? ")))
+        slot = str(int(input(_("What slot number did you use? "))))
         memory = open(slot, "r")
         print(_("Number: ", memory.read()))
         logging.info(("Retrieved number ", memory.read(), " from memory."))
