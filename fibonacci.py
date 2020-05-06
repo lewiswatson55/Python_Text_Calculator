@@ -2,8 +2,14 @@
 import time
 num0 = 0
 num1 = 1
+hi = 0
 while True:
-    print(num0, ", ", num1, end=", ", sep="")
-    num0 += 1
-    num1 += 1
+    num = num0 + num1
+    if hi == 0:
+        num0 = num
+        hi = 1
+    else:
+        num1 = num
+        hi = 0
+    print(num, end=", ", flush=True)
     time.sleep(0.5)
