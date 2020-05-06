@@ -44,7 +44,7 @@ except:
     print(_("I can't find file root.py, and therefore you cannot calculate roots."))
 try:
     from func import *
-except:
+except EOFError:
     logging.critical("Could not access file func.py")
     e(_("I can't access the file func.py. This file is necessary for proper function of the Software."))
 print(_("Loading...............\n"))
@@ -71,10 +71,10 @@ def palc():
 #HELP
        if "?" in calc:
            logging.info("User needed help")
-           help()
+           h()
        elif "help" in calc:
            logging.info("User needed help")
-           help()
+           h()
 #MULTIPLICATION
        elif "*" in calc:
             multi()
