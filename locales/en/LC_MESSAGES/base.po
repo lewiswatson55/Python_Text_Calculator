@@ -1,114 +1,482 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-04 16:11-0400\n"
-"PO-Revision-Date: 2020-05-04 16:11-0400\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2020-05-06 07:49-0400\n"
+"PO-Revision-Date: 2020-05-06 07:50-0400\n"
+"Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
-"X-Poedit-Basepath: ../python-text-calculator\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: palc.py:12
+#: area.py:16 area.py:31 area.py:49 area.py:67 area.py:84 area.py:99
+#: area.py:114 area.py:129 area.py:145 area.py:162 area.py:176 area.py:192
+#: area.py:208 area.py:223
+msgid "The area is: "
+msgstr ""
+
+#: areaInteractive.py:3
+msgid "What length is the side of the triangle? "
+msgstr ""
+
+#: areaInteractive.py:6
+msgid "What length is the base of the triangle? "
+msgstr ""
+
+#: areaInteractive.py:7
+msgid "What length is the height of the triangle? "
+msgstr ""
+
+#: areaInteractive.py:10 areaInteractive.py:15
+msgid "What is the length of the first side? "
+msgstr ""
+
+#: areaInteractive.py:11 areaInteractive.py:16
+msgid "what is the length of the second side? "
+msgstr ""
+
+#: areaInteractive.py:12 areaInteractive.py:17
+msgid "What is the length of the third side? "
+msgstr ""
+
+#: areaInteractive.py:20
+msgid "What is the length of the side of the square? "
+msgstr ""
+
+#: areaInteractive.py:24
+msgid "What is the length of the rectangle? "
+msgstr ""
+
+#: areaInteractive.py:25
+msgid "What is the height of the rectangle? "
+msgstr ""
+
+#: areaInteractive.py:29
+msgid "What is the length of the base? "
+msgstr ""
+
+#: areaInteractive.py:30
+msgid "What is the height of the shape? "
+msgstr ""
+
+#: areaInteractive.py:34
+msgid "What is the length of the first diagonal? "
+msgstr ""
+
+#: areaInteractive.py:35
+msgid "What is the length of the 2nd diagonal? "
+msgstr ""
+
+#: areaInteractive.py:39
+msgid "What is the length of the 1st set of parallel sides? "
+msgstr ""
+
+#: areaInteractive.py:40
+msgid "What is the length of the 2nd set of parallel sides? "
+msgstr ""
+
+#: areaInteractive.py:41
+msgid "What is the height of the trapezium? "
+msgstr ""
+
+#: areaInteractive.py:45
+msgid "What is the radius of the circle? "
+msgstr ""
+
+#: areaInteractive.py:49
+msgid "What is the radius of the semicircle? "
+msgstr ""
+
+#: areaInteractive.py:52
+msgid ""
+"I can't figure out what `a' is for, it is cirsector() in area.py if anyone "
+"can help"
+msgstr ""
+
+#: areaInteractive.py:57
+msgid "What is the radius of the outer circle? "
+msgstr ""
+
+#: areaInteractive.py:58
+msgid "What is the radius of the inner circle? "
+msgstr ""
+
+#: areaInteractive.py:62
+msgid "What is the length of the major axis? "
+msgstr ""
+
+#: areaInteractive.py:63
+msgid "What is the length of the minor axis? "
+msgstr ""
+
+#: areaInteractive.py:65
+msgid ""
+"Options:\n"
+"1 - Equilateral triangle\n"
+"2 - Right angle triangle\n"
+"3 - Acute triangle\n"
+"4 - Obtuse triangle\n"
+"5 - Square\n"
+"6 - Rectangle\n"
+"8 - Parallelogram\n"
+"9 - Rhombus\n"
+"10 - Trapezium\n"
+"11 - Circle\n"
+"12 - Semicircle\n"
+"13 - Circular sector\n"
+"14 - Ring\n"
+"15 - Ellipse"
+msgstr ""
+
+#: areaInteractive.py:82 volInteractive.py:75
+msgid "Please type one: "
+msgstr ""
+
+#: areaInteractive.py:84 volInteractive.py:77
+msgid "Please type an integer"
+msgstr ""
+
+#: areaInteractive.py:86
+msgid "I was too lazy to change 7."
+msgstr ""
+
+#: areaInteractive.py:121
+msgid ""
+"I cannot figure out what variable `a' is for, line 182 in `area.py' if "
+"anyone wants to help"
+msgstr ""
+
+#: func.py:3
+msgid "Please enter the first number: "
+msgstr ""
+
+#: func.py:4
+msgid "Please enter the second number: "
+msgstr ""
+
+#: func.py:8
+msgid ""
+"\n"
+"     Current list of commands: multiplication (*), division (/), addition "
+"(+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube "
+"({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm "
+"(log), memory (mem), and convert number systems (base). Type e to e.\n"
+"     Bugs? Head on over to https://github.com/thetechrobo/support/\n"
+"     To contribute: go to https://github.com/thetechrobo/python-text-"
+"calculator/\n"
+"     "
+msgstr ""
+
+#: func.py:15 func.py:20 func.py:25 func.py:30 func.py:46
+msgid ""
+"\n"
+"That equals..."
+msgstr ""
+
+#: func.py:35
+msgid ""
+"\n"
+"Type the first number (greater): "
+msgstr ""
+
+#: func.py:36
+msgid "Type the second number (smaller): "
+msgstr ""
+
+#: func.py:38 func.py:42
+msgid ""
+"\n"
+"Error!"
+msgstr ""
+
+#: func.py:39
+msgid "Invalid input (code 1)\n"
+msgstr ""
+
+#: func.py:43
+msgid "The second number entered is greater than the first number (code 2)\n"
+msgstr ""
+
+#: func.py:51
+msgid ""
+"What base would you like to use?\n"
+"    Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)\n"
+"    Type 2, 8, 10, or 16: "
+msgstr ""
+
+#: func.py:55 func.py:60 func.py:70 func.py:73 func.py:76 func.py:79 func.py:86
+msgid "Type the original number: "
+msgstr ""
+
+#: func.py:67
+msgid "Which type is the Number (ord, binary, octo, or hex): "
+msgstr ""
+
+#: func.py:81
+msgid "That was an invalid answer. Try again."
+msgstr ""
+
+#: func.py:101
+msgid ""
+"What base would you like to use? \n"
+"Currentlysupported: 10 (base 10), e (natural)"
+msgstr ""
+
+#: func.py:103
+msgid "Using base 10"
+msgstr ""
+
+#: func.py:104 func.py:110
+msgid "What is the number? "
+msgstr ""
+
+#: func.py:115
+msgid "The logarithm you typed is not available."
+msgstr ""
+
+#: func.py:116
+msgid "Try again."
+msgstr ""
+
+#: func.py:119
+msgid ""
+"This is the memory function.\n"
+"It will save a number into a file that can be used later with Palc... Or you "
+"can just read it with a text editor."
+msgstr ""
+
+#: func.py:121
+msgid ""
+"What slot would you like to use? (Hint: you can use any integer you want as "
+"long as you remember it)\n"
+"Type: "
+msgstr ""
+
+#: func.py:127
+msgid ""
+"This is the remember function.\n"
+"It will read a number that was previously stored in a file."
+msgstr ""
+
+#: func.py:129
+msgid "What slot number did you use? "
+msgstr ""
+
+#: func.py:131
+msgid "Number: "
+msgstr ""
+
+#: func.py:137
+msgid ""
+"Would you like cosine or inverse cosine? (cos / inverse)\n"
+"Type: "
+msgstr ""
+
+#: func.py:140
+msgid "Cosine it is!"
+msgstr ""
+
+#: func.py:141 func.py:148
+msgid "Enter the number: "
+msgstr ""
+
+#: palc.py:81
 msgid "I can't find file root.py, and therefore you cannot calculate roots."
 msgstr ""
 
-#: palc.py:17
+#: palc.py:91
 msgid ""
 "I can't access the file func.py. This file is necessary for proper function "
 "of the Software."
 msgstr ""
 
-#: palc.py:18
+#: palc.py:93
 msgid "Loading...............\n"
 msgstr ""
 
-#: palc.py:25
+#: palc.py:101
+msgid "Press any key to continue..."
+msgstr ""
+
+#: palc.py:131
 msgid ""
 "What calculation do you wish to do? (Type `?' for a list of commands)\n"
 "Type: "
 msgstr ""
 
-#: palc.py:41 palc.py:45
+#: palc.py:163 palc.py:171
 msgid "Number? "
 msgstr ""
 
-#: palc.py:104
+#: palc.py:289
 msgid "That equals.....\n"
 msgstr ""
 
-#: palc.py:109
+#: palc.py:299
 msgid ""
 "Currently I don't support the root you chose. Hopefully this will change :)"
 msgstr ""
 
-#: palc.py:111
+#: palc.py:303
 msgid ""
 "The root.py file could not be found at startup. Therefore you cannot "
 "calculate roots."
 msgstr ""
 
-#: palc.py:117
+#: palc.py:315
 msgid "=42 -- the answer to life, the universe, and everything"
 msgstr ""
 
-#: palc.py:128
+#: palc.py:337
 msgid "Type in the number to ord: "
 msgstr ""
 
-#: palc.py:141
+#: palc.py:363
 msgid ""
 "You did not type an answer.\n"
 "Abort."
 msgstr ""
 
-#: palc.py:146 palc.py:149
+#: palc.py:373 palc.py:379
 msgid "Type something!"
 msgstr ""
 
-#: palc.py:152
+#: palc.py:385
 #, python-format
 msgid ""
 "\n"
+"\n"
 "            I don't understand your request. Here are the currently "
 "supported calculations:\n"
+"\n"
 "            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); "
 "sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); "
 "root (roots); = (equals); log (logarithm); mem (memory); and base (convert "
 "number system). Sorry for the inconvenience\n"
+"\n"
 "            "
 msgstr ""
 
-#: palc.py:156
-msgid ""
-"\n"
-"Welcome to Palc!"
+#: palc.py:396
+msgid "Welcome to Palc!"
 msgstr ""
 
-#: palc.py:161
+#: palc.py:407
 msgid ""
 "\n"
-"Note that you CAN type `e' instead of the interrupt key"
+"Note that you CAN type `exit' instead of the interrupt key"
 msgstr ""
 
-#: palc.py:164
+#: palc.py:413
 msgid ""
 "\n"
-"Why ^D? Why not just type `e'?"
+"Why ^D? Why not just type `exit'?"
 msgstr ""
 
-#: palc.py:167
+#: palc.py:419
 msgid ""
 "You typed in an invalid integer or float. Or maybe the program needs "
 "debugging. Either way, it's a pretty big error."
 msgstr ""
 
-#: palc.py:170
+#: palc.py:425
 msgid "An unknown error occured. For debugging info, see Line 164"
+msgstr ""
+
+#: root.py:7
+msgid "Number to be rooted? "
+msgstr ""
+
+#: volInteractive.py:3
+msgid "What length is the side of the cube? "
+msgstr ""
+
+#: volInteractive.py:6
+msgid "What length is the breadth of the cuboid? "
+msgstr ""
+
+#: volInteractive.py:7
+msgid "What length is the height of the cuboid? "
+msgstr ""
+
+#: volInteractive.py:8
+msgid "What length is the cuboid? "
+msgstr ""
+
+#: volInteractive.py:11 volInteractive.py:16
+msgid "What is the radius of the cylinder? "
+msgstr ""
+
+#: volInteractive.py:12
+msgid "what is the height of the cylinder? "
+msgstr ""
+
+#: volInteractive.py:15 volInteractive.py:28
+msgid "What is the radius of the hollow space? "
+msgstr ""
+
+#: volInteractive.py:17
+msgid "What is the height of the cylinder? "
+msgstr ""
+
+#: volInteractive.py:20
+msgid "What is the radius of the cone? "
+msgstr ""
+
+#: volInteractive.py:21
+msgid "What is the height of the cone? "
+msgstr ""
+
+#: volInteractive.py:24 volInteractive.py:27
+msgid "What is the radius of the sphere? "
+msgstr ""
+
+#: volInteractive.py:31 volInteractive.py:35 volInteractive.py:39
+#: volInteractive.py:43 volInteractive.py:47 volInteractive.py:51
+#: volInteractive.py:55
+msgid "What is the length of the side of the base? "
+msgstr ""
+
+#: volInteractive.py:32 volInteractive.py:36 volInteractive.py:40
+msgid "What is the height of the prism? "
+msgstr ""
+
+#: volInteractive.py:44 volInteractive.py:48 volInteractive.py:52
+#: volInteractive.py:56
+msgid "What is the height of the pyramid? "
+msgstr ""
+
+#: volInteractive.py:58
+msgid ""
+"Options:\n"
+"1 - Cube\n"
+"2 - Cuboid\n"
+"3 - Cylinder\n"
+"4 - Hollow cylinder\n"
+"5 - Cone\n"
+"6 - Sphere\n"
+"8 - Hollow sphere\n"
+"9 - Triangular prism\n"
+"10 - Pentagonal prism\n"
+"11 - Hexagonal prism\n"
+"12 - Square-based pyramid\n"
+"13 - Triangular pyramid\n"
+"14 - Pentagon-based pyramid\n"
+"15 - Hexagon-based pyramid"
+msgstr ""
+
+#: volInteractive.py:79
+msgid "Sorry, that was not an option. >:)"
+msgstr ""
+
+#: volume.py:12 volume.py:27 volume.py:40 volume.py:54 volume.py:67
+#: volume.py:79 volume.py:92 volume.py:105 volume.py:118 volume.py:131
+#: volume.py:144 volume.py:157 volume.py:170 volume.py:183
+msgid "The volume is: "
 msgstr ""
