@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-06 07:49-0400\n"
-"PO-Revision-Date: 2020-05-06 07:50-0400\n"
+"POT-Creation-Date: 2020-05-06 18:51-0400\n"
+"PO-Revision-Date: 2020-05-06 18:51-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: en_CA\n"
@@ -152,245 +152,110 @@ msgid ""
 "anyone wants to help"
 msgstr ""
 
-#: func.py:3
-msgid "Please enter the first number: "
+#: func.py:24
+msgid "Do not divide by zero!"
 msgstr ""
 
-#: func.py:4
-msgid "Please enter the second number: "
+#: func.py:27
+msgid "There was an unknown issue dividing your Numbers..."
 msgstr ""
 
-#: func.py:8
-msgid ""
-"\n"
-"     Current list of commands: multiplication (*), division (/), addition "
-"(+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube "
-"({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm "
-"(log), memory (mem), and convert number systems (base). Type e to e.\n"
-"     Bugs? Head on over to https://github.com/thetechrobo/support/\n"
-"     To contribute: go to https://github.com/thetechrobo/python-text-"
-"calculator/\n"
-"     "
+#: func.py:148
+msgid "Number to be rooted? "
 msgstr ""
 
-#: func.py:15 func.py:20 func.py:25 func.py:30 func.py:46
-msgid ""
-"\n"
-"That equals..."
-msgstr ""
-
-#: func.py:35
-msgid ""
-"\n"
-"Type the first number (greater): "
-msgstr ""
-
-#: func.py:36
-msgid "Type the second number (smaller): "
-msgstr ""
-
-#: func.py:38 func.py:42
-msgid ""
-"\n"
-"Error!"
-msgstr ""
-
-#: func.py:39
-msgid "Invalid input (code 1)\n"
-msgstr ""
-
-#: func.py:43
-msgid "The second number entered is greater than the first number (code 2)\n"
-msgstr ""
-
-#: func.py:51
-msgid ""
-"What base would you like to use?\n"
-"    Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)\n"
-"    Type 2, 8, 10, or 16: "
-msgstr ""
-
-#: func.py:55 func.py:60 func.py:70 func.py:73 func.py:76 func.py:79 func.py:86
-msgid "Type the original number: "
-msgstr ""
-
-#: func.py:67
-msgid "Which type is the Number (ord, binary, octo, or hex): "
-msgstr ""
-
-#: func.py:81
-msgid "That was an invalid answer. Try again."
-msgstr ""
-
-#: func.py:101
-msgid ""
-"What base would you like to use? \n"
-"Currentlysupported: 10 (base 10), e (natural)"
-msgstr ""
-
-#: func.py:103
-msgid "Using base 10"
-msgstr ""
-
-#: func.py:104 func.py:110
-msgid "What is the number? "
-msgstr ""
-
-#: func.py:115
-msgid "The logarithm you typed is not available."
-msgstr ""
-
-#: func.py:116
-msgid "Try again."
-msgstr ""
-
-#: func.py:119
-msgid ""
-"This is the memory function.\n"
-"It will save a number into a file that can be used later with Palc... Or you "
-"can just read it with a text editor."
-msgstr ""
-
-#: func.py:121
-msgid ""
-"What slot would you like to use? (Hint: you can use any integer you want as "
-"long as you remember it)\n"
-"Type: "
-msgstr ""
-
-#: func.py:127
-msgid ""
-"This is the remember function.\n"
-"It will read a number that was previously stored in a file."
-msgstr ""
-
-#: func.py:129
-msgid "What slot number did you use? "
-msgstr ""
-
-#: func.py:131
-msgid "Number: "
-msgstr ""
-
-#: func.py:137
-msgid ""
-"Would you like cosine or inverse cosine? (cos / inverse)\n"
-"Type: "
-msgstr ""
-
-#: func.py:140
-msgid "Cosine it is!"
-msgstr ""
-
-#: func.py:141 func.py:148
-msgid "Enter the number: "
-msgstr ""
-
-#: palc.py:81
-msgid "I can't find file root.py, and therefore you cannot calculate roots."
-msgstr ""
-
-#: palc.py:91
+#: palc.py:42
 msgid ""
 "I can't access the file func.py. This file is necessary for proper function "
 "of the Software."
 msgstr ""
 
-#: palc.py:93
+#: palc.py:43
 msgid "Loading...............\n"
 msgstr ""
 
-#: palc.py:101
+#: palc.py:47
 msgid "Press any key to continue..."
 msgstr ""
 
-#: palc.py:131
+#: palc.py:62
 msgid ""
 "What calculation do you wish to do? (Type `?' for a list of commands)\n"
 "Type: "
 msgstr ""
 
-#: palc.py:163 palc.py:171
+#: palc.py:78 palc.py:82
 msgid "Number? "
 msgstr ""
 
-#: palc.py:289
+#: palc.py:136
+msgid "That feature was discontinued."
+msgstr ""
+
+#: palc.py:143
 msgid "That equals.....\n"
 msgstr ""
 
-#: palc.py:299
+#: palc.py:148
 msgid ""
 "Currently I don't support the root you chose. Hopefully this will change :)"
 msgstr ""
 
-#: palc.py:303
-msgid ""
-"The root.py file could not be found at startup. Therefore you cannot "
-"calculate roots."
-msgstr ""
-
-#: palc.py:315
+#: palc.py:154
 msgid "=42 -- the answer to life, the universe, and everything"
 msgstr ""
 
-#: palc.py:337
+#: palc.py:165
 msgid "Type in the number to ord: "
 msgstr ""
 
-#: palc.py:363
+#: palc.py:178
 msgid ""
 "You did not type an answer.\n"
 "Abort."
 msgstr ""
 
-#: palc.py:373 palc.py:379
+#: palc.py:187 palc.py:190
 msgid "Type something!"
 msgstr ""
 
-#: palc.py:385
+#: palc.py:193
 #, python-format
 msgid ""
 "\n"
-"\n"
 "            I don't understand your request. Here are the currently "
 "supported calculations:\n"
-"\n"
 "            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); "
 "sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); "
-"root (roots); = (equals); log (logarithm); mem (memory); and base (convert "
-"number system). Sorry for the inconvenience\n"
-"\n"
+"root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); and "
+"base (convert number system). Sorry for the inconvenience\n"
 "            "
 msgstr ""
 
-#: palc.py:396
+#: palc.py:200
 msgid "Welcome to Palc!"
 msgstr ""
 
-#: palc.py:407
+#: palc.py:207
 msgid ""
 "\n"
 "Note that you CAN type `exit' instead of the interrupt key"
 msgstr ""
 
-#: palc.py:413
+#: palc.py:210
 msgid ""
 "\n"
 "Why ^D? Why not just type `exit'?"
 msgstr ""
 
-#: palc.py:419
+#: palc.py:213
 msgid ""
 "You typed in an invalid integer or float. Or maybe the program needs "
 "debugging. Either way, it's a pretty big error."
 msgstr ""
 
-#: palc.py:425
+#: palc.py:216
 msgid "An unknown error occured. For debugging info, see Line 164"
-msgstr ""
-
-#: root.py:7
-msgid "Number to be rooted? "
 msgstr ""
 
 #: volInteractive.py:3
