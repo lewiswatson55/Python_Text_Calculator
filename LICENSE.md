@@ -25,3 +25,5 @@
  
  3. Code is provided with no warranty. Using somebody else's code and bitching when it goes wrong makes 
  you a DONKEY dick. Fix the problem yourself. A non-dick would submit the fix back or submit a [bug report](https://www.chiark.greenend.org.uk/~sgtatham/bugs.html).
+
+4. If you use code, only the biggest dick ever would call it their own. Even just a comment saying "SOURCE: example.com" would be OK.
