@@ -63,7 +63,7 @@ def sector():
     r = int(input(_("What is the radius of the circular sector? ")))
     a = int(input(_("What is the angle of the circular sector *in degrees*? ")))
     print(_("The area is: "))
-    print(cirsector(r))
+    print(cirsector(r, a))
 def ring():
     from area import ring as myprecious
     ro = int(input(_("What is the radius of the outer circle? ")))
