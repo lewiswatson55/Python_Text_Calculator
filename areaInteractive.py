@@ -1,67 +1,81 @@
 from area import *
 def equ_triangle():
     a = int(input(_("What length is the side of the triangle? ")))
-    equtri(a)
+    print(_("The area is: "))
+    print(equtri(a))
 def right_triangle():
     b = int(input(_("What length is the base of the triangle? ")))
     h = int(input(_("What length is the height of the triangle? ")))
-    righttri(b, h)
+    print(_("The area is: "))
+    print(righttri(b, h))
 def acute_triangle():
     a = int(input(_("What is the length of the first side? ")))
     b = int(input(_("what is the length of the second side? ")))
     c = int(input(_("What is the length of the third side? ")))
-    actri(a, b, c)
+    print(_("The area is: "))
+    print(actri(a, b, c))
 def obtuse_triangle():
     a = int(input(_("What is the length of the first side? ")))
     b = int(input(_("what is the length of the second side? ")))
     c = int(input(_("What is the length of the third side? ")))
-    obtri(a, b, c)
+    print(_("The area is: "))
+    print(obtri(a, b, c))
 def square():
     a = int(input(_("What is the length of the side of the square? ")))
-    sq(a)
+    print(_("The area is: "))
+    print(sq(a))
 def rectangle():
     from area import rectangle as rec
     l = int(input(_("What is the length of the rectangle? ")))
     b = int(input(_("What is the height of the rectangle? ")))
-    rec(l, b)
+    print(_("The area is: "))
+    print(rec(l, b))
 def parallelogram():
     from area import parallelogram as para
     b = int(input(_("What is the length of the base? ")))
     h = int(input(_("What is the height of the shape? ")))
-    para(b, h)
+    print(_("The area is: "))
+    print(para(b, h))
 def rhombus():
     from area import rhombus as rhombu
     do = int(input(_("What is the length of the first diagonal? ")))
     ds = int(input(_("What is the length of the 2nd diagonal? ")))
-    rhombu(do, ds)
+    print(_("The area is: "))
+    print(rhombu(do, ds))
 def trapezium():
     from area import trapezium as trapezi
     a = int(input(_("What is the length of the 1st set of parallel sides? ")))
     b = int(input(_("What is the length of the 2nd set of parallel sides? ")))
     h = int(input(_("What is the height of the trapezium? ")))
-    trapezi(a, b, h)
+    print(_("The area is: "))
+    print(trapezi(a, b, h))
 def circle():
     from area import circle as circl
     r = int(input(_("What is the radius of the circle? ")))
-    circl(r)
+    print(_("The area is: "))
+    print(circl(r))
 def semicircle():
     from area import semicircle as semi
     r = int(input(_("What is the radius of the semicircle? ")))
-    semi(r)
+    print(_("The area is: "))
+    print(semi(r))
 def sector():
     print(_("I can't figure out what `a' is for, it is cirsector() in area.py if anyone can help"))
     #r = int(input("What is the radius of the circular sector? "))
-    #cirsector(r)
+    #print(_("The area is: "))
+    #print(cirsector(r))
 def ring():
     from area import ring as myprecious
     ro = int(input(_("What is the radius of the outer circle? ")))
     rs = int(input(_("What is the radius of the inner circle? ")))
-    myprecious(ro, rs)
+    print(_("The area is: "))
+    print(myprecious(ro, rs))
 def ellipse():
     from area import ellipse as el
     a = int(input(_("What is the length of the major axis? ")))
     b = int(input(_("What is the length of the minor axis? ")))
-    el(a, b)
+    print(_("The area is: "))
+    print(el(a, b))
 print(_('''Options:
 1 - Equilateral triangle
 2 - Right angle triangle
