@@ -1,6 +1,7 @@
 from math import sqrt, pi
 
 # Contains Area Calculating Functions
+# For information on how to use this, go to the Palc wiki or look at the docstrings.
 
 # Triangles
 
