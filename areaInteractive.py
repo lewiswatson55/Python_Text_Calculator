@@ -62,7 +62,7 @@ def semicircle():
 def sector():
     #print(_("I can't figure out what `a' is for, it is cirsector() in area.py if anyone can help"))
     r = int(input(_("What is the radius of the circular sector? ")))
-    a = int(input(_("What is the angle of the circular sector *in degrees*? "))
+    a = int(input(_("What is the angle of the circular sector *in degrees*? ")))
     print(_("The area is: "))
     print(cirsector(r))
 def ring():
