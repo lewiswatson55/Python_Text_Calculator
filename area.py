@@ -161,7 +161,8 @@ def cirsector(r: int, a: int) -> 'area':
     """
     This Function Is For Circular Sector's Area Calculation.
     Takes 'r' As The Radius Of The Circular Sector.
-    And Returns The Area.
+    Takes 'a' as the angle of the sector in degrees.
+    Returns the area.
     :param r: int
     :param a: int
     :return: area
