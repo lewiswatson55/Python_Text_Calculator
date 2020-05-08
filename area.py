@@ -13,8 +13,6 @@ def equtri(a: int) -> 'area':
     :return: area
     '''
     area = (sqrt(3) / 4) * pow(a, 2)
-    print(_("The area is: "))
-    print(area)
     return area
 
 #Right Angle Triangle
@@ -28,8 +26,6 @@ def righttri(b: int, h: int) -> 'area':
     :return: area
     '''
     area = 1 / 2 * b * h
-    print(_("The area is: "))
-    print(area)
     return area
 
 #Acute Triangle
@@ -46,8 +42,6 @@ def actri(a: int, b: int, c: int) -> 'area':
     '''
     s = (a + b + c) / 2
     area = sqrt(s * (s - a) * (s - b) * (s - c))
-    print(_("The area is: "))
-    print(area)
     return area
 
 #Obtuse Triangle
@@ -64,8 +58,6 @@ def obtri(a: int, b: int, c: int) -> 'area':
         '''
     s = (a + b + c) / 2
     area = sqrt(s * (s - a) * (s - b) * (s - c))
-    print(_("The area is: "))
-    print(area)
     return area
 
 
@@ -81,8 +73,6 @@ def sq(a: int) -> 'area':
     :return: area
     '''
     area = pow(a, 2)
-    print(_("The area is: "))
-    print(area)
     return area
 
 #Rectangle
@@ -96,8 +86,6 @@ def rectangle(l: int, b: int) -> 'area':
        :return: area
        '''
     area = l * b
-    print(_("The area is: "))
-    print(area)
     return area
 
 #Parallelogram
@@ -111,8 +99,6 @@ Takes 'b' As The Base And 'h' As The Height.
     :return: area
     '''
     area = b * h
-    print(_("The area is: "))
-    print(area)
     return area
 
 #Rhombus
@@ -126,8 +112,6 @@ def rhombus(do: int, ds: int) -> 'area':
     :return:
     '''
     area = 1 / 2 * do * ds
-    print(_("The area is: "))
-    print(area)
     return area
 
 #Trapezium
@@ -142,8 +126,6 @@ def trapezium(a: int, b: int, h: int) -> 'area':
     :return: area
     '''
     area = 1 / 2 * (a + b) * h
-    print(_("The area is: "))
-    print(area)
     return area
 
 
@@ -159,8 +141,6 @@ def circle(r: int) -> 'area':
     :return: area
     '''
     area = pi * (pow(r, 2))
-    print(_("The area is: "))
-    print(area)
     return area
 
 #Semicircle
@@ -173,8 +153,6 @@ def semicircle(r: int) -> 'area':
     :return: area
     """
     area = 1 / 2 * (circle(r))
-    print(_("The area is: "))
-    print(area)
     return area
 
 #Circular sector
@@ -189,8 +167,6 @@ def cirsector(r: int, a: int) -> 'area':
     """
     length = (a / 360) * 2 * pi * r
     area = 1 / 2 * length * r
-    print(_("The area is: "))
-    print(area)
     return area
 
 #Ring
@@ -205,8 +181,6 @@ def ring(ro: int, rs: int != 1) -> 'area':
     :return: area
     """
     area = pi * (pow(ro, 2) - pow(rs, 2))
-    print(_("The area is: "))
-    print(area)
     return area
 
 #Ellipse
@@ -220,6 +194,4 @@ def ellipse(a: int, b: int != 1) -> 'area':
     :return: area
     """
     area = pi * a * b
-    print(_("The area is: "))
-    print(area)
     return area
