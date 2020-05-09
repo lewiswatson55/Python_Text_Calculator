@@ -7,4 +7,5 @@ def whatIsPercent():
 def getPercentage(part, whole):
     return 100 * float(part)/float(whole)
 def getPercentageRN():
-    origin = int(input(""))
+    origin = int(input("What is the number that would be 100%? "))
+    part = int(input("What is the number that you want to convert to percentage (e.g. this number out of the number that would be 100%)? "))
