@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-06 18:51-0400\n"
-"PO-Revision-Date: 2020-05-06 18:51-0400\n"
+"POT-Creation-Date: 2020-05-09 08:41-0400\n"
+"PO-Revision-Date: 2020-05-09 08:41-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: en_CA\n"
@@ -15,107 +15,111 @@ msgstr ""
 "X-Poedit-KeywordsList: _\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: area.py:16 area.py:31 area.py:49 area.py:67 area.py:84 area.py:99
-#: area.py:114 area.py:129 area.py:145 area.py:162 area.py:176 area.py:192
-#: area.py:208 area.py:223
-msgid "The area is: "
-msgstr ""
-
 #: areaInteractive.py:3
 msgid "What length is the side of the triangle? "
 msgstr ""
 
-#: areaInteractive.py:6
-msgid "What length is the base of the triangle? "
+#: areaInteractive.py:4 areaInteractive.py:9 areaInteractive.py:15
+#: areaInteractive.py:21 areaInteractive.py:25 areaInteractive.py:31
+#: areaInteractive.py:37 areaInteractive.py:43 areaInteractive.py:50
+#: areaInteractive.py:55 areaInteractive.py:60 areaInteractive.py:65
+#: areaInteractive.py:71 areaInteractive.py:77
+msgid "The area is: "
 msgstr ""
 
 #: areaInteractive.py:7
+msgid "What length is the base of the triangle? "
+msgstr ""
+
+#: areaInteractive.py:8
 msgid "What length is the height of the triangle? "
 msgstr ""
 
-#: areaInteractive.py:10 areaInteractive.py:15
+#: areaInteractive.py:12 areaInteractive.py:18
 msgid "What is the length of the first side? "
 msgstr ""
 
-#: areaInteractive.py:11 areaInteractive.py:16
+#: areaInteractive.py:13 areaInteractive.py:19
 msgid "what is the length of the second side? "
 msgstr ""
 
-#: areaInteractive.py:12 areaInteractive.py:17
+#: areaInteractive.py:14 areaInteractive.py:20
 msgid "What is the length of the third side? "
 msgstr ""
 
-#: areaInteractive.py:20
+#: areaInteractive.py:24
 msgid "What is the length of the side of the square? "
 msgstr ""
 
-#: areaInteractive.py:24
+#: areaInteractive.py:29
 msgid "What is the length of the rectangle? "
 msgstr ""
 
-#: areaInteractive.py:25
+#: areaInteractive.py:30
 msgid "What is the height of the rectangle? "
 msgstr ""
 
-#: areaInteractive.py:29
+#: areaInteractive.py:35
 msgid "What is the length of the base? "
 msgstr ""
 
-#: areaInteractive.py:30
+#: areaInteractive.py:36
 msgid "What is the height of the shape? "
 msgstr ""
 
-#: areaInteractive.py:34
+#: areaInteractive.py:41
 msgid "What is the length of the first diagonal? "
 msgstr ""
 
-#: areaInteractive.py:35
+#: areaInteractive.py:42
 msgid "What is the length of the 2nd diagonal? "
 msgstr ""
 
-#: areaInteractive.py:39
+#: areaInteractive.py:47
 msgid "What is the length of the 1st set of parallel sides? "
 msgstr ""
 
-#: areaInteractive.py:40
+#: areaInteractive.py:48
 msgid "What is the length of the 2nd set of parallel sides? "
 msgstr ""
 
-#: areaInteractive.py:41
+#: areaInteractive.py:49
 msgid "What is the height of the trapezium? "
 msgstr ""
 
-#: areaInteractive.py:45
+#: areaInteractive.py:54
 msgid "What is the radius of the circle? "
 msgstr ""
 
-#: areaInteractive.py:49
+#: areaInteractive.py:59
 msgid "What is the radius of the semicircle? "
 msgstr ""
 
-#: areaInteractive.py:52
-msgid ""
-"I can't figure out what `a' is for, it is cirsector() in area.py if anyone "
-"can help"
+#: areaInteractive.py:63
+msgid "What is the radius of the circular sector? "
 msgstr ""
 
-#: areaInteractive.py:57
+#: areaInteractive.py:64
+msgid "What is the angle of the circular sector *in degrees*? "
+msgstr ""
+
+#: areaInteractive.py:69
 msgid "What is the radius of the outer circle? "
 msgstr ""
 
-#: areaInteractive.py:58
+#: areaInteractive.py:70
 msgid "What is the radius of the inner circle? "
 msgstr ""
 
-#: areaInteractive.py:62
+#: areaInteractive.py:75
 msgid "What is the length of the major axis? "
 msgstr ""
 
-#: areaInteractive.py:63
+#: areaInteractive.py:76
 msgid "What is the length of the minor axis? "
 msgstr ""
 
-#: areaInteractive.py:65
+#: areaInteractive.py:79
 msgid ""
 "Options:\n"
 "1 - Equilateral triangle\n"
@@ -134,22 +138,56 @@ msgid ""
 "15 - Ellipse"
 msgstr ""
 
-#: areaInteractive.py:82 volInteractive.py:75
+#: areaInteractive.py:96 volInteractive.py:75
 msgid "Please type one: "
 msgstr ""
 
-#: areaInteractive.py:84 volInteractive.py:77
+#: areaInteractive.py:98 volInteractive.py:77
 msgid "Please type an integer"
 msgstr ""
 
-#: areaInteractive.py:86
+#: areaInteractive.py:100
 msgid "I was too lazy to change 7."
 msgstr ""
 
-#: areaInteractive.py:121
+#: fibonacci.py:6
+msgid "Press Control-C to stop."
+msgstr ""
+
+#: fibonacci.py:19
+msgid "Thanks for using Palc's FIBONACCI function!"
+msgstr ""
+
+#: fibonacci.py:21
+msgid "an error occured."
+msgstr ""
+
+#: func.py:3
+msgid "Please enter the first number: "
+msgstr ""
+
+#: func.py:4
+msgid "Please enter the second number: "
+msgstr ""
+
+#: func.py:8
 msgid ""
-"I cannot figure out what variable `a' is for, line 182 in `area.py' if "
-"anyone wants to help"
+"\n"
+"     Current list of commands: multiplication (*), division (/), addition "
+"(+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube "
+"({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm "
+"(log), memory (mem), fibonacci sequence (fib), and convert number systems "
+"(base). Type e to e.\n"
+"     Bugs? Head on over to https://github.com/thetechrobo/support/\n"
+"     To contribute: go to https://github.com/thetechrobo/python-text-"
+"calculator/\n"
+"     "
+msgstr ""
+
+#: func.py:15 func.py:20 func.py:31 func.py:36 func.py:52
+msgid ""
+"\n"
+"That equals..."
 msgstr ""
 
 #: func.py:24
@@ -160,8 +198,128 @@ msgstr ""
 msgid "There was an unknown issue dividing your Numbers..."
 msgstr ""
 
+#: func.py:41
+msgid ""
+"\n"
+"Type the first number (greater): "
+msgstr ""
+
+#: func.py:42
+msgid "Type the second number (smaller): "
+msgstr ""
+
+#: func.py:44 func.py:48
+msgid ""
+"\n"
+"Error!"
+msgstr ""
+
+#: func.py:45
+msgid "Invalid input (code 1)\n"
+msgstr ""
+
+#: func.py:49
+msgid "The second number entered is greater than the first number (code 2)\n"
+msgstr ""
+
+#: func.py:61 func.py:66 func.py:76 func.py:79 func.py:82 func.py:85 func.py:92
+msgid "Type the original number: "
+msgstr ""
+
+#: func.py:73
+msgid "Which type is the Number (ord, binary, octo, or hex): "
+msgstr ""
+
+#: func.py:87
+msgid "That was an invalid answer. Try again."
+msgstr ""
+
+#: func.py:107
+msgid ""
+"What base would you like to use? \n"
+"Currentlysupported: 10 (base 10), e (natural)"
+msgstr ""
+
+#: func.py:109
+msgid "Using base 10"
+msgstr ""
+
+#: func.py:110 func.py:116
+msgid "What is the number? "
+msgstr ""
+
+#: func.py:115
+msgid "Using natural logarithm"
+msgstr ""
+
+#: func.py:121
+msgid "The logarithm you typed is not available."
+msgstr ""
+
+#: func.py:122
+msgid "Try again."
+msgstr ""
+
+#: func.py:125
+msgid ""
+"This is the memory function.\n"
+"It will save a number into a file that can be used later with Palc... Or you "
+"can just read it with a text editor."
+msgstr ""
+
+#: func.py:126
+msgid ""
+"\n"
+"Please enter the number to be saved: "
+msgstr ""
+
+#: func.py:127
+msgid ""
+"What slot would you like to use? (Hint: you can use any integer you want as "
+"long as you remember it)\n"
+"Type: "
+msgstr ""
+
+#: func.py:133
+msgid ""
+"This is the remember function.\n"
+"It will read a number that was previously stored in a file."
+msgstr ""
+
+#: func.py:135
+msgid "What slot number did you use? "
+msgstr ""
+
+#: func.py:137
+msgid "Number: "
+msgstr ""
+
+#: func.py:141
+msgid ""
+"There was an error reading the file. Did you save the number by using the "
+"save function? Did you accidentally rename the file?"
+msgstr ""
+
 #: func.py:148
 msgid "Number to be rooted? "
+msgstr ""
+
+#: func.py:153
+msgid ""
+"Would you like sine or inverse sine? (sin / inverse)\n"
+"Type: "
+msgstr ""
+
+#: func.py:156
+msgid "Sine it is!"
+msgstr ""
+
+#: func.py:157 func.py:164
+msgid "Enter the number: "
+msgstr ""
+
+#: func.py:163
+msgid "Inverse it is!"
 msgstr ""
 
 #: palc.py:42
