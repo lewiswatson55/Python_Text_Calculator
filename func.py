@@ -149,21 +149,26 @@ def cu():
 def fib():
     import runpy
     runpy.run_path(path_name="fibonacci.py")
+    logging.info("user ran fibonacci function")
 def percentage(percent, whole):
     if whole == 0:
+        logging.error("User typed 0 as whole.")
         return (_("Please do not type in a zero as the whole."))
     return (percent * whole) / 100.0
 def whatIsPercent():
     origin = int(input(_("what is the ORIGINAL NUMBER? ")))
     percent = int(input(_("What is the PERCENTAGE? ")))
+    logging.info(("Got percentage RN origin ", origin, " and ", percent))
     print(percentage(percent, origin))
 def getPercentage(part, whole):
     if whole == 0:
+        logging.error("user typed whole zero")
         return (_("Please do not type in a zero as the whole."))
     return 100 * float(part)/float(whole)
 def getPercentageRN():
     origin = int(input(_("What is the number that would be 100%? ")))
     part = int(input(_("What is the number that you want to convert to percentage (e.g. this number out of the number that would be 100%)? ")))
+    logging.info(("Got percentage RN origin ", origin, " and ", part))
     print(getPercentage(part, origin))
 def calculateInterest():
     while True: 
@@ -178,6 +183,7 @@ This calculator wasn't programmed with the ability to track time.
 So, with that out of the way, type the amount we should multiply the interest by (aka the amount of units of time).\nType it: ''')))
         inRealNumbers = percentage(whole=origin, percent=rate)
         number = origin + (inRealNumbers * howMany)
+        logging.info(("INTERESTCALC: origin: ", origin, " rate: ", rate, " how many: ", howMany, " answer: ", number))
         print(_(("The answer is ", number)))
         doItAgain = input("Would you like to do it again (Y/n)? ")
         doItAgain = doItAgain.lower()

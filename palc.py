@@ -210,6 +210,7 @@ Type: ''')))
 width = os.get_terminal_size().columns
 for i in range(0, width):
     print("-", sep="", end="")
+    logging.info(("Printed ", width, "dashes"))
 print(_("Welcome to Palc!".center(width)))
 for i in range(0, width):
     print("-", sep="", end="")
