@@ -181,7 +181,8 @@ def palc():
        elif "fib" in calc:
             print(_("Starting fibonacci sequence. Please wait."))
             fib()
-       elif "percent" in calc:
+#PERCENTAGE
+       elif "percent" in calc: #SOURCE: https://stackoverflow.com/a/5998010/9654083
             whichOne = int(input(_('''1 - Calculate "What is x% of y?"
 2 - Convert a number to percentage.
 Type: ''')))
