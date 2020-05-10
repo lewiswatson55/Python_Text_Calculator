@@ -192,6 +192,8 @@ Type: ''')))
                 getPercentageRN()
             else:
                 print(_("Abort."))
+       elif calc == "wip":
+            interestCalculator()
 #OTHERWISE
        elif calc == "":
             logging.error("User attempted to type nothing as a command")
