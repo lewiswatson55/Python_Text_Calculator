@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-10 08:51-0400\n"
-"PO-Revision-Date: 2020-05-10 08:51-0400\n"
+"POT-Creation-Date: 2020-05-10 09:36-0400\n"
+"PO-Revision-Date: 2020-05-10 09:36-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: en_CA\n"
@@ -176,8 +176,9 @@ msgid ""
 "     Current list of commands: multiplication (*), division (/), addition "
 "(+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube "
 "({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm "
-"(log), memory (mem), fibonacci sequence (fib), percentage (percent), and "
-"convert number systems (base). Type e to e.\n"
+"(log), memory (mem), interest calculator (interest), fibonacci sequence "
+"(fib), percentage (percent), and convert number systems (base). Type e to "
+"e.\n"
 "     Bugs? Head on over to https://github.com/thetechrobo/support/\n"
 "     To contribute: go to https://github.com/thetechrobo/python-text-"
 "calculator/\n"
@@ -326,21 +327,48 @@ msgid ""
 "out of the number that would be 100%)? "
 msgstr ""
 
-#: func.py:169
+#: func.py:170
+msgid "What is the original number? "
+msgstr ""
+
+#: func.py:171
+msgid "What is the rate of interest in percentage (without the percent sign)? "
+msgstr ""
+
+#: func.py:173
+msgid ""
+"How many units of time would you like to calculate? \n"
+"Essentially, one unit of time could be one month, or one decade. It all "
+"depends on what you typed in the rate of interest question: it could be per "
+"year, per decade...we didn't ask.\n"
+"It was up to you to type the correct amount in the rate question.\n"
+"We have no idea what the rate represented: it could have been that rate per "
+"century for all we know.\n"
+"This calculator wasn't programmed with the ability to track time.\n"
+"So, with that out of the way, type the amount we should multiply the "
+"interest by (aka the amount of units of time).\n"
+"Type it: "
+msgstr ""
+
+#: func.py:187
+msgid "OK. Going back..."
+msgstr ""
+
+#: func.py:190
 msgid ""
 "Would you like sine or inverse sine? (sin / inverse)\n"
 "Type: "
 msgstr ""
 
-#: func.py:172
+#: func.py:193
 msgid "Sine it is!"
 msgstr ""
 
-#: func.py:173 func.py:180
+#: func.py:194 func.py:201
 msgid "Enter the number: "
 msgstr ""
 
-#: func.py:179
+#: func.py:200
 msgid "Inverse it is!"
 msgstr ""
 
@@ -411,11 +439,11 @@ msgstr ""
 msgid "Abort."
 msgstr ""
 
-#: palc.py:198 palc.py:201
+#: palc.py:200 palc.py:203
 msgid "Type something!"
 msgstr ""
 
-#: palc.py:204
+#: palc.py:206
 #, python-format
 msgid ""
 "\n"
@@ -424,34 +452,38 @@ msgid ""
 "            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); "
 "sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); "
 "root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); "
-"percent (calculate percentage) and base (convert number system). Sorry for "
-"the inconvenience\n"
+"percent (calculate percentage); interest (interest calculator); and base "
+"(convert number system). Sorry for the inconvenience\n"
 "            "
 msgstr ""
 
-#: palc.py:211
+#: palc.py:213
 msgid "Welcome to Palc!"
 msgstr ""
 
-#: palc.py:218
+#: palc.py:220
 msgid ""
 "\n"
-"Note that you CAN type `exit' instead of the interrupt key"
+"Note that you CAN type `quit' instead of pressing the interrupt key"
 msgstr ""
 
-#: palc.py:221
+#: palc.py:223
 msgid ""
 "\n"
-"Why ^D? Why not just type `exit'?"
+"Why ^D? Why not just type `quit'?"
 msgstr ""
 
-#: palc.py:224
+#: palc.py:226
 msgid ""
 "You typed in an invalid integer or float. Or maybe the program needs "
 "debugging. Either way, it's a pretty big error."
 msgstr ""
 
-#: palc.py:227
+#: palc.py:228
+msgid "Looks like you exited."
+msgstr ""
+
+#: palc.py:231
 msgid "An unknown error occured. For debugging info, see Line 164"
 msgstr ""
 

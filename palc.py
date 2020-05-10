@@ -124,7 +124,7 @@ def palc():
 #EXIT
        elif "quit" in calc:
             logging.info("User exited using `quit' command")
-            e("Looks like you exited.")
+            e()
 #EXPONENTS
        elif "ex" in calc:
             origin = int(input("Original number?"))
@@ -224,6 +224,8 @@ except EOFError: #if ^D
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
     print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
+except SystemExit:
+    print(_("Looks like you exited."))
 except:
     logging.critical("Unknown Error")
     print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
