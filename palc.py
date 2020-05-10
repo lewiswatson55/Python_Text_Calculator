@@ -122,8 +122,8 @@ def palc():
             logging.info(("User cubed number ", cubedNumber, " got result ", (cubedNumber ** 3)))
             print()
 #EXIT
-       elif "exit" in calc:
-            logging.info("User exited using `exit' command")
+       elif "quit" in calc:
+            logging.info("User exited using `quit' command")
             e("Looks like you exited.")
 #EXPONENTS
        elif "ex" in calc:
@@ -192,8 +192,8 @@ Type: ''')))
                 getPercentageRN()
             else:
                 print(_("Abort."))
-       elif calc == "wip":
-            interestCalculator()
+       elif calc == "interest":
+            calculateInterest()
 #OTHERWISE
        elif calc == "":
             logging.error("User attempted to type nothing as a command")
@@ -217,14 +217,14 @@ try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
     logging.info("KeyboardInterrupt")
-    e(_("\nNote that you CAN type `exit' instead of the interrupt key"))
+    e(_("\nNote that you CAN type `quit' instead of pressing the interrupt key"))
 except EOFError: #if ^D
     logging.info("EOFError")
-    e(_("\nWhy ^D? Why not just type `exit'?"))
+    e(_("\nWhy ^D? Why not just type `quit'?"))
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
     print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
-#except:
-#    logging.critical("Unknown Error")
-#    print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
+except:
+    logging.critical("Unknown Error")
+    print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
 #EOF

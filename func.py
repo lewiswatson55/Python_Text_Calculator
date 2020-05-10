@@ -165,6 +165,20 @@ def getPercentageRN():
     origin = int(input(_("What is the number that would be 100%? ")))
     part = int(input(_("What is the number that you want to convert to percentage (e.g. this number out of the number that would be 100%)? ")))
     print(getPercentage(part, origin))
+def calculateInterest():
+    while True:
+        origin = int(input(_("What is the original number? ")))
+        rate = float(input(_("What is the rate of interest in percentage (without the percent sign)? ")))
+        inRealNumbers = percentage(whole=origin, percent=rate)
+        number = origin + inRealNumbers
+        print(_(("The answer is ", number)))
+        doItAgain = input("Would you like to do it again (Y/n)? ")
+        doItAgain = doItAgain.lower()
+        if doItAgain == "y":
+            pass
+        else:
+            print(_("OK. Going back..."))
+            break
 def cosine():
     which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType: "))
     which = which.lower()
