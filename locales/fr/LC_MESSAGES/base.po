@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
 "POT-Creation-Date: 2020-05-10 09:36-0400\n"
-"PO-Revision-Date: 2020-05-10 09:46-0400\n"
+"PO-Revision-Date: 2020-05-10 09:53-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -400,15 +400,17 @@ msgstr ""
 "Une unité de temps peut être une mois, ou 10 ans. Il dépend tout sur quoi tu "
 "as tapez dans le taux de l'intérêt : ce pouvait représenter une mois, une "
 "année...on n'a pas demandé.\n"
-"C'était pour vous pour tapez le reponse correcte. \n"
+"C'était pour vous pour tapez le réponse correcte. \n"
 "On ne sais pas du tous quoi le taux a représenté : ce pouvait être cette "
 "taux par siècle pour tous qu'on savais.\n"
 "Cette calculatrice n'étais pas donne l'abilité pour savoir le temps.\n"
-"Donc, avec ça "
+"Donc, avec ça hors du chemin, tappe le montant que on dois multiplier "
+"l'intérêt par (aka le montant de unités de temps).\n"
+"Tappe le numero : "
 
 #: func.py:187
 msgid "OK. Going back..."
-msgstr ""
+msgstr "D'accord. Je retourne..."
 
 #: func.py:190
 msgid ""
@@ -511,7 +513,7 @@ msgstr "Tappez une chose !"
 
 # don't know why there's an error but what the hell. it works.
 #: palc.py:206
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "\n"
 "            I don't understand your request. Here are the currently "
@@ -524,14 +526,14 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            Je ne sais pas quoi vous voulez faire. Ca c'est une liste de les "
+"            Je ne sais pas quoi vous voulez faire. Ça c'est une liste de les "
 "calcules supportes :\n"
 "             * ou x pour la multiplication; -, min, ou sub pour la "
-"subtraction, + ou add pour l'addition; sq ou [] pour carre; ar, area, ou # "
-"pour l'aire; vol pour la volume; {} pour le cube; ex pour les exponents; "
-"root pour les racines; log pour le logarithme; fib pour l'equation "
-"fibonacci; mem pour la memoire; et base pour\n"
-"            converter les numeros a une autre systeme. Desole : /\n"
+"soustraction, + ou add pour l'addition; sq ou [] pour carre; ar ou # pour "
+"l'aire; vol pour le volume; {} pour le cube; ex pour les exponents; root "
+"pour les racines; log pour le logarithme; fib pour l'équation fibonacci; mem "
+"pour la mémoire; et base pour\n"
+"            convertir les numéros a une autre système. Désolé : /\n"
 "            "
 
 #: palc.py:213
@@ -539,22 +541,20 @@ msgid "Welcome to Palc!"
 msgstr "Bienvenue au Palc !"
 
 #: palc.py:220
-#, fuzzy
 msgid ""
 "\n"
 "Note that you CAN type `quit' instead of pressing the interrupt key"
 msgstr ""
 "\n"
-"Tu peux tappez `exit' plutot que ^C... "
+"Tu peux tappez `quit' plutot que ^C... "
 
 #: palc.py:223
-#, fuzzy
 msgid ""
 "\n"
 "Why ^D? Why not just type `quit'?"
 msgstr ""
 "\n"
-"Pourquoi ^D ? Pourquoi pas juste `exit' ?"
+"Pourquoi ^D ? Pourquoi pas juste `quit' ?"
 
 #: palc.py:226
 msgid ""
@@ -565,7 +565,7 @@ msgstr ""
 
 #: palc.py:228
 msgid "Looks like you exited."
-msgstr ""
+msgstr "Tu as quitter Palc."
 
 # i got lazy
 #: palc.py:231
