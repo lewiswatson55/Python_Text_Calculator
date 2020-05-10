@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-10 08:24-0400\n"
-"PO-Revision-Date: 2020-05-10 08:29-0400\n"
+"POT-Creation-Date: 2020-05-10 08:50-0400\n"
+"PO-Revision-Date: 2020-05-10 08:50-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -349,19 +349,23 @@ msgstr ""
 msgid "Number to be rooted? "
 msgstr "Quelle est la nombre ? "
 
-#: func.py:155
+#: func.py:154 func.py:162
+msgid "Please do not type in a zero as the whole."
+msgstr ""
+
+#: func.py:157
 msgid "what is the ORIGINAL NUMBER? "
 msgstr "Quelle est le nombre original ? "
 
-#: func.py:156
+#: func.py:158
 msgid "What is the PERCENTAGE? "
 msgstr "Qu'est-ce que le POURCENTAGE ? "
 
-#: func.py:161
+#: func.py:165
 msgid "What is the number that would be 100%? "
 msgstr "Quelle est la nombre qui serait 100 % ? "
 
-#: func.py:162
+#: func.py:166
 msgid ""
 "What is the number that you want to convert to percentage (e.g. this number "
 "out of the number that would be 100%)? "
@@ -369,21 +373,21 @@ msgstr ""
 "Quel est le nombre que vous souhaitez convertir en pourcentage (par exemple, "
 "ce nombre sur le nombre qui serait 100%) ? "
 
-#: func.py:165
+#: func.py:169
 msgid ""
 "Would you like sine or inverse sine? (sin / inverse)\n"
 "Type: "
 msgstr "WIP"
 
-#: func.py:168
+#: func.py:172
 msgid "Sine it is!"
 msgstr "J'utilise cosine ! "
 
-#: func.py:169 func.py:176
+#: func.py:173 func.py:180
 msgid "Enter the number: "
 msgstr "Tappez le nombre : "
 
-#: func.py:175
+#: func.py:179
 msgid "Inverse it is!"
 msgstr "J'utilise l'inverse cosine ! "
 
@@ -449,7 +453,7 @@ msgstr "Tu n'a pas tappez une reponse valide."
 msgid "Starting fibonacci sequence. Please wait."
 msgstr "Je commence le séquence Fibonacci. Veuillez attendre. "
 
-#: palc.py:185
+#: palc.py:186
 #, python-format
 msgid ""
 "1 - Calculate \"What is x% of y?\"\n"
@@ -460,16 +464,16 @@ msgstr ""
 "2 - Convertir une nombre au pourcentage.\n"
 "Tappez : "
 
-#: palc.py:193
+#: palc.py:194
 msgid "Abort."
 msgstr "Tu n'a pas tappez une reponse valide. Abandon."
 
-#: palc.py:197 palc.py:200
+#: palc.py:198 palc.py:201
 msgid "Type something!"
 msgstr "Tappez une chose !"
 
 # don't know why there's an error but what the hell. it works.
-#: palc.py:203
+#: palc.py:204
 #, python-format
 msgid ""
 "\n"
@@ -493,11 +497,11 @@ msgstr ""
 "            converter les numeros a une autre systeme. Desole : /\n"
 "            "
 
-#: palc.py:210
+#: palc.py:211
 msgid "Welcome to Palc!"
 msgstr "Bienvenue au Palc !"
 
-#: palc.py:217
+#: palc.py:218
 msgid ""
 "\n"
 "Note that you CAN type `exit' instead of the interrupt key"
@@ -505,7 +509,7 @@ msgstr ""
 "\n"
 "Tu peux tappez `exit' plutot que ^C... "
 
-#: palc.py:220
+#: palc.py:221
 msgid ""
 "\n"
 "Why ^D? Why not just type `exit'?"
@@ -513,7 +517,7 @@ msgstr ""
 "\n"
 "Pourquoi ^D ? Pourquoi pas juste `exit' ?"
 
-#: palc.py:223
+#: palc.py:224
 msgid ""
 "You typed in an invalid integer or float. Or maybe the program needs "
 "debugging. Either way, it's a pretty big error."
@@ -521,7 +525,7 @@ msgstr ""
 "Erreure: Tu as tappez une nombre invalide, ou le logiciel a une probleme."
 
 # i got lazy
-#: palc.py:226
+#: palc.py:227
 msgid "An unknown error occured. For debugging info, see Line 164"
 msgstr "Erreure critical. "
 
