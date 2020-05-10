@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-09 08:41-0400\n"
-"PO-Revision-Date: 2020-05-09 08:41-0400\n"
+"POT-Creation-Date: 2020-05-10 08:23-0400\n"
+"PO-Revision-Date: 2020-05-10 08:24-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: en_CA\n"
@@ -176,8 +176,8 @@ msgid ""
 "     Current list of commands: multiplication (*), division (/), addition "
 "(+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube "
 "({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm "
-"(log), memory (mem), fibonacci sequence (fib), and convert number systems "
-"(base). Type e to e.\n"
+"(log), memory (mem), fibonacci sequence (fib), percentage (percent), and "
+"convert number systems (base). Type e to e.\n"
 "     Bugs? Head on over to https://github.com/thetechrobo/support/\n"
 "     To contribute: go to https://github.com/thetechrobo/python-text-"
 "calculator/\n"
@@ -304,21 +304,39 @@ msgstr ""
 msgid "Number to be rooted? "
 msgstr ""
 
-#: func.py:153
+#: func.py:155
+msgid "what is the ORIGINAL NUMBER? "
+msgstr ""
+
+#: func.py:156
+msgid "What is the PERCENTAGE? "
+msgstr ""
+
+#: func.py:161
+msgid "What is the number that would be 100%? "
+msgstr ""
+
+#: func.py:162
+msgid ""
+"What is the number that you want to convert to percentage (e.g. this number "
+"out of the number that would be 100%)? "
+msgstr ""
+
+#: func.py:165
 msgid ""
 "Would you like sine or inverse sine? (sin / inverse)\n"
 "Type: "
 msgstr ""
 
-#: func.py:156
+#: func.py:168
 msgid "Sine it is!"
 msgstr ""
 
-#: func.py:157 func.py:164
+#: func.py:169 func.py:176
 msgid "Enter the number: "
 msgstr ""
 
-#: func.py:163
+#: func.py:175
 msgid "Inverse it is!"
 msgstr ""
 
@@ -373,11 +391,27 @@ msgid ""
 "Abort."
 msgstr ""
 
-#: palc.py:187 palc.py:190
-msgid "Type something!"
+#: palc.py:182
+msgid "Starting fibonacci sequence. Please wait."
+msgstr ""
+
+#: palc.py:185
+#, python-format
+msgid ""
+"1 - Calculate \"What is x% of y?\"\n"
+"2 - Convert a number to percentage.\n"
+"Type: "
 msgstr ""
 
 #: palc.py:193
+msgid "Abort."
+msgstr ""
+
+#: palc.py:197 palc.py:200
+msgid "Type something!"
+msgstr ""
+
+#: palc.py:203
 #, python-format
 msgid ""
 "\n"
@@ -385,34 +419,35 @@ msgid ""
 "supported calculations:\n"
 "            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); "
 "sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); "
-"root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); and "
-"base (convert number system). Sorry for the inconvenience\n"
+"root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); "
+"percent (calculate percentage) and base (convert number system). Sorry for "
+"the inconvenience\n"
 "            "
 msgstr ""
 
-#: palc.py:200
+#: palc.py:210
 msgid "Welcome to Palc!"
 msgstr ""
 
-#: palc.py:207
+#: palc.py:217
 msgid ""
 "\n"
 "Note that you CAN type `exit' instead of the interrupt key"
 msgstr ""
 
-#: palc.py:210
+#: palc.py:220
 msgid ""
 "\n"
 "Why ^D? Why not just type `exit'?"
 msgstr ""
 
-#: palc.py:213
+#: palc.py:223
 msgid ""
 "You typed in an invalid integer or float. Or maybe the program needs "
 "debugging. Either way, it's a pretty big error."
 msgstr ""
 
-#: palc.py:216
+#: palc.py:226
 msgid "An unknown error occured. For debugging info, see Line 164"
 msgstr ""
 
