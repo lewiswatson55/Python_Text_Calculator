@@ -25,5 +25,5 @@ Bug reports and questions belong at my [Support](https://github.com/thetechrobo/
 Thank you for your cooperation -- I get too much spam :wink:
 
 
-###### Current Release: v.0.6.6-stable
-###### Latest preview: v.0.7-omega.1
+###### Current Release: v.0.7.1-stable
+###### There are currently no previews available for testing
