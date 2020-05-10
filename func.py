@@ -150,12 +150,16 @@ def fib():
     import runpy
     runpy.run_path(path_name="fibonacci.py")
 def percentage(percent, whole):
+    if whole == 0:
+        return (_("Please do not type in a zero as the whole."))
     return (percent * whole) / 100.0
 def whatIsPercent():
     origin = int(input(_("what is the ORIGINAL NUMBER? ")))
     percent = int(input(_("What is the PERCENTAGE? ")))
     print(percentage(percent, origin))
 def getPercentage(part, whole):
+    if whole == 0:
+        return (_("Please do not type in a zero as the whole."))
     return 100 * float(part)/float(whole)
 def getPercentageRN():
     origin = int(input(_("What is the number that would be 100%? ")))
