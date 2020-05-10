@@ -183,8 +183,8 @@ def palc():
             fib()
        elif "percent" in calc:
             whichOne = int(input(_('''1 - Calculate "What is x% of y?"
-            2 - Convert a number to percentage.
-            Type: ''')))
+2 - Convert a number to percentage.
+Type: ''')))
             if whichOne == 1:
                 whatIsPercent()
             elif whichOne == 2:
