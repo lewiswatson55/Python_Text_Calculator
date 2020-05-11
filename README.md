@@ -1,6 +1,8 @@
-# python-text-calculator
+# python-text-calculator (Development Branch)
 
 **Please, if you make a pull request add your username to CONTRIBUTORS.md**
+
+**THIS BRANCH CONTAINS BLEEDING-EDGE, BARELY TESTED CODE. USE AT OWN RISK!!!**
 
 [![CodeFactor](https://www.codefactor.io/repository/github/thetechrobo/python-text-calculator/badge/master)](https://www.codefactor.io/repository/github/thetechrobo/python-text-calculator/overview/master)
 
@@ -23,7 +25,3 @@ Bug reports and questions belong at my [Support](https://github.com/thetechrobo/
 
 **The only time you should ever use my email is if you need to contact me personally.** Even though it sounds obvious.
 Thank you for your cooperation -- I get too much spam :wink:
-
-
-###### Current Release: v.0.7.1-stable
-###### There are currently no previews available for testing
