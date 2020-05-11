@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-11 15:50-0400\n"
-"PO-Revision-Date: 2020-05-11 15:50-0400\n"
+"POT-Creation-Date: 2020-05-11 16:02-0400\n"
+"PO-Revision-Date: 2020-05-11 16:02-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -414,21 +414,26 @@ msgstr "D'accord. Je retourne..."
 
 #: func.py:196
 msgid ""
-"1 - Ontario\n"
-"2 - Quebec\n"
-"3 - Custom Tax\n"
+"1 - Ontario Sales Tax\n"
+"2 - Quebec Sales Tax\n"
+"3 - Yukon, Northwest Territories, Nunavut, and Alberta Sales Tax\n"
+"4 - BC / Manitoba Sales Tax\n"
+"5 - Custom Tax\n"
 "Choose one: "
 msgstr ""
-"1 - Ontario\n"
-"2 - Québec\n"
-"3 - Taxe customisé\n"
-"Chosis : "
+"1 - Taxe de vente de l'Ontario \n"
+"2 - Taxe de vente du Québec \n"
+"3 - Taxe de vente du Yukon, les Territoires du Nord-Ouest, du Nunavut et de "
+"l'Alberta \n"
+"4 - Taxe de vente de la Colombie-Britannique / Manitoba \n"
+"5 - Taxe customizé \n"
+"Choisissez-en une:"
 
-#: func.py:202 func.py:210
+#: func.py:203 func.py:210 func.py:217 func.py:224
 msgid "What is the original price (before tax)? "
 msgstr "Quelle est le prix original (sans taxe) ? "
 
-#: func.py:207 func.py:215 func.py:221
+#: func.py:208 func.py:215 func.py:222 func.py:229 func.py:235
 #, python-format
 msgid ""
 "After tax, the price is: \n"
@@ -437,35 +442,35 @@ msgstr ""
 "Après qu'on ajoute taxe, le prix est : \n"
 "%s"
 
-#: func.py:217
+#: func.py:231
 msgid "OK, enter the original price: "
 msgstr "D'accord, tappez le prix original : "
 
-#: func.py:218
+#: func.py:232
 msgid "Now enter the tax percentage without the percent sign: "
 msgstr ""
 "Quel est le montant de taxe en pourcentage (sans le signe pourcentage)? "
 
-#: func.py:223
+#: func.py:237
 #, fuzzy
 msgid "You did not type answer. Abort."
 msgstr "Tu n'a pas tappez une reponse valide."
 
-#: func.py:225
+#: func.py:239
 msgid ""
 "Would you like sine or inverse sine? (sin / inverse)\n"
 "Type: "
 msgstr "WIP"
 
-#: func.py:228
+#: func.py:242
 msgid "Sine it is!"
 msgstr "J'utilise cosine ! "
 
-#: func.py:229 func.py:236
+#: func.py:243 func.py:250
 msgid "Enter the number: "
 msgstr "Tappez le nombre : "
 
-#: func.py:235
+#: func.py:249
 msgid "Inverse it is!"
 msgstr "J'utilise l'inverse cosine ! "
 
@@ -701,6 +706,17 @@ msgstr "Desole, ce n'etais pas une option. >:)"
 #: volume.py:144 volume.py:157 volume.py:170 volume.py:183
 msgid "The volume is: "
 msgstr "La reponse est : "
+
+#~ msgid ""
+#~ "1 - Ontario\n"
+#~ "2 - Quebec\n"
+#~ "3 - Custom Tax\n"
+#~ "Choose one: "
+#~ msgstr ""
+#~ "1 - Ontario\n"
+#~ "2 - Québec\n"
+#~ "3 - Taxe customisé\n"
+#~ "Chosis : "
 
 #~ msgid ""
 #~ "You typed in an invalid integer or float. Or maybe the program needs "
