@@ -27,3 +27,4 @@ Thank you for your cooperation -- I get too much spam :wink:
 
 ###### Current Release: v.0.7.1-stable
 ###### There are currently no previews available for testing
+###### Current Feature-Only Release: v.0.8-feature1
