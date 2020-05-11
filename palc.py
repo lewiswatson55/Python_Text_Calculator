@@ -104,6 +104,9 @@ def palc():
             mod()
        elif "mod" in calc:
             mod()
+#TAX
+       elif "tax" in calc:
+            taxCalc()
 #AREA
        elif "ar" in calc:
             area()
@@ -195,9 +198,6 @@ Type: ''')))
 #INTEREST
        elif "interest" in calc:
             calculateInterest()
-#TAX
-       elif "tax" in calc:
-            taxCalc()
 #OTHERWISE
        elif calc == "":
             logging.error("User attempted to type nothing as a command")
