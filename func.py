@@ -193,7 +193,7 @@ So, with that out of the way, type the amount we should multiply the interest by
             print(_("OK. Going back..."))
             break
 def taxCalc():
-    whatPlace = int(input(_(""""1 - Ontario
+    whatPlace = int(input(_("""1 - Ontario
 2 - Custom Tax
 Choose one: """)))
     if whatPlace == 1:
@@ -207,8 +207,8 @@ Choose one: """)))
             newPrice = theSalesTax + originPrice
             print(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 2:
-        percent = float(input(_("OK, enter a tax percent without the percent sign: ")))
-        originPrice = float(input(_("Enter the original price: ")))
+        originPrice = float(input(_("OK, enter the original price: ")))
+        percent = float(input(_("Now enter the tax percentage without the percent sign: ")))
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
         print(_("After tax, the price is: \n%s" % newPrice))
