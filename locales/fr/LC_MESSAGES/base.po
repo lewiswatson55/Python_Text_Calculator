@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-10 09:36-0400\n"
-"PO-Revision-Date: 2020-05-10 09:53-0400\n"
+"POT-Creation-Date: 2020-05-10 10:29-0400\n"
+"PO-Revision-Date: 2020-05-10 10:30-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -350,23 +350,23 @@ msgstr ""
 msgid "Number to be rooted? "
 msgstr "Quelle est la nombre ? "
 
-#: func.py:154 func.py:162
+#: func.py:156 func.py:166
 msgid "Please do not type in a zero as the whole."
 msgstr "N'écrivez pas une zero pour l'entier."
 
-#: func.py:157
+#: func.py:159
 msgid "what is the ORIGINAL NUMBER? "
 msgstr "Quelle est le nombre original ? "
 
-#: func.py:158
+#: func.py:160
 msgid "What is the PERCENTAGE? "
 msgstr "Qu'est-ce que le POURCENTAGE ? "
 
-#: func.py:165
+#: func.py:169
 msgid "What is the number that would be 100%? "
 msgstr "Quelle est la nombre qui serait 100 % ? "
 
-#: func.py:166
+#: func.py:170
 msgid ""
 "What is the number that you want to convert to percentage (e.g. this number "
 "out of the number that would be 100%)? "
@@ -374,15 +374,15 @@ msgstr ""
 "Quel est le nombre que vous souhaitez convertir en pourcentage (par exemple, "
 "ce nombre sur le nombre qui serait 100%) ? "
 
-#: func.py:170
+#: func.py:175
 msgid "What is the original number? "
 msgstr "Quelle est le nombre original ? "
 
-#: func.py:171
+#: func.py:176
 msgid "What is the rate of interest in percentage (without the percent sign)? "
 msgstr "Quel est le taux d'intérêt en pourcentage (sans le signe pourcentage)?"
 
-#: func.py:173
+#: func.py:178
 msgid ""
 "How many units of time would you like to calculate? \n"
 "Essentially, one unit of time could be one month, or one decade. It all "
@@ -408,25 +408,25 @@ msgstr ""
 "l'intérêt par (aka le montant de unités de temps).\n"
 "Tappe le numero : "
 
-#: func.py:187
+#: func.py:193
 msgid "OK. Going back..."
 msgstr "D'accord. Je retourne..."
 
-#: func.py:190
+#: func.py:196
 msgid ""
 "Would you like sine or inverse sine? (sin / inverse)\n"
 "Type: "
 msgstr "WIP"
 
-#: func.py:193
+#: func.py:199
 msgid "Sine it is!"
 msgstr "J'utilise cosine ! "
 
-#: func.py:194 func.py:201
+#: func.py:200 func.py:207
 msgid "Enter the number: "
 msgstr "Tappez le nombre : "
 
-#: func.py:200
+#: func.py:206
 msgid "Inverse it is!"
 msgstr "J'utilise l'inverse cosine ! "
 
@@ -536,11 +536,11 @@ msgstr ""
 "            convertir les numéros a une autre système. Désolé : /\n"
 "            "
 
-#: palc.py:213
+#: palc.py:214
 msgid "Welcome to Palc!"
 msgstr "Bienvenue au Palc !"
 
-#: palc.py:220
+#: palc.py:221
 msgid ""
 "\n"
 "Note that you CAN type `quit' instead of pressing the interrupt key"
@@ -548,7 +548,7 @@ msgstr ""
 "\n"
 "Tu peux tappez `quit' plutot que ^C... "
 
-#: palc.py:223
+#: palc.py:224
 msgid ""
 "\n"
 "Why ^D? Why not just type `quit'?"
@@ -556,19 +556,19 @@ msgstr ""
 "\n"
 "Pourquoi ^D ? Pourquoi pas juste `quit' ?"
 
-#: palc.py:226
+#: palc.py:227
 msgid ""
 "You typed in an invalid integer or float. Or maybe the program needs "
 "debugging. Either way, it's a pretty big error."
 msgstr ""
 "Erreure: Tu as tappez une nombre invalide, ou le logiciel a une probleme."
 
-#: palc.py:228
+#: palc.py:229
 msgid "Looks like you exited."
 msgstr "Tu as quitter Palc."
 
 # i got lazy
-#: palc.py:231
+#: palc.py:232
 msgid "An unknown error occured. For debugging info, see Line 164"
 msgstr "Erreure critical. "
 
