@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-10 09:36-0400\n"
-"PO-Revision-Date: 2020-05-10 09:36-0400\n"
+"POT-Creation-Date: 2020-05-11 13:08-0400\n"
+"PO-Revision-Date: 2020-05-11 13:08-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: en_CA\n"
@@ -175,10 +175,10 @@ msgid ""
 "\n"
 "     Current list of commands: multiplication (*), division (/), addition "
 "(+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube "
-"({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm "
-"(log), memory (mem), interest calculator (interest), fibonacci sequence "
-"(fib), percentage (percent), and convert number systems (base). Type e to "
-"e.\n"
+"({}), cube twice ({2}), exponents (power), root (root), equals (=), "
+"logarithm (log), memory (mem), interest calculator (interest), fibonacci "
+"sequence (fib), percentage (percent), and convert number systems (base). "
+"Type e to e.\n"
 "     Bugs? Head on over to https://github.com/thetechrobo/support/\n"
 "     To contribute: go to https://github.com/thetechrobo/python-text-"
 "calculator/\n"
@@ -305,37 +305,37 @@ msgstr ""
 msgid "Number to be rooted? "
 msgstr ""
 
-#: func.py:154 func.py:162
+#: func.py:156 func.py:166
 msgid "Please do not type in a zero as the whole."
 msgstr ""
 
-#: func.py:157
+#: func.py:159
 msgid "what is the ORIGINAL NUMBER? "
 msgstr ""
 
-#: func.py:158
+#: func.py:160
 msgid "What is the PERCENTAGE? "
 msgstr ""
 
-#: func.py:165
+#: func.py:169
 msgid "What is the number that would be 100%? "
 msgstr ""
 
-#: func.py:166
+#: func.py:170
 msgid ""
 "What is the number that you want to convert to percentage (e.g. this number "
 "out of the number that would be 100%)? "
 msgstr ""
 
-#: func.py:170
+#: func.py:175
 msgid "What is the original number? "
 msgstr ""
 
-#: func.py:171
+#: func.py:176
 msgid "What is the rate of interest in percentage (without the percent sign)? "
 msgstr ""
 
-#: func.py:173
+#: func.py:178
 msgid ""
 "How many units of time would you like to calculate? \n"
 "Essentially, one unit of time could be one month, or one decade. It all "
@@ -350,25 +350,51 @@ msgid ""
 "Type it: "
 msgstr ""
 
-#: func.py:187
+#: func.py:193
 msgid "OK. Going back..."
 msgstr ""
 
-#: func.py:190
+#: func.py:196
+msgid ""
+"1 - Ontario\n"
+"2 - Custom Tax\n"
+"Choose one: "
+msgstr ""
+
+#: func.py:204
+msgid "What is the original price (before tax)? "
+msgstr ""
+
+#: func.py:208 func.py:214
+#, python-format
+msgid ""
+"After tax, the price is: \n"
+"%s"
+msgstr ""
+
+#: func.py:210
+msgid "OK, enter the original price: "
+msgstr ""
+
+#: func.py:211
+msgid "Now enter the tax percentage without the percent sign: "
+msgstr ""
+
+#: func.py:216
 msgid ""
 "Would you like sine or inverse sine? (sin / inverse)\n"
 "Type: "
 msgstr ""
 
-#: func.py:193
+#: func.py:219
 msgid "Sine it is!"
 msgstr ""
 
-#: func.py:194 func.py:201
+#: func.py:220 func.py:227
 msgid "Enter the number: "
 msgstr ""
 
-#: func.py:200
+#: func.py:226
 msgid "Inverse it is!"
 msgstr ""
 
@@ -392,42 +418,42 @@ msgid ""
 "Type: "
 msgstr ""
 
-#: palc.py:78 palc.py:82
+#: palc.py:81 palc.py:85
 msgid "Number? "
 msgstr ""
 
-#: palc.py:136
+#: palc.py:144
 msgid "That feature was discontinued."
 msgstr ""
 
-#: palc.py:143
+#: palc.py:151
 msgid "That equals.....\n"
 msgstr ""
 
-#: palc.py:148
+#: palc.py:156
 msgid ""
 "Currently I don't support the root you chose. Hopefully this will change :)"
 msgstr ""
 
-#: palc.py:154
+#: palc.py:162
 msgid "=42 -- the answer to life, the universe, and everything"
 msgstr ""
 
-#: palc.py:165
+#: palc.py:173
 msgid "Type in the number to ord: "
 msgstr ""
 
-#: palc.py:178
+#: palc.py:186
 msgid ""
 "You did not type an answer.\n"
 "Abort."
 msgstr ""
 
-#: palc.py:182
+#: palc.py:190
 msgid "Starting fibonacci sequence. Please wait."
 msgstr ""
 
-#: palc.py:186
+#: palc.py:194
 #, python-format
 msgid ""
 "1 - Calculate \"What is x% of y?\"\n"
@@ -435,55 +461,55 @@ msgid ""
 "Type: "
 msgstr ""
 
-#: palc.py:194
+#: palc.py:202
 msgid "Abort."
 msgstr ""
 
-#: palc.py:200 palc.py:203
+#: palc.py:209 palc.py:212
 msgid "Type something!"
 msgstr ""
 
-#: palc.py:206
+#: palc.py:215
 #, python-format
 msgid ""
 "\n"
 "            I don't understand your request. Here are the currently "
 "supported calculations:\n"
 "            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); "
-"sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); "
-"root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); "
-"percent (calculate percentage); interest (interest calculator); and base "
-"(convert number system). Sorry for the inconvenience\n"
+"sq or [] (square); ar or # (area); vol (volume); {} (cube); power (exponents/"
+"power); root (roots); = (equals); fib (fibonacci) log (logarithm); mem "
+"(memory); percent (calculate percentage); interest (interest calculator); "
+"and base (convert number system). Sorry for the inconvenience\n"
 "            "
 msgstr ""
 
-#: palc.py:213
+#: palc.py:223
 msgid "Welcome to Palc!"
 msgstr ""
 
-#: palc.py:220
+#: palc.py:230
 msgid ""
 "\n"
 "Note that you CAN type `quit' instead of pressing the interrupt key"
 msgstr ""
 
-#: palc.py:223
+#: palc.py:233
 msgid ""
 "\n"
 "Why ^D? Why not just type `quit'?"
 msgstr ""
 
-#: palc.py:226
+#: palc.py:236
 msgid ""
 "You typed in an invalid integer or float. Or maybe the program needs "
 "debugging. Either way, it's a pretty big error."
 msgstr ""
 
-#: palc.py:228
+#: palc.py:238
 msgid "Looks like you exited."
 msgstr ""
 
-#: palc.py:231
+#: palc.py:241
 msgid "An unknown error occured. For debugging info, see Line 164"
 msgstr ""
 
