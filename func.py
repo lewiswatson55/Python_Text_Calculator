@@ -209,7 +209,16 @@ Choose one: """)))
             logging.info(("User used Ontarian Sales Tax 13 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
             print(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 2:
-        logging.info("User used Quebec sales tax before it was ready")
+        whatTax = input("Which tax? (Currently available: Sales)")
+        whatTax = whatTax.lower()
+        if whatTax == "sales":
+            print("Sales Tax it is!")
+            originPrice = int(input(_("What is the original price (before tax)? ")))
+            percent = 14.975
+            theSalesTax = percentage(percent, originPrice)
+            newPrice = theSalesTax + originPrice
+            logging.info(("User used Quebec Sales Tax 14.975 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+            print(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 3:
         originPrice = float(input(_("OK, enter the original price: ")))
         percent = float(input(_("Now enter the tax percentage without the percent sign: ")))
