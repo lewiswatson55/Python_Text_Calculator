@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-11 15:47-0400\n"
-"PO-Revision-Date: 2020-05-11 15:47-0400\n"
+"POT-Creation-Date: 2020-05-11 15:50-0400\n"
+"PO-Revision-Date: 2020-05-11 15:50-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -424,11 +424,11 @@ msgstr ""
 "3 - Taxe customisé\n"
 "Chosis : "
 
-#: func.py:205 func.py:216
+#: func.py:202 func.py:210
 msgid "What is the original price (before tax)? "
 msgstr "Quelle est le prix original (sans taxe) ? "
 
-#: func.py:210 func.py:221 func.py:227
+#: func.py:207 func.py:215 func.py:221
 #, python-format
 msgid ""
 "After tax, the price is: \n"
@@ -437,30 +437,35 @@ msgstr ""
 "Après qu'on ajoute taxe, le prix est : \n"
 "%s"
 
-#: func.py:223
+#: func.py:217
 msgid "OK, enter the original price: "
 msgstr "D'accord, tappez le prix original : "
 
-#: func.py:224
+#: func.py:218
 msgid "Now enter the tax percentage without the percent sign: "
 msgstr ""
 "Quel est le montant de taxe en pourcentage (sans le signe pourcentage)? "
 
-#: func.py:231
+#: func.py:223
+#, fuzzy
+msgid "You did not type answer. Abort."
+msgstr "Tu n'a pas tappez une reponse valide."
+
+#: func.py:225
 msgid ""
 "Would you like sine or inverse sine? (sin / inverse)\n"
 "Type: "
 msgstr "WIP"
 
-#: func.py:234
+#: func.py:228
 msgid "Sine it is!"
 msgstr "J'utilise cosine ! "
 
-#: func.py:235 func.py:242
+#: func.py:229 func.py:236
 msgid "Enter the number: "
 msgstr "Tappez le nombre : "
 
-#: func.py:241
+#: func.py:235
 msgid "Inverse it is!"
 msgstr "J'utilise l'inverse cosine ! "
 
