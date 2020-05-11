@@ -193,8 +193,8 @@ So, with that out of the way, type the amount we should multiply the interest by
             print(_("OK. Going back..."))
             break
 def taxCalc():
-    whatPlace = int(input(_("""1 - Ontario
-2 - Quebec
+    whatPlace = int(input(_("""1 - Ontario Sales Tax
+2 - Quebec Sales Tax
 3 - Custom Tax
 Choose one: """)))
     if whatPlace == 1:
