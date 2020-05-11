@@ -195,10 +195,11 @@ So, with that out of the way, type the amount we should multiply the interest by
 def taxCalc():
     whatPlace = int(input(_("""1 - Ontario Sales Tax
 2 - Quebec Sales Tax
-3 - Custom Tax
+3 - Yukon, Northwest Territories, Nunavut, and Alberta Sales Tax
+4 - BC / Manitoba Sales Tax
+5 - Custom Tax
 Choose one: """)))
     if whatPlace == 1:
-        print("Sales Tax it is!")
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 13.0
         theSalesTax = percentage(percent, originPrice)
@@ -206,7 +207,6 @@ Choose one: """)))
         logging.info(("User used Ontarian Sales Tax 13 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
         print(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 2:
-        print("Sales Tax it is!")
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 14.975
         theSalesTax = percentage(percent, originPrice)
@@ -214,6 +214,20 @@ Choose one: """)))
         logging.info(("User used Quebec Sales Tax 14.975 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
         print(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 3:
+        originPrice = int(input(_("What is the original price (before tax)? ")))
+        percent = 5.0
+        theSalesTax = percentage(percent, originPrice)
+        newPrice = theSalesTax + originPrice
+        logging.info(("User used Alberta Sales Tax 5 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        print(_("After tax, the price is: \n%s" % newPrice))
+    elif whatPlace == 4:
+        originPrice = int(input(_("What is the original price (before tax)? ")))
+        percent = 12.0
+        theSalesTax = percentage(percent, originPrice)
+        newPrice = theSalesTax + originPrice
+        logging.info(("User used Manitoba Sales Tax 12 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        print(_("After tax, the price is: \n%s" % newPrice))
+    elif whatPlace == 5:
         originPrice = float(input(_("OK, enter the original price: ")))
         percent = float(input(_("Now enter the tax percentage without the percent sign: ")))
         theSalesTax = percentage(percent, originPrice)
