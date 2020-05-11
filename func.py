@@ -6,7 +6,7 @@ def getNum(): #ask for two numbers and then return to function
     return n1, n2
 def h():
     print(_('''
-     Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (ex), root (root), equals (=), logarithm (log), memory (mem), interest calculator (interest), fibonacci sequence (fib), percentage (percent), and convert number systems (base). Type e to e.
+     Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (power), root (root), equals (=), logarithm (log), memory (mem), interest calculator (interest), fibonacci sequence (fib), percentage (percent), and convert number systems (base). Type e to e.
      Bugs? Head on over to https://github.com/thetechrobo/support/
      To contribute: go to https://github.com/thetechrobo/python-text-calculator/
      '''))
@@ -192,6 +192,49 @@ So, with that out of the way, type the amount we should multiply the interest by
         else:
             print(_("OK. Going back..."))
             break
+def taxCalc():
+    whatPlace = int(input(_("""1 - Ontario Sales Tax
+2 - Quebec Sales Tax
+3 - Yukon, Northwest Territories, Nunavut, and Alberta Sales Tax
+4 - BC / Manitoba Sales Tax
+5 - Custom Tax
+Choose one: """)))
+    if whatPlace == 1:
+        originPrice = int(input(_("What is the original price (before tax)? ")))
+        percent = 13.0
+        theSalesTax = percentage(percent, originPrice)
+        newPrice = theSalesTax + originPrice
+        logging.info(("User used Ontarian Sales Tax 13 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        print(_("After tax, the price is: \n%s" % newPrice))
+    elif whatPlace == 2:
+        originPrice = int(input(_("What is the original price (before tax)? ")))
+        percent = 14.975
+        theSalesTax = percentage(percent, originPrice)
+        newPrice = theSalesTax + originPrice
+        logging.info(("User used Quebec Sales Tax 14.975 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        print(_("After tax, the price is: \n%s" % newPrice))
+    elif whatPlace == 3:
+        originPrice = int(input(_("What is the original price (before tax)? ")))
+        percent = 5.0
+        theSalesTax = percentage(percent, originPrice)
+        newPrice = theSalesTax + originPrice
+        logging.info(("User used Alberta Sales Tax 5 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        print(_("After tax, the price is: \n%s" % newPrice))
+    elif whatPlace == 4:
+        originPrice = int(input(_("What is the original price (before tax)? ")))
+        percent = 12.0
+        theSalesTax = percentage(percent, originPrice)
+        newPrice = theSalesTax + originPrice
+        logging.info(("User used Manitoba Sales Tax 12 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        print(_("After tax, the price is: \n%s" % newPrice))
+    elif whatPlace == 5:
+        originPrice = float(input(_("OK, enter the original price: ")))
+        percent = float(input(_("Now enter the tax percentage without the percent sign: ")))
+        theSalesTax = percentage(percent, originPrice)
+        newPrice = theSalesTax + originPrice
+        print(_("After tax, the price is: \n%s" % newPrice))
+    else:
+        print(_("You did not type answer. Abort."))
 def cosine():
     which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType: "))
     which = which.lower()

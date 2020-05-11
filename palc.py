@@ -68,6 +68,9 @@ def palc():
        elif "help" in calc:
            logging.info("User needed help")
            h()
+#TAX
+       elif "tax" in calc:
+            taxCalc()
 #MULTIPLICATION
        elif "*" in calc:
             multi()
@@ -126,6 +129,11 @@ def palc():
             logging.info("User exited using `quit' command")
             e()
 #EXPONENTS
+       elif "power" in calc:
+            origin = int(input("Original number?"))
+            ex = int(input("Exponent? "))
+            print(origin ** ex)
+            logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
        elif "ex" in calc:
             origin = int(input("Original number?"))
             ex = int(input("Exponent? "))
@@ -192,7 +200,8 @@ Type: ''')))
                 getPercentageRN()
             else:
                 print(_("Abort."))
-       elif calc == "interest":
+#INTEREST
+       elif "interest" in calc:
             calculateInterest()
 #OTHERWISE
        elif calc == "":
@@ -205,7 +214,7 @@ Type: ''')))
             logging.error("User typed an invalid command")
             print(_('''
             I don't understand your request. Here are the currently supported calculations:
-            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); percent (calculate percentage); interest (interest calculator); and base (convert number system). Sorry for the inconvenience
+            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); power (exponents/power); root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); percent (calculate percentage); interest (interest calculator); and base (convert number system). Sorry for the inconvenience
             '''))
 width = os.get_terminal_size().columns
 for i in range(0, width):
@@ -222,12 +231,12 @@ except KeyboardInterrupt: #if ^C
 except EOFError: #if ^D
     logging.info("EOFError")
     e(_("\nWhy ^D? Why not just type `quit'?"))
-except (ValueError, TypeError):
-    logging.critical("ValueError or TypeError")
-    print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
+#except (ValueError, TypeError):
+#    logging.critical("ValueError or TypeError")
+#    print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
 except SystemExit:
     print(_("Looks like you exited."))
-except:
-    logging.critical("Unknown Error")
-    print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
+#except:
+#    logging.critical("Unknown Error")
+#    print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
 #EOF

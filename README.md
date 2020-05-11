@@ -2,7 +2,7 @@
 
 **Please, if you make a pull request add your username to CONTRIBUTORS.md**
 
-[![CodeFactor](https://www.codefactor.io/repository/github/thetechrobo/python-text-calculator/badge/master)](https://www.codefactor.io/repository/github/thetechrobo/python-text-calculator/overview/master)
+[![CodeFactor](https://www.codefactor.io/repository/github/thetechrobo/python-text-calculator/badge/development)](https://www.codefactor.io/repository/github/thetechrobo/python-text-calculator/overview/development)
 
 This is a Python script I forked when I wanted to learn math in Python.
 
@@ -25,6 +25,5 @@ Bug reports and questions belong at my [Support](https://github.com/thetechrobo/
 Thank you for your cooperation -- I get too much spam :wink:
 
 
-###### Current Release: v.0.7.1-stable
+###### Current Release: v.0.8-stable
 ###### There are currently no previews available for testing
-###### Current Feature-Only Release: v.0.8-feature1
