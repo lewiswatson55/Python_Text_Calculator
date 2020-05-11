@@ -192,7 +192,8 @@ Type: ''')))
                 getPercentageRN()
             else:
                 print(_("Abort."))
-       elif calc == "interest":
+#INTEREST
+       elif "interest" in calc:
             calculateInterest()
 #OTHERWISE
        elif calc == "":
