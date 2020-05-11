@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-11 13:08-0400\n"
-"PO-Revision-Date: 2020-05-11 13:13-0400\n"
+"POT-Creation-Date: 2020-05-11 15:47-0400\n"
+"PO-Revision-Date: 2020-05-11 15:47-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -415,18 +415,20 @@ msgstr "D'accord. Je retourne..."
 #: func.py:196
 msgid ""
 "1 - Ontario\n"
-"2 - Custom Tax\n"
+"2 - Quebec\n"
+"3 - Custom Tax\n"
 "Choose one: "
 msgstr ""
 "1 - Ontario\n"
-"2 - Taxe customisé\n"
+"2 - Québec\n"
+"3 - Taxe customisé\n"
 "Chosis : "
 
-#: func.py:204
+#: func.py:205 func.py:216
 msgid "What is the original price (before tax)? "
 msgstr "Quelle est le prix original (sans taxe) ? "
 
-#: func.py:208 func.py:214
+#: func.py:210 func.py:221 func.py:227
 #, python-format
 msgid ""
 "After tax, the price is: \n"
@@ -435,30 +437,30 @@ msgstr ""
 "Après qu'on ajoute taxe, le prix est : \n"
 "%s"
 
-#: func.py:210
+#: func.py:223
 msgid "OK, enter the original price: "
 msgstr "D'accord, tappez le prix original : "
 
-#: func.py:211
+#: func.py:224
 msgid "Now enter the tax percentage without the percent sign: "
 msgstr ""
 "Quel est le montant de taxe en pourcentage (sans le signe pourcentage)? "
 
-#: func.py:216
+#: func.py:231
 msgid ""
 "Would you like sine or inverse sine? (sin / inverse)\n"
 "Type: "
 msgstr "WIP"
 
-#: func.py:219
+#: func.py:234
 msgid "Sine it is!"
 msgstr "J'utilise cosine ! "
 
-#: func.py:220 func.py:227
+#: func.py:235 func.py:242
 msgid "Enter the number: "
 msgstr "Tappez le nombre : "
 
-#: func.py:226
+#: func.py:241
 msgid "Inverse it is!"
 msgstr "J'utilise l'inverse cosine ! "
 
@@ -588,21 +590,9 @@ msgstr ""
 "\n"
 "Pourquoi ^D ? Pourquoi pas juste `quit' ?"
 
-#: palc.py:236
-msgid ""
-"You typed in an invalid integer or float. Or maybe the program needs "
-"debugging. Either way, it's a pretty big error."
-msgstr ""
-"Erreure: Tu as tappez une nombre invalide, ou le logiciel a une probleme."
-
 #: palc.py:238
 msgid "Looks like you exited."
 msgstr "Tu as quitter Palc."
-
-# i got lazy
-#: palc.py:241
-msgid "An unknown error occured. For debugging info, see Line 164"
-msgstr "Erreure critical. "
 
 #: volInteractive.py:3
 msgid "What length is the side of the cube? "
@@ -706,6 +696,16 @@ msgstr "Desole, ce n'etais pas une option. >:)"
 #: volume.py:144 volume.py:157 volume.py:170 volume.py:183
 msgid "The volume is: "
 msgstr "La reponse est : "
+
+#~ msgid ""
+#~ "You typed in an invalid integer or float. Or maybe the program needs "
+#~ "debugging. Either way, it's a pretty big error."
+#~ msgstr ""
+#~ "Erreure: Tu as tappez une nombre invalide, ou le logiciel a une probleme."
+
+# i got lazy
+#~ msgid "An unknown error occured. For debugging info, see Line 164"
+#~ msgstr "Erreure critical. "
 
 #~ msgid ""
 #~ "I can't figure out what `a' is for, it is cirsector() in area.py if "
