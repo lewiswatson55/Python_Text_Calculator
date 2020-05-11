@@ -194,7 +194,8 @@ So, with that out of the way, type the amount we should multiply the interest by
             break
 def taxCalc():
     whatPlace = int(input(_("""1 - Ontario
-2 - Custom Tax
+2 - Quebec
+3 - Custom Tax
 Choose one: """)))
     if whatPlace == 1:
         whatTax = input("Which tax? (Currently available: Sales)")
@@ -205,13 +206,18 @@ Choose one: """)))
             percent = 13.0
             theSalesTax = percentage(percent, originPrice)
             newPrice = theSalesTax + originPrice
+            logging.info(("User used Ontarian Sales Tax 13 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
             print(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 2:
+        logging.info("User used Quebec sales tax before it was ready")
+    elif whatPlace == 3:
         originPrice = float(input(_("OK, enter the original price: ")))
         percent = float(input(_("Now enter the tax percentage without the percent sign: ")))
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
         print(_("After tax, the price is: \n%s" % newPrice))
+    else:
+        print("You did not type answer. Abort.")
 def cosine():
     which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType: "))
     which = which.lower()
