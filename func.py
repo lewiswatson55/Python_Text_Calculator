@@ -198,6 +198,13 @@ Choose one: """)))
     if whatPlace == 1:
         whatTax = input("Which tax? (Currently available: Sales)")
         whatTax = whatTax.lower()
+        if whatTax == "sales":
+            print("Sales Tax it is!")
+            originPrice = int(input(_("What is the original price (before tax)? ")))
+            percent = 13.0
+            theSalesTax = percentage(percent, originPrice)
+            newPrice = theSalesTax + originPrice
+            print(_("After tax, the price is: \n%s" % newPrice))
 def cosine():
     which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType: "))
     which = which.lower()
