@@ -4,7 +4,7 @@
 
 **THIS BRANCH CONTAINS BLEEDING-EDGE, BARELY TESTED CODE. USE AT OWN RISK!!!**
 
-[![CodeFactor](https://www.codefactor.io/repository/github/thetechrobo/python-text-calculator/badge/master)](https://www.codefactor.io/repository/github/thetechrobo/python-text-calculator/overview/master)
+[![CodeFactor](https://www.codefactor.io/repository/github/thetechrobo/python-text-calculator/badge/development)](https://www.codefactor.io/repository/github/thetechrobo/python-text-calculator/overview/development)
 
 This is a Python script I forked when I wanted to learn math in Python.
 
