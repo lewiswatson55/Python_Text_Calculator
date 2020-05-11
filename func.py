@@ -192,6 +192,8 @@ So, with that out of the way, type the amount we should multiply the interest by
         else:
             print(_("OK. Going back..."))
             break
+def taxCalc():
+    pass
 def cosine():
     which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType: "))
     which = which.lower()
