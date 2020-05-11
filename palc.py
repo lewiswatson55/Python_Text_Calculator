@@ -68,6 +68,9 @@ def palc():
        elif "help" in calc:
            logging.info("User needed help")
            h()
+#TAX
+       elif "tax" in calc:
+            taxCalc()
 #MULTIPLICATION
        elif "*" in calc:
             multi()
@@ -104,9 +107,6 @@ def palc():
             mod()
        elif "mod" in calc:
             mod()
-#TAX
-       elif "tax" in calc:
-            taxCalc()
 #AREA
        elif "ar" in calc:
             area()
@@ -129,6 +129,11 @@ def palc():
             logging.info("User exited using `quit' command")
             e()
 #EXPONENTS
+       elif "power" in calc:
+            origin = int(input("Original number?"))
+            ex = int(input("Exponent? "))
+            print(origin ** ex)
+            logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
        elif "ex" in calc:
             origin = int(input("Original number?"))
             ex = int(input("Exponent? "))
@@ -209,7 +214,7 @@ Type: ''')))
             logging.error("User typed an invalid command")
             print(_('''
             I don't understand your request. Here are the currently supported calculations:
-            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); ex (exponents); root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); percent (calculate percentage); interest (interest calculator); and base (convert number system). Sorry for the inconvenience
+            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); power (exponents/power); root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); percent (calculate percentage); interest (interest calculator); and base (convert number system). Sorry for the inconvenience
             '''))
 width = os.get_terminal_size().columns
 for i in range(0, width):
