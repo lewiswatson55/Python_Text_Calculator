@@ -231,12 +231,12 @@ except KeyboardInterrupt: #if ^C
 except EOFError: #if ^D
     logging.info("EOFError")
     e(_("\nWhy ^D? Why not just type `quit'?"))
-#except (ValueError, TypeError):
-#    logging.critical("ValueError or TypeError")
-#    print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
+except (ValueError, TypeError):
+    logging.critical("ValueError or TypeError")
+    print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
 except SystemExit:
     print(_("Looks like you exited."))
-#except:
-#    logging.critical("Unknown Error")
-#    print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
+except:
+    logging.critical("Unknown Error")
+    cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support.")) 
 #EOF
