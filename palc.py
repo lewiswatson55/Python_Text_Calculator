@@ -3,6 +3,7 @@
 # THANKS TO @ErdoganOnal for their comment on this SO question: https://stackoverflow.com/questions/61621821/any-secure-alternatives-for-this?noredirect=1#comment109002742_61621821
 # THANKS TO https://stackoverflow.com/questions/33594958/is-it-possible-to-align-a-print-statement-to-the-center-in-python
 # 
+from cprint import *
 import sys, os, logging #sys so I can exit, os so I can do I can't remember, logging so I can log.
 logging.basicConfig(filename="palc.log", level=logging.DEBUG) #set up logging
 try: 
@@ -39,12 +40,12 @@ try:
     from func import *
 except ImportError:
     logging.critical("Could not access file func.py")
-    e(_("I can't access the file func.py. This file is necessary for proper function of the Software."))
-print(_("Loading...............\n"))
+    cprint.fatal(_("I can't access the file func.py. This file is necessary for proper function of the Software."), interrupt=True)
+cprint.ok(_("Loading...............\n"))
 time.sleep(2)
 def palc():
     while True:
-       print(_("Press any key to continue..."), end='', flush=True) 
+       print(_("Press any key to continue..."), end="", flush=True)
        if _IS_WINDOWS: 
            msvcrt.getch() 
        else: 
@@ -236,7 +237,7 @@ except (ValueError, TypeError):
     cprint.fatal(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."), interrupt=True)
 except SystemExit:
     cprint.ok(_("Looks like you exited."))
-except:
-    logging.critical("Unknown Error")
-    cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support.")) 
+#except:
+#    logging.critical("Unknown Error")
+#    cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support.")) 
 #EOF
