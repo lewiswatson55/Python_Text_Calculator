@@ -1,4 +1,5 @@
 import logging
+from cprint import *
 def getNum(): #ask for two numbers and then return to function
     n1 = int(input(_("Please enter the first number: ")))
     n2 = int(input(_("Please enter the second number: ")))
@@ -12,8 +13,7 @@ def h():
      '''))
 def multi(): #multiplication
     n1, n2 = getNum()
-    print(_("\nThat equals..."))
-    print(n1 * n2)
+    cprint.info(_("\nThat equals...\n%s" % (n1 * n2)))
     logging.info(("User multiplied ", n1, " by ", n2, " and got result ", (n1 * n2)))
 def div(): #division
     n1, n2 = getNum()
@@ -21,7 +21,7 @@ def div(): #division
     try:
         print(n1 / n2)
     except ZeroDivisionError:
-        print(_("Do not divide by zero!"))
+        cprint.err(_("Do not divide by zero!"))
         logging.error("User attempted to divide by zero.")
     except:
         print(_("There was an unknown issue dividing your Numbers..."))
@@ -235,7 +235,7 @@ Choose one: """)))
         print(_("After tax, the price is: \n%s" % newPrice))
     else:
         print(_("You did not type answer. Abort."))
-def cosine():
+def sin():
     which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType: "))
     which = which.lower()
     if which == "sin":
