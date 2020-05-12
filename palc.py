@@ -231,9 +231,9 @@ except KeyboardInterrupt: #if ^C
 except EOFError: #if ^D
     logging.info("EOFError")
     e(_("\nWhy ^D? Why not just type `quit'?"))
-#except (ValueError, TypeError):
-#    logging.critical("ValueError or TypeError")
-#    print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
+except (ValueError, TypeError):
+    logging.critical("ValueError or TypeError")
+    print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
 except SystemExit:
     print(_("Looks like you exited."))
 except:
