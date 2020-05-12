@@ -3,6 +3,7 @@
 # THANKS TO @ErdoganOnal for their comment on this SO question: https://stackoverflow.com/questions/61621821/any-secure-alternatives-for-this?noredirect=1#comment109002742_61621821
 # THANKS TO https://stackoverflow.com/questions/33594958/is-it-possible-to-align-a-print-statement-to-the-center-in-python
 # 
+from cprint import *
 import sys, os, logging #sys so I can exit, os so I can do I can't remember, logging so I can log.
 logging.basicConfig(filename="palc.log", level=logging.DEBUG) #set up logging
 try: 
@@ -39,12 +40,12 @@ try:
     from func import *
 except ImportError:
     logging.critical("Could not access file func.py")
-    e(_("I can't access the file func.py. This file is necessary for proper function of the Software."))
-print(_("Loading...............\n"))
+    cprint.fatal(_("I can't access the file func.py. This file is necessary for proper function of the Software."), interrupt=True)
+cprint.ok(_("Loading...............\n"))
 time.sleep(2)
 def palc():
     while True:
-       print(_("Press any key to continue..."), end='', flush=True) 
+       print(_("Press any key to continue..."), end="", flush=True)
        if _IS_WINDOWS: 
            msvcrt.getch() 
        else: 
@@ -79,12 +80,12 @@ def palc():
 #SQUARE
        elif "sq" in calc:
             n = int(input(_("Number? ")))
-            print(n * n)
+            cprint.info(n * n)
             logging.info(("User squared number ", n, " got result ", (n * n)))
        elif "[]" in calc:
             n = int(input(_("Number? ")))
             logging.info(("User squared number ", n, " got result ", (n * n)))
-            print(n * n)
+            cprint.info(n * n)
 #DIVISION
        elif "/" in calc:
             div()
@@ -121,7 +122,7 @@ def palc():
        elif "{}" in calc:
             cubedNumber = int(input("\nType the number to be cubed: "))
             print()
-            print(cubedNumber ** 3) #Manually cube number
+            cprint.info(cubedNumber ** 3) #Manually cube number
             logging.info(("User cubed number ", cubedNumber, " got result ", (cubedNumber ** 3)))
             print()
 #EXIT
@@ -132,7 +133,7 @@ def palc():
        elif "power" in calc:
             origin = int(input("Original number?"))
             ex = int(input("Exponent? "))
-            print(origin ** ex)
+            cprint.info(origin ** ex)
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
        elif "ex" in calc:
             origin = int(input("Original number?"))
@@ -141,14 +142,14 @@ def palc():
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
 #CUBE TWICE
        elif "{2}" in calc:
-            print(_("That feature was discontinued."))
+            cprint.err(_("That feature was discontinued."))
 #ROOTS
        elif "root" in calc:
             root = input("Square root or cube root?(square/cube)")
             root = root.lower()
             if "square" in root:
                 num = input("Number to be rooted?")
-                print(_("That equals.....\n", num ** 0.5))
+                cprint.info(_("That equals.....\n", num ** 0.5))
                 logging.info(("user sqrooted number ", (num**0.5)))
             elif "cube" in root:
                 cu()
@@ -159,10 +160,10 @@ def palc():
             print()
             number = int(input("Type in a number: "))
             if number == 42:
-                print(_("=42 -- the answer to life, the universe, and everything"))
+                cprint.info(_("=42 -- the answer to life, the universe, and everything"))
                 logging.info("User got the easter egg")
             else:
-                print("=" +number)
+                cprint.info("=" +number)
                 logging.info("User used the `=' feature for number ", number)
 #NUMBER SYSTEMS
        elif "base" in calc:
@@ -171,7 +172,7 @@ def palc():
        elif "ord" in calc:
            logging.info(("User ord'ed to get result ", result))
            result = str(ord(int(input(_("Type in the number to ord: ")))))
-           print("=", result)
+           cprint.info("=", result)
 #LOGARITHM
        elif "log" in calc:
            log()
@@ -183,11 +184,11 @@ def palc():
             elif memOrRecall.lower() in "recall":
                 readMyMemory()
             else:
-                print(_("You did not type an answer.\nAbort."))
+                cprint.err(_("You did not type an answer.\nAbort."))
                 logging.error("User didn't type an answer in MEM function")
 #FIBONACCI
        elif "fib" in calc:
-            print(_("Starting fibonacci sequence. Please wait."))
+            cprint.ok(_("Starting fibonacci sequence. Please wait."))
             fib()
 #PERCENTAGE
        elif "percent" in calc: #SOURCE: https://stackoverflow.com/a/5998010/9654083
@@ -199,7 +200,7 @@ Type: ''')))
             elif whichOne == 2:
                 getPercentageRN()
             else:
-                print(_("Abort."))
+                cprint.err(_("You didn't type a valid answer. Abort."))
 #INTEREST
        elif "interest" in calc:
             calculateInterest()
@@ -219,24 +220,25 @@ Type: ''')))
 width = os.get_terminal_size().columns
 for i in range(0, width):
     print("-", sep="", end="")
-    logging.info(("Printed ", width, "dashes"))
-print(_("Welcome to Palc!".center(width)))
+logging.info(("Printed ", width, "dashes"))
+cprint.info(_("Welcome to Palc!".center(width)))
 for i in range(0, width):
     print("-", sep="", end="")
+logging.info(("Printed ", width, "dashes"))
 try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
     logging.info("KeyboardInterrupt")
-    e(_("\nNote that you CAN type `quit' instead of pressing the interrupt key"))
+    cprint.ok(_("\nNote that you CAN type `quit' instead of pressing the interrupt key"), interrupt=True)
 except EOFError: #if ^D
     logging.info("EOFError")
-    e(_("\nWhy ^D? Why not just type `quit'?"))
+    cprint.ok(_("\nWhy ^D? Why not just type `quit'?"), interrupt=True)
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
-    print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
+    cprint.fatal(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."), interrupt=True)
 except SystemExit:
-    print(_("Looks like you exited."))
+    cprint.ok(_("Looks like you exited."))
 except:
     logging.critical("Unknown Error")
-    print(_("An unknown error occured. For debugging info, see Line 164")) #To debug, comment lines 162, 163 and 164
+    cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support.")) 
 #EOF
