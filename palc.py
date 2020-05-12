@@ -220,10 +220,11 @@ Type: ''')))
 width = os.get_terminal_size().columns
 for i in range(0, width):
     print("-", sep="", end="")
-    logging.info(("Printed ", width, "dashes"))
+logging.info(("Printed ", width, "dashes"))
 cprint.info(_("Welcome to Palc!".center(width)))
 for i in range(0, width):
     print("-", sep="", end="")
+logging.info(("Printed ", width, "dashes"))
 try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
