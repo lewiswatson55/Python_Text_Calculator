@@ -159,10 +159,10 @@ def palc():
             print()
             number = int(input("Type in a number: "))
             if number == 42:
-                print(_("=42 -- the answer to life, the universe, and everything"))
+                cprint.info(_("=42 -- the answer to life, the universe, and everything"))
                 logging.info("User got the easter egg")
             else:
-                print("=" +number)
+                cprint.info("=" +number)
                 logging.info("User used the `=' feature for number ", number)
 #NUMBER SYSTEMS
        elif "base" in calc:
@@ -171,7 +171,7 @@ def palc():
        elif "ord" in calc:
            logging.info(("User ord'ed to get result ", result))
            result = str(ord(int(input(_("Type in the number to ord: ")))))
-           print("=", result)
+           cprint.info("=", result)
 #LOGARITHM
        elif "log" in calc:
            log()
@@ -183,11 +183,11 @@ def palc():
             elif memOrRecall.lower() in "recall":
                 readMyMemory()
             else:
-                print(_("You did not type an answer.\nAbort."))
+                cprint.err(_("You did not type an answer.\nAbort."))
                 logging.error("User didn't type an answer in MEM function")
 #FIBONACCI
        elif "fib" in calc:
-            print(_("Starting fibonacci sequence. Please wait."))
+            cprint.ok(_("Starting fibonacci sequence. Please wait."))
             fib()
 #PERCENTAGE
        elif "percent" in calc: #SOURCE: https://stackoverflow.com/a/5998010/9654083
@@ -199,7 +199,7 @@ Type: ''')))
             elif whichOne == 2:
                 getPercentageRN()
             else:
-                print(_("Abort."))
+                cprint.err(_("You didn't type a valid answer. Abort."))
 #INTEREST
        elif "interest" in calc:
             calculateInterest()
@@ -220,22 +220,22 @@ width = os.get_terminal_size().columns
 for i in range(0, width):
     print("-", sep="", end="")
     logging.info(("Printed ", width, "dashes"))
-print(_("Welcome to Palc!".center(width)))
+cprint.info(_("Welcome to Palc!".center(width)))
 for i in range(0, width):
     print("-", sep="", end="")
 try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
     logging.info("KeyboardInterrupt")
-    e(_("\nNote that you CAN type `quit' instead of pressing the interrupt key"))
+    cprint.ok(_("\nNote that you CAN type `quit' instead of pressing the interrupt key"), interrupt=True)
 except EOFError: #if ^D
-    logging.info("EOFError")
-    e(_("\nWhy ^D? Why not just type `quit'?"))
+    logging.ok("EOFError")
+    cprint.ok(_("\nWhy ^D? Why not just type `quit'?"), interrupt=True)
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
-    print(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
+    cprint.fatal(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."), interrupt=True)
 except SystemExit:
-    print(_("Looks like you exited."))
+    cprint.ok(_("Looks like you exited."))
 except:
     logging.critical("Unknown Error")
     cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support.")) 
