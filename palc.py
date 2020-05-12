@@ -79,12 +79,12 @@ def palc():
 #SQUARE
        elif "sq" in calc:
             n = int(input(_("Number? ")))
-            print(n * n)
+            cprint.info(n * n)
             logging.info(("User squared number ", n, " got result ", (n * n)))
        elif "[]" in calc:
             n = int(input(_("Number? ")))
             logging.info(("User squared number ", n, " got result ", (n * n)))
-            print(n * n)
+            cprint.info(n * n)
 #DIVISION
        elif "/" in calc:
             div()
@@ -121,7 +121,7 @@ def palc():
        elif "{}" in calc:
             cubedNumber = int(input("\nType the number to be cubed: "))
             print()
-            print(cubedNumber ** 3) #Manually cube number
+            cprint.info(cubedNumber ** 3) #Manually cube number
             logging.info(("User cubed number ", cubedNumber, " got result ", (cubedNumber ** 3)))
             print()
 #EXIT
@@ -132,7 +132,7 @@ def palc():
        elif "power" in calc:
             origin = int(input("Original number?"))
             ex = int(input("Exponent? "))
-            print(origin ** ex)
+            cprint.info(origin ** ex)
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
        elif "ex" in calc:
             origin = int(input("Original number?"))
@@ -141,14 +141,14 @@ def palc():
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
 #CUBE TWICE
        elif "{2}" in calc:
-            print(_("That feature was discontinued."))
+            cprint.err(_("That feature was discontinued."))
 #ROOTS
        elif "root" in calc:
             root = input("Square root or cube root?(square/cube)")
             root = root.lower()
             if "square" in root:
                 num = input("Number to be rooted?")
-                print(_("That equals.....\n", num ** 0.5))
+                cprint.info(_("That equals.....\n", num ** 0.5))
                 logging.info(("user sqrooted number ", (num**0.5)))
             elif "cube" in root:
                 cu()
