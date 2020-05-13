@@ -132,7 +132,7 @@ def readMyMemory():
     try:
         slot = str(int(input(_("What slot number did you use? "))))
         memory = open(slot, "r")
-        print(_("Number: ", memory.read()))
+        print(_(("Number: ", memory.read())))
         logging.info(("Retrieved number ", memory.read(), " from memory."))
     except:
         logging.info("There was an error retrieving the file from memory.")
