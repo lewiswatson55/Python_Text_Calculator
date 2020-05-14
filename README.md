@@ -1,4 +1,5 @@
 # python-text-calculator
+# For installation instructions see INSTALLING.md // Pour les instructions d'installation voir INSTALLING_FRANCAIS.md
 
 **Please, if you make a pull request add your username to CONTRIBUTORS.md**
 
