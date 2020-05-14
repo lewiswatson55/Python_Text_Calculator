@@ -1,7 +1,7 @@
-# Installation
-Pour installer, utiliser ces etapes : 
+# Installing Palc
+To use Palc, follow these steps:
 
-1. **Installer Python 3.x [ici](https://www.python.org/downloads/).** Clique **Download Python 3.X.X** et puis utiliser les instructions.  
-2. **Installer le release de Palc sur date :** Aller [ici](https://github.com/TheTechRobo/python-text-calculator/archive/master.zip) et extract le ZIP.
-3. **Aller dans une Terminal**. Je ne sais pas pour Windows, mais pour Mac: clique sur la glasse magnifique sur le haut-droit et tappe << **Terminal** >>. Puis, pousse **Enter**.
-4. **Quand le terminal est ouvert :** 
+1. **Install Python 3.x [here](https://www.python.org/downloads/).** Click **Download Python 3.X.X** and  then follow the instructions.  
+2. **Installer the latest version of Palc :** Go [here](https://github.com/TheTechRobo/python-text-calculator/archive/master.zip) and extract the ZIP.
+3. **Go into a terminal**. For mac users: Click the magnifying glass in the top-right corner of the screen and type **Terminal**. When you see a word that says "Terminal" and an icon that looks like a black screen with a few lines, press ENTER.
+4. **When the terminal is open :** type `cd Downloads/python-text-calculator-master` and then `python3 palc.py`. After you do that, Palc starts to run!
