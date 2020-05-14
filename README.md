@@ -1,4 +1,5 @@
 # python-text-calculator
+# For installation instructions see [INSTALLING.md](https://github.com/TheTechRobo/python-text-calculator/blob/master/INSTALLING.md)
 
 **Please, if you make a pull request add your username to CONTRIBUTORS.md**
 
