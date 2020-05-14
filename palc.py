@@ -229,10 +229,12 @@ try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
     logging.info("KeyboardInterrupt")
-    cprint.ok(_("\nNote that you CAN type `quit' instead of pressing the interrupt key"), interrupt=True)
+    cprint.ok(_("\nNote that you CAN type `quit' instead of pressing the interrupt key"))
+    sys.exit()
 except EOFError: #if ^D
     logging.info("EOFError")
-    cprint.ok(_("\nWhy ^D? Why not just type `quit'?"), interrupt=True)
+    cprint.ok(_("\nWhy ^D? Why not just type `quit'?"))
+    sys.exit()
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
     cprint.fatal(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."), interrupt=True)
