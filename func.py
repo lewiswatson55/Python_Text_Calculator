@@ -1,8 +1,8 @@
 import logging
 from cprint import *
 def getNum(): #ask for two numbers and then return to function
-    n1 = int(input(_("Please enter the first number: ")))
-    n2 = int(input(_("Please enter the second number: ")))
+    n1 = float(input(_("Please enter the first number: ")))
+    n2 = float(input(_("Please enter the second number: ")))
     logging.info(("Palc got two numbers: ", n1, " and ", n2))
     return n1, n2
 def h():

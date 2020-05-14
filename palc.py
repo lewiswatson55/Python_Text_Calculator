@@ -131,13 +131,13 @@ def palc():
             e()
 #EXPONENTS
        elif "power" in calc:
-            origin = int(input("Original number?"))
-            ex = int(input("Exponent? "))
+            origin = float(input("Original number?"))
+            ex = float(input("Exponent? "))
             cprint.info(origin ** ex)
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
        elif "ex" in calc:
-            origin = int(input("Original number?"))
-            ex = int(input("Exponent? "))
+            origin = float(input("Original number?"))
+            ex = float(input("Exponent? "))
             print(origin ** ex)
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
 #CUBE TWICE
