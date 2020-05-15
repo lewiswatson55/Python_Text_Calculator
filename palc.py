@@ -243,8 +243,9 @@ except (ValueError, TypeError):
     for i in range(0, width):
         print("-", sep="", end="", flush=True)
     logging.info(("Printed ", width, "dashes"))
-    cprint.fatal(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."), interrupt=True)
-    cprint.info(_("There may have been details before the word `ERROR!'. Check that."))
+    cprint.fatal(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
+    cprint.ok(_("There may have been details before the word `ERROR!'. Check that."))
+    e()
 except SystemExit:
     cprint.ok(_("Looks like you exited."))
 except:
