@@ -235,10 +235,26 @@ except EOFError: #if ^D
     sys.exit()
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
+    width = os.get_terminal_size().columns
+    for i in range(0, width):
+        print("-", sep="", end="", flush=True)
+    logging.info(("Printed ", width, "dashes"))
+    cprint.err(_("\aERROR!".center(width)))
+    for i in range(0, width):
+        print("-", sep="", end="", flush=True)
+    logging.info(("Printed ", width, "dashes"))
     cprint.fatal(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."), interrupt=True)
+    cprint.info(_("There may have been details before the word `ERROR!'. Check that."))
 except SystemExit:
     cprint.ok(_("Looks like you exited."))
 except:
-    logging.critical("Unknown Error")
+    width = os.get_terminal_size().columns
+    for i in range(0, width):
+        print("-", sep="", end="")
+    logging.info(("Printed ", width, "dashes"))
+    cprint.fatal(_("Unknown Error!".center(width)))
+    for i in range(0, width):
+        print("-", sep="", end="")
+    logging.info(("Printed ", width, "dashes"))
     cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support."))
 #EOF
