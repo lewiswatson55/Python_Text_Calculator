@@ -2,30 +2,28 @@
 #THANKS TO https://simpleit.rocks/python/how-to-translate-a-python-project-with-gettext-the-easy-way/ and https://inventwithpython.com/blog/2014/12/20/translate-your-python-3-program-with-the-gettext-module/ for their GETTEXT guides! :)
 # THANKS TO @ErdoganOnal for their comment on this SO question: https://stackoverflow.com/questions/61621821/any-secure-alternatives-for-this?noredirect=1#comment109002742_61621821
 # THANKS TO https://stackoverflow.com/questions/33594958/is-it-possible-to-align-a-print-statement-to-the-center-in-python
-# 
+#
 from cprint import *
 import sys, os, logging #sys so I can exit, os so I can do I can't remember, logging so I can log.
 logging.basicConfig(filename="palc.log", level=logging.DEBUG) #set up logging
-try: 
-    import msvcrt 
-    _IS_WINDOWS = True 
+try:
+    import msvcrt
+    _IS_WINDOWS = True
     logger.info("Imported msvcrt")
-except ImportError: 
-    import tty 
-    import termios 
-    _IS_WINDOWS = False 
+except ImportError:
+    import tty
+    import termios
+    _IS_WINDOWS = False
     logging.info("Imported tty, termios")
 import gettext #to translate Palc
 language = input("English or Francais? (do not add accents to letters/ne pas ajouter les accents aux lettres): ")
 language = language.lower()
 if language == "francais":
     logging.info("Set language to French")
-    global lang_translations
     gettext.bindtextdomain('base', localedir="locales")
     lang_translations = gettext.translation('base',localedir='locales', languages=["fr"])
 elif language == "english":
     logging.info("Set language to English")
-    global l_translations
     gettext.bindtextdomain('base', localedir="locales")
     l_translations = gettext.translation('base', localedir='locales', languages=["en"])
 try:
@@ -46,15 +44,15 @@ time.sleep(2)
 def palc():
     while True:
        print(_("Press any key to continue..."), end="", flush=True)
-       if _IS_WINDOWS: 
-           msvcrt.getch() 
-       else: 
-           fd = sys.stdin.fileno() 
-           settings = termios.tcgetattr(fd) 
-           try: 
-               tty.setraw(sys.stdin.fileno()) 
-               sys.stdin.read(1) 
-           finally: 
+       if _IS_WINDOWS:
+           msvcrt.getch()
+       else:
+           fd = sys.stdin.fileno()
+           settings = termios.tcgetattr(fd)
+           try:
+               tty.setraw(sys.stdin.fileno())
+               sys.stdin.read(1)
+           finally:
                termios.tcsetattr(fd, termios.TCSADRAIN, settings)
        print(chr(27)+'[2j') #First attempt at clearing the screen with ANSI escape codes.
        print('\033c') #Second attempt at clearing the screen with ANSI escape codes.
@@ -242,5 +240,5 @@ except SystemExit:
     cprint.ok(_("Looks like you exited."))
 except:
     logging.critical("Unknown Error")
-    cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support.")) 
+    cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support."))
 #EOF
