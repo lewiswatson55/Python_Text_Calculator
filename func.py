@@ -6,7 +6,7 @@ def getNum(): #ask for two numbers and then return to function
     logging.info(("Palc got two numbers: ", n1, " and ", n2))
     return n1, n2
 def h():
-    print(_('''
+    cprint.info(_('''
      Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (power), root (root), equals (=), logarithm (log), memory (mem), interest calculator (interest), fibonacci sequence (fib), percentage (percent), and convert number systems (base). Type e to e.
      Bugs? Head on over to https://github.com/thetechrobo/support/
      To contribute: go to https://github.com/thetechrobo/python-text-calculator/
@@ -31,20 +31,19 @@ def sub(): #subtraction
     logging.info(("User subtracted ", n1, " by ", n2, " and got result ", (n1 - n2)))
 def add(): #addition
     n1, n2 = getNum()
-    print(_("\nThat equals..."))
-    print(n1 + n2)
+    cprint.info(_("\nThat equals...\n%s" % (n1 + n2)))
     logging.info(("User added ", n1, " to ", n2, " and got result ", (n1 + n2)))
 def mod(): #modulo
     try:
         bigger = int(input(_("\nType the first number (greater): ")))
         smaller = int(input(_("Type the second number (smaller): ")))
     except (TypeError, ValueError):
-        print(_("\nError!"))
-        print(_("Invalid input (code 1)\n"))
+        cprint.err(_("\nError!"))
+        cprint.err(_("Invalid input (code 1)\n"))
         logging.error(("ERROR: attempted to modulo numbers ", bigger, " and ", smaller, ", but errored code 1."))
     if(abs(bigger)<abs(smaller)):
-        print(_("\nError!"))
-        print(_("The second number entered is greater than the first number (code 2)\n"))
+        cprint.err(_("\nError!"))
+        cprint.err(_("The second number entered is greater than the first number (code 2)\n"))
         logging.error(("ERROR: attempted to modulo numbers ", bigger, " and ", smaller, ", but errored code 2."))
     else:
         print(_("\nThat equals..."))
