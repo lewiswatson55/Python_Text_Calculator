@@ -22,6 +22,7 @@ def div(): #division
     except ZeroDivisionError:
         cprint.err(_("Do not divide by zero!"))
         logging.error("User attempted to divide by zero.")
+        raise ValueError
     except:
         cprint.err(_("There was an unknown issue dividing your Numbers..."))
     logging.info(("User divvied ", n1, " by ", n2, ", getting a result of ", (n1 / n2)))
@@ -38,13 +39,14 @@ def mod(): #modulo
         bigger = int(input(_("\nType the first number (greater): ")))
         smaller = int(input(_("Type the second number (smaller): ")))
     except (TypeError, ValueError):
-        cprint.err(_("\nError!"))
         cprint.err(_("Invalid input (code 1)\n"))
         logging.error(("ERROR: attempted to modulo numbers ", bigger, " and ", smaller, ", but errored code 1."))
+        raise TypeError
     if(abs(bigger)<abs(smaller)):
         cprint.err(_("\nError!"))
         cprint.err(_("The second number entered is greater than the first number (code 2)\n"))
         logging.error(("ERROR: attempted to modulo numbers ", bigger, " and ", smaller, ", but errored code 2."))
+        raise ValueError
     else:
         print(_("\nThat equals..."))
         print(bigger-smaller*int(bigger/smaller))
@@ -150,7 +152,8 @@ def fib():
 def percentage(percent, whole):
     if whole == 0:
         logging.error("User typed 0 as whole.")
-        return (_("Please do not type in a zero as the whole."))
+        cprint.err(_("Please do not type in a zero as the whole."))
+        raise ValueError
     return (percent * whole) / 100.0
 def whatIsPercent():
     origin = int(input(_("what is the ORIGINAL NUMBER? ")))
