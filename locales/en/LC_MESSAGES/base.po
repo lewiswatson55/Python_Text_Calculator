@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-11 16:00-0400\n"
-"PO-Revision-Date: 2020-05-11 16:00-0400\n"
+"POT-Creation-Date: 2020-05-16 17:08-0400\n"
+"PO-Revision-Date: 2020-05-16 17:09-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: en_CA\n"
@@ -15,111 +15,111 @@ msgstr ""
 "X-Poedit-KeywordsList: _\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: areaInteractive.py:3
+#: areaInteractive.py:4
 msgid "What length is the side of the triangle? "
 msgstr ""
 
-#: areaInteractive.py:4 areaInteractive.py:9 areaInteractive.py:15
-#: areaInteractive.py:21 areaInteractive.py:25 areaInteractive.py:31
-#: areaInteractive.py:37 areaInteractive.py:43 areaInteractive.py:50
-#: areaInteractive.py:55 areaInteractive.py:60 areaInteractive.py:65
-#: areaInteractive.py:71 areaInteractive.py:77
+#: areaInteractive.py:5 areaInteractive.py:10 areaInteractive.py:16
+#: areaInteractive.py:22 areaInteractive.py:26 areaInteractive.py:32
+#: areaInteractive.py:38 areaInteractive.py:44 areaInteractive.py:51
+#: areaInteractive.py:56 areaInteractive.py:61 areaInteractive.py:66
+#: areaInteractive.py:72 areaInteractive.py:78
 msgid "The area is: "
 msgstr ""
 
-#: areaInteractive.py:7
+#: areaInteractive.py:8
 msgid "What length is the base of the triangle? "
 msgstr ""
 
-#: areaInteractive.py:8
+#: areaInteractive.py:9
 msgid "What length is the height of the triangle? "
 msgstr ""
 
-#: areaInteractive.py:12 areaInteractive.py:18
+#: areaInteractive.py:13 areaInteractive.py:19
 msgid "What is the length of the first side? "
 msgstr ""
 
-#: areaInteractive.py:13 areaInteractive.py:19
+#: areaInteractive.py:14 areaInteractive.py:20
 msgid "what is the length of the second side? "
 msgstr ""
 
-#: areaInteractive.py:14 areaInteractive.py:20
+#: areaInteractive.py:15 areaInteractive.py:21
 msgid "What is the length of the third side? "
 msgstr ""
 
-#: areaInteractive.py:24
+#: areaInteractive.py:25
 msgid "What is the length of the side of the square? "
 msgstr ""
 
-#: areaInteractive.py:29
+#: areaInteractive.py:30
 msgid "What is the length of the rectangle? "
 msgstr ""
 
-#: areaInteractive.py:30
+#: areaInteractive.py:31
 msgid "What is the height of the rectangle? "
 msgstr ""
 
-#: areaInteractive.py:35
+#: areaInteractive.py:36
 msgid "What is the length of the base? "
 msgstr ""
 
-#: areaInteractive.py:36
+#: areaInteractive.py:37
 msgid "What is the height of the shape? "
 msgstr ""
 
-#: areaInteractive.py:41
+#: areaInteractive.py:42
 msgid "What is the length of the first diagonal? "
 msgstr ""
 
-#: areaInteractive.py:42
+#: areaInteractive.py:43
 msgid "What is the length of the 2nd diagonal? "
 msgstr ""
 
-#: areaInteractive.py:47
+#: areaInteractive.py:48
 msgid "What is the length of the 1st set of parallel sides? "
 msgstr ""
 
-#: areaInteractive.py:48
+#: areaInteractive.py:49
 msgid "What is the length of the 2nd set of parallel sides? "
 msgstr ""
 
-#: areaInteractive.py:49
+#: areaInteractive.py:50
 msgid "What is the height of the trapezium? "
 msgstr ""
 
-#: areaInteractive.py:54
+#: areaInteractive.py:55
 msgid "What is the radius of the circle? "
 msgstr ""
 
-#: areaInteractive.py:59
+#: areaInteractive.py:60
 msgid "What is the radius of the semicircle? "
 msgstr ""
 
-#: areaInteractive.py:63
+#: areaInteractive.py:64
 msgid "What is the radius of the circular sector? "
 msgstr ""
 
-#: areaInteractive.py:64
+#: areaInteractive.py:65
 msgid "What is the angle of the circular sector *in degrees*? "
 msgstr ""
 
-#: areaInteractive.py:69
+#: areaInteractive.py:70
 msgid "What is the radius of the outer circle? "
 msgstr ""
 
-#: areaInteractive.py:70
+#: areaInteractive.py:71
 msgid "What is the radius of the inner circle? "
 msgstr ""
 
-#: areaInteractive.py:75
+#: areaInteractive.py:76
 msgid "What is the length of the major axis? "
 msgstr ""
 
-#: areaInteractive.py:76
+#: areaInteractive.py:77
 msgid "What is the length of the minor axis? "
 msgstr ""
 
-#: areaInteractive.py:79
+#: areaInteractive.py:80
 msgid ""
 "Options:\n"
 "1 - Equilateral triangle\n"
@@ -138,15 +138,15 @@ msgid ""
 "15 - Ellipse"
 msgstr ""
 
-#: areaInteractive.py:96 volInteractive.py:75
+#: areaInteractive.py:97 volInteractive.py:75
 msgid "Please type one: "
 msgstr ""
 
-#: areaInteractive.py:98 volInteractive.py:77
+#: areaInteractive.py:99 volInteractive.py:77
 msgid "Please type an integer"
 msgstr ""
 
-#: areaInteractive.py:100
+#: areaInteractive.py:101
 msgid "I was too lazy to change 7."
 msgstr ""
 
@@ -162,41 +162,49 @@ msgstr ""
 msgid "an error occured."
 msgstr ""
 
-#: func.py:3
+#: func.py:6
 msgid "Please enter the first number: "
 msgstr ""
 
-#: func.py:4
+#: func.py:7
 msgid "Please enter the second number: "
 msgstr ""
 
-#: func.py:8
+#: func.py:11
 msgid ""
 "\n"
 "     Current list of commands: multiplication (*), division (/), addition "
 "(+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube "
 "({}), cube twice ({2}), exponents (power), root (root), equals (=), "
 "logarithm (log), memory (mem), interest calculator (interest), fibonacci "
-"sequence (fib), percentage (percent), and convert number systems (base). "
-"Type e to e.\n"
+"sequence (fib), percentage (percent), convert temperature (temperature), and "
+"convert number systems (base). Type quit to quit.\n"
 "     Bugs? Head on over to https://github.com/thetechrobo/support/\n"
 "     To contribute: go to https://github.com/thetechrobo/python-text-"
 "calculator/\n"
 "     "
 msgstr ""
 
-#: func.py:15 func.py:20 func.py:31 func.py:36 func.py:52
+#: func.py:18 func.py:23 func.py:32
+#, python-format
 msgid ""
 "\n"
-"That equals..."
+"That equals...\n"
+"%s"
 msgstr ""
 
-#: func.py:24
+#: func.py:25
 msgid "Do not divide by zero!"
 msgstr ""
 
-#: func.py:27
+#: func.py:28
 msgid "There was an unknown issue dividing your Numbers..."
+msgstr ""
+
+#: func.py:36 func.py:52
+msgid ""
+"\n"
+"That equals..."
 msgstr ""
 
 #: func.py:41
@@ -360,107 +368,129 @@ msgid ""
 "2 - Quebec Sales Tax\n"
 "3 - Yukon, Northwest Territories, Nunavut, and Alberta Sales Tax\n"
 "4 - BC / Manitoba Sales Tax\n"
-"5 - Custom Tax\n"
+"5 - New Brunswick / Nova Scotia / Newfoundland / PEI Sales Tax\n"
+"6 - Custom Tax\n"
 "Choose one: "
 msgstr ""
 
-#: func.py:203 func.py:210 func.py:217 func.py:224
+#: func.py:204 func.py:211 func.py:218 func.py:225 func.py:232
 msgid "What is the original price (before tax)? "
 msgstr ""
 
-#: func.py:208 func.py:215 func.py:222 func.py:229 func.py:235
+#: func.py:209 func.py:216 func.py:223 func.py:230 func.py:237 func.py:243
 #, python-format
 msgid ""
 "After tax, the price is: \n"
 "%s"
 msgstr ""
 
-#: func.py:231
+#: func.py:239
 msgid "OK, enter the original price: "
 msgstr ""
 
-#: func.py:232
+#: func.py:240
 msgid "Now enter the tax percentage without the percent sign: "
 msgstr ""
 
-#: func.py:237
+#: func.py:245
 msgid "You did not type answer. Abort."
 msgstr ""
 
-#: func.py:239
+#: func.py:247
 msgid ""
-"Would you like sine or inverse sine? (sin / inverse)\n"
-"Type: "
+"OPTIONS:\n"
+"    1 - Farenheit to Celsius\n"
+"    2 - Celsius to Farenheit\n"
+"    3 - Farenheit to Kelvin\n"
+"    4 - Celsius to Kelvin\n"
+"    5 - Kelvin to Celsius\n"
+"    6 - Kelvin to Farenheit\n"
+"    Type: "
 msgstr ""
 
-#: func.py:242
-msgid "Sine it is!"
+#: func.py:256
+msgid "Please enter the FARENHEIT temperature: "
 msgstr ""
 
-#: func.py:243 func.py:250
-msgid "Enter the number: "
+#: func.py:260 func.py:266
+#, python-format
+msgid ""
+"That equals...\n"
+"%s"
 msgstr ""
 
-#: func.py:249
-msgid "Inverse it is!"
+#: func.py:263
+msgid "Please enter the CELSIUS temperature: "
 msgstr ""
 
-#: palc.py:42
+#: func.py:275
+msgid "5 - Empty Custom Slot"
+msgstr ""
+
+#: func.py:281
+msgid "Type a name..."
+msgstr ""
+
+#: func.py:282
+msgid "What Percentage? "
+msgstr ""
+
+#: palc.py:41
 msgid ""
 "I can't access the file func.py. This file is necessary for proper function "
 "of the Software."
 msgstr ""
 
-#: palc.py:43
+#: palc.py:42
 msgid "Loading...............\n"
 msgstr ""
 
-#: palc.py:47
+#: palc.py:46
 msgid "Press any key to continue..."
 msgstr ""
 
-#: palc.py:62
+#: palc.py:61
 msgid ""
 "What calculation do you wish to do? (Type `?' for a list of commands)\n"
 "Type: "
 msgstr ""
 
-#: palc.py:81 palc.py:85
+#: palc.py:80 palc.py:84
 msgid "Number? "
 msgstr ""
 
-#: palc.py:144
+#: palc.py:143
 msgid "That feature was discontinued."
 msgstr ""
 
-#: palc.py:151
+#: palc.py:150
 msgid "That equals.....\n"
 msgstr ""
 
-#: palc.py:156
+#: palc.py:155
 msgid ""
 "Currently I don't support the root you chose. Hopefully this will change :)"
 msgstr ""
 
-#: palc.py:162
+#: palc.py:161
 msgid "=42 -- the answer to life, the universe, and everything"
 msgstr ""
 
-#: palc.py:173
+#: palc.py:172
 msgid "Type in the number to ord: "
 msgstr ""
 
-#: palc.py:186
+#: palc.py:185
 msgid ""
 "You did not type an answer.\n"
 "Abort."
 msgstr ""
 
-#: palc.py:190
+#: palc.py:189
 msgid "Starting fibonacci sequence. Please wait."
 msgstr ""
 
-#: palc.py:194
+#: palc.py:193
 #, python-format
 msgid ""
 "1 - Calculate \"What is x% of y?\"\n"
@@ -468,15 +498,15 @@ msgid ""
 "Type: "
 msgstr ""
 
-#: palc.py:202
-msgid "Abort."
+#: palc.py:201
+msgid "You didn't type a valid answer. Abort."
 msgstr ""
 
-#: palc.py:209 palc.py:212
+#: palc.py:210 palc.py:213
 msgid "Type something!"
 msgstr ""
 
-#: palc.py:215
+#: palc.py:216
 #, python-format
 msgid ""
 "\n"
@@ -486,28 +516,53 @@ msgid ""
 "sq or [] (square); ar or # (area); vol (volume); {} (cube); power (exponents/"
 "power); root (roots); = (equals); fib (fibonacci) log (logarithm); mem "
 "(memory); percent (calculate percentage); interest (interest calculator); "
-"and base (convert number system). Sorry for the inconvenience\n"
+"temperature (convert Celsius to Farenheit etc); and base (convert number "
+"system). Sorry for the inconvenience\n"
 "            "
 msgstr ""
 
-#: palc.py:223
+#: palc.py:224
 msgid "Welcome to Palc!"
 msgstr ""
 
-#: palc.py:230
+#: palc.py:232
 msgid ""
 "\n"
 "Note that you CAN type `quit' instead of pressing the interrupt key"
 msgstr ""
 
-#: palc.py:233
+#: palc.py:236
 msgid ""
 "\n"
 "Why ^D? Why not just type `quit'?"
 msgstr ""
 
-#: palc.py:238
+#: palc.py:244
+msgid "\aERROR!"
+msgstr ""
+
+#: palc.py:248
+msgid ""
+"You typed in an invalid integer or float. Or maybe the program needs "
+"debugging. Either way, it's a pretty big error."
+msgstr ""
+
+#: palc.py:249
+msgid "There may have been details before the word `ERROR!'. Check that."
+msgstr ""
+
+#: palc.py:252
 msgid "Looks like you exited."
+msgstr ""
+
+#: palc.py:258
+msgid "Unknown Error!"
+msgstr ""
+
+#: palc.py:262
+msgid ""
+"An unknown error occured. Please file an Issue at github.com/thetechrobo/"
+"support."
 msgstr ""
 
 #: volInteractive.py:3
@@ -592,8 +647,8 @@ msgstr ""
 msgid "Sorry, that was not an option. >:)"
 msgstr ""
 
-#: volume.py:12 volume.py:27 volume.py:40 volume.py:54 volume.py:67
-#: volume.py:79 volume.py:92 volume.py:105 volume.py:118 volume.py:131
-#: volume.py:144 volume.py:157 volume.py:170 volume.py:183
+#: volume.py:14 volume.py:29 volume.py:42 volume.py:56 volume.py:69
+#: volume.py:81 volume.py:94 volume.py:107 volume.py:120 volume.py:133
+#: volume.py:146 volume.py:159 volume.py:172 volume.py:185
 msgid "The volume is: "
 msgstr ""

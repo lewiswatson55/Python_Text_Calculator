@@ -257,13 +257,13 @@ def tempCalc():
         #howdy = float(input(_("Please enter the CELSIUS temperature: ")))
         yolo = hello - 32
         yolo = yolo * 5/9
-        cprint.info("That equals...\n%s" % yolo)
+        cprint.info(_("That equals...\n%s" % yolo))
         logging.info("User did F to C with F=%s, result=%s" % (hello, yolo))
     elif hi == 2:
         howdy = float(input(_("Please enter the CELSIUS temperature: ")))
         yolo = howdy * 9/5
         yolo = yolo + 32
-        cprint.info("That equals...\n%s" % yolo)
+        cprint.info(_("That equals...\n%s" % yolo))
         logging.info("User did C to F with C=%s, result=%s" % (howdy, yolo))
 def saveSlot5():
     try:
@@ -272,13 +272,13 @@ def saveSlot5():
         print("5 - %s" % tryyy)
         itWorks = True
     except (NameError, IOError):
-        print("5 - Empty Custom Slot")
+        print(_("5 - Empty Custom Slot"))
         itWorks = False
     if hi == 5:
         if itWorks is True:
             pass
         if itWorks is False:
-            name = input("Type a name...")
-            taxSlot5 = float(input("What Percentage? "))
+            name = input(_("Type a name..."))
+            taxSlot5 = float(input(_("What Percentage? ")))
 #def sin():
     #which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType:
