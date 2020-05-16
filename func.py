@@ -257,8 +257,10 @@ def tempCalc():
         yolo = yolo + 32
         cprint.info("That equals...\n%s" % yolo)
         logging.info("User did C to F with C=%s, result=%s" % (howdy, yolo))
-def saveSlot():
+def saveSlot5():
     try:
+        TheFile = open("taxslot5", "r")
+        tryyy = TheFile.read()
         print("5 - %s" % tryyy)
         itWorks = True
     except NameError:
