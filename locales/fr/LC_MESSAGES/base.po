@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-16 19:15-0400\n"
-"PO-Revision-Date: 2020-05-16 19:18-0400\n"
+"POT-Creation-Date: 2020-05-16 19:23-0400\n"
+"PO-Revision-Date: 2020-05-16 19:23-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -426,6 +426,15 @@ msgstr ""
 "Donc, avec ça hors du chemin, tappe le montant que on dois multiplier "
 "l'intérêt par (aka le montant de unités de temps).\n"
 "Tappe le numero : "
+
+#: func.py:187
+#, python-format
+msgid ""
+"The answer is: \n"
+"%s"
+msgstr ""
+"La reponse est : \n"
+"%s"
 
 #: func.py:188
 msgid "Would you like to do it again (Y/n)? "
