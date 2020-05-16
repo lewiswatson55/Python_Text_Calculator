@@ -251,5 +251,11 @@ def tempCalc():
         yolo = yolo * 5/9
         cprint.info("That equals...\n%s" % yolo)
         logging.info("User did F to C with F=%s, result=%s" % (hello, yolo))
+    elif hi == 2:
+        howdy = float(input(_("Please enter the CELSIUS temperature: ")))
+        yolo = howdy * 9/5
+        yolo = yolo + 32
+        cprint.info("That equals...\n%s" % yolo)
+        logging.info("User did C to F with C=%s, result=%s" % (howdy, yolo))
 #def sin():
     #which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType:
