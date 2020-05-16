@@ -118,7 +118,7 @@ def palc():
             uc()
 #CUBE
        elif "{}" in calc:
-            cubedNumber = int(input("\nType the number to be cubed: "))
+            cubedNumber = int(input(_("\nType the number to be cubed: ")))
             print()
             cprint.info(cubedNumber ** 3) #Manually cube number
             logging.info(("User cubed number ", cubedNumber, " got result ", (cubedNumber ** 3)))
@@ -129,13 +129,13 @@ def palc():
             e()
 #EXPONENTS
        elif "power" in calc:
-            origin = float(input("Original number?"))
-            ex = float(input("Exponent? "))
+            origin = float(input(_("Original number?")))
+            ex = float(input(_("Exponent? ")))
             cprint.info(origin ** ex)
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
        elif "ex" in calc:
-            origin = float(input("Original number?"))
-            ex = float(input("Exponent? "))
+            origin = float(input(_("Original number?")))
+            ex = float(input(_("Exponent? ")))
             print(origin ** ex)
             logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
 #CUBE TWICE
@@ -143,10 +143,10 @@ def palc():
             cprint.err(_("That feature was discontinued."))
 #ROOTS
        elif "root" in calc:
-            root = input("Square root or cube root?(square/cube)")
+            root = input(_("Square root or cube root?(square/cube)"))
             root = root.lower()
             if "square" in root:
-                num = input("Number to be rooted?")
+                num = input(_("Number to be rooted?"))
                 cprint.info(_("That equals.....\n", num ** 0.5))
                 logging.info(("user sqrooted number ", (num**0.5)))
             elif "cube" in root:
@@ -156,7 +156,7 @@ def palc():
 #EASTER EGG!
        elif "=" in calc:
             print()
-            number = int(input("Type in a number: "))
+            number = int(input(_("Type in a number: ")))
             if number == 42:
                 cprint.info(_("=42 -- the answer to life, the universe, and everything"))
                 logging.info("User got the easter egg")
@@ -176,7 +176,7 @@ def palc():
            log()
 #MEMORY
        elif "mem" in calc:
-            memOrRecall = input("Would you like to set the memory or recall? (set / recall)\nType: ")
+            memOrRecall = input(_("Would you like to set the memory or recall? (set / recall)\nType: "))
             if memOrRecall.lower() in "set":
                 remember()
             elif memOrRecall.lower() in "recall":

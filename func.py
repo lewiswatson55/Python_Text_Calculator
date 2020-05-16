@@ -1,7 +1,7 @@
 import logging
 from cprint import *
 if __name__ == "__main__":
-    print("Please do not run any of these files directly. They don't do anything useful on their own.")
+    print(_("Please do not run any of these files directly. They don't do anything useful on their own."))
 def getNum(): #ask for two numbers and then return to function
     n1 = int(input(_("Please enter the first number: ")))
     n2 = int(input(_("Please enter the second number: ")))
@@ -185,7 +185,7 @@ So, with that out of the way, type the amount we should multiply the interest by
         number = origin + (inRealNumbers * howMany)
         logging.info(("INTERESTCALC: origin: ", origin, " rate: ", rate, " how many: ", howMany, " answer: ", number))
         print(_(("The answer is ", number)))
-        doItAgain = input("Would you like to do it again (Y/n)? ")
+        doItAgain = input(_("Would you like to do it again (Y/n)? "))
         doItAgain = doItAgain.lower()
         if doItAgain == "y":
             pass

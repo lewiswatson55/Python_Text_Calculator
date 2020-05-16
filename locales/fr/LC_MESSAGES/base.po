@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-16 17:09-0400\n"
-"PO-Revision-Date: 2020-05-16 17:14-0400\n"
+"POT-Creation-Date: 2020-05-16 19:15-0400\n"
+"PO-Revision-Date: 2020-05-16 19:18-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -176,6 +176,14 @@ msgstr "Merci d'utiliser le Fibonacci fonction de Palc !"
 #: fibonacci.py:21
 msgid "an error occured."
 msgstr "Une erreur est survenue."
+
+#: func.py:4
+msgid ""
+"Please do not run any of these files directly. They don't do anything useful "
+"on their own."
+msgstr ""
+"Veuillez n'exécuter aucun de ces fichiers directement. Ils ne font rien "
+"d'utile par eux-mêmes."
 
 #: func.py:6
 msgid "Please enter the first number: "
@@ -419,6 +427,10 @@ msgstr ""
 "l'intérêt par (aka le montant de unités de temps).\n"
 "Tappe le numero : "
 
+#: func.py:188
+msgid "Would you like to do it again (Y/n)? "
+msgstr "Voulez-vous faire ça encore (Y/n)? "
+
 #: func.py:193
 msgid "OK. Going back..."
 msgstr "D'accord. Je retourne..."
@@ -545,9 +557,35 @@ msgstr ""
 msgid "Number? "
 msgstr "Quelle est le nombre ? "
 
+#: palc.py:121
+msgid ""
+"\n"
+"Type the number to be cubed: "
+msgstr ""
+"\n"
+"Tappez le nombre à cuber : "
+
+#: palc.py:132 palc.py:137
+msgid "Original number?"
+msgstr "Tappez le nombre original : "
+
+#: palc.py:133 palc.py:138
+msgid "Exponent? "
+msgstr "Tappez l'exponent : "
+
 #: palc.py:143
 msgid "That feature was discontinued."
 msgstr "Cette fonctionnalité a été supprimée."
+
+#: palc.py:146
+msgid "Square root or cube root?(square/cube)"
+msgstr ""
+"Racine carré ou cube ? (Square/cube)\n"
+"Tappez : "
+
+#: palc.py:149
+msgid "Number to be rooted?"
+msgstr "Quelle est la nombre pour << raciner >> ? "
 
 #: palc.py:150
 msgid "That equals.....\n"
@@ -560,6 +598,10 @@ msgstr ""
 "Pour le moment je ne supporte pas la racine que vous voulez. J'espere que ca "
 "va changer :)"
 
+#: palc.py:159
+msgid "Type in a number: "
+msgstr "Tappez le nombre : "
+
 #: palc.py:161
 msgid "=42 -- the answer to life, the universe, and everything"
 msgstr "=42 -- la reponse au vie, l'universe, et tous les choses"
@@ -567,6 +609,14 @@ msgstr "=42 -- la reponse au vie, l'universe, et tous les choses"
 #: palc.py:172
 msgid "Type in the number to ord: "
 msgstr "Tappez le nombre pour 'ord'er : "
+
+#: palc.py:179
+msgid ""
+"Would you like to set the memory or recall? (set / recall)\n"
+"Type: "
+msgstr ""
+"Souhaitez-vous setter la mémoire ou rappeler? (set / recall)\n"
+"Type:"
 
 #: palc.py:185
 msgid ""
@@ -776,11 +826,6 @@ msgstr "Desole, ce n'etais pas une option. >:)"
 #: volume.py:146 volume.py:159 volume.py:172 volume.py:185
 msgid "The volume is: "
 msgstr "La reponse est : "
-
-#~ msgid ""
-#~ "Would you like sine or inverse sine? (sin / inverse)\n"
-#~ "Type: "
-#~ msgstr "WIP"
 
 #~ msgid "Sine it is!"
 #~ msgstr "J'utilise cosine ! "
