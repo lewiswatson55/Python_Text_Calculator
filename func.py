@@ -265,9 +265,9 @@ def saveSlot():
         print("5 - Empty Custom Slot")
         itWorks = False
     if hi == 5:
-        if itWorks == True:
+        if itWorks is True:
             pass
-        if itWorks == False:
+        if itWorks is False:
             name = input("Type a name...")
             taxSlot5 = float(input("What Percentage? "))
 #def sin():
