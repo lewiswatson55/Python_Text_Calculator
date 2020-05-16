@@ -263,7 +263,7 @@ def saveSlot5():
         tryyy = TheFile.read()
         print("5 - %s" % tryyy)
         itWorks = True
-    except NameError:
+    except (NameError, IOError):
         print("5 - Empty Custom Slot")
         itWorks = False
     if hi == 5:
