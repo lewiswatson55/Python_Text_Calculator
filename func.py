@@ -1,12 +1,14 @@
 import logging
 from cprint import *
+if __name__ == "__main__":
+    print("Please do not run any of these files directly. They don't do anything useful on their own.")
 def getNum(): #ask for two numbers and then return to function
-    n1 = float(input(_("Please enter the first number: ")))
-    n2 = float(input(_("Please enter the second number: ")))
+    n1 = int(input(_("Please enter the first number: ")))
+    n2 = int(input(_("Please enter the second number: ")))
     logging.info(("Palc got two numbers: ", n1, " and ", n2))
     return n1, n2
 def h():
-    cprint.info(_('''
+    print(_('''
      Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (power), root (root), equals (=), logarithm (log), memory (mem), interest calculator (interest), fibonacci sequence (fib), percentage (percent), and convert number systems (base). Type e to e.
      Bugs? Head on over to https://github.com/thetechrobo/support/
      To contribute: go to https://github.com/thetechrobo/python-text-calculator/
@@ -22,7 +24,6 @@ def div(): #division
     except ZeroDivisionError:
         cprint.err(_("Do not divide by zero!"))
         logging.error("User attempted to divide by zero.")
-        raise ValueError
     except:
         cprint.err(_("There was an unknown issue dividing your Numbers..."))
     logging.info(("User divvied ", n1, " by ", n2, ", getting a result of ", (n1 / n2)))
@@ -32,21 +33,21 @@ def sub(): #subtraction
     logging.info(("User subtracted ", n1, " by ", n2, " and got result ", (n1 - n2)))
 def add(): #addition
     n1, n2 = getNum()
-    cprint.info(_("\nThat equals...\n%s" % (n1 + n2)))
+    print(_("\nThat equals..."))
+    print(n1 + n2)
     logging.info(("User added ", n1, " to ", n2, " and got result ", (n1 + n2)))
 def mod(): #modulo
     try:
         bigger = int(input(_("\nType the first number (greater): ")))
         smaller = int(input(_("Type the second number (smaller): ")))
     except (TypeError, ValueError):
-        cprint.err(_("Invalid input (code 1)\n"))
+        print(_("\nError!"))
+        print(_("Invalid input (code 1)\n"))
         logging.error(("ERROR: attempted to modulo numbers ", bigger, " and ", smaller, ", but errored code 1."))
-        raise TypeError
     if(abs(bigger)<abs(smaller)):
-        cprint.err(_("\nError!"))
-        cprint.err(_("The second number entered is greater than the first number (code 2)\n"))
+        print(_("\nError!"))
+        print(_("The second number entered is greater than the first number (code 2)\n"))
         logging.error(("ERROR: attempted to modulo numbers ", bigger, " and ", smaller, ", but errored code 2."))
-        raise ValueError
     else:
         print(_("\nThat equals..."))
         print(bigger-smaller*int(bigger/smaller))
@@ -133,7 +134,7 @@ def readMyMemory():
     try:
         slot = str(int(input(_("What slot number did you use? "))))
         memory = open(slot, "r")
-        print(_(("Number: ", memory.read())))
+        print(_("Number: ", memory.read()))
         logging.info(("Retrieved number ", memory.read(), " from memory."))
     except:
         logging.info("There was an error retrieving the file from memory.")
@@ -152,8 +153,7 @@ def fib():
 def percentage(percent, whole):
     if whole == 0:
         logging.error("User typed 0 as whole.")
-        cprint.err(_("Please do not type in a zero as the whole."))
-        raise ValueError
+        return (_("Please do not type in a zero as the whole."))
     return (percent * whole) / 100.0
 def whatIsPercent():
     origin = int(input(_("what is the ORIGINAL NUMBER? ")))
@@ -235,16 +235,17 @@ Choose one: """)))
         print(_("After tax, the price is: \n%s" % newPrice))
     else:
         print(_("You did not type answer. Abort."))
+def tempCalc():
+    hi = int(input(_('''OPTIONS:
+    1 - Farenheit to Celsius
+    2 - Celsius to Farenheit
+    3 - Farenheit to Kelvin
+    4 - Celsius to Kelvin
+    5 - Kelvin to Celsius
+    6 - Kelvin to Farenheit
+    Type: ''')))
+    if hi == 1:
+        hello = float(input(_("Please enter the FARENHEIT temperature: ")))
+        howdy = float(input(_("Please enter the CELSIUS temperature: ")))
 def sin():
-    which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType: "))
-    which = which.lower()
-    if which == "sin":
-        print(_("Sine it is!"))
-        number = float(input(_("Enter the number: ")))
-        import math
-        res = math.degrees(math.sin(number))
-        print(res)
-        logging.info(("User cos'ed number ", number, " getting result of ", res))
-    elif which == "inverse":
-        print(_("Inverse it is!"))
-        number = float(input(_("Enter the number: ")))
+    which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType:
