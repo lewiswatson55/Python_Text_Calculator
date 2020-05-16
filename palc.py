@@ -215,7 +215,7 @@ Type: ''')))
             logging.error("User typed an invalid command")
             print(_('''
             I don't understand your request. Here are the currently supported calculations:
-            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); power (exponents/power); root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); percent (calculate percentage); interest (interest calculator); and base (convert number system). Sorry for the inconvenience
+            * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); power (exponents/power); root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); percent (calculate percentage); interest (interest calculator); temperature (convert Celsius to Farenheit etc); and base (convert number system). Sorry for the inconvenience
             '''))
 width = os.get_terminal_size().columns
 for i in range(0, width):
