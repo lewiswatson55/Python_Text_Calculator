@@ -23,11 +23,11 @@ class cprint(object):
         'ENDC': '\033[0m'
     }
 
-    def __init__(self, str):
+    def __init__(self, string):
         """
             Prints in white to stdout
         """
-        print(str, file=sys.stdout)
+        print(string, file=sys.stdout)
         del self
 
     @classmethod
