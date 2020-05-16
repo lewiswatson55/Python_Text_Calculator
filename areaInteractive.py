@@ -1,6 +1,4 @@
 from area import *
-if __name__ == "__main__":
-    print("Please do not run any of these files directly. They don't do anything useful on their own.")
 logging.info("User used areaInteractive...")
 def equ_triangle():
     a = int(input(_("What length is the side of the triangle? ")))
