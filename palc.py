@@ -202,6 +202,8 @@ Type: ''')))
 #INTEREST
        elif "interest" in calc:
             calculateInterest()
+       elif "temperature" in calc:
+            tempCalc()
 #OTHERWISE
        elif calc == "":
             logging.error("User attempted to type nothing as a command")

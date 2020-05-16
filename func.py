@@ -246,6 +246,10 @@ def tempCalc():
     Type: ''')))
     if hi == 1:
         hello = float(input(_("Please enter the FARENHEIT temperature: ")))
-        howdy = float(input(_("Please enter the CELSIUS temperature: ")))
-def sin():
-    which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType:
+        #howdy = float(input(_("Please enter the CELSIUS temperature: ")))
+        yolo = hello - 32
+        yolo = yolo * 5/9
+        cprint.info("That equals...\n%s" % yolo)
+        logging.info("User did F to C with F=%s, result=%s" % (hello, yolo))
+#def sin():
+    #which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType:
