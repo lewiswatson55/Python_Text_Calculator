@@ -1,5 +1,6 @@
 from math import sqrt, pi
-
+if __name__ == "__main__":
+    print("Please do not run any of these files directly. They don't do anything useful on their own.")
 # Contains Area Calculating Functions
 # For information on how to use this, go to the Palc wiki or look at the docstrings.
 
