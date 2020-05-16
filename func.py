@@ -257,5 +257,18 @@ def tempCalc():
         yolo = yolo + 32
         cprint.info("That equals...\n%s" % yolo)
         logging.info("User did C to F with C=%s, result=%s" % (howdy, yolo))
+def saveSlot():
+    try:
+        print("5 - %s" % tryyy)
+        itWorks = True
+    except NameError:
+        print("5 - Empty Custom Slot")
+        itWorks = False
+    if hi == 5:
+        if itWorks == True:
+            pass
+        if itWorks == False:
+            name = input("Type a name...")
+            taxSlot5 = float(input("What Percentage? "))
 #def sin():
     #which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType:
