@@ -184,7 +184,7 @@ So, with that out of the way, type the amount we should multiply the interest by
         inRealNumbers = percentage(whole=origin, percent=rate)
         number = origin + (inRealNumbers * howMany)
         logging.info(("INTERESTCALC: origin: ", origin, " rate: ", rate, " how many: ", howMany, " answer: ", number))
-        print(_(("The answer is ", number)))
+        print(_("The answer is: \n%s" % number))
         doItAgain = input(_("Would you like to do it again (Y/n)? "))
         doItAgain = doItAgain.lower()
         if doItAgain == "y":

@@ -253,11 +253,11 @@ except SystemExit:
 except:
     width = os.get_terminal_size().columns
     for i in range(0, width):
-        print("-", sep="", end="")
+        print("-", sep="", end="", flush=True)
     logging.info(("Printed ", width, "dashes"))
     cprint.fatal(_("Unknown Error!".center(width)))
     for i in range(0, width):
-        print("-", sep="", end="")
+        print("-", sep="", end="", flush=True)
     logging.info(("Printed ", width, "dashes"))
     cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support."))
 #EOF
