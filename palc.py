@@ -3,7 +3,7 @@
 # THANKS TO @ErdoganOnal for their comment on this SO question: https://stackoverflow.com/questions/61621821/any-secure-alternatives-for-this?noredirect=1#comment109002742_61621821
 # THANKS TO https://stackoverflow.com/questions/33594958/is-it-possible-to-align-a-print-statement-to-the-center-in-python
 #
-from cprint import *
+from cprint import cprint
 import sys, os, logging #sys so I can exit, os so I can do I can't remember, logging so I can log.
 logging.basicConfig(filename="palc.log", level=logging.DEBUG) #set up logging
 try:
