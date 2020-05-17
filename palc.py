@@ -16,7 +16,7 @@ except ImportError:
     _IS_WINDOWS = False
     logging.info("Imported tty, termios")
 import gettext #to translate Palc
-language = input("English or Francais? (do not add accents to letters/ne pas ajouter les accents aux lettres): ")
+language = input("English or Francais? (do not add accents to letters/n'ajoute pas les accents aux lettres): ")
 language = language.lower()
 if language == "francais":
     logging.info("Set language to French")
