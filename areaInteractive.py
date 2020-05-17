@@ -1,4 +1,5 @@
 from area import *
+import logging
 logging.info("User used areaInteractive...")
 def equ_triangle():
     a = int(input(_("What length is the side of the triangle? ")))

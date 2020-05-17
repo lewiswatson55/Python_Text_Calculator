@@ -1,4 +1,5 @@
 from math import sqrt, pi
+import logging
 if __name__ == "__main__":
     print("Please do not run any of these files directly. They don't do anything useful on their own.")
 # Contains Area Calculating Functions
@@ -181,6 +182,7 @@ def cirsector(r: int, a: int) -> 'area':
     """
     length = (a / 360) * 2 * pi * r
     area = 1 / 2 * length * r
+    logging.info("User used Cirsector area with variable r=%s, a=%s answer=%s" % (r, a, area))
     return area
 
 #Ring
@@ -195,6 +197,7 @@ def ring(ro: int, rs: int != 1) -> 'area':
     :return: area
     """
     area = pi * (pow(ro, 2) - pow(rs, 2))
+    logging.info("User used Ring area with variable ro=%s, rs=%s answer=%s" % (ro, rs, area))
     return area
 
 #Ellipse
@@ -208,4 +211,5 @@ def ellipse(a: int, b: int != 1) -> 'area':
     :return: area
     """
     area = pi * a * b
+    logging.info("User used Ellipse area with variable a=%s, b=%s answer=%s" % (a, b, area))
     return area

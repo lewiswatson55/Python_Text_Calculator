@@ -252,7 +252,7 @@ except (ValueError, TypeError):
     e()
 except SystemExit:
     cprint.ok(_("Looks like you exited."))
-except:
+except EOFError:
     width = os.get_terminal_size().columns
     for i in range(0, width):
         print("-", sep="", end="", flush=True)
