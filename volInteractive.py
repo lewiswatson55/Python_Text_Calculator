@@ -47,19 +47,19 @@ def hexaprism():
 def squiramid():
     a = int(input(_("What is the length of the side of the base? ")))
     h = int(input(_("What is the height of the pyramid? ")))
-    vol_sqr_pyramid(a, h)
+    print(_("The volume is: %s" % vol_sqr_pyramid(a=a, h=h))
 def triramid():
     a = int(input(_("What is the length of the side of the base? ")))
     h = int(input(_("What is the height of the pyramid? ")))
-    vol_tri_pyramid(a, h)
+    print(_("The volume is: %s" % vol_tri_pyramid(a=a, h=h))
 def pentapyr():
-    ro = int(input(_("What is the length of the side of the base? ")))
-    rs = int(input(_("What is the height of the pyramid? ")))
-    vol_penta_pyramid(ro, rs)
+    a = int(input(_("What is the length of the side of the base? ")))
+    h = int(input(_("What is the height of the pyramid? ")))
+    print(_("The volume is: %s" % vol_penta_pyramid(a=a, h=h))
 def hexramid():
     a = int(input(_("What is the length of the side of the base? ")))
     h = int(input(_("What is the height of the pyramid? ")))
-    vol_hexa_pyramid(a, h)
+    print(_("The volume is: %s" % vol_hexa_pyramid(a=a, h=h))
 print(_('''Options:
 1 - Cube
 2 - Cuboid
