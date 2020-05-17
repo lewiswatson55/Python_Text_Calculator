@@ -1,4 +1,5 @@
 from volume import *
+logging.info("Running volinteractive")
 def cuvol():
     a = int(input(_("What length is the side of the cube? ")))
     vol_cube(a)

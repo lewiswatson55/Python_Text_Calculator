@@ -15,6 +15,7 @@ def equtri(a: int) -> 'area':
     :return: area
     '''
     area = (sqrt(3) / 4) * pow(a, 2)
+    logging.info("User used Equtri area with origin %s answer %s" % (a, area))
     return area
 
 #Right Angle Triangle
@@ -28,6 +29,7 @@ def righttri(b: int, h: int) -> 'area':
     :return: area
     '''
     area = 1 / 2 * b * h
+    logging.info("User used Righttri area with variable b=%s, h=%s, answer=%s" % (b, h, area))
     return area
 
 #Acute Triangle
@@ -44,6 +46,7 @@ def actri(a: int, b: int, c: int) -> 'area':
     '''
     s = (a + b + c) / 2
     area = sqrt(s * (s - a) * (s - b) * (s - c))
+    logging.info("User used Acutetri area with variable a=%s, b=%s, c=%s, answer=%s" % (a, b, c, area))
     return area
 
 #Obtuse Triangle
@@ -60,6 +63,7 @@ def obtri(a: int, b: int, c: int) -> 'area':
         '''
     s = (a + b + c) / 2
     area = sqrt(s * (s - a) * (s - b) * (s - c))
+    logging.info("User used Obtuse Triangle area with variable a=%s, b=%s, c=%s, answer=%s" % (a, b, c, area))
     return area
 
 
@@ -75,6 +79,7 @@ def sq(a: int) -> 'area':
     :return: area
     '''
     area = pow(a, 2)
+    logging.info("User used Square area with variable a=%s, answer=%s" % (a, area))
     return area
 
 #Rectangle
@@ -88,6 +93,7 @@ def rectangle(l: int, b: int) -> 'area':
        :return: area
        '''
     area = l * b
+    logging.info("User used Rectangle area with variable l=%s, b=%s, answer=%s" % (l, b, area))
     return area
 
 #Parallelogram
@@ -101,6 +107,7 @@ Takes 'b' As The Base And 'h' As The Height.
     :return: area
     '''
     area = b * h
+    logging.info("User used Parallelogram area with variable b=%s, h=%s, answer=%s" % (b, h, area))
     return area
 
 #Rhombus
@@ -114,6 +121,7 @@ def rhombus(do: int, ds: int) -> 'area':
     :return:
     '''
     area = 1 / 2 * do * ds
+    logging.info("User used Rhombus area with variable do=%s, ds=%s, answer=%s" % (do, ds, area))
     return area
 
 #Trapezium
@@ -128,6 +136,7 @@ def trapezium(a: int, b: int, h: int) -> 'area':
     :return: area
     '''
     area = 1 / 2 * (a + b) * h
+    logging.info("User used Trapezium area with variable a=%s, b=%s, h=%s, answer=%s" % (a, b, h, area))
     return area
 
 
@@ -143,6 +152,7 @@ def circle(r: int) -> 'area':
     :return: area
     '''
     area = pi * (pow(r, 2))
+    logging.info("User used Circle area with variable r=%s, answer=%s" % (r, area))
     return area
 
 #Semicircle
@@ -155,6 +165,7 @@ def semicircle(r: int) -> 'area':
     :return: area
     """
     area = 1 / 2 * (circle(r))
+    logging.info("User used Semicircle area with variable r=%s, answer=%s" % (r, area))
     return area
 
 #Circular sector
