@@ -262,3 +262,5 @@ except:
     logging.info(("Printed ", width, "dashes"))
     cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support."))
 #EOF
+finally:
+    logging.info("Program stopped execution.")
