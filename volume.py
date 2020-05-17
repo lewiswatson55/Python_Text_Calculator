@@ -11,8 +11,8 @@ def vol_cube(a: int) -> 'volume':
     :return: volume
     '''
     volume = pow(a, 3)
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #CUBOID
@@ -26,8 +26,8 @@ def vol_cuboid(l: int, b: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = l * b * h
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #CYLINDER
@@ -39,8 +39,8 @@ def vol_cylinder(r: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = pi * pow(r, 2) * h
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #HOLLOW CYLINDER
@@ -53,8 +53,8 @@ def vol_hollow_cylinder(ro: int, rs: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = 2 * pi * (ro + rs) * h
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #CONE
@@ -66,8 +66,8 @@ def vol_cone(r: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = 1 / 3 * pi / pow(r, 2) * h
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #SPHERE
@@ -78,8 +78,8 @@ def vol_sphere(r: int) -> 'volume':
     :return: volume
     '''
     volume = 4 / 3 * pi * pow(r, 3)
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #HOLLOW SPHERE
@@ -91,8 +91,8 @@ def vol_hollow_sphere(ro: int, rs: int) -> 'volume':
     :return: volume
     '''
     volume = 4 / 3 * pi * (pow(ro, 3) - pow(rs, 3))
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #BASE TRIANGLE PRISM
@@ -104,8 +104,8 @@ def vol_tri_prism(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = (sqrt(3) / 4 * pow(a, 2)) * h
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #PRISM BASE PENTAGON
@@ -117,8 +117,8 @@ def vol_penta_prism(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = (sqrt(3) * pow(a, 2)) * h
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #PRISM WITH A HEXAGON BASE
@@ -130,8 +130,8 @@ def vol_hexa_prism(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = (2.5981 * pow(a, 2)) * h
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #PYRAMID WITH A SQUARE BASE
@@ -143,8 +143,8 @@ def vol_sqr_pyramid(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = (1 / 3 * h) * pow(a, 2)
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #PYRAMID WITH A TRIANGULAR BASE
@@ -156,8 +156,8 @@ def vol_tri_pyramid(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = 1 / 3 * h * (sqrt(3) / 4 * pow(a, 2))
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #PYRAMID WITH A PENTAGON BASE
@@ -169,8 +169,8 @@ def vol_penta_pyramid(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = 1 / 3 * h * (sqrt(3) * pow(a, 2))
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
 
 #PYRAMID WITH A HEXAGON BASE
@@ -182,6 +182,6 @@ def vol_hexa_pyramid(a: int, h: int) -> 'volume':
     :return: volume
     '''
     volume = (1 / 3 * h) * (2.5981 * pow(a, 2))
-    print(_("The volume is: "))
-    print(volume)
+    
+    
     return volume
