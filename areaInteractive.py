@@ -3,13 +3,11 @@ import logging
 logging.info("User used areaInteractive...")
 def equ_triangle():
     a = int(input(_("What length is the side of the triangle? ")))
-    print(_("The area is: "))
-    print(equtri(a))
+    print(_("The area is: %s" % equtri(a)))
 def right_triangle():
     b = int(input(_("What length is the base of the triangle? ")))
     h = int(input(_("What length is the height of the triangle? ")))
-    print(_("The area is: "))
-    print(righttri(b, h))
+    print(_("The area is: %s" % righttri(b=b, h=h)))
 def acute_triangle():
     a = int(input(_("What is the length of the first side? ")))
     b = int(input(_("what is the length of the second side? ")))
