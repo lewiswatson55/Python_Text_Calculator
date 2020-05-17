@@ -203,6 +203,7 @@ Type: ''')))
 #INTEREST
        elif "interest" in calc:
             calculateInterest()
+#TEMPERATURE
        elif "temperature" in calc:
             tempCalc()
 #OTHERWISE
