@@ -111,7 +111,7 @@ while True:
         squiramid()
         break
     elif choice == 13:
-        trimarid()
+        triramid()
         break
     elif choice == 14:
         pentapyr()
