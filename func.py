@@ -95,11 +95,11 @@ def base():
         print(printThis)
 def uc():
     import runpy
-    logging.warning(("User ran `volume.py'. Log is currently unavailable for area and volume."))
+    logging.warning(("User ran `volume.py'. Log is untested for area and volume."))
     runpy.run_path(path_name='volInteractive.py')
 def area():
     import runpy
-    logging.warning(("User ran `area.py'. Log is currently unavailable for area and volume."))
+    logging.warning(("User ran `area.py'. Log is untested for area and volume."))
     runpy.run_path(path_name='areaInteractive.py')
 def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-python
     import math
