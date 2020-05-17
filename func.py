@@ -198,7 +198,8 @@ def taxCalc():
 3 - Yukon, Northwest Territories, Nunavut, and Alberta Sales Tax
 4 - BC / Manitoba Sales Tax
 5 - New Brunswick / Nova Scotia / Newfoundland / PEI Sales Tax
-6 - Custom Tax
+6 - Saskatchewan Sales Tax
+7 - Custom Tax
 Choose one: """)))
     if whatPlace == 1:
         originPrice = int(input(_("What is the original price (before tax)? ")))
@@ -236,6 +237,13 @@ Choose one: """)))
         logging.info(("User used PEI Sales Tax 15 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
         print(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 6:
+        originPrice = int(input(_("What is the original price (before tax)? ")))
+        percent = 11.0
+        theSalesTax = percentage(percent, originPrice)
+        newPrice = theSalesTax + originPrice
+        logging.info(("User used Saskatchewan Sales Tax 11 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        print(_("After tax, the price is: \n%s" % newPrice))
+    elif whatPlace == 7:
         originPrice = float(input(_("OK, enter the original price: ")))
         percent = float(input(_("Now enter the tax percentage without the percent sign: ")))
         theSalesTax = percentage(percent, originPrice)
