@@ -79,10 +79,10 @@ def palc():
        elif "sq" in calc:
             n = int(input(_("Number? ")))
             cprint.info(n * n)
-            logging.info(("User squared number ", n, " got result ", (n * n)))
+            logging.info("User squared number %s got result %s" % (n, (n * n)))
        elif "[]" in calc:
             n = int(input(_("Number? ")))
-            logging.info(("User squared number ", n, " got result ", (n * n)))
+            logging.info("User squared number %s got result %s" % (n, (n * n)))
             cprint.info(n * n)
 #DIVISION
        elif "/" in calc:
@@ -141,6 +141,7 @@ def palc():
 #CUBE TWICE
        elif "{2}" in calc:
             cprint.err(_("That feature was discontinued."))
+            logging.err("User attempted to use cube twice function")
 #ROOTS
        elif "root" in calc:
             root = input(_("Square root or cube root?(square/cube)"))
