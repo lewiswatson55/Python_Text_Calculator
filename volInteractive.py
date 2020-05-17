@@ -3,13 +3,12 @@ import logging
 logging.info("Running volinteractive")
 def cuvol():
     a = int(input(_("What length is the side of the cube? ")))
-    print(_"The volume is: %s" % vol_cube(a))
+    print(_("The volume is: %s" % vol_cube(a)))
 def cuboid():
     b = int(input(_("What length is the breadth of the cuboid? ")))
     h = int(input(_("What length is the height of the cuboid? ")))
     l = int(input(_("What length is the cuboid? ")))
-    print(_"The volume is: %s" % vol_vuboid(b=b, h=h, l=l))
-    vol_cuboid(b=b, h=h, l=l)
+    print(_("The volume is: %s" % vol_cuboid(b=b, h=h, l=l)))
 def cylindervol():
     r = int(input(_("What is the radius of the cylinder? ")))
     h = int(input(_("what is the height of the cylinder? ")))
@@ -30,36 +29,35 @@ def sphere():
 def hollow_sphere():
     ro = int(input(_("What is the radius of the sphere? ")))
     rs = int(input(_("What is the radius of the hollow space? ")))
-    print(_("The volume is: %s" % vol_hollow_sphere(ro=ro, rs=rs))
+    print(_("The volume is: %s" % vol_hollow_sphere(ro=ro, rs=rs)))
 def triprism():
     a = int(input(_("What is the length of the side of the base? ")))
     h = int(input(_("What is the height of the prism? ")))
-    print(_("The volume is: %s" % vol_tri_prism(a=a, h=h))
+    print(_("The volume is: %s" % vol_tri_prism(a=a, h=h)))
 def pentprism():
     a = int(input(_("What is the length of the side of the base? ")))
     h = int(input(_("What is the height of the prism? ")))
-    print(_("The volume is: %s" % vol_penta_prism(a=a, h=h))
+    print(_("The volume is: %s" % vol_penta_prism(a=a, h=h)))
 def hexaprism():
     r = int(input(_("What is the length of the side of the base? ")))
     h = int(input(_("What is the height of the prism? ")))
-    print(_("The volume is: %s" % vol_hexa_prism(r=r, h=h))
-    vol_hexa_prism(r, h)
+    print(_("The volume is: %s" % vol_hexa_prism(r=r, h=h)))
 def squiramid():
     a = int(input(_("What is the length of the side of the base? ")))
     h = int(input(_("What is the height of the pyramid? ")))
-    print(_("The volume is: %s" % vol_sqr_pyramid(a=a, h=h))
+    print(_("The volume is: %s" % vol_sqr_pyramid(a=a, h=h)))
 def triramid():
     a = int(input(_("What is the length of the side of the base? ")))
     h = int(input(_("What is the height of the pyramid? ")))
-    print(_("The volume is: %s" % vol_tri_pyramid(a=a, h=h))
+    print(_("The volume is: %s" % vol_tri_pyramid(a=a, h=h)))
 def pentapyr():
     a = int(input(_("What is the length of the side of the base? ")))
     h = int(input(_("What is the height of the pyramid? ")))
-    print(_("The volume is: %s" % vol_penta_pyramid(a=a, h=h))
+    print(_("The volume is: %s" % vol_penta_pyramid(a=a, h=h)))
 def hexramid():
     a = int(input(_("What is the length of the side of the base? ")))
     h = int(input(_("What is the height of the pyramid? ")))
-    print(_("The volume is: %s" % vol_hexa_pyramid(a=a, h=h))
+    print(_("The volume is: %s" % vol_hexa_pyramid(a=a, h=h)))
 print(_('''Options:
 1 - Cube
 2 - Cuboid
