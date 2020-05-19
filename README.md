@@ -20,11 +20,11 @@ Thanks for visiting!
 
 PLEASE, leave feature requests in the Issues [section](https://github.com/thetechrobo/python-text-calculator/issues), even if you know my email.
 
-Bug reports and questions belong at my [Support](https://github.com/thetechrobo/support) repo.
+Bug reports and questions belong at my [Support repo](https://github.com/thetechrobo/support)
 
 **The only time you should ever use my email is if you need to contact me personally.** Even though it sounds obvious.
 Thank you for your cooperation -- I get too much spam :wink:
 
 
-###### Current Release: v.0.8.2-stable
+###### Current Release: v.0.8.4-stable
 ###### There are currently no previews available for testing
