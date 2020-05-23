@@ -162,7 +162,7 @@ def palc():
                 cprint.info(_("=42 -- the answer to life, the universe, and everything"))
                 logging.info("User got the easter egg")
             else:
-                cprint.info("=" +number)
+                cprint.err("Do you really need a calculator?")
                 logging.info("User used the `=' feature for number ", number)
 #NUMBER SYSTEMS
        elif "base" in calc:
