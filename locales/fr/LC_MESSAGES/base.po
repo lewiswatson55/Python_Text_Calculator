@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-17 13:16-0400\n"
-"PO-Revision-Date: 2020-05-17 13:17-0400\n"
+"POT-Creation-Date: 2020-05-23 11:54-0400\n"
+"PO-Revision-Date: 2020-05-23 11:55-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -17,12 +17,12 @@ msgstr ""
 
 #: areaInteractive.py:5
 msgid "What length is the side of the triangle? "
-msgstr "Longeur du cote de la triangle ? "
+msgstr "Longeur du côté de la triangle ? "
 
 #: areaInteractive.py:6 areaInteractive.py:10
 #, python-format
 msgid "The area is: %s"
-msgstr "La reponse est : %s"
+msgstr "La réponse est : %s"
 
 #: areaInteractive.py:8
 msgid "What length is the base of the triangle? "
@@ -157,11 +157,11 @@ msgstr ""
 "14 - Ring\n"
 "15 - Ellipse"
 
-#: areaInteractive.py:96 volInteractive.py:80
+#: areaInteractive.py:96 volInteractive.py:78
 msgid "Please type one: "
 msgstr "SVP tappez une option : "
 
-#: areaInteractive.py:98 volInteractive.py:82
+#: areaInteractive.py:98 volInteractive.py:80
 msgid "Please type an integer"
 msgstr "SVP tappez une integer"
 
@@ -267,7 +267,7 @@ msgid ""
 "Error!"
 msgstr ""
 "\n"
-"Erreure !"
+"Une erreur est survenue."
 
 #: func.py:45
 msgid "Invalid input (code 1)\n"
@@ -621,6 +621,10 @@ msgstr "Tappez le nombre : "
 msgid "=42 -- the answer to life, the universe, and everything"
 msgstr "=42 -- la reponse au vie, l'universe, et tous les choses"
 
+#: palc.py:165
+msgid "Do you really need a calculator for this?"
+msgstr "Est-ce-que tu as vraiment besoin d'une calculatrice pour ça ? "
+
 #: palc.py:173
 msgid "Type in the number to ord: "
 msgstr "Tappez le nombre pour 'ord'er : "
@@ -729,7 +733,7 @@ msgstr "Tu as quitter Palc."
 
 #: palc.py:260
 msgid "Unknown Error!"
-msgstr "Erreure critical."
+msgstr "Une erreure a survenue."
 
 #: palc.py:264
 msgid ""
@@ -743,6 +747,15 @@ msgstr ""
 msgid "What length is the side of the cube? "
 msgstr "Quelle est le longeur de la cote du cube ? "
 
+#: volInteractive.py:6 volInteractive.py:11 volInteractive.py:15
+#: volInteractive.py:20 volInteractive.py:24 volInteractive.py:27
+#: volInteractive.py:32 volInteractive.py:36 volInteractive.py:40
+#: volInteractive.py:44 volInteractive.py:48 volInteractive.py:52
+#: volInteractive.py:56 volInteractive.py:60
+#, python-format
+msgid "The volume is: %s"
+msgstr "La reponse est : %s"
+
 #: volInteractive.py:8
 msgid "What length is the breadth of the cuboid? "
 msgstr "Largeur du parallélépipède rectangle ? "
@@ -755,58 +768,50 @@ msgstr "Hauteur du parallélépipède rectangle ? "
 msgid "What length is the cuboid? "
 msgstr "Longeur du parallélépipède rectangle ? "
 
-#: volInteractive.py:14 volInteractive.py:19
+#: volInteractive.py:13 volInteractive.py:18
 msgid "What is the radius of the cylinder? "
 msgstr "Radius du cylindre ? "
 
-#: volInteractive.py:15
+#: volInteractive.py:14
 msgid "what is the height of the cylinder? "
 msgstr "hauteur du cylindre ? "
 
-#: volInteractive.py:16 volInteractive.py:21 volInteractive.py:25
-#: volInteractive.py:28 volInteractive.py:33 volInteractive.py:37
-#: volInteractive.py:41 volInteractive.py:45 volInteractive.py:50
-#: volInteractive.py:54 volInteractive.py:58 volInteractive.py:62
-#, python-format
-msgid "The volume is: %s"
-msgstr "La reponse est : %s"
-
-#: volInteractive.py:18 volInteractive.py:32
+#: volInteractive.py:17 volInteractive.py:31
 msgid "What is the radius of the hollow space? "
 msgstr "Radius d'espace creux ? "
 
-#: volInteractive.py:20
+#: volInteractive.py:19
 msgid "What is the height of the cylinder? "
 msgstr "Hauteur du cylindre ? "
 
-#: volInteractive.py:23
+#: volInteractive.py:22
 msgid "What is the radius of the cone? "
 msgstr "Radius du cone ? "
 
-#: volInteractive.py:24
+#: volInteractive.py:23
 msgid "What is the height of the cone? "
 msgstr "Hauteur du cone ? "
 
-#: volInteractive.py:27 volInteractive.py:31
+#: volInteractive.py:26 volInteractive.py:30
 msgid "What is the radius of the sphere? "
 msgstr "Radius du sphere ? "
 
-#: volInteractive.py:35 volInteractive.py:39 volInteractive.py:43
-#: volInteractive.py:48 volInteractive.py:52 volInteractive.py:56
-#: volInteractive.py:60
+#: volInteractive.py:34 volInteractive.py:38 volInteractive.py:42
+#: volInteractive.py:46 volInteractive.py:50 volInteractive.py:54
+#: volInteractive.py:58
 msgid "What is the length of the side of the base? "
 msgstr "Longeur de la cote du base ? "
 
-#: volInteractive.py:36 volInteractive.py:40 volInteractive.py:44
+#: volInteractive.py:35 volInteractive.py:39 volInteractive.py:43
 msgid "What is the height of the prism? "
 msgstr "Hauteur du prisme ? "
 
-#: volInteractive.py:49 volInteractive.py:53 volInteractive.py:57
-#: volInteractive.py:61
+#: volInteractive.py:47 volInteractive.py:51 volInteractive.py:55
+#: volInteractive.py:59
 msgid "What is the height of the pyramid? "
 msgstr "Hauteur du pyramide ? "
 
-#: volInteractive.py:63
+#: volInteractive.py:61
 msgid ""
 "Options:\n"
 "1 - Cube\n"
@@ -840,7 +845,7 @@ msgstr ""
 "14 - Pyramide a base pentagonal\n"
 "15 - Pyramide a base hexagonal"
 
-#: volInteractive.py:84
+#: volInteractive.py:82
 msgid "Sorry, that was not an option. >:)"
 msgstr "Desole, ce n'etais pas une option. >:)"
 
