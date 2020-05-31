@@ -21,17 +21,17 @@ def div(): #division
     n1, n2 = getNum()
     try:
         cprint.info(_("\nThat equals...\n%s" % (n1 / n2)))
-        logging.info("User divvied %s by %s, getting a result of %s", % (n1, n2, (n1 / n2)))
+        logging.info("User divvied %s by %s, getting a result of %s" % (n1, n2, (n1 / n2)))
     except ZeroDivisionError:
         cprint.err(_("Do not divide by zero!"))
         logging.error("User attempted to divide by zero.")
     except:
         cprint.err(_("There was an unknown issue dividing your Numbers..."))
-        logging.info("User had an issue divvying up %s by %s" % (n1,n2))
+        logging.error("User had an issue divvying up %s by %s" % (n1,n2))
 def sub(): #subtraction
     n1, n2 = getNum()
-    cprint.info(_("\nThat equals...\n%s" % (n1 - n2)))
-    logging.info("User subtracted ", n1, " by ", n2, " and got result " % ((n1 - n2)))
+    cprint.info(_("\nThat equals...\n%s" % n1 - n2))
+    logging.info("User subtracted %s by %s and got result %s" % (n1, n2, n1 - n2))
 def add(): #addition
     n1, n2 = getNum()
     print(_("\nThat equals..."))
