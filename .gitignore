@@ -2,6 +2,8 @@
 Thumbs.db
 palc.log
 palc.logv2
+__pycache__/*
+__pycache__
 __pycache__/
 # From https://stackoverflow.com/questions/3719243/best-practices-for-adding-gitignore-file-for-python-projects
 *.pyc
