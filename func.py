@@ -5,7 +5,7 @@ if __name__ == "__main__":
 def getNum(): #ask for two numbers and then return to function
     n1 = int(input(_("Please enter the first number: ")))
     n2 = int(input(_("Please enter the second number: ")))
-    logging.info(("Palc got two numbers: ", n1, " and ", n2))
+    logging.info("Palc got two numbers: %s and %s" % (n1, n2))
     return n1, n2
 def h():
     print(_('''
@@ -16,21 +16,22 @@ def h():
 def multi(): #multiplication
     n1, n2 = getNum()
     cprint.info(_("\nThat equals...\n%s" % (n1 * n2)))
-    logging.info(("User multiplied ", n1, " by ", n2, " and got result ", (n1 * n2)))
+    logging.info("User multiplied %s by %s and got result %s" % (n1, n2, (n1 * n2)))
 def div(): #division
     n1, n2 = getNum()
     try:
         cprint.info(_("\nThat equals...\n%s" % (n1 / n2)))
+        logging.info("User divvied %s by %s, getting a result of %s", % (n1, n2, (n1 / n2)))
     except ZeroDivisionError:
         cprint.err(_("Do not divide by zero!"))
         logging.error("User attempted to divide by zero.")
     except:
         cprint.err(_("There was an unknown issue dividing your Numbers..."))
-    logging.info(("User divvied ", n1, " by ", n2, ", getting a result of ", (n1 / n2)))
+        logging.info("User had an issue divvying up %s by %s" % (n1,n2))
 def sub(): #subtraction
     n1, n2 = getNum()
     cprint.info(_("\nThat equals...\n%s" % (n1 - n2)))
-    logging.info(("User subtracted ", n1, " by ", n2, " and got result ", (n1 - n2)))
+    logging.info("User subtracted ", n1, " by ", n2, " and got result " % ((n1 - n2)))
 def add(): #addition
     n1, n2 = getNum()
     print(_("\nThat equals..."))
@@ -273,6 +274,16 @@ def tempCalc():
         yolo = yolo + 32
         cprint.info(_("That equals...\n%s" % yolo))
         logging.info("User did C to F with C=%s, result=%s" % (howdy, yolo))
+    elif hi == 3:
+        pass
+    elif hi == 4:
+        pass
+    elif hi == 5:
+        pass
+    elif hi == 6:
+        pass
+    else:
+        print("Invalid response.")
 def saveSlot5():
     try:
         TheFile = open("taxslot5", "r")
