@@ -239,31 +239,32 @@ except EOFError: #if ^D
     logging.info("EOFError")
     cprint.ok(_("\nWhy ^D? Why not just type `quit'?"))
     sys.exit()
-except (ValueError, TypeError):
+except (ValueError, TypeError) as ename:
     logging.critical("ValueError or TypeError")
     width = os.get_terminal_size().columns
     for i in range(0, width):
         print("-", sep="", end="", flush=True)
-    logging.info(("Printed ", width, "dashes"))
+    logging.info("Printed %s dashes" % width)
     cprint.err(_("\aERROR!".center(width)))
     for i in range(0, width):
         print("-", sep="", end="", flush=True)
-    logging.info(("Printed ", width, "dashes"))
+    logging.info("Printed %s dashes" % width)
     cprint.fatal(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
-    cprint.ok(_("There may have been details before the word `ERROR!'. Check that."))
+    cprint.ok(_("Details: %s" % ename))
     e()
 except SystemExit:
     cprint.ok(_("Looks like you exited."))
-except:
+except Exception as ename:
     width = os.get_terminal_size().columns
     for i in range(0, width):
         print("-", sep="", end="", flush=True)
-    logging.info(("Printed ", width, "dashes"))
+    logging.info("Printed %s dashes" % width)
     cprint.fatal(_("Unknown Error!".center(width)))
     for i in range(0, width):
         print("-", sep="", end="", flush=True)
-    logging.info(("Printed ", width, "dashes"))
-    cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support."))
+    logging.info("Printed %s dashes" % width)
+    logging.info("Unknown error (%s)" % ename)
+    cprint.fatal(_("An unknown error occured (%s). Please file an Issue at github.com/thetechrobo/support." % ename))
 finally:
     logging.info("Program stopped execution.")
 #EOF
