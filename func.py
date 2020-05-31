@@ -31,7 +31,7 @@ def div(): #division
 def sub(): #subtraction
     n1, n2 = getNum()
     cprint.info(_("\nThat equals...\n%s" % n1 - n2))
-    logging.info("User subtracted %s by %s and got result %s" % (n1, n2, n1 - n2))
+    logging.info("User subtracted %s by %s and got result %s" % (n1, n2, (n1 - n2)))
 def add(): #addition
     n1, n2 = getNum()
     print(_("\nThat equals..."))
