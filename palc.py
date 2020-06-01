@@ -5,9 +5,10 @@
 
 # THANKS TO https://stackoverflow.com/questions/33594958/is-it-possible-to-align-a-print-statement-to-the-center-in-python FOR showing how to ALIGN the PRINT STATEMENT
 #
+import gettext #to translate Palc
+from sys import exit as e #so that we can exit later on
 from cprint import cprint
 import time
-from time import strftime
 import sys, os, logging #sys so I can exit, os so I can do I can't remember, logging so I can log.
 logging.basicConfig(filename="palc.log", level=logging.DEBUG, format='%(asctime)s %(message)s', datefmt='%d/%m/%Y %H:%M:%S') #set up logging
 try:
@@ -19,8 +20,7 @@ except ImportError:
     import termios
     _IS_WINDOWS = False
     logging.info("Imported tty, termios")
-import gettext #to translate Palc
-language = input("English or Francais? (do not add accents to letters/n'ajoute pas les accents aux lettres): ")
+language = input("English or/ou Francais? (do not add accents to letters/n'ajoute pas les accents aux lettres): ")
 language = language.lower()
 if language == "francais":
     logging.info("Set language to French")
@@ -36,7 +36,6 @@ try:
 except:
     l_translations.install()
     _ = l_translations.gettext
-from sys import exit as e #so that we can exit later on
 try:
     from func import *
 except ImportError:

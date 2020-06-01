@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-05-31 16:18-0400\n"
-"PO-Revision-Date: 2020-05-31 16:19-0400\n"
+"POT-Creation-Date: 2020-06-01 14:41-0400\n"
+"PO-Revision-Date: 2020-06-01 14:43-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -49,7 +49,7 @@ msgstr "Longeur du troisieme cote ? "
 #: areaInteractive.py:50 areaInteractive.py:55 areaInteractive.py:60
 #: areaInteractive.py:65 areaInteractive.py:71 areaInteractive.py:77
 msgid "The area is: "
-msgstr "La reponse est : "
+msgstr "La réponse est : "
 
 #: areaInteractive.py:24
 msgid "What is the length of the side of the square? "
@@ -175,7 +175,7 @@ msgstr "Appuyez sur Ctrl-C pour arrêter."
 
 #: fibonacci.py:19
 msgid "Thanks for using Palc's FIBONACCI function!"
-msgstr "Merci d'utiliser le Fibonacci fonction de Palc !"
+msgstr "Merci d'utiliser le fonction Fibonacci de Palc !"
 
 #: fibonacci.py:21
 msgid "an error occured."
@@ -568,11 +568,11 @@ msgstr ""
 "calcules)\n"
 "Tappe : "
 
-#: palc.py:82 palc.py:86
+#: palc.py:86 palc.py:90
 msgid "Number? "
 msgstr "Quelle est le nombre ? "
 
-#: palc.py:123
+#: palc.py:127
 msgid ""
 "\n"
 "Type the number to be cubed: "
@@ -580,56 +580,58 @@ msgstr ""
 "\n"
 "Tappez le nombre à cuber : "
 
-#: palc.py:134 palc.py:139
+#: palc.py:138 palc.py:143
 msgid "Original number?"
 msgstr "Tappez le nombre original : "
 
-#: palc.py:135 palc.py:140
+#: palc.py:139 palc.py:144
 msgid "Exponent? "
 msgstr "Tappez l'exponent : "
 
-#: palc.py:145
+#: palc.py:149
 msgid "That feature was discontinued."
 msgstr "Cette fonctionnalité a été supprimée."
 
-#: palc.py:149
-msgid "Square root or cube root?(square/cube)"
+#: palc.py:153
+msgid ""
+"Square root or cube root?(square/cube)\n"
+"Type: "
 msgstr ""
-"Racine carré ou cube ? (Square/cube)\n"
+"Racine carré ou cubique ? (Square/cube)\n"
 "Tappez : "
 
-#: palc.py:152
+#: palc.py:156
 msgid "Number to be rooted?"
 msgstr "Quelle est la nombre pour << raciner >> ? "
 
-#: palc.py:153
+#: palc.py:157
 msgid "That equals.....\n"
 msgstr "La reponse est...\n"
 
-#: palc.py:158
+#: palc.py:162
 msgid ""
 "Currently I don't support the root you chose. Hopefully this will change :)"
 msgstr ""
 "Pour le moment je ne supporte pas la racine que vous voulez. J'espere que ca "
 "va changer :)"
 
-#: palc.py:162
+#: palc.py:167
 msgid "Type in a number: "
 msgstr "Tappez le nombre : "
 
-#: palc.py:164
+#: palc.py:169
 msgid "=42 -- the answer to life, the universe, and everything"
 msgstr "=42 -- la reponse au vie, l'universe, et tous les choses"
 
-#: palc.py:167
+#: palc.py:172
 msgid "Do you really need a calculator for this?"
 msgstr "Est-ce-que tu as vraiment besoin d'une calculatrice pour ça ? "
 
-#: palc.py:175
+#: palc.py:179
 msgid "Type in the number to ord: "
 msgstr "Tappez le nombre pour 'ord'er : "
 
-#: palc.py:182
+#: palc.py:187
 msgid ""
 "Would you like to set the memory or recall? (set / recall)\n"
 "Type: "
@@ -637,17 +639,17 @@ msgstr ""
 "Souhaitez-vous setter la mémoire ou rappeler? (set / recall)\n"
 "Type:"
 
-#: palc.py:188
+#: palc.py:193
 msgid ""
 "You did not type an answer.\n"
 "Abort."
 msgstr "Tu n'a pas tappez une reponse valide."
 
-#: palc.py:192
+#: palc.py:197
 msgid "Starting fibonacci sequence. Please wait."
 msgstr "Je commence le séquence Fibonacci. Veuillez attendre. "
 
-#: palc.py:196
+#: palc.py:201
 #, python-format
 msgid ""
 "1 - Calculate \"What is x% of y?\"\n"
@@ -658,16 +660,16 @@ msgstr ""
 "2 - Convertir une nombre au pourcentage.\n"
 "Tappez : "
 
-#: palc.py:204
+#: palc.py:209
 msgid "You didn't type a valid answer. Abort."
 msgstr "Tu n'a pas tappez une reponse valide."
 
-#: palc.py:214 palc.py:217
+#: palc.py:220 palc.py:223
 msgid "Type something!"
 msgstr "Tappez une chose !"
 
 # don't know why there's an error but what the hell. it works.
-#: palc.py:220
+#: palc.py:226
 #, python-format
 msgid ""
 "\n"
@@ -692,11 +694,11 @@ msgstr ""
 "            convertir les numéros a une autre système. Désolé : /\n"
 "            "
 
-#: palc.py:228
+#: palc.py:234
 msgid "Welcome to Palc!"
 msgstr "Bienvenue au Palc !"
 
-#: palc.py:236
+#: palc.py:242
 msgid ""
 "\n"
 "Note that you CAN type `quit' instead of pressing the interrupt key"
@@ -704,7 +706,7 @@ msgstr ""
 "\n"
 "Tu peux tappez `quit' plutot que ^C... "
 
-#: palc.py:240
+#: palc.py:246
 msgid ""
 "\n"
 "Why ^D? Why not just type `quit'?"
@@ -712,31 +714,31 @@ msgstr ""
 "\n"
 "Pourquoi ^D ? Pourquoi pas juste `quit' ?"
 
-#: palc.py:248
+#: palc.py:254
 msgid "\aERROR!"
 msgstr "\aErreure !"
 
-#: palc.py:252
+#: palc.py:258
 msgid ""
 "You typed in an invalid integer or float. Or maybe the program needs "
 "debugging. Either way, it's a pretty big error."
 msgstr ""
 "Erreure: Tu as tappez une nombre invalide, ou le logiciel a une probleme."
 
-#: palc.py:253
+#: palc.py:259
 #, python-format
 msgid "Details: %s"
 msgstr "Détails : %s"
 
-#: palc.py:256
+#: palc.py:262
 msgid "Looks like you exited."
 msgstr "Tu as quitter Palc."
 
-#: palc.py:262
+#: palc.py:268
 msgid "Unknown Error!"
 msgstr "Une erreure a survenue."
 
-#: palc.py:267
+#: palc.py:273
 #, python-format
 msgid ""
 "An unknown error occured (%s). Please file an Issue at github.com/"
@@ -776,7 +778,7 @@ msgstr "Radius du cylindre ? "
 
 #: volInteractive.py:14
 msgid "what is the height of the cylinder? "
-msgstr "hauteur du cylindre ? "
+msgstr "Hauteur du cylindre ? "
 
 #: volInteractive.py:17 volInteractive.py:31
 msgid "What is the radius of the hollow space? "
