@@ -45,10 +45,6 @@ cprint.ok(_("Loading...............\n"))
 time.sleep(2)
 def palc():
     while True:
-       try:
-           logging.info("Calc: %s" % calc)
-       except:
-           pass
        print(_("Press any key to continue..."), end="", flush=True)
        if _IS_WINDOWS:
            msvcrt.getch()
@@ -65,6 +61,10 @@ def palc():
        print('\x1bc') #Third attempt at clearing the screen with ANSI escape codes.
 #CALCULATION CHOICE
        calc = input(_("What calculation do you wish to do? (Type `?' for a list of commands)\nType: "))
+       try:
+           logging.info("Got calc choice %s" % calc)
+       except:
+           pass
        calc = calc.lower() #make variable "calc" lowercase
 #HELP
        if "?" in calc:
@@ -230,11 +230,11 @@ Type: ''')))
 width = os.get_terminal_size().columns
 for i in range(0, width):
     print("-", sep="", end="")
-logging.info(("Printed ", width, "dashes"))
+logging.info("Printed %s dashes" % width)
 cprint.info(_("Welcome to Palc!".center(width)))
 for i in range(0, width):
     print("-", sep="", end="")
-logging.info(("Printed ", width, "dashes"))
+logging.info("Printed %s dashes" % width)
 try:
     palc() #run all that code
 except KeyboardInterrupt: #if ^C
