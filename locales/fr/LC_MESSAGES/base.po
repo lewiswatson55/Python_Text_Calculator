@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-06-01 16:38-0400\n"
-"PO-Revision-Date: 2020-06-01 16:38-0400\n"
+"POT-Creation-Date: 2020-06-01 16:49-0400\n"
+"PO-Revision-Date: 2020-06-01 16:51-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -515,10 +515,10 @@ msgstr ""
 "Tappez une réponse : "
 
 #: func.py:265 func.py:278
-msgid "Please enter the FARENHEIT temperature: "
+msgid "Please enter the FAHRENHEIT temperature: "
 msgstr "Veuillez entrer la température FARENHEIT: "
 
-#: func.py:269 func.py:275 func.py:282
+#: func.py:269 func.py:275 func.py:284 func.py:288 func.py:292 func.py:298
 #, python-format
 msgid ""
 "That equals...\n"
@@ -527,19 +527,23 @@ msgstr ""
 "La reponse est...\n"
 "%s"
 
-#: func.py:272
+#: func.py:272 func.py:286
 msgid "Please enter the CELSIUS temperature: "
 msgstr "Veuillez entrer la température CELSIUS:"
 
-#: func.py:298
+#: func.py:290 func.py:294
+msgid "Please enter the KELVIN temperature: "
+msgstr "Veuillez entrer la température KELVIN : "
+
+#: func.py:310
 msgid "5 - Empty Custom Slot"
 msgstr "5 - Slot customisè vide"
 
-#: func.py:304
+#: func.py:316
 msgid "Type a name..."
 msgstr "Tappez une nom ..."
 
-#: func.py:305
+#: func.py:317
 msgid "What Percentage? "
 msgstr "Quel pourcentage ? "
 

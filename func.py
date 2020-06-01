@@ -295,6 +295,7 @@ Type: ''')))
         yolo = ciao - 273.15
         yolo = yolo * 9/5
         yolo = yolo + 32
+        cprint.info(_("That equals...\n%s" % yolo))
     # TO FIGURE OUT THE FORMULA I JUST GOOGLED 5 ____ TO _____ AND LOOKED AT THE FORMULA IT SHOWS.
     else:
         print("Invalid response.")
