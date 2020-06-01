@@ -6,8 +6,10 @@
 # THANKS TO https://stackoverflow.com/questions/33594958/is-it-possible-to-align-a-print-statement-to-the-center-in-python FOR showing how to ALIGN the PRINT STATEMENT
 #
 from cprint import cprint
+import time
+from time import strftime
 import sys, os, logging #sys so I can exit, os so I can do I can't remember, logging so I can log.
-logging.basicConfig(filename="palc.log", level=logging.DEBUG) #set up logging
+logging.basicConfig(filename="palc.log", level=logging.DEBUG, format='%(asctime)s %(message)s', datefmt='%d/%m/%Y %H:%M:%S') #set up logging
 try:
     import msvcrt
     _IS_WINDOWS = True
@@ -35,7 +37,6 @@ except:
     l_translations.install()
     _ = l_translations.gettext
 from sys import exit as e #so that we can exit later on
-import time
 try:
     from func import *
 except ImportError:
