@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-06-01 14:41-0400\n"
-"PO-Revision-Date: 2020-06-01 14:43-0400\n"
+"POT-Creation-Date: 2020-06-01 16:38-0400\n"
+"PO-Revision-Date: 2020-06-01 16:38-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -175,7 +175,7 @@ msgstr "Appuyez sur Ctrl-C pour arrêter."
 
 #: fibonacci.py:19
 msgid "Thanks for using Palc's FIBONACCI function!"
-msgstr "Merci d'utiliser le fonction Fibonacci de Palc !"
+msgstr "Merci pour utiliser le fonction Fibonacci de Palc !"
 
 #: fibonacci.py:21
 msgid "an error occured."
@@ -503,7 +503,7 @@ msgid ""
 "    4 - Celsius to Kelvin\n"
 "    5 - Kelvin to Celsius\n"
 "    6 - Kelvin to Farenheit\n"
-"    Type: "
+"Type: "
 msgstr ""
 "OPTIONS : \n"
 "    1 - Fahrenheit à Celsius\n"
@@ -512,13 +512,13 @@ msgstr ""
 "    4 - Celsius à Kelvin\n"
 "    5 - Kelvin à Celsius\n"
 "    6 - Kelvin à Fahrenheit\n"
-"    Tappez une réponse : "
+"Tappez une réponse : "
 
-#: func.py:265
+#: func.py:265 func.py:278
 msgid "Please enter the FARENHEIT temperature: "
 msgstr "Veuillez entrer la température FARENHEIT: "
 
-#: func.py:269 func.py:275
+#: func.py:269 func.py:275 func.py:282
 #, python-format
 msgid ""
 "That equals...\n"
@@ -531,15 +531,15 @@ msgstr ""
 msgid "Please enter the CELSIUS temperature: "
 msgstr "Veuillez entrer la température CELSIUS:"
 
-#: func.py:294
+#: func.py:298
 msgid "5 - Empty Custom Slot"
 msgstr "5 - Slot customisè vide"
 
-#: func.py:300
+#: func.py:304
 msgid "Type a name..."
 msgstr "Tappez une nom ..."
 
-#: func.py:301
+#: func.py:305
 msgid "What Percentage? "
 msgstr "Quel pourcentage ? "
 

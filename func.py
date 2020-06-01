@@ -96,11 +96,11 @@ def base():
         print(printThis)
 def uc():
     import runpy
-    logging.warning(("User ran `volume.py'. Log is untested for area and volume."))
+    logging.warning("User ran `volume.py'. Log is untested for area and volume.")
     runpy.run_path(path_name='volInteractive.py')
 def area():
     import runpy
-    logging.warning(("User ran `area.py'. Log is untested for area and volume."))
+    logging.warning("User ran `area.py'. Log is untested for area and volume.")
     runpy.run_path(path_name='areaInteractive.py')
 def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-python
     import math
@@ -260,7 +260,7 @@ def tempCalc():
     4 - Celsius to Kelvin
     5 - Kelvin to Celsius
     6 - Kelvin to Farenheit
-    Type: ''')))
+Type: ''')))
     if hi == 1:
         hello = float(input(_("Please enter the FARENHEIT temperature: ")))
         #howdy = float(input(_("Please enter the CELSIUS temperature: ")))
@@ -275,7 +275,11 @@ def tempCalc():
         cprint.info(_("That equals...\n%s" % yolo))
         logging.info("User did C to F with C=%s, result=%s" % (howdy, yolo))
     elif hi == 3:
-        pass
+        salut = float(input(_("Please enter the FARENHEIT temperature: ")))
+        yolo = salut - 32
+        yolo = yolo * 5/9
+        yolo = yolo + 273.15
+        cprint.info(_("That equals...\n%s" % yolo))
     elif hi == 4:
         pass
     elif hi == 5:
