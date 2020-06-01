@@ -13,9 +13,9 @@ I always make my forked repositories better — and this one is no exception!
 
 Thanks for visiting!
 
-**Note that morassuttia3 is me (TheTechRobo) on my MacBook Air.**
-**And Dr. Me is also me (TheTechRobo).**
+**Note that ittussaromYno3 is me (TheTechRobo) on my MacBook Air.**  
 **And Retals is me on my [Elive](https://elivecd.org) PCs**
+**Ittussarom is me on some other [Elive](https://elivecd.org) PCs**
 
 
 PLEASE, leave feature requests in the Issues [section](https://github.com/thetechrobo/python-text-calculator/issues), even if you know my email.
