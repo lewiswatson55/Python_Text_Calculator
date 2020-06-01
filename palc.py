@@ -45,6 +45,10 @@ cprint.ok(_("Loading...............\n"))
 time.sleep(2)
 def palc():
     while True:
+       try:
+           logging.info("Calc: %s" % calc)
+       except:
+           pass
        print(_("Press any key to continue..."), end="", flush=True)
        if _IS_WINDOWS:
            msvcrt.getch()
@@ -123,7 +127,7 @@ def palc():
             cubedNumber = int(input(_("\nType the number to be cubed: ")))
             print()
             cprint.info(cubedNumber ** 3) #Manually cube number
-            logging.info(("User cubed number ", cubedNumber, " got result ", (cubedNumber ** 3)))
+            logging.info("User cubed number %s got result %s" % (cubedNumber, (cubedNumber ** 3)))
             print()
 #EXIT
        elif "quit" in calc:
@@ -143,10 +147,10 @@ def palc():
 #CUBE TWICE
        elif "{2}" in calc:
             cprint.err(_("That feature was discontinued."))
-            logging.err("User attempted to use cube twice function")
+            logging.err("User attempted to use cube twice function but it's discontinued")
 #ROOTS
        elif "root" in calc:
-            root = input(_("Square root or cube root?(square/cube)"))
+            root = input(_("Square root or cube root?(square/cube)\nType: "))
             root = root.lower()
             if "square" in root:
                 num = input(_("Number to be rooted?"))
@@ -156,6 +160,7 @@ def palc():
                 cu()
             else:
                 print(_("Currently I don't support the root you chose. Hopefully this will change :)"))
+                logging.error("User used non-existent root (%s)" % root)
 #EASTER EGG!
        elif "=" in calc:
             print()
@@ -165,28 +170,28 @@ def palc():
                 logging.info("User got the easter egg")
             else:
                 cprint.err(_("Do you really need a calculator for this?"))
-                logging.info(("User used the `=' feature for number ", number))
+                logging.info("User used the `=' feature for number %s" % number)
 #NUMBER SYSTEMS
        elif "base" in calc:
             base()
 #ORD
        elif "ord" in calc:
-           logging.info(("User ord'ed to get result ", result))
            result = str(ord(int(input(_("Type in the number to ord: ")))))
-           cprint.info("=", result)
+           logging.info("User ord'ed to get result %s" % result)
+           cprint.info("= %s" % result)
 #LOGARITHM
        elif "log" in calc:
            log()
 #MEMORY
        elif "mem" in calc:
             memOrRecall = input(_("Would you like to set the memory or recall? (set / recall)\nType: "))
-            if memOrRecall.lower() in "set":
+            if "set" in memOrRecall.lower():
                 remember()
-            elif memOrRecall.lower() in "recall":
+            elif "recall" in memOrRecall.lower():
                 readMyMemory()
             else:
                 cprint.err(_("You did not type an answer.\nAbort."))
-                logging.error("User didn't type an answer in MEM function")
+                logging.error("User didn't type an answer in MEM function (typed %s)" % memOrRecall)
 #FIBONACCI
        elif "fib" in calc:
             cprint.ok(_("Starting fibonacci sequence. Please wait."))
@@ -202,6 +207,7 @@ Type: ''')))
                 getPercentageRN()
             else:
                 cprint.err(_("You didn't type a valid answer. Abort."))
+                logging.info("User did not answer correct percentage interpretation (typed %s)" % whichOne)
 #INTEREST
        elif "interest" in calc:
             calculateInterest()
@@ -216,7 +222,7 @@ Type: ''')))
             logging.error("User attempted to type nothing as a command")
             print(_("Type something!"))
        else:
-            logging.error("User typed an invalid command")
+            logging.error("User typed an invalid command (%s)" % calc)
             print(_('''
             I don't understand your request. Here are the currently supported calculations:
             * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); power (exponents/power); root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); percent (calculate percentage); interest (interest calculator); temperature (convert Celsius to Farenheit etc); and base (convert number system). Sorry for the inconvenience
