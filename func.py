@@ -262,7 +262,7 @@ def tempCalc():
     6 - Kelvin to Farenheit
 Type: ''')))
     if hi == 1:
-        hello = float(input(_("Please enter the FARENHEIT temperature: ")))
+        hello = float(input(_("Please enter the FAHRENHEIT temperature: ")))
         #howdy = float(input(_("Please enter the CELSIUS temperature: ")))
         yolo = hello - 32
         yolo = yolo * 5/9
@@ -275,19 +275,30 @@ Type: ''')))
         cprint.info(_("That equals...\n%s" % yolo))
         logging.info("User did C to F with C=%s, result=%s" % (howdy, yolo))
     elif hi == 3:
-        salut = float(input(_("Please enter the FARENHEIT temperature: ")))
+        salut = float(input(_("Please enter the FAHRENHEIT temperature: ")))
+        #convert to celsius
         yolo = salut - 32
         yolo = yolo * 5/9
+        #convert from celsius to kelvin
         yolo = yolo + 273.15
         cprint.info(_("That equals...\n%s" % yolo))
     elif hi == 4:
-        pass
+        howdy = float(input(_("Please enter the CELSIUS temperature: ")))
+        yolo = howdy + 273.15 #convert to kelvin
+        cprint.info(_("That equals...\n%s" % yolo))
     elif hi == 5:
-        pass
+        ciao = float(input(_("Please enter the KELVIN temperature: ")))
+        yolo = ciao - 273.15 #do the opposite of celsius to kelvin
+        cprint.info(_("That equals...\n%s" % yolo))
     elif hi == 6:
-        pass
+        ciao = float(input(_("Please enter the KELVIN temperature: ")))
+        yolo = ciao - 273.15
+        yolo = yolo * 9/5
+        yolo = yolo + 32
+    # TO FIGURE OUT THE FORMULA I JUST GOOGLED 5 ____ TO _____ AND LOOKED AT THE FORMULA IT SHOWS.
     else:
         print("Invalid response.")
+        logging.error("User typed invalid temperature answer %s" % hi)
 def saveSlot5():
     try:
         TheFile = open("taxslot5", "r")
