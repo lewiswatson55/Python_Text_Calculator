@@ -52,47 +52,45 @@ def mod(): #modulo
     else:
         print(_("\nThat equals..."))
         print(bigger-smaller*int(bigger/smaller))
-        logging.info(("User attempted to modulo numbers ", bigger, " and ", smaller, ", and got result ", (bigger-smaller*int(bigger/smaller))))
+        logging.info("User attempted to modulo numbers %s and %s, and got result %s" % (bigger, smaller, (bigger-smaller*int(bigger/smaller))))
         print()
 def base():
     base = int(input('''What base would you like to use?
     Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)
     Type 2, 8, 10, or 16: '''))
     if base == 2:
-        result = bin(int(input(_("Type the original number: ")))) #bin() the number
-        printThis = "=" +str(result)
-        logging.info(("User binaried number ", result, ", getting a result of ", printThis))
-        print(printThis)
+        origin = int(input(_("Type the original number: "))) #bin() the number
+        printThis = "=" +str(bin(origin))
+        logging.info("User binaried number %s, getting a result of %s" % (origin, printThis))
+        cprint.info(printThis)
     elif base == 8:
-            result = oct(int(input(_("Type the original number: ")))) #oct() the number
-            printThis = "=" +str(result)
-            logging.info(("User oct'ed number ", result, ", getting a result of ", printThis))
+            result = int(input(_("Type the original number: "))) #oct() the number
+            printThis = "=" +str(oct(result))
+            logging.info(("User oct'ed number %s, getting a result of %s" % (result, printThis)))
             print(printThis)
     elif base == 10:
-        goodanswer = False
-        while goodanswer is False:
-            whichType = input(_("Which type is the Number (ord, binary, octo, or hex): "))
-            if whichType == "ord":
-                goodanswer = True
-                result = int(ord(input(_("Type the original number: ")))) #int() the number
-            elif whichType == "binary":
-                goodanswer = True
-                result = int(bin(input(_("Type the original number: ")))) #int() the number
-            elif whichType == "octo":
-                goodanswer = True
-                result = int(oct(input(_("Type the original number: ")))) #int() the number
-            elif whichType == "hex":
-                goodanswer = True
-                result = int(hex(input(_("Type the original number: ")))) #int() the number
-            else:
-                print(_("That was an invalid answer. Try again."))
-            printThis = "=" +str(result)
-            logging.info(("User int'ed number ", result, ", getting a result of ", printThis))
-            print(printThis)
+        base = int(input(_('''Converting from a base to decimal (normal).
+        Example bases:
+        2 - Binary
+        8 - Oct
+        16 - Hexadecimal
+        Or, type 1 for ord.''')))
+        if base == 1:
+            base2Print = "ord"
+        else:
+            base2Print = "base " + base
+        original = int(input(_("Please enter the number to be converted from %s: " % base2Print)))
+        if base == 1:
+            eureka = chr(original)
+        else:
+            eureka = int(original, base)
+        logging.info(("User int'ed number %s from %s, getting a result of %s" % (original, base2Print, printThis)))
+        cprint.info(_("That equals...\n%s" % eureka))
+        cprint.ok(_("TIP: If you got no answer, it might be that it was a Unicode character that it can't render. E.g. \\x06"))
     elif base == 16:
-        result = hex(int(input(_("Type the original number: ")))) #ask for original number
-        printThis = "=" +str(result)
-        logging.info(("User hexed number ", result, ", getting a result of ", printThis))
+        result = int(input(_("Type the original number: "))) #ask for original number
+        printThis = "=" +hex(result)
+        logging.info("User hexed number %s, getting a result of %s" % (result, printThis))
         print(printThis)
 def uc():
     import runpy
