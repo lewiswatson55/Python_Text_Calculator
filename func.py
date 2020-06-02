@@ -56,8 +56,8 @@ def mod(): #modulo
         print()
 def base():
     base = int(input('''What base would you like to use?
-    Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)
-    Type 2, 8, 10, or 16: '''))
+Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)
+Type 2, 8, 10, or 16: '''))
     if base == 2:
         origin = int(input(_("Type the original number: "))) #bin() the number
         printThis = "=" +str(bin(origin))
@@ -70,11 +70,12 @@ def base():
             print(printThis)
     elif base == 10:
         base = int(input(_('''Converting from a base to decimal (normal).
-        Example bases:
-        2 - Binary
-        8 - Oct
-        16 - Hexadecimal
-        Or, type 1 for ord.''')))
+Example bases:
+2 - Binary
+8 - Oct
+16 - Hexadecimal
+Or, type 1 for ord.
+Type: ''')))
         if base == 1:
             base2Print = "ord"
         else:
