@@ -40,13 +40,18 @@ try:
 except:
     l_translations.install()
     _ = l_translations.gettext
-logging.info("Attempting to import func.py.")
+logging.info("Attempting to import func.py and basicfunc.py.")
 try:
     from func import *
-except ImportError:
-    logging.critical("Could not access file func.py")
+except Exception as e:
+    logging.critical("Could not access file func.py (%s)" % e)
     cprint.fatal(_("I can't access the file func.py. This file is necessary for proper function of the Software."), interrupt=True)
 logging.info("Successfully imported func.py")
+try:
+    from basicfunc import *
+except Exception as e:
+    logging.critical("Could Not Access basicfunc.py (%s)" % e)
+    cprint.fatal(_("I can't access file basicfunc.py. This file is necessary for proper function of the Software."), interrupt=True)
 cprint.ok(_("Loading...............\n"))
 time.sleep(2)
 def palc():
