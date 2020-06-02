@@ -9,7 +9,7 @@ from sys import exit as e #so that we can exit later on
 from cprint import cprint #printing in colour
 import time
 import sys, os, logging #sys so I can exit, os so I can do I can't remember, logging so I can log.
-logging.basicConfig(filename="palc.log", level=logging.DEBUG, format='%(levelname)s @ %(asctime)s %(message)s', datefmt='%d/%m/%Y %H:%M:%S') #set up logging
+logging.basicConfig(filename="palc.log", level=logging.DEBUG, format='%(levelname)s @ %(asctime)s %(message)s. Logged on line %(lineno)d.', datefmt='%d/%m/%Y %H:%M:%S') #set up logging
 #set up "press any key to continue"
 try:
     import msvcrt
