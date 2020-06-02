@@ -86,7 +86,7 @@ def base():
             eureka = int(original, base)
         logging.info(("User int'ed number %s from %s, getting a result of %s" % (original, base2Print, eureka)))
         cprint.info(_("That equals...\n%s" % eureka))
-        cprint.ok(_("TIP: If you got no answer, it might be that it was a Unicode character that it can't render. E.g. \\x06"))
+        cprint.ok(_("TIP: If you got no answer, it might be that it was a Unicode character that it can't render. E.g. \\x06 would just be a blank space, like so: \x06"))
     elif base == 16:
         result = int(input(_("Type the original number: "))) #ask for original number
         printThis = "=" +hex(result)
