@@ -13,30 +13,6 @@ def h():
      Bugs? Head on over to https://github.com/thetechrobo/support/
      To contribute: go to https://github.com/thetechrobo/python-text-calculator/
      '''))
-def multi(): #multiplication
-    n1, n2 = getNum()
-    cprint.info(_("\nThat equals...\n%s" % (n1 * n2)))
-    logging.info("User multiplied %s by %s and got result %s" % (n1, n2, (n1 * n2)))
-def div(): #division
-    n1, n2 = getNum()
-    try:
-        cprint.info(_("\nThat equals...\n%s" % (n1 / n2)))
-        logging.info("User divvied %s by %s, getting a result of %s" % (n1, n2, (n1 / n2)))
-    except ZeroDivisionError:
-        cprint.err(_("Do not divide by zero!"))
-        logging.error("User attempted to divide by zero.")
-    except:
-        cprint.err(_("There was an unknown issue dividing your Numbers..."))
-        logging.error("User had an issue divvying up %s by %s" % (n1,n2))
-def sub(): #subtraction
-    n1, n2 = getNum()
-    cprint.info(_("\nThat equals...\n%s" % (n1 - n2)))
-    logging.info("User subtracted %s by %s and got result %s" % (n1, n2, (n1 - n2)))
-def add(): #addition
-    n1, n2 = getNum()
-    print(_("\nThat equals..."))
-    print(n1 + n2)
-    logging.info(("User added ", n1, " to ", n2, " and got result ", (n1 + n2)))
 def mod(): #modulo
     try:
         bigger = int(input(_("\nType the first number (greater): ")))
@@ -93,14 +69,6 @@ Type: ''')))
         printThis = "=" +hex(result)
         logging.info("User hexed number %s, getting a result of %s" % (result, printThis))
         print(printThis)
-def uc():
-    import runpy
-    logging.warning("User ran `volume.py'. Log is untested for area and volume.")
-    runpy.run_path(path_name='volInteractive.py')
-def area():
-    import runpy
-    logging.warning("User ran `area.py'. Log is untested for area and volume.")
-    runpy.run_path(path_name='areaInteractive.py')
 def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-python
     import math
     while True:
@@ -139,13 +107,7 @@ def readMyMemory():
     except:
         logging.info("There was an error retrieving the file from memory.")
         print(_("There was an error reading the file. Did you save the number by using the save function? Did you accidentally rename the file?"))
-def cubeInternal(x):
-    # all credit goes to user4466285's answer to "https://stackoverflow.com/questions/28014241/how-to-find-cube-root-using-python"
-    if 0 <= x:
-        return x**(1./3.)
-    return -(-x)**(1./3.)
-def cu():
-    print(cubeInternal(int(input(_("Number to be rooted? ")))))
+
 def fib():
     import runpy
     runpy.run_path(path_name="fibonacci.py")
