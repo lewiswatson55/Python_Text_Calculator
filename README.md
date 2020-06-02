@@ -14,7 +14,7 @@ I always make my forked repositories better — and this one is no exception!
 Thanks for visiting!
 
 **Note that ittussaromYno3 is me (TheTechRobo) on my MacBook Air.**  
-**And Retals is me on my [Elive](https://elivecd.org) PCs**
+**And Retals is me on my [Elive](https://elivecd.org) PCs**  
 **Ittussarom is me on some other [Elive](https://elivecd.org) PCs**
 
 
