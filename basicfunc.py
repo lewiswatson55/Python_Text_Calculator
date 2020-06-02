@@ -1,3 +1,4 @@
+# This file is for basic functions and small functions that would be in func.py.
 import logging
 from cprint import cprint
 if __name__ == "__main__":
@@ -51,3 +52,11 @@ def curoot():
     print(cubeInternal(int(input(_("Number to be rooted? ")))))
 def cu(): #backwards-compatibility
     curoot()
+
+def fib():
+    import runpy
+    runpy.run_path(path_name="fibonacci.py")
+    logging.info("user ran fibonacci function")
+
+#def sin():
+    #which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType:

@@ -108,10 +108,7 @@ def readMyMemory():
         logging.info("There was an error retrieving the file from memory.")
         print(_("There was an error reading the file. Did you save the number by using the save function? Did you accidentally rename the file?"))
 
-def fib():
-    import runpy
-    runpy.run_path(path_name="fibonacci.py")
-    logging.info("user ran fibonacci function")
+
 def percentage(percent, whole):
     if whole == 0:
         logging.error("User typed 0 as whole.")
@@ -276,5 +273,3 @@ def saveSlot5():
         if itWorks is False:
             name = input(_("Type a name..."))
             taxSlot5 = float(input(_("What Percentage? ")))
-#def sin():
-    #which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType:
