@@ -84,7 +84,7 @@ def base():
             eureka = chr(original)
         else:
             eureka = int(original, base)
-        logging.info(("User int'ed number %s from %s, getting a result of %s" % (original, base2Print, printThis)))
+        logging.info(("User int'ed number %s from %s, getting a result of %s" % (original, base2Print, eureka)))
         cprint.info(_("That equals...\n%s" % eureka))
         cprint.ok(_("TIP: If you got no answer, it might be that it was a Unicode character that it can't render. E.g. \\x06"))
     elif base == 16:
