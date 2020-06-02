@@ -9,7 +9,8 @@ from sys import exit as e #so that we can exit later on
 from cprint import cprint #printing in colour
 import time
 import sys, os, logging #sys so I can exit, os so I can do I can't remember, logging so I can log.
-logging.basicConfig(filename="palc.log", level=logging.DEBUG, format='%(asctime)s %(message)s', datefmt='%d/%m/%Y %H:%M:%S') #set up logging
+logging.basicConfig(filename="palc.log", level=logging.DEBUG, format='%(levelname)s@%(asctime)s %(message)s', datefmt='%d/%m/%Y %H:%M:%S') #set up logging
+#set up "press any key to continue"
 try:
     import msvcrt
     _IS_WINDOWS = True
@@ -19,6 +20,7 @@ except ImportError:
     import termios
     _IS_WINDOWS = False
     logging.info("Imported tty, termios")
+#ask for language
 language = input("English or/ou Francais? (do not add accents to letters/n'ajoute pas les accents aux lettres): ")
 language = language.lower()
 if language == "francais":
@@ -29,6 +31,9 @@ elif language == "english":
     logging.info("Set language to English")
     gettext.bindtextdomain('base', localedir="locales")
     l_translations = gettext.translation('base', localedir='locales', languages=["en"])
+else:
+    logging.fatal("USER DID NOT SPECIFY A LANGUAGE, ABORT!")
+    cprint.fatal("You did not specify a language. Abort.\nTu n'a pas dit une language supporte.", interrupt=True)
 try:
     lang_translations.install()
     _ = lang_translations.gettext
@@ -247,7 +252,7 @@ except EOFError: #if ^D
     cprint.ok(_("\nWhy ^D? Why not just type `quit'?"))
     sys.exit()
 except (ValueError, TypeError) as ename:
-    logging.critical("ValueError or TypeError")
+    logging.critical("ValueError or TypeError: %s" % ename)
     width = os.get_terminal_size().columns
     for i in range(0, width):
         print("-", sep="", end="", flush=True)
@@ -261,6 +266,7 @@ except (ValueError, TypeError) as ename:
     e()
 except SystemExit:
     cprint.ok(_("Looks like you exited."))
+    logging.info("User exited")
 except Exception as ename:
     width = os.get_terminal_size().columns
     for i in range(0, width):
@@ -270,7 +276,7 @@ except Exception as ename:
     for i in range(0, width):
         print("-", sep="", end="", flush=True)
     logging.info("Printed %s dashes" % width)
-    logging.info("Unknown error (%s)" % ename)
+    logging.fatal("Unknown error (%s)" % ename)
     cprint.fatal(_("An unknown error occured (%s). Please file an Issue at github.com/thetechrobo/support." % ename))
 finally:
     logging.info("Program stopped execution.")
