@@ -36,11 +36,13 @@ try:
 except:
     l_translations.install()
     _ = l_translations.gettext
+logging.info("Attempting to import func.py.")
 try:
     from func import *
 except ImportError:
     logging.critical("Could not access file func.py")
     cprint.fatal(_("I can't access the file func.py. This file is necessary for proper function of the Software."), interrupt=True)
+logging.info("Successfully imported func.py")
 cprint.ok(_("Loading...............\n"))
 time.sleep(2)
 def palc():
