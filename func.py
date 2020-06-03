@@ -20,11 +20,11 @@ def mod(): #modulo
     except (TypeError, ValueError):
         print(_("\nError!"))
         print(_("Invalid input (code 1)\n"))
-        logging.error(("ERROR: attempted to modulo numbers ", bigger, " and ", smaller, ", but errored code 1."))
+        logging.error("ERROR: attempted to modulo numbers %s and %s, but errored code 1." % (number1, number2))
     if(abs(bigger)<abs(smaller)):
         print(_("\nError!"))
         print(_("The second number entered is greater than the first number (code 2)\n"))
-        logging.error(("ERROR: attempted to modulo numbers ", bigger, " and ", smaller, ", but errored code 2."))
+        logging.error("ERROR: attempted to modulo numbers %s and %s, but errored code 2." % (number1, number2))
     else:
         print(_("\nThat equals..."))
         print(bigger-smaller*int(bigger/smaller))
