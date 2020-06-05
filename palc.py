@@ -94,11 +94,11 @@ def palc():
             multi()
 #SQUARE
        elif "sq" in calc:
-            n = int(input(_("Number? ")))
+            n = int(input(_("Number to square? ")))
             cprint.info(n * n)
             logging.info("User squared number %s got result %s" % (n, (n * n)))
        elif "[]" in calc:
-            n = int(input(_("Number? ")))
+            n = int(input(_("Number to square? ")))
             logging.info("User squared number %s got result %s" % (n, (n * n)))
             cprint.info(n * n)
 #DIVISION
@@ -154,7 +154,7 @@ def palc():
             origin = float(input(_("Original number?")))
             ex = float(input(_("Exponent? ")))
             print(origin ** ex)
-            logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
+            logging.info("User exponented number %s with %s, getting %s" % (origin, ex, (origin ** ex)))
 #CUBE TWICE
        elif "{2}" in calc:
             cprint.err(_("That feature was discontinued."))
