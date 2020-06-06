@@ -49,7 +49,10 @@ def cubeInternal(x):
         return x**(1./3.)
     return -(-x)**(1./3.)
 def curoot():
-    print(cubeInternal(int(input(_("Number to be rooted? ")))))
+    number = float(input(_("Number to be rooted? ")))
+    nothernumber = cuInternal(number)
+    logging.info("User curooted number %s to get %s..." % (number, nothernumber))
+    cprint.info("=%s" % nothernumber)
 def cu(): #backwards-compatibility
     curoot()
 
