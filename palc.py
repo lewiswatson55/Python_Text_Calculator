@@ -39,7 +39,7 @@ else:
 try:
     lang_translations.install()
     _ = lang_translations.gettext
-except:
+except NameError:
     l_translations.install()
     _ = l_translations.gettext
 logging.info("Attempting to import func.py and basicfunc.py.")
@@ -77,8 +77,6 @@ def palc():
        calc = input(_("What calculation do you wish to do? (Type `?' for a list of commands)\nType: "))
        try:
            logging.info("Got calc choice %s" % calc)
-       except:
-           pass
        calc = calc.lower() #make variable "calc" lowercase
 #HELP
        if "?" in calc:

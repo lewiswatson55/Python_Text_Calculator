@@ -21,9 +21,9 @@ def div(): #division
     except ZeroDivisionError:
         cprint.err(_("Do not divide by zero!"))
         logging.error("User attempted to divide by zero.")
-    except:
+    except Exception as e:
         cprint.err(_("There was an unknown issue dividing your Numbers..."))
-        logging.error("User had an issue divvying up %s by %s" % (n1,n2))
+        logging.error("User had an issue divvying up %s by %s (%s)" % (n1,n2,e))
 def sub(): #subtraction
     n1, n2 = getNum()
     cprint.info(_("\nThat equals...\n%s" % (n1 - n2)))

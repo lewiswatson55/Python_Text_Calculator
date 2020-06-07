@@ -1,5 +1,6 @@
 #FIBONACCI
 import time
+import logging
 num0 = 0
 num1 = 1
 hi = 0
@@ -17,5 +18,6 @@ try:
         time.sleep(0.5)
 except KeyboardInterrupt: #if ctrl-c
     print(_("Thanks for using Palc's FIBONACCI function!"))
-except: #if an error occurs
-    print(_("an error occured."))
+except Exception as e: #if an error occurs
+    print(_("An error occured."))
+    logging.err("Exception %s" % e)
