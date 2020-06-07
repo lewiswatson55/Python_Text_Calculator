@@ -1,4 +1,5 @@
 from math import pi, sqrt
+import logging
 if __name__ == "__main__":
     print("Please do not run any of these files directly. They don't do anything useful on their own.")
 # Contains Volume Calculating Functions
@@ -131,7 +132,6 @@ def vol_hexa_prism(a: int, h: int) -> 'volume':
     '''
     volume = (2.5981 * pow(a, 2)) * h
     logging.info("User ran Hexagon Prism Volume a=%s h=%s answer=%s" % (a, h, volume))
-    
     return volume
 
 #PYRAMID WITH A SQUARE BASE
@@ -183,5 +183,4 @@ def vol_hexa_pyramid(a: int, h: int) -> 'volume':
     '''
     volume = (1 / 3 * h) * (2.5981 * pow(a, 2))
     logging.info("User ran Hexapyramid Volume a=%s h=%s answer=%s" % (a, h, volume))
-    
     return volume

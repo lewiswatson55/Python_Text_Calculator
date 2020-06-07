@@ -1,4 +1,5 @@
 from volume import *
+from cprint import *
 import logging
 logging.info("Running volinteractive")
 def cuvol():
@@ -77,10 +78,10 @@ while True:
     try:
         choice = int(input(_("Please type one: ")))
     except (ValueError, TypeError):
-        cprint.err("Please type an integer"))
+        cprint.err("Please type an integer")
         logging.err("User did a ValueError or TypeError while inputting choice in volinteractive")
     if choice == 7:
-        cprint.ok("Sorry, that was not an option. >:)"))
+        cprint.ok("Sorry, that was not an option. >:)")
         logging.info(">:) choice 7")
     elif choice == 1:
         cuvol()
