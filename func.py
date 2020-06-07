@@ -8,26 +8,25 @@ def getNum(): #ask for two numbers and then return to function
     logging.info("Palc got two numbers: %s and %s" % (n1, n2))
     return n1, n2
 def h():
-    print(_('''
-     Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (power), root (root), equals (=), logarithm (log), memory (mem), interest calculator (interest), fibonacci sequence (fib), percentage (percent), convert temperature (temperature), and convert number systems (base). Type quit to quit.
-     Bugs? Head on over to https://github.com/thetechrobo/support/
-     To contribute: go to https://github.com/thetechrobo/python-text-calculator/
+    cprint.info(_('''
+Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (power), root (root), equals (=), logarithm (log), memory (mem), interest calculator (interest), fibonacci sequence (fib), percentage (percent), convert temperature (temperature), and convert number systems (base). Type quit to quit.
+Bugs? Head on over to https://github.com/thetechrobo/support/
+To contribute: go to https://github.com/thetechrobo/python-text-calculator/
      '''))
 def mod(): #modulo
     try:
         bigger = int(input(_("\nType the first number (greater): ")))
         smaller = int(input(_("Type the second number (smaller): ")))
     except (TypeError, ValueError):
-        print(_("\nError!"))
-        print(_("Invalid input (code 1)\n"))
+        cprint.err(_("\nError!"))
+        cprint.err(_("Invalid input (code 1)\n"))
         logging.error("ERROR: attempted to modulo numbers %s and %s, but errored code 1." % (number1, number2))
     if(abs(bigger)<abs(smaller)):
-        print(_("\nError!"))
-        print(_("The second number entered is greater than the first number (code 2)\n"))
+        cprint.err(_("\nError!"))
+        cprint.err(_("The second number entered is greater than the first number (code 2)\n"))
         logging.error("ERROR: attempted to modulo numbers %s and %s, but errored code 2." % (number1, number2))
     else:
-        print(_("\nThat equals..."))
-        print(bigger-smaller*int(bigger/smaller))
+        cprint.info(_("\nThat equals...\n%s" % (bigger - smaller * int(bigger / smaller))))
         logging.info("User attempted to modulo numbers %s and %s, and got result %s" % (bigger, smaller, (bigger-smaller*int(bigger/smaller))))
         print()
 def base():
@@ -43,7 +42,7 @@ Type 2, 8, 10, or 16: '''))
             result = int(input(_("Type the original number: "))) #oct() the number
             printThis = "=" +str(oct(result))
             logging.info(("User oct'ed number %s, getting a result of %s" % (result, printThis)))
-            print(printThis)
+            cprint.info(printThis)
     elif base == 10:
         base = int(input(_('''Converting from a base to decimal (normal).
 Example bases:
@@ -68,26 +67,28 @@ Type: ''')))
         result = int(input(_("Type the original number: "))) #ask for original number
         printThis = "=" +hex(result)
         logging.info("User hexed number %s, getting a result of %s" % (result, printThis))
-        print(printThis)
+        cprint.info(printThis)
 def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-python
     import math
     while True:
         base = input(_("What base would you like to use? \nCurrentlysupported: 10 (base 10), e (natural)"))
         if base == "10":
-            print(_("Using base 10"))
+            cprint.info(_("Using base 10"))
             number = int(input(_("What is the number? ")))
-            print(math.log10(number))
+            cprint.info(_("That equals:"))
+            cprint.info(math.log10(number))
             logging.info(("User used base 10 logarithm with number", number, ", getting a result of ", math.log10(number)))
             break
         elif base.lower() == "e":
-            print(_("Using natural logarithm"))
+            cprint.info(_("Using natural logarithm"))
             number = int(input(_("What is the number? ")))
-            print(math.log(number))
+            cprint.info("That equals...")
+            cprint.info(math.log(number))
             logging.info(("User used natural logarithm with number ", number, ", getting a result of ", math.log(number)))
             break
         else:
-            print(_("The logarithm you typed is not available."))
-            print(_("Try again."))
+            cprint.err(_("The logarithm you typed is not available."))
+            cprint.ok(_("Try again."))
             logging.info(("User attempted to use a logarithm that is unavailable."))
 def remember():
     print(_("This is the memory function.\nIt will save a number into a file that can be used later with Palc... Or you can just read it with a text editor."))

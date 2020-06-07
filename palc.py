@@ -154,7 +154,7 @@ def palc():
        elif "ex" in calc:
             origin = float(input(_("Original number?")))
             ex = float(input(_("Exponent? ")))
-            print(origin ** ex)
+            cprint.info("=%s" % origin ** ex)
             logging.info("User exponented number %s with %s, getting %s" % (origin, ex, (origin ** ex)))
 #CUBE TWICE
        elif "{2}" in calc:
@@ -171,7 +171,7 @@ def palc():
             elif "cube" in root:
                 cu()
             else:
-                print(_("Currently I don't support the root you chose. Hopefully this will change :)"))
+                cprint.err(_("Currently I don't support the root you chose. Hopefully this will change :)"))
                 logging.error("User used non-existent root (%s)" % root)
 #EASTER EGG!
        elif "=" in calc:
@@ -229,13 +229,13 @@ Type: ''')))
 #OTHERWISE
        elif calc == "":
             logging.error("User attempted to type nothing as a command")
-            print(_("Type something!"))
+            cprint.err(_("Type something!"))
        elif calc is None:
             logging.error("User attempted to type nothing as a command")
-            print(_("Type something!"))
+            cprint.err(_("Type something!"))
        else:
             logging.error("User typed an invalid command (%s)" % calc)
-            print(_('''
+            cprint.err(_('''
             I don't understand your request. Here are the currently supported calculations:
             * or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); power (exponents/power); root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); percent (calculate percentage); interest (interest calculator); temperature (convert Celsius to Farenheit etc); and base (convert number system). Sorry for the inconvenience
             '''))
