@@ -91,7 +91,7 @@ def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-
             cprint.ok(_("Try again."))
             logging.info(("User attempted to use a logarithm that is unavailable."))
 def remember():
-    print(_("This is the memory function.\nIt will save a number into a file that can be used later with Palc... Or you can just read it with a text editor."))
+    cprint.info(_("This is the memory function.\nIt will save a number into a file that can be used later with Palc... Or you can just read it with a text editor."))
     toRemember = float(input(_("\nPlease enter the number to be saved: ")))
     slot = str(int(input(_("What slot would you like to use? (Hint: you can use any integer you want as long as you remember it)\nType: "))))
     toRemember = str(toRemember)
@@ -99,15 +99,15 @@ def remember():
     memory.write(toRemember)
     logging.info(("Saved number ", toRemember, " to memory slot ", slot))
 def readMyMemory():
-    print(_("This is the remember function.\nIt will read a number that was previously stored in a file."))
+    cprint.info(_("This is the remember function.\nIt will read a number that was previously stored in a file."))
     try:
         slot = str(int(input(_("What slot number did you use? "))))
         memory = open(slot, "r")
-        print(_("Number: ", memory.read()))
+        cprint.info(_("Number: ", memory.read()))
         logging.info(("Retrieved number ", memory.read(), " from memory."))
     except:
         logging.info("There was an error retrieving the file from memory.")
-        print(_("There was an error reading the file. Did you save the number by using the save function? Did you accidentally rename the file?"))
+        cprint.err(_("There was an error reading the file. Did you save the number by using the save function? Did you accidentally rename the file?"))
 
 
 def percentage(percent, whole):
@@ -119,7 +119,8 @@ def whatIsPercent():
     origin = int(input(_("what is the ORIGINAL NUMBER? ")))
     percent = int(input(_("What is the PERCENTAGE? ")))
     logging.info(("Got percentage RN origin ", origin, " and ", percent))
-    print(percentage(percent, origin))
+    cprint.info(_("That equals:"))
+    cprint.info(percentage(percent, origin))
 def getPercentage(part, whole):
     if whole == 0:
         logging.error("user typed whole zero")
@@ -128,8 +129,9 @@ def getPercentage(part, whole):
 def getPercentageRN():
     origin = int(input(_("What is the number that would be 100%? ")))
     part = int(input(_("What is the number that you want to convert to percentage (e.g. this number out of the number that would be 100%)? ")))
-    logging.info(("Got percentage RN origin ", origin, " and ", part))
-    print(getPercentage(part, origin))
+    logging.info("Got percentage RN origin %s and %s" % (origin, part))
+    cprint.info(_("that equals:"))
+    cprint.info(getPercentage(part, origin))
 def calculateInterest():
     while True: 
         origin = int(input(_("What is the original number? ")))
@@ -144,73 +146,74 @@ So, with that out of the way, type the amount we should multiply the interest by
         inRealNumbers = percentage(whole=origin, percent=rate)
         number = origin + (inRealNumbers * howMany)
         logging.info(("INTERESTCALC: origin: ", origin, " rate: ", rate, " how many: ", howMany, " answer: ", number))
-        print(_("The answer is: \n%s" % number))
+        cprint.info(_("The answer is: \n%s" % number))
         doItAgain = input(_("Would you like to do it again (Y/n)? "))
         doItAgain = doItAgain.lower()
         if doItAgain == "y":
             pass
         else:
-            print(_("OK. Going back..."))
+            cprint.ok(_("Going back..."))
             break
 def taxCalc():
-    whatPlace = int(input(_("""1 - Ontario Sales Tax
+    cprint.info(_('''1 - Ontario Sales Tax
 2 - Quebec Sales Tax
 3 - Yukon, Northwest Territories, Nunavut, and Alberta Sales Tax
 4 - BC / Manitoba Sales Tax
 5 - New Brunswick / Nova Scotia / Newfoundland / PEI Sales Tax
 6 - Saskatchewan Sales Tax
-7 - Custom Tax
-Choose one: """)))
+7 - Custom Tax'''))
+    whatPlace = int(input(_("Choose one: ")))
     if whatPlace == 1:
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 13.0
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
         logging.info(("User used Ontarian Sales Tax 13 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
-        print(_("After tax, the price is: \n%s" % newPrice))
+        cprint.info(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 2:
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 14.975
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
         logging.info(("User used Quebec Sales Tax 14.975 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
-        print(_("After tax, the price is: \n%s" % newPrice))
+        cprint.info(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 3:
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 5.0
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
         logging.info(("User used Alberta Sales Tax 5 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
-        print(_("After tax, the price is: \n%s" % newPrice))
+        cprint.info(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 4:
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 12.0
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
         logging.info(("User used Manitoba Sales Tax 12 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
-        print(_("After tax, the price is: \n%s" % newPrice))
+        cprint.info(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 5:
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 15.0
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
         logging.info(("User used PEI Sales Tax 15 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
-        print(_("After tax, the price is: \n%s" % newPrice))
+        cprint.info(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 6:
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 11.0
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
         logging.info(("User used Saskatchewan Sales Tax 11 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
-        print(_("After tax, the price is: \n%s" % newPrice))
+        cprint.info(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 7:
         originPrice = float(input(_("OK, enter the original price: ")))
         percent = float(input(_("Now enter the tax percentage without the percent sign: ")))
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
-        print(_("After tax, the price is: \n%s" % newPrice))
+        cprint.info(_("After tax, the price is: \n%s" % newPrice))
     else:
-        print(_("You did not type answer. Abort."))
+        cprint.err(_("You did not type answer. Abort."))
+        logging.error("User typed %s into tax...aka an invalid answer." % whatPlace)
 def tempCalc():
     hi = int(input(_('''OPTIONS:
     1 - Farenheit to Celsius
@@ -257,16 +260,16 @@ Type: ''')))
         cprint.info(_("That equals...\n%s" % yolo))
     # TO FIGURE OUT THE FORMULA I JUST GOOGLED 5 ____ TO _____ AND LOOKED AT THE FORMULA IT SHOWS.
     else:
-        print("Invalid response.")
+        cprint.err(_("Invalid response."))
         logging.error("User typed invalid temperature answer %s" % hi)
 def saveSlot5():
     try:
         TheFile = open("taxslot5", "r")
         tryyy = TheFile.read()
-        print("5 - %s" % tryyy)
+        cprint.info("8 - %s" % tryyy)
         itWorks = True
     except (NameError, IOError):
-        print(_("5 - Empty Custom Slot"))
+        cprint.info(_("5 - Empty Custom Slot"))
         itWorks = False
     if hi == 5:
         if itWorks is True:

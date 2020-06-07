@@ -30,8 +30,7 @@ def sub(): #subtraction
     logging.info("User subtracted %s by %s and got result %s" % (n1, n2, (n1 - n2)))
 def add(): #addition
     n1, n2 = getNum()
-    print(_("\nThat equals..."))
-    print(n1 + n2)
+    cprint.info(_("\nThat equals...\n%s" % (n1 + n2)))
     logging.info(("User added ", n1, " to ", n2, " and got result ", (n1 + n2)))
 
 def uc():

@@ -3,80 +3,80 @@ import logging
 logging.info("User used areaInteractive...")
 def equ_triangle():
     a = int(input(_("What length is the side of the triangle? ")))
-    print(_("The area is: %s" % equtri(a)))
+    cprint.info(_("The area is: %s" % equtri(a)))
 def right_triangle():
     b = int(input(_("What length is the base of the triangle? ")))
     h = int(input(_("What length is the height of the triangle? ")))
-    print(_("The area is: %s" % righttri(b=b, h=h)))
+    cprint.info(_("The area is: %s" % righttri(b=b, h=h)))
 def acute_triangle():
     a = int(input(_("What is the length of the first side? ")))
     b = int(input(_("what is the length of the second side? ")))
     c = int(input(_("What is the length of the third side? ")))
-    print(_("The area is: "))
-    print(actri(a, b, c))
+    cprint.info(_("The area is: "))
+    cprint.info(actri(a, b, c))
 def obtuse_triangle():
     a = int(input(_("What is the length of the first side? ")))
     b = int(input(_("what is the length of the second side? ")))
     c = int(input(_("What is the length of the third side? ")))
-    print(_("The area is: "))
-    print(obtri(a, b, c))
+    cprint.info(_("The area is: "))
+    cprint.info(obtri(a, b, c))
 def square():
     a = int(input(_("What is the length of the side of the square? ")))
-    print(_("The area is: "))
-    print(sq(a))
+    cprint.info(_("The area is: "))
+    cprint.info(sq(a))
 def rectangle():
     from area import rectangle as rec
     l = int(input(_("What is the length of the rectangle? ")))
     b = int(input(_("What is the height of the rectangle? ")))
-    print(_("The area is: "))
-    print(rec(l, b))
+    cprint.info(_("The area is: "))
+    cprint.info(rec(l, b))
 def parallelogram():
     from area import parallelogram as para
     b = int(input(_("What is the length of the base? ")))
     h = int(input(_("What is the height of the shape? ")))
-    print(_("The area is: "))
-    print(para(b, h))
+    cprint.info(_("The area is: "))
+    cprint.info(para(b, h))
 def rhombus():
     from area import rhombus as rhombu
     do = int(input(_("What is the length of the first diagonal? ")))
     ds = int(input(_("What is the length of the 2nd diagonal? ")))
-    print(_("The area is: "))
-    print(rhombu(do, ds))
+    cprint.info(_("The area is: "))
+    cprint.info(rhombu(do, ds))
 def trapezium():
     from area import trapezium as trapezi
     a = int(input(_("What is the length of the 1st set of parallel sides? ")))
     b = int(input(_("What is the length of the 2nd set of parallel sides? ")))
     h = int(input(_("What is the height of the trapezium? ")))
-    print(_("The area is: "))
-    print(trapezi(a, b, h))
+    cprint.info(_("The area is: "))
+    cprint.info(trapezi(a, b, h))
 def circle():
     from area import circle as circl
     r = int(input(_("What is the radius of the circle? ")))
-    print(_("The area is: "))
-    print(circl(r))
+    cprint.info(_("The area is: "))
+    cprint.info(circl(r))
 def semicircle():
     from area import semicircle as semi
     r = int(input(_("What is the radius of the semicircle? ")))
-    print(_("The area is: "))
-    print(semi(r))
+    cprint.info(_("The area is: "))
+    cprint.info(semi(r))
 def sector():
     r = int(input(_("What is the radius of the circular sector? ")))
     a = int(input(_("What is the angle of the circular sector *in degrees*? ")))
-    print(_("The area is: "))
-    print(cirsector(r, a))
+    cprint.info(_("The area is: "))
+    cprint.info(cirsector(r, a))
 def ring():
     from area import ring as myprecious
     ro = int(input(_("What is the radius of the outer circle? ")))
     rs = int(input(_("What is the radius of the inner circle? ")))
-    print(_("The area is: "))
-    print(myprecious(ro, rs))
+    cprint.info(_("The area is: "))
+    cprint.info(myprecious(ro, rs))
 def ellipse():
     from area import ellipse as el
     a = int(input(_("What is the length of the major axis? ")))
     b = int(input(_("What is the length of the minor axis? ")))
-    print(_("The area is: "))
-    print(el(a, b))
-print(_('''Options:
+    cprint.info(_("The area is: "))
+    cprint.info(el(a, b))
+cprint.info(_('''Options:
 1 - Equilateral triangle
 2 - Right angle triangle
 3 - Acute triangle
@@ -95,9 +95,11 @@ while True:
     try:
         choice = int(input(_("Please type one: ")))
     except (ValueError, TypeError):
-        print(_("Please type an integer"))
+        cprint.err(_("Please type an integer"))
+        logging.error("User did valueerror typeerror while inputting areaInteractive choice")
     if choice == 7:
-        print(_("I was too lazy to change 7."))
+        cprint.err(_("I was too lazy to change 7."))
+        logging.info("Lazy 7")
     elif choice == 1:
         equ_triangle()
         break
@@ -133,7 +135,6 @@ while True:
         break
     elif choice == 13:
         sector()
-        #print(_("I cannot figure out what variable `a' is for, line 182 in `area.py' if anyone wants to help"))
         break
     elif choice == 14:
         ring() #my precious!
