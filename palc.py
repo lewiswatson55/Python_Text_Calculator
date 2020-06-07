@@ -88,11 +88,6 @@ def palc():
 #TAX
        elif "tax" in calc:
             taxCalc()
-#MULTIPLICATION
-       elif "*" in calc:
-            multi()
-       elif "x" in calc:
-            multi()
 #SQUARE
        elif "sq" in calc:
             n = int(input(_("Number to square? ")))
@@ -148,6 +143,11 @@ def palc():
        elif "exit" in calc:
             logging.info("User exited using exit command")
             e()
+#MULTIPLICATION
+       elif "*" in calc:
+            multi()
+       elif "x" in calc:
+            multi()
 #EXPONENTS
        elif "power" in calc:
             origin = float(input(_("Original number?")))
@@ -246,7 +246,7 @@ width = os.get_terminal_size().columns
 for i in range(0, width):
     print("-", sep="", end="")
 logging.info("Printed %s dashes" % width)
-cprint.info(_("Welcome to Palc!".center(width)))
+cprint.info(_("Welcome to Palc!").center(width))
 for i in range(0, width):
     print("-", sep="", end="")
 logging.info("Printed %s dashes" % width)
