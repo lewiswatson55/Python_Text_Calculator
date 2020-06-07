@@ -229,6 +229,11 @@ Type: ''')))
 #TEMPERATURE
        elif "temperature" in calc:
             tempCalc()
+#CONVERSIONS
+       elif "conver" in calc:
+            conversion = int(input(_("1 - Convert temperature units\nType: ")))
+            if conversion == 1:
+                tempCalc()
 #OTHERWISE
        elif calc == "":
             logging.error("User attempted to type nothing as a command")
