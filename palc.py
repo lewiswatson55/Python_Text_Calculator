@@ -1,3 +1,4 @@
+#CREDITS
 #THANKS TO https://simpleit.rocks/python/how-to-translate-a-python-project-with-gettext-the-easy-way/ and https://inventwithpython.com/blog/2014/12/20/translate-your-python-3-program-with-the-gettext-module/ for their gettext guides!
 
 # THANKS TO @ErdoganOnal for their comment on this SO question: https://stackoverflow.com/questions/61621821/any-secure-alternatives-for-this?noredirect=1#comment109002742_61621821 That comment helped with the Press Any Key To Continue function
@@ -277,7 +278,7 @@ except (ValueError, TypeError) as ename:
         print("-", sep="", end="", flush=True)
     logging.info("Printed %s dashes" % width)
     cprint.fatal(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
-    cprint.ok(_("Details are in the log." % ename))
+    cprint.ok(_("Details are in the log."))
     e()
 except SystemExit:
     cprint.ok(_("Looks like you exited."))
