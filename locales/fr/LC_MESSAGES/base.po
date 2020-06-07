@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
 "POT-Creation-Date: 2020-06-07 12:29-0400\n"
-"PO-Revision-Date: 2020-06-07 12:31-0400\n"
+"PO-Revision-Date: 2020-06-07 12:32-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -496,11 +496,7 @@ msgstr ""
 
 #: func.py:165
 msgid "Choose one: "
-msgstr ""
-"1 - Ontario\n"
-"2 - Québec\n"
-"3 - Taxe customisé\n"
-"Chosis : "
+msgstr "Choisissez-en un : "
 
 #: func.py:167 func.py:174 func.py:181 func.py:188 func.py:195 func.py:202
 msgid "What is the original price (before tax)? "
