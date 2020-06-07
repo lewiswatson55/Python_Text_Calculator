@@ -103,13 +103,11 @@ def readMyMemory():
     try:
         slot = str(int(input(_("What slot number did you use? "))))
         memory = open(slot, "r")
-        cprint.info(_("Number: ", memory.read()))
+        cprint.info(_("Number: %s" % memory.read()))
         logging.info(("Retrieved number ", memory.read(), " from memory."))
-    except:
-        logging.info("There was an error retrieving the file from memory.")
+    except Exception as e:
+        logging.info("There was an error retrieving the file from memory. (Err %s)" % e)
         cprint.err(_("There was an error reading the file. Did you save the number by using the save function? Did you accidentally rename the file?"))
-
-
 def percentage(percent, whole):
     if whole == 0:
         logging.error("User typed 0 as whole.")

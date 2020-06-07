@@ -276,11 +276,11 @@ except (ValueError, TypeError) as ename:
         print("-", sep="", end="", flush=True)
     logging.info("Printed %s dashes" % width)
     cprint.fatal(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."))
-    cprint.ok(_("Details: %s" % ename))
+    cprint.ok(_("Details are in the log." % ename))
     e()
 except SystemExit:
     cprint.ok(_("Looks like you exited."))
-    logging.info("User exited")
+    logging.info("User exited with exception SystemExit")
 except Exception as ename:
     width = os.get_terminal_size().columns
     for i in range(0, width):
@@ -291,7 +291,7 @@ except Exception as ename:
         print("-", sep="", end="", flush=True)
     logging.info("Printed %s dashes" % width)
     logging.fatal("Unknown error (%s)" % ename)
-    cprint.fatal(_("An unknown error occured (%s). Please file an Issue at github.com/thetechrobo/support." % ename))
+    cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support."))
 finally:
     logging.info("Program stopped execution.")
 #EOF
