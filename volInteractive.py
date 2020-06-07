@@ -1,5 +1,5 @@
 from volume import *
-from cprint import *
+from cprint import cprint
 import logging
 logging.info("Running volinteractive")
 def cuvol():
