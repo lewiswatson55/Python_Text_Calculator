@@ -52,6 +52,7 @@ try:
 except Exception as e:
     logging.critical("Could Not Access basicfunc.py (%s)" % e)
     cprint.fatal(_("I can't access file basicfunc.py. This file is necessary for proper function of the Software."), interrupt=True)
+logging.info("Success import basicfunc.py !")
 cprint.ok(_("Loading...............\n"))
 time.sleep(2)
 def palc():
