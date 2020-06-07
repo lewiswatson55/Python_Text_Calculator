@@ -145,12 +145,15 @@ def palc():
        elif "quit" in calc:
             logging.info("User exited using `quit' command")
             e()
+       elif "exit" in calc:
+            logging.info("User exited using exit command")
+            e()
 #EXPONENTS
        elif "power" in calc:
             origin = float(input(_("Original number?")))
             ex = float(input(_("Exponent? ")))
             cprint.info(origin ** ex)
-            logging.info(("User exponented number ", origin, " with ", ex, "getting ", (origin ** ex)))
+            logging.info("User exponented number %s with %s, getting %s" % (origin, ex, (origin ** ex)))
        elif "ex" in calc:
             origin = float(input(_("Original number?")))
             ex = float(input(_("Exponent? ")))
