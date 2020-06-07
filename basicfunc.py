@@ -31,7 +31,7 @@ def sub(): #subtraction
 def add(): #addition
     n1, n2 = getNum()
     cprint.info(_("\nThat equals...\n%s" % (n1 + n2)))
-    logging.info(("User added ", n1, " to ", n2, " and got result ", (n1 + n2)))
+    logging.info("User added %s to %s and got result %s" % (n1, n2, (n1 + n2)))
 
 def uc():
     import runpy

@@ -41,7 +41,7 @@ Type 2, 8, 10, or 16: '''))
     elif base == 8:
             result = int(input(_("Type the original number: "))) #oct() the number
             printThis = "=" +str(oct(result))
-            logging.info(("User oct'ed number %s, getting a result of %s" % (result, printThis)))
+            logging.info("User oct'ed number %s, getting a result of %s" % (result, printThis))
             cprint.info(printThis)
     elif base == 10:
         base = int(input(_('''Converting from a base to decimal (normal).
@@ -60,7 +60,7 @@ Type: ''')))
             eureka = chr(original)
         else:
             eureka = int(original, base)
-        logging.info(("User int'ed number %s from %s, getting a result of %s" % (original, base2Print, eureka)))
+        logging.info("User int'ed number %s from %s, getting a result of %s" % (original, base2Print, eureka))
         cprint.info(_("That equals...\n%s" % eureka))
         cprint.ok(_("TIP: If you got no answer, it might be that it was a Unicode character that it can't render. E.g. \\x06 would just be a blank space, like so: \x06"))
     elif base == 16:
@@ -89,7 +89,7 @@ def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-
         else:
             cprint.err(_("The logarithm you typed is not available."))
             cprint.ok(_("Try again."))
-            logging.info(("User attempted to use a logarithm that is unavailable."))
+            logging.info("User attempted to use a logarithm that is unavailable.")
 def remember():
     cprint.info(_("This is the memory function.\nIt will save a number into a file that can be used later with Palc... Or you can just read it with a text editor."))
     toRemember = float(input(_("\nPlease enter the number to be saved: ")))
@@ -168,42 +168,42 @@ def taxCalc():
         percent = 13.0
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
-        logging.info(("User used Ontarian Sales Tax 13 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        logging.info("User used Ontarian Sales Tax 13 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice))
         cprint.info(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 2:
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 14.975
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
-        logging.info(("User used Quebec Sales Tax 14.975 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        logging.info("User used Quebec Sales Tax 14.975 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice))
         cprint.info(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 3:
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 5.0
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
-        logging.info(("User used Alberta Sales Tax 5 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        logging.info("User used Alberta Sales Tax 5 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice))
         cprint.info(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 4:
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 12.0
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
-        logging.info(("User used Manitoba Sales Tax 12 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        logging.info("User used Manitoba Sales Tax 12 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice))
         cprint.info(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 5:
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 15.0
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
-        logging.info(("User used PEI Sales Tax 15 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        logging.info("User used PEI Sales Tax 15 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice))
         cprint.info(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 6:
         originPrice = int(input(_("What is the original price (before tax)? ")))
         percent = 11.0
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
-        logging.info(("User used Saskatchewan Sales Tax 11 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice)))
+        logging.info("User used Saskatchewan Sales Tax 11 PerCent  with originPrice %s sales tax %s, with price %s" % (originPrice, theSalesTax, newPrice))
         cprint.info(_("After tax, the price is: \n%s" % newPrice))
     elif whatPlace == 7:
         originPrice = float(input(_("OK, enter the original price: ")))

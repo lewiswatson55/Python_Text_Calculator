@@ -167,7 +167,7 @@ def palc():
             if "square" in root:
                 num = input(_("Number to be rooted?"))
                 cprint.info(_("That equals.....\n", num ** 0.5))
-                logging.info(("user sqrooted number ", (num**0.5)))
+                logging.info("user sqrooted number %s" % (num**0.5))
             elif "cube" in root:
                 cu()
             else:
