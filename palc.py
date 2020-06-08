@@ -82,10 +82,10 @@ def palc():
            logging.info("User needed help")
            h()
 #TAX
-       elif "tax" in calc:
+       elif _("tax") in calc:
             taxCalc()
 #SQUARE
-       elif "sq" in calc:
+       elif _("sq") in calc:
             n = int(input(_("Number to square? ")))
             cprint.info(n * n)
             logging.info("User squared number %s got result %s" % (n, (n * n)))
@@ -96,19 +96,19 @@ def palc():
 #DIVISION
        elif "/" in calc:
             div()
-       elif "div" in calc:
+       elif _("div") in calc:
             div()
 #SUBTRACTION
        elif "-" in calc:
             sub()
-       elif "sub" in calc:
+       elif _("sub") in calc:
             sub()
        elif "min" in calc:
             sub()
 #ADDITION
        elif "+" in calc:
             add()
-       elif "add" in calc:
+       elif _("add") in calc:
             add()
 #MODULO
        elif "%" in calc:
@@ -116,14 +116,12 @@ def palc():
        elif "mod" in calc:
             mod()
 #AREA
-       elif "ar" in calc:
+       elif _("area") in calc:
             area()
        elif "#" in calc:
             area()
-       elif "area" in calc:
-            area()
 #VOLUME
-       elif "vol" in calc:
+       elif _("vol") in calc:
             uc()
 #CUBE
        elif "{}" in calc:
@@ -132,14 +130,14 @@ def palc():
             cprint.info(cubedNumber ** 3) #Manually cube number
             logging.info("User cubed number %s got result %s" % (cubedNumber, (cubedNumber ** 3)))
             print()
-       elif "cube" in calc: 
+       elif _("cube") in calc: 
             cubedNumber = int(input(_("\nType the number to be cubed: ")))
             print()
             cprint.info(cubedNumber ** 3) #Manually cube number
             logging.info("User cubed number %s got result %s" % (cubedNumber, (cubedNumber ** 3)))
             print()
 #EXIT
-       elif "quit" in calc:
+       elif _("quit") in calc:
             logging.info("User exited using `quit' command")
             e()
        elif "exit" in calc:
@@ -150,7 +148,7 @@ def palc():
             multi()
        elif "x" in calc:
             multi()
-       elif "multi" in calc:
+       elif _("multi") in calc:
             multi()
 #EXPONENTS
        elif "power" in calc:
@@ -166,9 +164,9 @@ def palc():
 #CUBE TWICE
        elif "{2}" in calc:
             cprint.err(_("That feature was discontinued."))
-            logging.err("User attempted to use cube twice function but it's discontinued")
+            logging.error("User attempted to use cube twice function but it's discontinued")
 #ROOTS
-       elif "root" in calc:
+       elif _("root") in calc:
             root = input(_("Square root or cube root?(square/cube)\nType: "))
             root = root.lower()
             if "square" in root:
