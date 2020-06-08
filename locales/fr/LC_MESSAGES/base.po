@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
 "POT-Creation-Date: 2020-06-08 15:48-0400\n"
-"PO-Revision-Date: 2020-06-08 15:51-0400\n"
+"PO-Revision-Date: 2020-06-08 15:55-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -719,7 +719,6 @@ msgstr ""
 msgid "Type something!"
 msgstr "Tappez une chose !"
 
-# don't know why there's an error but what the hell. it works.
 #: palc.py:250
 msgid ""
 "\n"
@@ -734,9 +733,10 @@ msgstr ""
 "Je ne sais pas quoi vous voulez faire. Ça c'est une liste de les calcules "
 "supportes :\n"
 "multiplication, division, soustraction, addition, modulo, carré, aire, "
-"volume, cube, exponenents, racines, fibonacci, logarithme, mémoire, "
+"volume, cube, exponents, racines, fibonacci, logarithme, mémoire, "
 "calculatrice pourcentage, calculatrice d'intérêt, température, et base. "
 "Désolé pour la dérangement : /\n"
+"(NOTE : N'AJOUTE PAS LES ACCENTS AU CALCULS, OU CE NE VA PAS FONCTIONNER)\n"
 
 #: palc.py:258
 msgid "Welcome to Palc!"
