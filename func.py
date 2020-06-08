@@ -260,18 +260,3 @@ Type: ''')))
     else:
         cprint.err(_("Invalid response."))
         logging.error("User typed invalid temperature answer %s" % hi)
-def saveSlot5():
-    try:
-        TheFile = open("taxslot5", "r")
-        tryyy = TheFile.read()
-        cprint.info("8 - %s" % tryyy)
-        itWorks = True
-    except (NameError, IOError):
-        cprint.info(_("5 - Empty Custom Slot"))
-        itWorks = False
-    if hi == 5:
-        if itWorks is True:
-            pass
-        if itWorks is False:
-            name = input(_("Type a name..."))
-            taxSlot5 = float(input(_("What Percentage? ")))
