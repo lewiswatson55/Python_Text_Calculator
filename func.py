@@ -9,7 +9,7 @@ def getNum(): #ask for two numbers and then return to function
     return n1, n2
 def h():
     cprint.info(_('''
-Current list of commands: multiplication (*), division (/), addition (+), square (sq), subtraction (-), modulo (%), area (#), volume (vol), cube ({}), cube twice ({2}), exponents (power), root (root), equals (=), logarithm (log), memory (mem), interest calculator (interest), fibonacci sequence (fib), percentage (percent), convert temperature (temperature), and convert number systems (base). Type quit to quit.
+Current list of commands: multiplication, division, addition, square, subtraction, modulo, area, volume, cube, exponents, root, logarithm, memory, interest calculator, fibonacci sequence, percentage calculator, convert temperature, and convert bases (aka number systems). Type quit to quit.
 Bugs? Head on over to https://github.com/thetechrobo/support/
 To contribute: go to https://github.com/thetechrobo/python-text-calculator/
      '''))
