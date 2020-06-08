@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-06-08 16:04-0400\n"
-"PO-Revision-Date: 2020-06-08 16:05-0400\n"
+"POT-Creation-Date: 2020-06-08 16:07-0400\n"
+"PO-Revision-Date: 2020-06-08 16:07-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -468,7 +468,11 @@ msgstr ""
 
 #: func.py:148
 msgid "Would you like to do it again (Y/n)? "
-msgstr "Voulez-vous faire ça encore (Y/n)? "
+msgstr "Voulez-vous faire ça encore (O/n)? "
+
+#: func.py:150
+msgid "y"
+msgstr "o"
 
 #: func.py:153
 msgid "Going back..."

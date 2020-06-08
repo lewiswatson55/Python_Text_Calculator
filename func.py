@@ -147,7 +147,7 @@ So, with that out of the way, type the amount we should multiply the interest by
         cprint.info(_("The answer is: \n%s" % number))
         doItAgain = input(_("Would you like to do it again (Y/n)? "))
         doItAgain = doItAgain.lower()
-        if doItAgain == "y":
+        if doItAgain == _("y"):
             pass
         else:
             cprint.ok(_("Going back..."))
