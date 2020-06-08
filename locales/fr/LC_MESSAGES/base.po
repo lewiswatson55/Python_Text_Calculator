@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-06-08 16:00-0400\n"
-"PO-Revision-Date: 2020-06-08 16:00-0400\n"
+"POT-Creation-Date: 2020-06-08 16:04-0400\n"
+"PO-Revision-Date: 2020-06-08 16:05-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -684,8 +684,12 @@ msgid ""
 "Square root or cube root?(square/cube)\n"
 "Type: "
 msgstr ""
-"Racine carré ou cubique ? (Square/cube)\n"
-"Tappez : "
+"Racine carré ou cubique ? (carre/cube, n'ajouter pas les accents)\n"
+"Tapez : "
+
+#: palc.py:172
+msgid "square"
+msgstr "carre"
 
 #: palc.py:173
 msgid "Number to be rooted?"
@@ -718,13 +722,25 @@ msgstr "Est-ce-que tu as vraiment besoin d'une calculatrice pour ça ? "
 msgid "Type in the number to ord: "
 msgstr "Tappez le nombre pour 'ord'er : "
 
+#: palc.py:200
+msgid "log"
+msgstr "log"
+
 #: palc.py:204
 msgid ""
 "Would you like to set the memory or recall? (set / recall)\n"
 "Type: "
 msgstr ""
-"Souhaitez-vous setter la mémoire ou rappeler? (set / recall)\n"
-"Type:"
+"Souhaitez-vous setter la mémoire ou rappeler? (setter / rappeler)\n"
+"Type: "
+
+#: palc.py:205
+msgid "set"
+msgstr "setter"
+
+#: palc.py:207
+msgid "recall"
+msgstr "rappeler"
 
 #: palc.py:210
 msgid ""
@@ -735,6 +751,10 @@ msgstr "Tu n'a pas tappez une reponse valide."
 #: palc.py:214
 msgid "Starting fibonacci sequence. Please wait."
 msgstr "Je commence le séquence Fibonacci. Veuillez attendre. "
+
+#: palc.py:217
+msgid "percent"
+msgstr "pourcentage"
 
 #: palc.py:218
 #, python-format
@@ -750,6 +770,10 @@ msgstr ""
 #: palc.py:226
 msgid "You didn't type a valid answer. Abort."
 msgstr "Tu n'a pas tappez une reponse valide."
+
+#: palc.py:229
+msgid "interest"
+msgstr "interet"
 
 #: palc.py:236
 msgid ""
@@ -769,7 +793,7 @@ msgid ""
 "I don't understand your request. Here are the currently supported "
 "calculations:\n"
 "multiplication, division, subtraction, addition, modulo, square, area, "
-"volume, cube, power, root, fibonacci, logarithm, memory, percentage "
+"volume, cube, power, root, ord, fibonacci, logarithm, memory, percentage "
 "calculator, interest calculator, temperature, and base. Sorry for the "
 "inconvenience\n"
 msgstr ""
@@ -777,7 +801,7 @@ msgstr ""
 "Je ne sais pas quoi vous voulez faire. Ça c'est une liste de les calcules "
 "supportes :\n"
 "multiplication, division, soustraction, addition, modulo, carré, aire, "
-"volume, cube, exponents, racines, fibonacci, logarithme, mémoire, "
+"volume, cube, exponents, racines, fibonacci, ord, logarithme, mémoire, "
 "calculatrice pourcentage, calculatrice d'intérêt, température, et base. "
 "Désolé pour la dérangement : /\n"
 "(NOTE : N'AJOUTE PAS LES ACCENTS AU CALCULS, OU CE NE VA PAS FONCTIONNER)\n"
@@ -934,6 +958,12 @@ msgstr ""
 "13 - Pyramide a base triangulaire\n"
 "14 - Pyramide a base pentagonal\n"
 "15 - Pyramide a base hexagonal"
+
+#~ msgid "temperature"
+#~ msgstr "temperature"
+
+#~ msgid "conver"
+#~ msgstr "conver"
 
 #~ msgid "Details: %s"
 #~ msgstr "Détails : %s"

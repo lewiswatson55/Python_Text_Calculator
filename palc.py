@@ -169,7 +169,7 @@ def palc():
        elif _("root") in calc:
             root = input(_("Square root or cube root?(square/cube)\nType: "))
             root = root.lower()
-            if "square" in root:
+            if _("square") in root:
                 num = input(_("Number to be rooted?"))
                 cprint.info(_("That equals.....\n", num ** 0.5))
                 logging.info("user sqrooted number %s" % (num**0.5))
@@ -197,14 +197,14 @@ def palc():
            logging.info("User ord'ed to get result %s" % result)
            cprint.info("= %s" % result)
 #LOGARITHM
-       elif "log" in calc:
+       elif _("log") in calc:
            log()
 #MEMORY
        elif "mem" in calc:
             memOrRecall = input(_("Would you like to set the memory or recall? (set / recall)\nType: "))
-            if "set" in memOrRecall.lower():
+            if _("set") in memOrRecall.lower():
                 remember()
-            elif "recall" in memOrRecall.lower():
+            elif _("recall") in memOrRecall.lower():
                 readMyMemory()
             else:
                 cprint.err(_("You did not type an answer.\nAbort."))
@@ -214,7 +214,7 @@ def palc():
             cprint.ok(_("Starting fibonacci sequence. Please wait."))
             fib()
 #PERCENTAGE
-       elif "percent" in calc: #SOURCE: https://stackoverflow.com/a/5998010/9654083
+       elif _("percent") in calc: #SOURCE: https://stackoverflow.com/a/5998010/9654083
             whichOne = int(input(_('''1 - Calculate "What is x% of y?"
 2 - Convert a number to percentage.
 Type: ''')))
@@ -226,7 +226,7 @@ Type: ''')))
                 cprint.err(_("You didn't type a valid answer. Abort."))
                 logging.info("User did not answer correct percentage interpretation (typed %s)" % whichOne)
 #INTEREST
-       elif "interest" in calc:
+       elif _("interest") in calc:
             calculateInterest()
 #TEMPERATURE
        elif "temperature" in calc:
@@ -247,7 +247,7 @@ Type: ''')))
             logging.error("User typed an invalid command (%s)" % calc)
             cprint.err(_('''
 I don't understand your request. Here are the currently supported calculations:
-multiplication, division, subtraction, addition, modulo, square, area, volume, cube, power, root, fibonacci, logarithm, memory, percentage calculator, interest calculator, temperature, and base. Sorry for the inconvenience
+multiplication, division, subtraction, addition, modulo, square, area, volume, cube, power, root, ord, fibonacci, logarithm, memory, percentage calculator, interest calculator, temperature, and base. Sorry for the inconvenience
 '''))
 width = os.get_terminal_size().columns
 for i in range(0, width):
