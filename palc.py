@@ -5,6 +5,7 @@
 #(UPDATE::: That link is now dead, it is in the file FOR CLEARING THE SCREEN AND PRESS ANY KEY TO CONTINUE.md)
 
 # THANKS TO https://stackoverflow.com/questions/33594958/is-it-possible-to-align-a-print-statement-to-the-center-in-python FOR showing how to ALIGN the PRINT STATEMENT
+
 # IMPORTS
 import gettext #to translate Palc
 from sys import exit as e #so that we can exit later on
@@ -131,6 +132,12 @@ def palc():
             cprint.info(cubedNumber ** 3) #Manually cube number
             logging.info("User cubed number %s got result %s" % (cubedNumber, (cubedNumber ** 3)))
             print()
+       elif "cube" in calc: 
+            cubedNumber = int(input(_("\nType the number to be cubed: ")))
+            print()
+            cprint.info(cubedNumber ** 3) #Manually cube number
+            logging.info("User cubed number %s got result %s" % (cubedNumber, (cubedNumber ** 3)))
+            print()
 #EXIT
        elif "quit" in calc:
             logging.info("User exited using `quit' command")
@@ -142,6 +149,8 @@ def palc():
        elif "*" in calc:
             multi()
        elif "x" in calc:
+            multi()
+       elif "multi" in calc:
             multi()
 #EXPONENTS
        elif "power" in calc:
@@ -240,7 +249,7 @@ Type: ''')))
             logging.error("User typed an invalid command (%s)" % calc)
             cprint.err(_('''
 I don't understand your request. Here are the currently supported calculations:
-* or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] (square); ar or # (area); vol (volume); {} (cube); power (exponents/power); root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); percent (calculate percentage); interest (interest calculator); temperature (convert Celsius to Farenheit etc); and base (convert number system). Sorry for the inconvenience
+multiplication, division, subtraction, addition, modulo, square, area, volume, cube, power, root, fibonacci, logarithm, memory, percentage calculator, interest calculator, temperature, and base. Sorry for the inconvenience
 '''))
 width = os.get_terminal_size().columns
 for i in range(0, width):
