@@ -12,7 +12,7 @@ def h():
 Current list of commands: multiplication, division, addition, square, subtraction, modulo, area, volume, cube, exponents, root, logarithm, memory, interest calculator, fibonacci sequence, percentage calculator, convert temperature, and convert bases (aka number systems). Type quit to quit.
 Bugs? Head on over to https://github.com/thetechrobo/support/
 To contribute: go to https://github.com/thetechrobo/python-text-calculator/
-     '''))
+'''))
 def mod(): #modulo
     try:
         bigger = int(input(_("\nType the first number (greater): ")))
