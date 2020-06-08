@@ -32,16 +32,12 @@ if language == "francais":
 elif language == "english":
     logging.info("Set language to English")
     gettext.bindtextdomain('base', localedir="locales")
-    l_translations = gettext.translation('base', localedir='locales', languages=["en"])
+    lang_translations = gettext.translation('base', localedir='locales', languages=["en"])
 else:
     logging.fatal("USER DID NOT SPECIFY A LANGUAGE, ABORT!")
     cprint.fatal("You did not specify a language. Abort.\nTu n'a pas dit une language supporte.", interrupt=True)
-try:
-    lang_translations.install()
-    _ = lang_translations.gettext
-except NameError:
-    l_translations.install()
-    _ = l_translations.gettext
+lang_translations.install()
+_ = lang_translations.gettext
 logging.info("Attempting to import func.py and basicfunc.py.")
 try:
     from func import *
@@ -75,8 +71,7 @@ def palc():
        print('\x1bc') #Third attempt at clearing the screen with ANSI escape codes.
 #CALCULATION CHOICE
        calc = input(_("What calculation do you wish to do? (Type `?' for a list of commands)\nType: "))
-       try:
-           logging.info("Got calc choice %s" % calc)
+       logging.info("Got calc choice %s" % calc)
        calc = calc.lower() #make variable "calc" lowercase
 #HELP
        if "?" in calc:
