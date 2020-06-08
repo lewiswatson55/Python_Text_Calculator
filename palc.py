@@ -78,7 +78,7 @@ def palc():
        if "?" in calc:
            logging.info("User needed help")
            h()
-       elif "help" in calc:
+       elif _("help") in calc:
            logging.info("User needed help")
            h()
 #TAX

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-06-07 12:34-0400\n"
-"PO-Revision-Date: 2020-06-07 12:35-0400\n"
+"POT-Creation-Date: 2020-06-08 15:48-0400\n"
+"PO-Revision-Date: 2020-06-08 15:51-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -200,16 +200,16 @@ msgstr "Il y avait un problème inconnu divisant vos numéros. "
 msgid "Number to be rooted? "
 msgstr "Quelle est la nombre ? "
 
-#: fibonacci.py:6
+#: fibonacci.py:7
 msgid "Press Control-C to stop."
 msgstr "Appuyez sur Ctrl-C pour arrêter."
 
-#: fibonacci.py:19
+#: fibonacci.py:20
 msgid "Thanks for using Palc's FIBONACCI function!"
 msgstr "Merci pour utiliser le fonction Fibonacci de Palc !"
 
-#: fibonacci.py:21
-msgid "an error occured."
+#: fibonacci.py:22
+msgid "An error occured."
 msgstr "Une erreur est survenue."
 
 #: func.py:11
@@ -291,8 +291,8 @@ msgstr ""
 msgid "Please enter the number to be converted from %s: "
 msgstr "Veuillez entrer le numéro pour être convertir de %s : "
 
-#: func.py:64 func.py:231 func.py:237 func.py:246 func.py:250 func.py:254
-#: func.py:260
+#: func.py:64 func.py:229 func.py:235 func.py:244 func.py:248 func.py:252
+#: func.py:258
 #, python-format
 msgid ""
 "That equals...\n"
@@ -326,7 +326,7 @@ msgstr "utilisant base 10 "
 msgid "What is the number? "
 msgstr "Quelle est la nombre ? "
 
-#: func.py:78 func.py:122
+#: func.py:78 func.py:120
 msgid "That equals:"
 msgstr "La reponse est..."
 
@@ -383,8 +383,9 @@ msgid "What slot number did you use? "
 msgstr "Quelle numero slot est-ce-que tu as utilise ? "
 
 #: func.py:106
-msgid "Number: "
-msgstr "Quelle est le nombre ? "
+#, python-format
+msgid "Number: %s"
+msgstr "Numéro : %s"
 
 #: func.py:110
 msgid ""
@@ -394,23 +395,23 @@ msgstr ""
 "Il y etait une erreur pour lire le fichier. Est-ce-que tu as sauve le "
 "numero ? est-ce-que tu as par accident renommer le fichier ? "
 
-#: func.py:116 func.py:127
+#: func.py:114 func.py:125
 msgid "Please do not type in a zero as the whole."
 msgstr "N'écrivez pas une zero pour l'entier."
 
-#: func.py:119
+#: func.py:117
 msgid "what is the ORIGINAL NUMBER? "
 msgstr "Quelle est le nombre original ? "
 
-#: func.py:120
+#: func.py:118
 msgid "What is the PERCENTAGE? "
 msgstr "Qu'est-ce que le POURCENTAGE ? "
 
-#: func.py:130
+#: func.py:128
 msgid "What is the number that would be 100%? "
 msgstr "Quelle est la nombre qui serait 100 % ? "
 
-#: func.py:131
+#: func.py:129
 msgid ""
 "What is the number that you want to convert to percentage (e.g. this number "
 "out of the number that would be 100%)? "
@@ -418,19 +419,19 @@ msgstr ""
 "Quel est le nombre que vous souhaitez convertir en pourcentage (par exemple, "
 "ce nombre sur le nombre qui serait 100%) ? "
 
-#: func.py:133
+#: func.py:131
 msgid "that equals:"
 msgstr "La reponse est..."
 
-#: func.py:137
+#: func.py:135
 msgid "What is the original number? "
 msgstr "Quelle est le nombre original ? "
 
-#: func.py:138
+#: func.py:136
 msgid "What is the rate of interest in percentage (without the percent sign)? "
 msgstr "Quel est le taux d'intérêt en pourcentage (sans le signe pourcentage)?"
 
-#: func.py:140
+#: func.py:138
 msgid ""
 "How many units of time would you like to calculate? \n"
 "Essentially, one unit of time could be one month, or one decade. It all "
@@ -456,7 +457,7 @@ msgstr ""
 "l'intérêt par (aka le montant de unités de temps).\n"
 "Tappe le numero : "
 
-#: func.py:149
+#: func.py:147
 #, python-format
 msgid ""
 "The answer is: \n"
@@ -465,15 +466,15 @@ msgstr ""
 "La reponse est : \n"
 "%s"
 
-#: func.py:150
+#: func.py:148
 msgid "Would you like to do it again (Y/n)? "
 msgstr "Voulez-vous faire ça encore (Y/n)? "
 
-#: func.py:155
+#: func.py:153
 msgid "Going back..."
 msgstr "Je retourne..."
 
-#: func.py:158
+#: func.py:156
 msgid ""
 "1 - Ontario Sales Tax\n"
 "2 - Quebec Sales Tax\n"
@@ -494,16 +495,16 @@ msgstr ""
 "7 - Taxe personnalisée \n"
 "Choisissez-en une: "
 
-#: func.py:165
+#: func.py:163
 msgid "Choose one: "
 msgstr "Choisissez-en un : "
 
-#: func.py:167 func.py:174 func.py:181 func.py:188 func.py:195 func.py:202
+#: func.py:165 func.py:172 func.py:179 func.py:186 func.py:193 func.py:200
 msgid "What is the original price (before tax)? "
 msgstr "Quelle est le prix original (sans taxe) ? "
 
-#: func.py:172 func.py:179 func.py:186 func.py:193 func.py:200 func.py:207
-#: func.py:213
+#: func.py:170 func.py:177 func.py:184 func.py:191 func.py:198 func.py:205
+#: func.py:211
 #, python-format
 msgid ""
 "After tax, the price is: \n"
@@ -512,20 +513,20 @@ msgstr ""
 "Après qu'on ajoute taxe, le prix est : \n"
 "%s"
 
-#: func.py:209
+#: func.py:207
 msgid "OK, enter the original price: "
 msgstr "D'accord, tappez le prix original : "
 
-#: func.py:210
+#: func.py:208
 msgid "Now enter the tax percentage without the percent sign: "
 msgstr ""
 "Quel est le montant de taxe en pourcentage (sans le signe pourcentage)? "
 
-#: func.py:215
+#: func.py:213
 msgid "You did not type answer. Abort."
 msgstr "Tu n'a pas tappez une reponse valide."
 
-#: func.py:218
+#: func.py:216
 msgid ""
 "OPTIONS:\n"
 "    1 - Farenheit to Celsius\n"
@@ -545,35 +546,35 @@ msgstr ""
 "    6 - Kelvin à Fahrenheit\n"
 "Tappez une réponse : "
 
-#: func.py:227 func.py:240
+#: func.py:225 func.py:238
 msgid "Please enter the FAHRENHEIT temperature: "
 msgstr "Veuillez entrer la température FARENHEIT: "
 
-#: func.py:234 func.py:248
+#: func.py:232 func.py:246
 msgid "Please enter the CELSIUS temperature: "
 msgstr "Veuillez entrer la température CELSIUS:"
 
-#: func.py:252 func.py:256
+#: func.py:250 func.py:254
 msgid "Please enter the KELVIN temperature: "
 msgstr "Veuillez entrer la température KELVIN : "
 
-#: func.py:263
+#: func.py:261
 msgid "Invalid response."
 msgstr "Réponse invalide."
 
-#: func.py:272
+#: func.py:270
 msgid "5 - Empty Custom Slot"
 msgstr "5 - Slot customisè vide"
 
-#: func.py:278
+#: func.py:276
 msgid "Type a name..."
 msgstr "Tappez une nom ..."
 
-#: func.py:279
+#: func.py:277
 msgid "What Percentage? "
 msgstr "Quel pourcentage ? "
 
-#: palc.py:48
+#: palc.py:47
 msgid ""
 "I can't access the file func.py. This file is necessary for proper function "
 "of the Software."
@@ -581,7 +582,7 @@ msgstr ""
 "Je ne peux pas trouver le fichier func.py. Cette fichier est necessaire pour "
 "la fonction propre de cette logiciel."
 
-#: palc.py:54
+#: palc.py:53
 msgid ""
 "I can't access file basicfunc.py. This file is necessary for proper function "
 "of the Software."
@@ -589,15 +590,15 @@ msgstr ""
 "Je ne peux pas trouver le fichier basicfunc.py. Cette fichier est nécessaire "
 "pour la fonction propre de cette logiciel."
 
-#: palc.py:56
+#: palc.py:55
 msgid "Loading...............\n"
 msgstr "Chargement...\n"
 
-#: palc.py:60
+#: palc.py:59
 msgid "Press any key to continue..."
 msgstr "Appuyer sur une touche pour continuer…"
 
-#: palc.py:75
+#: palc.py:74
 msgid ""
 "What calculation do you wish to do? (Type `?' for a list of commands)\n"
 "Type: "
@@ -606,11 +607,15 @@ msgstr ""
 "calcules)\n"
 "Tappe : "
 
-#: palc.py:98 palc.py:102
+#: palc.py:81
+msgid "help"
+msgstr "aide"
+
+#: palc.py:89 palc.py:93
 msgid "Number to square? "
 msgstr "Quelle est la nombre ? "
 
-#: palc.py:139
+#: palc.py:130 palc.py:136
 msgid ""
 "\n"
 "Type the number to be cubed: "
@@ -618,19 +623,19 @@ msgstr ""
 "\n"
 "Tappez le nombre à cuber : "
 
-#: palc.py:153 palc.py:158
+#: palc.py:157 palc.py:162
 msgid "Original number?"
 msgstr "Tappez le nombre original : "
 
-#: palc.py:154 palc.py:159
+#: palc.py:158 palc.py:163
 msgid "Exponent? "
 msgstr "Tappez l'exponent : "
 
-#: palc.py:164
+#: palc.py:168
 msgid "That feature was discontinued."
 msgstr "Cette fonctionnalité a été supprimée."
 
-#: palc.py:168
+#: palc.py:172
 msgid ""
 "Square root or cube root?(square/cube)\n"
 "Type: "
@@ -638,38 +643,38 @@ msgstr ""
 "Racine carré ou cubique ? (Square/cube)\n"
 "Tappez : "
 
-#: palc.py:171
+#: palc.py:175
 msgid "Number to be rooted?"
 msgstr "Quelle est la nombre pour << raciner >> ? "
 
-#: palc.py:172
+#: palc.py:176
 msgid "That equals.....\n"
 msgstr "La reponse est...\n"
 
-#: palc.py:177
+#: palc.py:181
 msgid ""
 "Currently I don't support the root you chose. Hopefully this will change :)"
 msgstr ""
 "Pour le moment je ne supporte pas la racine que vous voulez. J'espere que ca "
 "va changer :)"
 
-#: palc.py:182
+#: palc.py:186
 msgid "Type in a number: "
 msgstr "Tappez le nombre : "
 
-#: palc.py:184
+#: palc.py:188
 msgid "=42 -- the answer to life, the universe, and everything"
 msgstr "=42 -- la reponse au vie, l'universe, et tous les choses"
 
-#: palc.py:187
+#: palc.py:191
 msgid "Do you really need a calculator for this?"
 msgstr "Est-ce-que tu as vraiment besoin d'une calculatrice pour ça ? "
 
-#: palc.py:194
+#: palc.py:198
 msgid "Type in the number to ord: "
 msgstr "Tappez le nombre pour 'ord'er : "
 
-#: palc.py:202
+#: palc.py:206
 msgid ""
 "Would you like to set the memory or recall? (set / recall)\n"
 "Type: "
@@ -677,17 +682,17 @@ msgstr ""
 "Souhaitez-vous setter la mémoire ou rappeler? (set / recall)\n"
 "Type:"
 
-#: palc.py:208
+#: palc.py:212
 msgid ""
 "You did not type an answer.\n"
 "Abort."
 msgstr "Tu n'a pas tappez une reponse valide."
 
-#: palc.py:212
+#: palc.py:216
 msgid "Starting fibonacci sequence. Please wait."
 msgstr "Je commence le séquence Fibonacci. Veuillez attendre. "
 
-#: palc.py:216
+#: palc.py:220
 #, python-format
 msgid ""
 "1 - Calculate \"What is x% of y?\"\n"
@@ -698,43 +703,46 @@ msgstr ""
 "2 - Convertir une nombre au pourcentage.\n"
 "Tappez : "
 
-#: palc.py:224
+#: palc.py:228
 msgid "You didn't type a valid answer. Abort."
 msgstr "Tu n'a pas tappez une reponse valide."
 
-#: palc.py:235 palc.py:238
+#: palc.py:238
+msgid ""
+"1 - Convert temperature units\n"
+"Type: "
+msgstr ""
+"1 - Convertir les unités de température\n"
+"Tape : "
+
+#: palc.py:244 palc.py:247
 msgid "Type something!"
 msgstr "Tappez une chose !"
 
 # don't know why there's an error but what the hell. it works.
-#: palc.py:241
-#, python-format
+#: palc.py:250
 msgid ""
 "\n"
 "I don't understand your request. Here are the currently supported "
 "calculations:\n"
-"* or x; / or div; -, min, or sub; + or add; % or mod (modulo); sq or [] "
-"(square); ar or # (area); vol (volume); {} (cube); power (exponents/power); "
-"root (roots); = (equals); fib (fibonacci) log (logarithm); mem (memory); "
-"percent (calculate percentage); interest (interest calculator); temperature "
-"(convert Celsius to Farenheit etc); and base (convert number system). Sorry "
-"for the inconvenience\n"
+"multiplication, division, subtraction, addition, modulo, square, area, "
+"volume, cube, power, root, fibonacci, logarithm, memory, percentage "
+"calculator, interest calculator, temperature, and base. Sorry for the "
+"inconvenience\n"
 msgstr ""
 "\n"
 "Je ne sais pas quoi vous voulez faire. Ça c'est une liste de les calcules "
 "supportes :\n"
-"* ou x pour la multiplication; -, min, ou sub pour la soustraction, + ou add "
-"pour l'addition; sq ou [] pour carre; ar ou # pour l'aire; vol pour le "
-"volume; {} pour le cube; ex pour les exponents; root pour les racines; log "
-"pour le logarithme; fib pour l'équation fibonacci; mem pour la mémoire; et "
-"base pour\n"
-"convertir les numéros a une autre système. Désolé : /\n"
+"multiplication, division, soustraction, addition, modulo, carré, aire, "
+"volume, cube, exponenents, racines, fibonacci, logarithme, mémoire, "
+"calculatrice pourcentage, calculatrice d'intérêt, température, et base. "
+"Désolé pour la dérangement : /\n"
 
-#: palc.py:249
+#: palc.py:258
 msgid "Welcome to Palc!"
 msgstr "Bienvenue au Palc !"
 
-#: palc.py:257
+#: palc.py:266
 msgid ""
 "\n"
 "Note that you CAN type `quit' instead of pressing the interrupt key"
@@ -742,7 +750,7 @@ msgstr ""
 "\n"
 "Tu peux tappez `quit' plutot que ^C... "
 
-#: palc.py:261
+#: palc.py:270
 msgid ""
 "\n"
 "Why ^D? Why not just type `quit'?"
@@ -750,38 +758,36 @@ msgstr ""
 "\n"
 "Pourquoi ^D ? Pourquoi pas juste `quit' ?"
 
-#: palc.py:269
+#: palc.py:278
 msgid "\aERROR!"
 msgstr "\aErreure !"
 
-#: palc.py:273
+#: palc.py:282
 msgid ""
 "You typed in an invalid integer or float. Or maybe the program needs "
 "debugging. Either way, it's a pretty big error."
 msgstr ""
 "Erreure: Tu as tappez une nombre invalide, ou le logiciel a une probleme."
 
-#: palc.py:274
-#, python-format
-msgid "Details: %s"
-msgstr "Détails : %s"
+#: palc.py:283
+msgid "Details are in the log."
+msgstr "Les détails sont dans le journal."
 
-#: palc.py:277
+#: palc.py:286
 msgid "Looks like you exited."
 msgstr "Tu as quitter Palc."
 
-#: palc.py:284
+#: palc.py:293
 msgid "Unknown Error!"
 msgstr "Une erreure a survenue."
 
-#: palc.py:289
-#, python-format
+#: palc.py:298
 msgid ""
-"An unknown error occured (%s). Please file an Issue at github.com/"
-"thetechrobo/support."
+"An unknown error occured. Please file an Issue at github.com/thetechrobo/"
+"support."
 msgstr ""
-"Une erreure à se passé (%s). Veuillez mettre une Issue à github.com/"
-"thetechrobo/support."
+"Une erreur à se passé. Veuillez mettre une Issue à github.com/thetechrobo/"
+"support."
 
 #: volInteractive.py:6
 msgid "What length is the side of the cube? "
@@ -884,6 +890,9 @@ msgstr ""
 "13 - Pyramide a base triangulaire\n"
 "14 - Pyramide a base pentagonal\n"
 "15 - Pyramide a base hexagonal"
+
+#~ msgid "Details: %s"
+#~ msgstr "Détails : %s"
 
 #~ msgid ""
 #~ "Please do not run any of these files directly. They don't do anything "
