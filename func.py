@@ -30,7 +30,7 @@ def mod(): #modulo
         logging.info("User attempted to modulo numbers %s and %s, and got result %s" % (bigger, smaller, (bigger-smaller*int(bigger/smaller))))
         print()
 def base():
-    base = int(input('''What base would you like to use?
+    base = int(input('''What base would you like to convert to?
 Available: 2 (binary) 8 (octo) 10 (decimal (normal)) 16 (hex)
 Type 2, 8, 10, or 16: '''))
     if base == 2:
@@ -71,7 +71,7 @@ Type: ''')))
 def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-python
     import math
     while True:
-        base = input(_("What base would you like to use? \nCurrentlysupported: 10 (base 10), e (natural)"))
+        base = input(_("What base would you like to use? \nCurrently supported: 10 (base 10), e (natural)"))
         if base == "10":
             cprint.info(_("Using base 10"))
             number = int(input(_("What is the number? ")))
