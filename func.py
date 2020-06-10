@@ -76,15 +76,15 @@ def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-
             cprint.info(_("Using base 10"))
             number = int(input(_("What is the number? ")))
             cprint.info(_("That equals:"))
-            cprint.info(math.log10(number))
-            logging.info(("User used base 10 logarithm with number", number, ", getting a result of ", math.log10(number)))
+            cprint.info("=%s" % (math.log10(number)))
+            logging.info("User used base 10 logarithm with number %s, getting a result of %s" % (number, (math.log10(number)))
             break
         elif base.lower() == "e":
             cprint.info(_("Using natural logarithm"))
             number = int(input(_("What is the number? ")))
             cprint.info("That equals...")
-            cprint.info(math.log(number))
-            logging.info(("User used natural logarithm with number ", number, ", getting a result of ", math.log(number)))
+            cprint.info("=%s" % (math.log(number)))
+            logging.info("User used natural logarithm with number %s, getting a result of %s" % (number, (math.log(number)))
             break
         else:
             cprint.err(_("The logarithm you typed is not available."))
@@ -97,14 +97,14 @@ def remember():
     toRemember = str(toRemember)
     memory = open(slot, "w+")
     memory.write(toRemember)
-    logging.info(("Saved number ", toRemember, " to memory slot ", slot))
+    logging.info("Saved number %s to memory slot %s" % (toRemember, slot))
 def readMyMemory():
     cprint.info(_("This is the remember function.\nIt will read a number that was previously stored in a file."))
     try:
         slot = str(int(input(_("What slot number did you use? "))))
         memory = open(slot, "r")
         cprint.info(_("Number: %s" % memory.read()))
-        logging.info(("Retrieved number ", memory.read(), " from memory."))
+        logging.info("Retrieved number %s from memory." % (memory.read()))
     except Exception as e:
         logging.info("There was an error retrieving the file from memory. (Err %s)" % e)
         cprint.err(_("There was an error reading the file. Did you save the number by using the save function? Did you accidentally rename the file?"))
@@ -116,8 +116,8 @@ def percentage(percent, whole):
 def whatIsPercent():
     origin = int(input(_("what is the ORIGINAL NUMBER? ")))
     percent = int(input(_("What is the PERCENTAGE? ")))
-    logging.info(("Got percentage RN origin ", origin, " and ", percent))
-    cprint.info(_("That equals:"))
+    logging.info("Got percentage RN origin %s percent %s" % (origin, percent))
+    cprint.info(_("That equals..."))
     cprint.info(percentage(percent, origin))
 def getPercentage(part, whole):
     if whole == 0:
@@ -143,7 +143,7 @@ This calculator wasn't programmed with the ability to track time.
 So, with that out of the way, type the amount we should multiply the interest by (aka the amount of units of time).\nType it: ''')))
         inRealNumbers = percentage(whole=origin, percent=rate)
         number = origin + (inRealNumbers * howMany)
-        logging.info(("INTERESTCALC: origin: ", origin, " rate: ", rate, " how many: ", howMany, " answer: ", number))
+        logging.info("INTERESTCALC: origin: %s rate: %s howMany: %s answer: %s" % (origin, rate, howMany, number))
         cprint.info(_("The answer is: \n%s" % number))
         doItAgain = input(_("Would you like to do it again (Y/n)? "))
         doItAgain = doItAgain.lower()
