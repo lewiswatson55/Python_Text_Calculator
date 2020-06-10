@@ -76,15 +76,15 @@ def log(): #https://stackoverflow.com/questions/33754670/calculate-logarithm-in-
             cprint.info(_("Using base 10"))
             number = int(input(_("What is the number? ")))
             cprint.info(_("That equals:"))
-            cprint.info("=%s" % (math.log10(number)))
-            logging.info("User used base 10 logarithm with number %s, getting a result of %s" % (number, (math.log10(number)))
+            cprint.info(math.log10(number))
+            logging.info("User used base 10 logarithm with number %s, getting a result of %s" % (number, (math.log10(number))))
             break
         elif base.lower() == "e":
             cprint.info(_("Using natural logarithm"))
             number = int(input(_("What is the number? ")))
             cprint.info("That equals...")
-            cprint.info("=%s" % (math.log(number)))
-            logging.info("User used natural logarithm with number %s, getting a result of %s" % (number, (math.log(number)))
+            cprint.info(math.log(number))
+            logging.info("User used natural logarithm with number %s, getting a result of %s" % (number, (math.log(number))))
             break
         else:
             cprint.err(_("The logarithm you typed is not available."))
@@ -102,9 +102,10 @@ def readMyMemory():
     cprint.info(_("This is the remember function.\nIt will read a number that was previously stored in a file."))
     try:
         slot = str(int(input(_("What slot number did you use? "))))
-        memory = open(slot, "r")
-        cprint.info(_("Number: %s" % memory.read()))
-        logging.info("Retrieved number %s from memory." % (memory.read()))
+        with open(slot, "r") as memory:
+            theMem = memory.read()
+            cprint.info(_("Number: %s" % theMem))
+            logging.info("Retrieved %s from memory slot %s" % (theMem, slot))
     except Exception as e:
         logging.info("There was an error retrieving the file from memory. (Err %s)" % e)
         cprint.err(_("There was an error reading the file. Did you save the number by using the save function? Did you accidentally rename the file?"))
