@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-06-08 16:13-0400\n"
-"PO-Revision-Date: 2020-06-08 16:15-0400\n"
+"POT-Creation-Date: 2020-06-10 13:44-0400\n"
+"PO-Revision-Date: 2020-06-10 13:45-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -221,19 +221,18 @@ msgid ""
 "temperature, and convert bases (aka number systems). Type quit to quit.\n"
 "Bugs? Head on over to https://github.com/thetechrobo/support/\n"
 "To contribute: go to https://github.com/thetechrobo/python-text-calculator/\n"
-"     "
 msgstr ""
 "\n"
-"Liste des calculs : \n"
-"multiplication, division, soustraction, addition, modulo, carré, aire, "
-"volume, cube, exponents, racines, fibonacci, ord, logarithme, mémoire, "
-"calculatrice pourcentage, calculatrice d'intérêt, température, et base "
-"(convertir les nombres au système différent). Tappez quitter pour quitter.\n"
+"Liste des calculs : multiplication, division, soustraction, addition, "
+"modulo, carré, aire, volume, cube, exponents, racines, fibonacci, ord, "
+"logarithme, mémoire, calculatrice pourcentage, calculatrice d'intérêt, "
+"température, et base (convertir les nombres au système différent). Tapez "
+"quitter pour quitter.\n"
 "Erreurs ? Allez a https://github.com/thetechrobo/support\n"
 "Si tu veux contribuer : https://github.com/thetechrobo/python-text-"
 "calculator\n"
 "(IMPORTANT : N'AJOUTE PAS LES ACCENTS AU CALCULS, OU CE NE VA PAS "
-"FONCTIONNER)"
+"FONCTIONNER)\n"
 
 #: func.py:18
 msgid ""
@@ -290,8 +289,8 @@ msgstr ""
 msgid "Please enter the number to be converted from %s: "
 msgstr "Veuillez entrer le numéro pour être convertir de %s : "
 
-#: func.py:64 func.py:229 func.py:235 func.py:244 func.py:248 func.py:252
-#: func.py:258
+#: func.py:64 func.py:231 func.py:237 func.py:246 func.py:250 func.py:254
+#: func.py:260
 #, python-format
 msgid ""
 "That equals...\n"
@@ -312,10 +311,11 @@ msgstr ""
 #: func.py:74
 msgid ""
 "What base would you like to use? \n"
-"Currentlysupported: 10 (base 10), e (natural)"
+"Currently supported: 10 (base 10), e (natural)"
 msgstr ""
-"Quelle systeme est-ce-que tu veux utiliser ? \n"
-"10 (decimal) ou e (natural)"
+"Quelle système est-ce-que tu veux utiliser ? \n"
+"Options : 10 (décimal) ou e (naturel)\n"
+"Tape : "
 
 #: func.py:76
 msgid "Using base 10"
@@ -325,7 +325,7 @@ msgstr "utilisant base 10 "
 msgid "What is the number? "
 msgstr "Quelle est la nombre ? "
 
-#: func.py:78 func.py:120
+#: func.py:78
 msgid "That equals:"
 msgstr "La reponse est..."
 
@@ -381,12 +381,12 @@ msgstr ""
 msgid "What slot number did you use? "
 msgstr "Quelle numero slot est-ce-que tu as utilise ? "
 
-#: func.py:106
+#: func.py:107
 #, python-format
 msgid "Number: %s"
 msgstr "Numéro : %s"
 
-#: func.py:110
+#: func.py:111
 msgid ""
 "There was an error reading the file. Did you save the number by using the "
 "save function? Did you accidentally rename the file?"
@@ -394,23 +394,27 @@ msgstr ""
 "Il y etait une erreur pour lire le fichier. Est-ce-que tu as sauve le "
 "numero ? est-ce-que tu as par accident renommer le fichier ? "
 
-#: func.py:114 func.py:125
+#: func.py:115 func.py:126
 msgid "Please do not type in a zero as the whole."
 msgstr "N'écrivez pas une zero pour l'entier."
 
-#: func.py:117
+#: func.py:118
 msgid "what is the ORIGINAL NUMBER? "
 msgstr "Quelle est le nombre original ? "
 
-#: func.py:118
+#: func.py:119
 msgid "What is the PERCENTAGE? "
 msgstr "Qu'est-ce que le POURCENTAGE ? "
 
-#: func.py:128
+#: func.py:121
+msgid "That equals..."
+msgstr "La reponse est..."
+
+#: func.py:129
 msgid "What is the number that would be 100%? "
 msgstr "Quelle est la nombre qui serait 100 % ? "
 
-#: func.py:129
+#: func.py:130
 msgid ""
 "What is the number that you want to convert to percentage (e.g. this number "
 "out of the number that would be 100%)? "
@@ -418,19 +422,19 @@ msgstr ""
 "Quel est le nombre que vous souhaitez convertir en pourcentage (par exemple, "
 "ce nombre sur le nombre qui serait 100%) ? "
 
-#: func.py:131
+#: func.py:132
 msgid "that equals:"
 msgstr "La reponse est..."
 
-#: func.py:135
+#: func.py:136
 msgid "What is the original number? "
 msgstr "Quelle est le nombre original ? "
 
-#: func.py:136
+#: func.py:137
 msgid "What is the rate of interest in percentage (without the percent sign)? "
 msgstr "Quel est le taux d'intérêt en pourcentage (sans le signe pourcentage)?"
 
-#: func.py:138
+#: func.py:139
 msgid ""
 "How many units of time would you like to calculate? \n"
 "Essentially, one unit of time could be one month, or one decade. It all "
@@ -456,7 +460,7 @@ msgstr ""
 "l'intérêt par (aka le montant de unités de temps).\n"
 "Tappe le numero : "
 
-#: func.py:147
+#: func.py:148
 #, python-format
 msgid ""
 "The answer is: \n"
@@ -465,19 +469,19 @@ msgstr ""
 "La reponse est : \n"
 "%s"
 
-#: func.py:148
+#: func.py:149
 msgid "Would you like to do it again (Y/n)? "
 msgstr "Voulez-vous faire ça encore (O/n)? "
 
-#: func.py:150
+#: func.py:151
 msgid "y"
 msgstr "o"
 
-#: func.py:153
+#: func.py:154
 msgid "Going back..."
 msgstr "Je retourne..."
 
-#: func.py:156
+#: func.py:157
 msgid ""
 "1 - Ontario Sales Tax\n"
 "2 - Quebec Sales Tax\n"
@@ -498,16 +502,16 @@ msgstr ""
 "7 - Taxe personnalisée \n"
 "Choisissez-en une: "
 
-#: func.py:163
+#: func.py:164
 msgid "Choose one: "
 msgstr "Choisissez-en un : "
 
-#: func.py:165 func.py:172 func.py:179 func.py:186 func.py:193 func.py:200
+#: func.py:166 func.py:173 func.py:180 func.py:187 func.py:194 func.py:201
 msgid "What is the original price (before tax)? "
 msgstr "Quelle est le prix original (sans taxe) ? "
 
-#: func.py:170 func.py:177 func.py:184 func.py:191 func.py:198 func.py:205
-#: func.py:211
+#: func.py:171 func.py:178 func.py:185 func.py:192 func.py:199 func.py:206
+#: func.py:212
 #, python-format
 msgid ""
 "After tax, the price is: \n"
@@ -516,20 +520,20 @@ msgstr ""
 "Après qu'on ajoute taxe, le prix est : \n"
 "%s"
 
-#: func.py:207
+#: func.py:208
 msgid "OK, enter the original price: "
 msgstr "D'accord, tappez le prix original : "
 
-#: func.py:208
+#: func.py:209
 msgid "Now enter the tax percentage without the percent sign: "
 msgstr ""
 "Quel est le montant de taxe en pourcentage (sans le signe pourcentage)? "
 
-#: func.py:213
+#: func.py:215
 msgid "You did not type answer. Abort."
 msgstr "Tu n'a pas tappez une reponse valide."
 
-#: func.py:216
+#: func.py:218
 msgid ""
 "OPTIONS:\n"
 "    1 - Farenheit to Celsius\n"
@@ -549,33 +553,21 @@ msgstr ""
 "    6 - Kelvin à Fahrenheit\n"
 "Tappez une réponse : "
 
-#: func.py:225 func.py:238
+#: func.py:227 func.py:240
 msgid "Please enter the FAHRENHEIT temperature: "
 msgstr "Veuillez entrer la température FARENHEIT: "
 
-#: func.py:232 func.py:246
+#: func.py:234 func.py:248
 msgid "Please enter the CELSIUS temperature: "
 msgstr "Veuillez entrer la température CELSIUS:"
 
-#: func.py:250 func.py:254
+#: func.py:252 func.py:256
 msgid "Please enter the KELVIN temperature: "
 msgstr "Veuillez entrer la température KELVIN : "
 
-#: func.py:261
+#: func.py:263
 msgid "Invalid response."
 msgstr "Réponse invalide."
-
-#: func.py:270
-msgid "5 - Empty Custom Slot"
-msgstr "5 - Slot customisè vide"
-
-#: func.py:276
-msgid "Type a name..."
-msgstr "Tappez une nom ..."
-
-#: func.py:277
-msgid "What Percentage? "
-msgstr "Quel pourcentage ? "
 
 #: palc.py:47
 msgid ""
@@ -962,6 +954,15 @@ msgstr ""
 "13 - Pyramide a base triangulaire\n"
 "14 - Pyramide a base pentagonal\n"
 "15 - Pyramide a base hexagonal"
+
+#~ msgid "5 - Empty Custom Slot"
+#~ msgstr "5 - Slot customisè vide"
+
+#~ msgid "Type a name..."
+#~ msgstr "Tappez une nom ..."
+
+#~ msgid "What Percentage? "
+#~ msgstr "Quel pourcentage ? "
 
 #~ msgid "temperature"
 #~ msgstr "temperature"
