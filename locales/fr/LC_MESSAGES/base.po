@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
 "POT-Creation-Date: 2020-06-10 13:44-0400\n"
-"PO-Revision-Date: 2020-06-10 13:45-0400\n"
+"PO-Revision-Date: 2020-06-10 14:28-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -327,7 +327,7 @@ msgstr "Quelle est la nombre ? "
 
 #: func.py:78
 msgid "That equals:"
-msgstr "La reponse est..."
+msgstr "La réponse est..."
 
 #: func.py:83
 msgid "Using natural logarithm"
@@ -357,7 +357,7 @@ msgid ""
 "Please enter the number to be saved: "
 msgstr ""
 "\n"
-"Quelle numero est-ce-que tu veux etre sauve : "
+"Quelle numero est-ce-que tu veux etre sauvé : "
 
 #: func.py:96
 msgid ""
@@ -904,13 +904,13 @@ msgstr "Hauteur du cone ? "
 
 #: volInteractive.py:27 volInteractive.py:31
 msgid "What is the radius of the sphere? "
-msgstr "Radius du sphere ? "
+msgstr "Radius du sphère ? "
 
 #: volInteractive.py:35 volInteractive.py:39 volInteractive.py:43
 #: volInteractive.py:47 volInteractive.py:51 volInteractive.py:55
 #: volInteractive.py:59
 msgid "What is the length of the side of the base? "
-msgstr "Longeur de la cote du base ? "
+msgstr "Longueur de la côté du base ? "
 
 #: volInteractive.py:36 volInteractive.py:40 volInteractive.py:44
 msgid "What is the height of the prism? "
