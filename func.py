@@ -105,7 +105,7 @@ def readMyMemory():
         with open(slot, "r") as memory:
             theMem = memory.read()
             cprint.info(_("Number: %s" % theMem))
-            logging.info("Retrieved %s from memory slot %s" % (theMem, slot))
+            logging.info("Retrieved number %s from memory slot %s" % (theMem, slot))
     except Exception as e:
         logging.info("There was an error retrieving the file from memory. (Err %s)" % e)
         cprint.err(_("There was an error reading the file. Did you save the number by using the save function? Did you accidentally rename the file?"))
