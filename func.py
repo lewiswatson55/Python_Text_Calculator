@@ -209,6 +209,7 @@ def taxCalc():
         theSalesTax = percentage(percent, originPrice)
         newPrice = theSalesTax + originPrice
         cprint.info(_("After tax, the price is: \n%s" % newPrice))
+        logging.info("User did CustomTax %s PerCent with originPrice %s, sales tax %s, with newPrice %s" % (percent, originPrice, theSalesTax, newPrice))
     else:
         cprint.err(_("You did not type answer. Abort."))
         logging.error("User typed %s into tax...aka an invalid answer." % whatPlace)
