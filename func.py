@@ -10,7 +10,7 @@ def getNum(): #ask for two numbers and then return to function
 def showUserWhatIThink(whatDOyouthink):
     cprint.ok(_("I think you want me to: %s" % whatDOyouthink))
     if "y" in input(_("Is this correct? ")).lower():
-        logging.info("Palc chose the right calculation (%s) for choice %s" % (whatDOyouthink, calc))
+        logging.info("Palc chose the right calculation (%s) for calc choice that (should be) shown above." % whatDOyouthink)
     else:
         cprint.info(_("Try different wording. Or, if you want that calculation choice to be made right, file a ticket."))
         if "y" in input(_("Would you like to file a ticket? (Y/n)\nType: ")).lower(): 
