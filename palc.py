@@ -108,7 +108,9 @@ def palc():
 #ADDITION
        elif "+" in calc:
             add()
-       elif _("add") in calc:
+       elif "add" in calc:
+            add()
+       elif "plus" in calc:
             add()
 #MODULO
        elif "%" in calc:
