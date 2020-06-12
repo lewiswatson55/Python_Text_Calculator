@@ -8,15 +8,19 @@ def getNum(): #ask for two numbers and then return to function
     logging.info("Palc got two numbers: %s and %s" % (n1, n2))
     return n1, n2
 def showUserWhatIThink(whatDOyouthink):
-    cprint.ok(_("I think you want me to: %s" % whatDOyouthink))
-    if "y" in input(_("Is this correct? ")).lower():
+    cprint.ok(_("I think you want me to: "))
+    cprint.ok(whatDOyouthink)
+    if _("y") in input(_("Is this correct? ")).lower():
         logging.info("Palc chose the right calculation (%s) for calc choice that (should be) shown above." % whatDOyouthink)
     else:
         cprint.info(_("Try different wording. Or, if you want that calculation choice to be made right, file a ticket."))
-        if "y" in input(_("Would you like to file a ticket? (Y/n)\nType: ")).lower(): 
+        if _("y") in input(_("Would you like to file a ticket? (Y/n)\nType: ")).lower(): 
             import webbrowser
             webbrowser.open("http://github.com/thetechrobo/support/issues/new")
             logging.info("User chose to file a ticket because they didn't want Palc to %s" % whatDOyouthink)
+            cprint.info(_("Proceeding with the function I thought it was."))
+        else:
+            cprint.info(_("OK, proceeding with the function I thought it was."))
 def h():
     cprint.info(_('''
 Current list of commands: multiplication, division, addition, square, subtraction, modulo, area, volume, cube, exponents, root, logarithm, memory, interest calculator, fibonacci sequence, percentage calculator, convert temperature, and convert bases (aka number systems). Type quit to quit.
