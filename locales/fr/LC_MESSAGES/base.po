@@ -215,7 +215,7 @@ msgstr "Une erreur est survenue."
 #: func.py:11
 #, python-format
 msgid "I think you want me to: %s"
-msgstr "Je pense que vous voulez que je fais : "
+msgstr "Je pense que vous voulez que je fais : %s"
 
 #: func.py:12
 msgid "Is this correct? "
