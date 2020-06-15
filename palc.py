@@ -17,7 +17,7 @@ logging.basicConfig(filename="palc.log", level=logging.DEBUG, format='%(levelnam
 try:
     import msvcrt
     _IS_WINDOWS = True
-    logger.info("Imported msvcrt")
+    logging.info("Imported msvcrt")
 except ImportError:
     import tty
     import termios
