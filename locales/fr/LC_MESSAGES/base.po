@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
 "POT-Creation-Date: 2020-06-12 19:55-0400\n"
-"PO-Revision-Date: 2020-06-12 19:55-0400\n"
+"PO-Revision-Date: 2020-06-18 22:01-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -634,10 +634,12 @@ msgstr ""
 "calcules)\n"
 "Tappe : "
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:81
 msgid "help"
 msgstr "aide"
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:85
 msgid "tax"
 msgstr "taxe"
@@ -646,6 +648,7 @@ msgstr "taxe"
 msgid "calculate tax"
 msgstr "calculer la taxe"
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:89
 msgid "sq"
 msgstr "carre"
@@ -666,6 +669,7 @@ msgstr "diviser un nombre"
 msgid "subtract a number from a number"
 msgstr "soustraire un nombre par un nombre"
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:110
 msgid "sub"
 msgstr "sous"
@@ -678,6 +682,7 @@ msgstr "ajoute deux nombres"
 msgid "find the remainder of two numbers after division"
 msgstr "trouver le reste de deux numéros après la division"
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:134
 msgid "area"
 msgstr "aire"
@@ -686,6 +691,7 @@ msgstr "aire"
 msgid "calculate area"
 msgstr "calcule l'aire"
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:141
 msgid "vol"
 msgstr "vol"
@@ -706,14 +712,17 @@ msgstr ""
 "\n"
 "Tappez le nombre à cuber : "
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:152
 msgid "cube"
 msgstr "cube"
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:160 palc.py:161
 msgid "quit"
 msgstr "quitter"
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:165
 msgid "exit"
 msgstr "quitter"
@@ -738,6 +747,7 @@ msgstr "Tappez l'exponent : "
 msgid "The \" CUBE TWICE \" feature was discontinued."
 msgstr "La fonctionnalité << CUBE DEUX FOIS >> a été supprimée."
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:196
 msgid "root"
 msgstr "racine"
@@ -754,6 +764,7 @@ msgstr ""
 "Racine carré ou cubique ? (carre/cube, n'ajouter pas les accents)\n"
 "Tapez : "
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:200
 msgid "square"
 msgstr "carre"
@@ -805,6 +816,7 @@ msgstr "'ord' une nombre"
 msgid "Type in the number to ord: "
 msgstr "Tappez le nombre pour 'ord'er : "
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:230
 msgid "log"
 msgstr "log"
@@ -825,10 +837,12 @@ msgstr ""
 "Souhaitez-vous setter la mémoire ou rappeler? (setter / rappeler)\n"
 "Type: "
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:237
 msgid "set"
 msgstr "setter"
 
+# This is a translated if statement. DO NOT ADD ACCENTS (as some people dont add them), and make sure to keep a key word inside.
 #: palc.py:239
 msgid "recall"
 msgstr "rappeler"
@@ -847,9 +861,10 @@ msgstr "utiliser la fonction fibonacci"
 msgid "Starting fibonacci sequence. Please wait."
 msgstr "Je commence le séquence Fibonacci. Veuillez attendre. "
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:250
 msgid "percent"
-msgstr "pourcentage"
+msgstr "pourcent"
 
 #: palc.py:251
 msgid "use the percentage function"
@@ -870,6 +885,7 @@ msgstr ""
 msgid "You didn't type a valid answer. Abort."
 msgstr "Tu n'a pas tappez une reponse valide."
 
+# This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:263
 msgid "interest"
 msgstr "interet"
