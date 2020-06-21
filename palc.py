@@ -63,11 +63,14 @@ elif language == "english":
 else:
     logging.fatal("USER DID NOT SPECIFY A LANGUAGE, ABORT!")
     cprint.fatal("You did not specify a language. Abort.\nTu n'a pas dit une language supporte.", interrupt=True)
+    ignore = False
 try:
     lang_translations.install()
     _ = lang_translations.gettext
+    ignore = False
 except NameError:
     pass
+
 logging.info("Attempting to import func.py and basicfunc.py.")
 try:
     from func import *
