@@ -64,7 +64,7 @@ def hexramid():
     h = int(input(_("What is the height of the pyramid? ")))
     cprint.info(_("The volume is: %s" % vol_hexa_pyramid(a=a, h=h)))
 
-def TheMain():
+def VolMain():
     cprint.info(_('''Options:
 1 - Cube
 2 - Cuboid
@@ -132,4 +132,6 @@ def TheMain():
             hexramid()
             break
 if __name__ == "__main__":
-    TheMain()
+    def _(thestring):
+        return thestring
+    VolMain()

@@ -82,7 +82,7 @@ def ellipse():
     cprint.info(_("The area is: "))
     cprint.info(el(a, b))
 
-def TheMain():
+def AreaMain():
     cprint.info(_('''Options:
 1 - Equilateral triangle
 2 - Right angle triangle
@@ -150,4 +150,6 @@ def TheMain():
             ellipse()
             break
 if __name__ == "__main__":
-    TheMain()
+    def _(thestring):
+        return thestring
+    AreaMain()

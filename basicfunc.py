@@ -1,6 +1,8 @@
 # This file is for basic functions and small functions that would be in func.py.
 import logging
 from cprint import cprint
+from areaInteractive import *
+from volInteractive import *
 
 def main(Comandeer):
     global _
@@ -40,13 +42,10 @@ def add(): #addition
 
 def uc():
     logging.warning("User ran `volume.py'. Log is barely-tested for area and volume.")
-    runpy.run_path(path_name='volInteractive.py')
-    from volInteractive import *
-    TheMain()
+    VolMain()
 def area():
     logging.warning("User ran `area.py'. Log is barely tested for area and volume.")
-    from areaInteractive import *
-    TheMain()
+    AreaMain()
 
 def cubeInternal(x):
     # all credit goes to user4466285's answer to "https://stackoverflow.com/questions/28014241/how-to-find-cube-root-using-python"
@@ -62,8 +61,9 @@ def cu(): #backwards-compatibility
     curoot()
 
 def fib():
-    import runpy
-    runpy.run_path(path_name="fibonacci.py")
+    from fib import FibMain
+    logging.info("About to run fibonacci")
+    fib()
     logging.info("user ran fibonacci function")
 
 #def sin():
