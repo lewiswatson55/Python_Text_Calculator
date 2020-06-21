@@ -85,9 +85,9 @@ try:
         import basicfunc as b
         b.main(_)
         del b
-        import areaInteractive
+        import areaInteractive as a
         a.main(_)
-        del areaInteractive
+        del a
         import volInteractive as v
         v.main(_)
         del v
