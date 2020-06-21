@@ -44,15 +44,30 @@ elif language == "english":
         lang_translations = gettext.translation('base', localedir='locales', languages=["en"])
     except (FileNotFoundError, IOError) as ename:
         logging.fatal("Could not get translation files. This is fatal. (%s)" % ename)
-        cprint.fatal("Could not get translation files! Make sure that the `locales' directory exists!\nJe ne peux pas trouver la dossier `locales' ! ", interrupt=True)
+        cprint.fatal("Could not get translation files! Make sure that the `locales' directory exists!\nJe ne peux pas trouver la dossier `locales' ! ")
+        cprint.info("This is not fatal with English translations, we can ignore it.")
+        ignore = input("Ignore? (Y/n) ").lower()
+        if "y" in ignore: #if user chooses to ignore
+            logging.info("User ignored error !")
+            def _(theEnglishString): #define a function that does nothing except give the value back so that NameErrors dont occur
+                return string
     except Exception as ename:
         logging.fatal("Could not get translations. (%s)" % ename)
         cprint.fatal("Could not load translations!\nJe ne peux pas utiliser les traductions ! ")
+        cprint.info("This is not fatal with English translations, we can ignore it.")
+        ignore = input("Ignore? (Y/n) ").lower()
+        if "y" in ignore: #if user chooses to ignore
+            logging.info("User ignored error !")
+            def _(theEnglishString): #define a function that does nothing except give the value back so that NameErrors dont occur
+                return string
 else:
     logging.fatal("USER DID NOT SPECIFY A LANGUAGE, ABORT!")
     cprint.fatal("You did not specify a language. Abort.\nTu n'a pas dit une language supporte.", interrupt=True)
-lang_translations.install()
-_ = lang_translations.gettext
+try:
+    lang_translations.install()
+    _ = lang_translations.gettext
+except NameError:
+    pass
 logging.info("Attempting to import func.py and basicfunc.py.")
 try:
     from func import *
@@ -194,7 +209,7 @@ def palc():
             power()
        elif "ex" in calc:
             power()
-        elif "^" in calc: #IDEA SOURCE: 3N4N's (first) Pull Request on the original repo
+       elif "^" in calc: #IDEA SOURCE: 3N4N's (first) Pull Request on the original repo
             power()
 #CUBE TWICE
        elif "{2}" in calc:
