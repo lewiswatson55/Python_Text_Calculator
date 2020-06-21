@@ -79,6 +79,10 @@ except Exception as e:
     cprint.fatal(_("I can't access the file func.py. This file is necessary for proper function of the Software."), interrupt=True)
 logging.info("Successfully imported func.py")
 try:
+    if "y" in ignore:
+        main(_)
+except:pass
+try:
     from basicfunc import *
 except Exception as e:
     logging.critical("Could Not Access basicfunc.py (%s)" % e)
