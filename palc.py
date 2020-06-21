@@ -50,7 +50,7 @@ elif language == "english":
         if "y" in ignore: #if user chooses to ignore
             logging.info("User ignored error !")
             def _(theEnglishString): #define a function that does nothing except give the value back so that NameErrors dont occur
-                return string
+                return theEnglishString
     except Exception as ename:
         logging.fatal("Could not get translations. (%s)" % ename)
         cprint.fatal("Could not load translations!\nJe ne peux pas utiliser les traductions ! ")
@@ -59,7 +59,7 @@ elif language == "english":
         if "y" in ignore: #if user chooses to ignore
             logging.info("User ignored error !")
             def _(theEnglishString): #define a function that does nothing except give the value back so that NameErrors dont occur
-                return string
+                return theEnglishString
 else:
     logging.fatal("USER DID NOT SPECIFY A LANGUAGE, ABORT!")
     cprint.fatal("You did not specify a language. Abort.\nTu n'a pas dit une language supporte.", interrupt=True)
