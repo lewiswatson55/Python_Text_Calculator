@@ -48,7 +48,7 @@ elif language == "english":
         cprint.info("This is not fatal with English translations, we can ignore it.")
         ignore = input("Ignore? (Y/n) ").lower()
         if "y" in ignore: #if user chooses to ignore
-            logging.info("User ignored error !)
+            logging.info("User ignored error !")
             def _(theEnglishString): #define a function that does nothing except give the value back so that NameErrors dont occur
                 return theEnglishString
     except Exception as ename:
