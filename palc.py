@@ -32,16 +32,22 @@ if language == "francais":
         gettext.bindtextdomain('base', localedir="locales")
         lang_translations = gettext.translation('base',localedir='locales', languages=["fr"])
     except (FileNotFoundError, IOError):
-        logging.fatal("Could not get translations. This is fatal.")
-        cprint.fatal("Could not get translations! Make sure that the `locales' directory exists!", interrupt=True)
+        logging.fatal("Could not get translations. This is fatal. (%s)" % ename)
+        cprint.fatal("Could not get translation files! Make sure that the `locales' directory exists!\nJe ne peux pas trouver la dossier `locales' ! ", interrupt=True)
+    except Exception as ename:
+        logging.fatal("Could not get translations. (%s)" % ename)
+        cprint.fatal("Could not load translations!\nJe ne peux pas utiliser les traductions ! ")
 elif language == "english":
     try:
         logging.info("Set language to English")
         gettext.bindtextdomain('base', localedir="locales")
         lang_translations = gettext.translation('base', localedir='locales', languages=["en"])
-    except (FileNotFoundError, IOError):
-        logging.fatal("Could not get translations. This is fatal.")
-        cprint.fatal("Could not get translations! Make sure that the `locales' directory exists!", interrupt=True)
+    except (FileNotFoundError, IOError) as ename:
+        logging.fatal("Could not get translation files. This is fatal. (%s)" % ename)
+        cprint.fatal("Could not get translation files! Make sure that the `locales' directory exists!\nJe ne peux pas trouver la dossier `locales' ! ", interrupt=True)
+    except Exception as ename:
+        logging.fatal("Could not get translations. (%s)" % ename)
+        cprint.fatal("Could not load translations!\nJe ne peux pas utiliser les traductions ! ")
 else:
     logging.fatal("USER DID NOT SPECIFY A LANGUAGE, ABORT!")
     cprint.fatal("You did not specify a language. Abort.\nTu n'a pas dit une language supporte.", interrupt=True)
