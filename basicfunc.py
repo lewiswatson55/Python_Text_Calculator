@@ -1,6 +1,11 @@
 # This file is for basic functions and small functions that would be in func.py.
 import logging
 from cprint import cprint
+
+def main(Comandeer):
+    global _
+    _ = Comandeer
+
 if __name__ == "__main__":
     print("Please do not run any of these files directly. They don't do anything useful on their own.")
 def getNum(): #ask for two numbers and then return to function

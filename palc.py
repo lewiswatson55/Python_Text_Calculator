@@ -48,7 +48,7 @@ elif language == "english":
         cprint.info("This is not fatal with English translations, we can ignore it.")
         ignore = input("Ignore? (Y/n) ").lower()
         if "y" in ignore: #if user chooses to ignore
-            logging.info("User ignored error !")
+            logging.info("User ignored error !)
             def _(theEnglishString): #define a function that does nothing except give the value back so that NameErrors dont occur
                 return theEnglishString
     except Exception as ename:
@@ -67,8 +67,7 @@ else:
 try:
     lang_translations.install()
     _ = lang_translations.gettext
-    ignore = False
-except NameError:
+except:
     pass
 
 logging.info("Attempting to import func.py and basicfunc.py.")
@@ -80,7 +79,21 @@ except Exception as e:
 logging.info("Successfully imported func.py")
 try:
     if "y" in ignore:
-        main(_)
+        import func as f
+        f.main(_)
+        del f
+        import basicfunc as b
+        b.main(_)
+        del b
+        import areaInteractive as a
+        a.main(_)
+        del a
+        import volInteractive as v
+        v.main(_)
+        del v
+        import fibonacci as fi
+        fi.main(_)
+        del fi
 except:pass
 try:
     from basicfunc import *

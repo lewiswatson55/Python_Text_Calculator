@@ -4,6 +4,10 @@ import logging
 num0 = 0
 num1 = 1
 hi = 0
+def main(Comandeer):
+    global _
+    _ = Comandeer
+
 print(_("Press Control-C to stop."))
 try:
     while True:

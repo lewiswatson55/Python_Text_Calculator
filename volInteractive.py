@@ -2,6 +2,10 @@ from volume import *
 from cprint import cprint
 import logging
 logging.info("Running volinteractive")
+def main(Comandeer):
+    global _
+    _ = Comandeer
+
 def cuvol():
     a = int(input(_("What length is the side of the cube? ")))
     cprint.info(_("The volume is: %s" % vol_cube(a)))

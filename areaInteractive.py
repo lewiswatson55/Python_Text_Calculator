@@ -2,6 +2,10 @@ from area import *
 from cprint import cprint
 import logging
 logging.info("User used areaInteractive...")
+def main(Comandeer):
+    global _
+    _ = Comandeer
+
 def equ_triangle():
     a = int(input(_("What length is the side of the triangle? ")))
     cprint.info(_("The area is: %s" % equtri(a)))
