@@ -27,13 +27,21 @@ except ImportError:
 language = input("English or/ou Francais? (do not add accents to letters/n'ajoute pas les accents aux lettres): ")
 language = language.lower()
 if language == "francais":
-    logging.info("Set language to French")
-    gettext.bindtextdomain('base', localedir="locales")
-    lang_translations = gettext.translation('base',localedir='locales', languages=["fr"])
+    try:
+        logging.info("Set language to French")
+        gettext.bindtextdomain('base', localedir="locales")
+        lang_translations = gettext.translation('base',localedir='locales', languages=["fr"])
+    except (FileNotFoundError, IOError):
+        logging.fatal("Could not get translations. This is fatal.")
+        cprint.fatal("Could not get translations! Make sure that the `locales' directory exists!", interrupt=True)
 elif language == "english":
-    logging.info("Set language to English")
-    gettext.bindtextdomain('base', localedir="locales")
-    lang_translations = gettext.translation('base', localedir='locales', languages=["en"])
+    try:
+        logging.info("Set language to English")
+        gettext.bindtextdomain('base', localedir="locales")
+        lang_translations = gettext.translation('base', localedir='locales', languages=["en"])
+    except (FileNotFoundError, IOError):
+        logging.fatal("Could not get translations. This is fatal.")
+        cprint.fatal("Could not get translations! Make sure that the `locales' directory exists!", interrupt=True)
 else:
     logging.fatal("USER DID NOT SPECIFY A LANGUAGE, ABORT!")
     cprint.fatal("You did not specify a language. Abort.\nTu n'a pas dit une language supporte.", interrupt=True)
