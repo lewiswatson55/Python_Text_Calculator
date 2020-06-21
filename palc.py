@@ -191,17 +191,11 @@ def palc():
             multi()
 #EXPONENTS
        elif "power" in calc:
-            showUserWhatIThink(_("use the exponent function"))
-            origin = float(input(_("Original number?")))
-            ex = float(input(_("Exponent? ")))
-            cprint.info(origin ** ex)
-            logging.info("User exponented number %s with %s, getting %s" % (origin, ex, (origin ** ex)))
+            power()
        elif "ex" in calc:
-            showUserWhatIThink(_("use the exponent function"))
-            origin = float(input(_("Original number?")))
-            ex = float(input(_("Exponent? ")))
-            cprint.info("=%s" % origin ** ex)
-            logging.info("User exponented number %s with %s, getting %s" % (origin, ex, (origin ** ex)))
+            power()
+        elif "^" in calc: #IDEA SOURCE: 3N4N's (first) Pull Request on the original repo
+            power()
 #CUBE TWICE
        elif "{2}" in calc:
             cprint.err(_("The \" CUBE TWICE \" feature was discontinued."))

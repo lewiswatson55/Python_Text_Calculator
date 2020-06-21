@@ -21,6 +21,12 @@ def showUserWhatIThink(whatDOyouthink):
             cprint.info(_("Proceeding with the function I thought it was."))
         else:
             cprint.info(_("OK, proceeding with the function I thought it was."))
+def power():
+    showUserWhatIThink(_("use the exponent function"))
+    origin = float(input(_("Original number?")))
+    ex = float(input(_("Exponent? ")))
+    cprint.info("=%s" % origin ** ex)
+    logging.info("User exponented number %s with %s, getting %s" % (origin, ex, (origin ** ex)))
 def h():
     cprint.info(_('''
 Current list of commands: multiplication, division, addition, square, subtraction, modulo, area, volume, cube, exponents, root, logarithm, memory, interest calculator, fibonacci sequence, percentage calculator, convert temperature, and convert bases (aka number systems). Type quit to quit.
