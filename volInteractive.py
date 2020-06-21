@@ -63,7 +63,9 @@ def hexramid():
     a = int(input(_("What is the length of the side of the base? ")))
     h = int(input(_("What is the height of the pyramid? ")))
     cprint.info(_("The volume is: %s" % vol_hexa_pyramid(a=a, h=h)))
-cprint.info(_('''Options:
+
+def TheMain():
+    cprint.info(_('''Options:
 1 - Cube
 2 - Cuboid
 3 - Cylinder
@@ -78,54 +80,56 @@ cprint.info(_('''Options:
 13 - Triangular pyramid
 14 - Pentagon-based pyramid
 15 - Hexagon-based pyramid'''))
-while True:
-    try:
-        choice = int(input(_("Please type one: ")))
-    except (ValueError, TypeError):
-        cprint.err("Please type an integer")
-        logging.err("User did a ValueError or TypeError while inputting choice in volinteractive")
-    if choice == 7:
-        cprint.ok("Sorry, that was not an option. >:)")
-        logging.info(">:) choice 7")
-    elif choice == 1:
-        cuvol()
-        break
-    elif choice == 2:
-        cuboid()
-        break
-    elif choice == 3:
-        cylindervol()
-        break
-    elif choice == 4:
-        hollow_cylinder()
-        break
-    elif choice == 5:
-        cone()
-        break
-    elif choice == 6:
-        sphere()
-        break
-    elif choice == 8:
-        hollow_sphere()
-        break
-    elif choice == 9:
-        triprism()
-        break
-    elif choice == 10:
-        pentprism()
-        break
-    elif choice == 11:
-        hexaprism()
-        break
-    elif choice == 12:
-        squiramid()
-        break
-    elif choice == 13:
-        triramid()
-        break
-    elif choice == 14:
-        pentapyr()
-        break
-    elif choice == 15:
-        hexramid()
-        break
+    while True:
+        try:
+            choice = int(input(_("Please type one: ")))
+        except (ValueError, TypeError) as ename:
+            cprint.err("Please type an integer")
+            logging.error("User did a ValueError or TypeError while inputting choice in volinteractive (%s)" % ename)
+        if choice == 7:
+            cprint.ok("Sorry, that was not an option. >:)")
+            logging.info(">:) choice 7")
+        elif choice == 1:
+            cuvol()
+            break
+        elif choice == 2:
+            cuboid()
+            break
+        elif choice == 3:
+            cylindervol()
+            break
+        elif choice == 4:
+            hollow_cylinder()
+            break
+        elif choice == 5:
+            cone()
+            break
+        elif choice == 6:
+            sphere()
+            break
+        elif choice == 8:
+            hollow_sphere()
+            break
+        elif choice == 9:
+            triprism()
+            break
+        elif choice == 10:
+            pentprism()
+            break
+        elif choice == 11:
+            hexaprism()
+            break
+        elif choice == 12:
+            squiramid()
+            break
+        elif choice == 13:
+            triramid()
+            break
+        elif choice == 14:
+            pentapyr()
+            break
+        elif choice == 15:
+            hexramid()
+            break
+if __name__ == "__main__":
+    TheMain()

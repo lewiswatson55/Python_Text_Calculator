@@ -85,16 +85,16 @@ try:
         import basicfunc as b
         b.main(_)
         del b
-        import areaInteractive as a
+        import areaInteractive
         a.main(_)
-        del a
+        del areaInteractive
         import volInteractive as v
         v.main(_)
         del v
         import fibonacci as fi
         fi.main(_)
         del fi
-except:pass
+finally:pass
 try:
     from basicfunc import *
 except Exception as e:

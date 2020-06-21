@@ -81,7 +81,9 @@ def ellipse():
     b = int(input(_("What is the length of the minor axis? ")))
     cprint.info(_("The area is: "))
     cprint.info(el(a, b))
-cprint.info(_('''Options:
+
+def TheMain():
+    cprint.info(_('''Options:
 1 - Equilateral triangle
 2 - Right angle triangle
 3 - Acute triangle
@@ -96,54 +98,56 @@ cprint.info(_('''Options:
 13 - Circular sector
 14 - Ring
 15 - Ellipse'''))
-while True:
-    try:
-        choice = int(input(_("Please type one: ")))
-    except (ValueError, TypeError):
-        cprint.err(_("Please type an integer"))
-        logging.error("User did valueerror typeerror while inputting areaInteractive choice")
-    if choice == 7:
-        cprint.err(_("I was too lazy to change 7."))
-        logging.info("Lazy 7")
-    elif choice == 1:
-        equ_triangle()
-        break
-    elif choice == 2:
-        right_triangle()
-        break
-    elif choice == 3:
-        acute_triangle()
-        break
-    elif choice == 4:
-        obtuse_triangle()
-        break
-    elif choice == 5:
-        square()
-        break
-    elif choice == 6:
-        rectangle()
-        break
-    elif choice == 8:
-        parallelogram()
-        break
-    elif choice == 9:
-        rhombus()
-        break
-    elif choice == 10:
-        trapezium()
-        break
-    elif choice == 11:
-        circle()
-        break
-    elif choice == 12:
-        semicircle()
-        break
-    elif choice == 13:
-        sector()
-        break
-    elif choice == 14:
-        ring() #my precious!
-        break
-    elif choice == 15:
-        ellipse()
-        break
+    while True:
+        try:
+            choice = int(input(_("Please type one: ")))
+        except (ValueError, TypeError):
+            cprint.err(_("Please type an integer"))
+            logging.error("User did valueerror typeerror while inputting areaInteractive choice")
+        if choice == 7:
+            cprint.err(_("I was too lazy to change 7."))
+            logging.info("Lazy 7")
+        elif choice == 1:
+            equ_triangle()
+            break
+        elif choice == 2:
+            right_triangle()
+            break
+        elif choice == 3:
+            acute_triangle()
+            break
+        elif choice == 4:
+            obtuse_triangle()
+            break
+        elif choice == 5:
+            square()
+            break
+        elif choice == 6:
+            rectangle()
+            break
+        elif choice == 8:
+            parallelogram()
+            break
+        elif choice == 9:
+            rhombus()
+            break
+        elif choice == 10:
+            trapezium()
+            break
+        elif choice == 11:
+            circle()
+            break
+        elif choice == 12:
+            semicircle()
+            break
+        elif choice == 13:
+            sector()
+            break
+        elif choice == 14:
+            ring() #my precious!
+            break
+        elif choice == 15:
+            ellipse()
+            break
+if __name__ == "__main__":
+    TheMain()

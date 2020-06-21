@@ -39,13 +39,14 @@ def add(): #addition
     logging.info("User added %s to %s and got result %s" % (n1, n2, (n1 + n2)))
 
 def uc():
-    import runpy
     logging.warning("User ran `volume.py'. Log is barely-tested for area and volume.")
     runpy.run_path(path_name='volInteractive.py')
+    from volInteractive import *
+    TheMain()
 def area():
-    import runpy
     logging.warning("User ran `area.py'. Log is barely tested for area and volume.")
-    runpy.run_path(path_name='areaInteractive.py')
+    from areaInteractive import *
+    TheMain()
 
 def cubeInternal(x):
     # all credit goes to user4466285's answer to "https://stackoverflow.com/questions/28014241/how-to-find-cube-root-using-python"
