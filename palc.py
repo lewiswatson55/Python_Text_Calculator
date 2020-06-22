@@ -266,10 +266,10 @@ def palc():
             base()
 #ORD
        elif "ord" in calc:
-           showUserWhatIThink(_("ord a number"))
-           result = str(ord(int(input(_("Type in the number to ord: ")))))
+           showUserWhatIThink(_("ord a character"))
+           result = str(ord(input(_("Type in the character to ord: "))))
            logging.info("User ord'ed to get result %s" % result)
-           cprint.info("= %s" % result)
+           cprint.info(_("The result is: \n%s" % result))
 #LOGARITHM
        elif _("log") in calc:
            showUserWhatIThink(_("use the logarithm function"))

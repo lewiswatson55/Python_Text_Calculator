@@ -33,7 +33,7 @@ def power():
     logging.info("User exponented number %s with %s, getting %s" % (origin, ex, (origin ** ex)))
 def h():
     cprint.info(_('''
-Current list of commands: multiplication, division, addition, square, subtraction, modulo, area, volume, cube, exponents, root, logarithm, memory, interest calculator, fibonacci sequence, percentage calculator, convert temperature, and convert bases (aka number systems). Type quit to quit.
+Current list of commands: multiplication, division, addition, square, subtraction, modulo, area, volume, cube, exponents, root, logarithm, memory, interest calculator, fibonacci sequence, percentage calculator, convert temperature, "ord'ing", and convert bases (aka number systems). Type quit to quit.
 Bugs? Head on over to https://github.com/thetechrobo/support/
 To contribute: go to https://github.com/thetechrobo/python-text-calculator/
 '''))

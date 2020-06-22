@@ -44,9 +44,9 @@ def pentprism():
     h = int(input(_("What is the height of the prism? ")))
     cprint.info(_("The volume is: %s" % vol_penta_prism(a=a, h=h)))
 def hexaprism():
-    r = int(input(_("What is the length of the side of the base? ")))
+    a = int(input(_("What is the length of the side of the hexagon? ")))
     h = int(input(_("What is the height of the prism? ")))
-    cprint.info(_("The volume is: %s" % vol_hexa_prism(r=r, h=h)))
+    cprint.info(_("The volume is: %s" % vol_hexa_prism(a=a, h=h)))
 def squiramid():
     a = int(input(_("What is the length of the side of the base? ")))
     h = int(input(_("What is the height of the pyramid? ")))

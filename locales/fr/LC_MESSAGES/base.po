@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-06-22 09:44-0400\n"
-"PO-Revision-Date: 2020-06-22 09:45-0400\n"
+"POT-Creation-Date: 2020-06-22 09:59-0400\n"
+"PO-Revision-Date: 2020-06-22 10:00-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -177,7 +177,7 @@ msgstr "Premier nombre ? "
 msgid "Please enter the second number: "
 msgstr "Deuxième nombre ? "
 
-#: basicfunc.py:21 basicfunc.py:27 basicfunc.py:37 basicfunc.py:41 func.py:53
+#: basicfunc.py:21 basicfunc.py:26 basicfunc.py:36 basicfunc.py:40 func.py:53
 #, python-format
 msgid ""
 "\n"
@@ -188,15 +188,15 @@ msgstr ""
 "Le résultat est...\n"
 "%s"
 
-#: basicfunc.py:30
+#: basicfunc.py:29
 msgid "Do not divide by zero!"
 msgstr "Ne divisez pas par zéro !"
 
-#: basicfunc.py:33
+#: basicfunc.py:32
 msgid "There was an unknown issue dividing your Numbers..."
 msgstr "Il y a eu un problème inconnu en divisant vos nombres..."
 
-#: basicfunc.py:57
+#: basicfunc.py:56
 msgid "Number to be rooted? "
 msgstr "Nombre ? "
 
@@ -266,7 +266,8 @@ msgid ""
 "Current list of commands: multiplication, division, addition, square, "
 "subtraction, modulo, area, volume, cube, exponents, root, logarithm, memory, "
 "interest calculator, fibonacci sequence, percentage calculator, convert "
-"temperature, and convert bases (aka number systems). Type quit to quit.\n"
+"temperature, \"ord'ing\", and convert bases (aka number systems). Type quit "
+"to quit.\n"
 "Bugs? Head on over to https://github.com/thetechrobo/support/\n"
 "To contribute: go to https://github.com/thetechrobo/python-text-calculator/\n"
 msgstr ""
@@ -811,12 +812,21 @@ msgid "convert number systems"
 msgstr "convertir les systèmes de bases numérique"
 
 #: palc.py:269
-msgid "ord a number"
-msgstr "'ord' un nombre"
+msgid "ord a character"
+msgstr "\"ord\" un caractère!"
 
 #: palc.py:270
-msgid "Type in the number to ord: "
-msgstr "Saisissez le nombre à 'ord' : "
+msgid "Type in the character to ord: "
+msgstr "Saisissez le caractère à 'ord' : "
+
+#: palc.py:272
+#, python-format
+msgid ""
+"The result is: \n"
+"%s"
+msgstr ""
+"L'aire est : \n"
+"%s"
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
 #: palc.py:274
@@ -1042,15 +1052,18 @@ msgstr "Hauteur du cône ? "
 msgid "What is the radius of the sphere? "
 msgstr "Rayon de la sphère ? "
 
-#: volInteractive.py:39 volInteractive.py:43 volInteractive.py:47
-#: volInteractive.py:51 volInteractive.py:55 volInteractive.py:59
-#: volInteractive.py:63
+#: volInteractive.py:39 volInteractive.py:43 volInteractive.py:51
+#: volInteractive.py:55 volInteractive.py:59 volInteractive.py:63
 msgid "What is the length of the side of the base? "
 msgstr "Longueur du côté de la base ? "
 
 #: volInteractive.py:40 volInteractive.py:44 volInteractive.py:48
 msgid "What is the height of the prism? "
 msgstr "Hauteur du prisme ? "
+
+#: volInteractive.py:47
+msgid "What is the length of the side of the hexagon? "
+msgstr "Longueur du côté de l'hexagone ? "
 
 #: volInteractive.py:52 volInteractive.py:56 volInteractive.py:60
 #: volInteractive.py:64
@@ -1090,6 +1103,9 @@ msgstr ""
 "13 - Pyramide a base triangulaire\n"
 "14 - Pyramide a base pentagonale\n"
 "15 - Pyramide a base hexagonale"
+
+#~ msgid "ord a number"
+#~ msgstr "'ord' un nombre"
 
 #~ msgid "div"
 #~ msgstr "div"
