@@ -215,6 +215,13 @@ def palc():
             showUserWhatIThink(_("exit"))
             logging.info("User exited using `exit' command")
             e()
+#EXPONENTS
+       elif "power" in calc:
+            power()
+       elif "ex" in calc:
+            power()
+       elif "^" in calc: #IDEA SOURCE: 3N4N's (first) Pull Request on the original repo
+            power()
 #MULTIPLICATION
        elif "*" in calc:
             showUserWhatIThink(_("multiply a number"))
@@ -225,13 +232,6 @@ def palc():
        elif "multi" in calc:
             showUserWhatIThink(_("multiply a number"))
             multi()
-#EXPONENTS
-       elif "power" in calc:
-            power()
-       elif "ex" in calc:
-            power()
-       elif "^" in calc: #IDEA SOURCE: 3N4N's (first) Pull Request on the original repo
-            power()
 #CUBE TWICE
        elif "{2}" in calc:
             cprint.err(_("The \" CUBE TWICE \" feature was discontinued."))
