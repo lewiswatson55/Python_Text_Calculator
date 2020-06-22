@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-06-22 09:59-0400\n"
-"PO-Revision-Date: 2020-06-22 10:00-0400\n"
+"POT-Creation-Date: 2020-06-22 10:17-0400\n"
+"PO-Revision-Date: 2020-06-22 10:17-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -177,7 +177,7 @@ msgstr "Premier nombre ? "
 msgid "Please enter the second number: "
 msgstr "Deuxième nombre ? "
 
-#: basicfunc.py:21 basicfunc.py:26 basicfunc.py:36 basicfunc.py:40 func.py:53
+#: basicfunc.py:21 basicfunc.py:26 basicfunc.py:36 basicfunc.py:40 func.py:57
 #, python-format
 msgid ""
 "\n"
@@ -216,15 +216,15 @@ msgstr "Une erreur est survenue."
 msgid "I think you want me to: "
 msgstr "Je pense que vous voulez : "
 
-#: func.py:17 func.py:21 func.py:175
-msgid "y"
-msgstr "o"
-
 #: func.py:17
 msgid "Is this correct? (Y/n)"
 msgstr "Est-ce correct ? (O/n)"
 
-#: func.py:20
+#: func.py:18 func.py:22 func.py:179
+msgid "y"
+msgstr "o"
+
+#: func.py:21
 msgid ""
 "Try different wording. Or, if you want that calculation choice to be made "
 "right, file a ticket."
@@ -232,7 +232,7 @@ msgstr ""
 "Essayez un libellé différent. Ou, si vous voulez que ce choix de calcul soit "
 "implémenté, soumettez un billet."
 
-#: func.py:21
+#: func.py:22
 msgid ""
 "Would you like to file a ticket? (Y/n)\n"
 "Type: "
@@ -240,27 +240,31 @@ msgstr ""
 "Souhaitez-vous soumettre un billet? (O/n)\n"
 "Saisie : "
 
-#: func.py:25
+#: func.py:26
 msgid "Proceeding with the function I thought it was."
 msgstr "Utilisation de la fonction initialement détectée."
 
-#: func.py:27
+#: func.py:28
 msgid "OK, proceeding with the function I thought it was."
 msgstr "Ok, utilisation de la fonction initialement détectée."
 
-#: func.py:29
+#: func.py:30
+msgid "Defaulting to yes."
+msgstr "Par défaut à oui."
+
+#: func.py:33
 msgid "use the exponent function"
 msgstr "utiliser la fonction exposant"
 
-#: func.py:30
+#: func.py:34
 msgid "Original number?"
 msgstr "Saisissez le nombre d'origine :"
 
-#: func.py:31
+#: func.py:35
 msgid "Exponent? "
 msgstr "Saisissez l'exposant : "
 
-#: func.py:35
+#: func.py:39
 msgid ""
 "\n"
 "Current list of commands: multiplication, division, addition, square, "
@@ -283,7 +287,7 @@ msgstr ""
 "(IMPORTANT : N'AJOUTEZ PAS LES ACCENTS AUX COMMANDES, AUTREMENT CELA NE "
 "FONCTIONNERA PAS)\n"
 
-#: func.py:42
+#: func.py:46
 msgid ""
 "\n"
 "Type the first number (greater): "
@@ -291,11 +295,11 @@ msgstr ""
 "\n"
 "Saisissez le premier nombre (le plus grand) : "
 
-#: func.py:43
+#: func.py:47
 msgid "Type the second number (smaller): "
 msgstr "Saisissez le second nombre (le plus petit) : "
 
-#: func.py:45 func.py:49
+#: func.py:49 func.py:53
 msgid ""
 "\n"
 "Error!"
@@ -303,19 +307,19 @@ msgstr ""
 "\n"
 "Une erreur est survenue !"
 
-#: func.py:46
+#: func.py:50
 msgid "Invalid input (code 1)\n"
 msgstr "Saisie invalide (code 1)\n"
 
-#: func.py:50
+#: func.py:54
 msgid "The second number entered is greater than the first number (code 2)\n"
 msgstr "Le second nombre est plus grand que le premier (code 2)\n"
 
-#: func.py:61 func.py:66 func.py:91
+#: func.py:65 func.py:70 func.py:95
 msgid "Type the original number: "
 msgstr "Saisissez le nombre d'origine : "
 
-#: func.py:71
+#: func.py:75
 msgid ""
 "Converting from a base to decimal (normal).\n"
 "Example bases:\n"
@@ -333,13 +337,13 @@ msgstr ""
 "Saisissez 1 pour ord. \n"
 "Saisie : "
 
-#: func.py:82
+#: func.py:86
 #, python-format
 msgid "Please enter the number to be converted from %s: "
 msgstr "Veuillez entrer le nombre à convertir depuis une %s : "
 
-#: func.py:88 func.py:255 func.py:261 func.py:270 func.py:274 func.py:278
-#: func.py:284
+#: func.py:92 func.py:259 func.py:265 func.py:274 func.py:278 func.py:282
+#: func.py:288
 #, python-format
 msgid ""
 "That equals...\n"
@@ -348,7 +352,7 @@ msgstr ""
 "Le résultat est...\n"
 "%s"
 
-#: func.py:89
+#: func.py:93
 msgid ""
 "TIP: If you got no answer, it might be that it was a Unicode character that "
 "it can't render. E.g. \\x06 would just be a blank space, like so: "
@@ -357,7 +361,7 @@ msgstr ""
 "d'un caractère Unicode qui ne peux pas être affiché. Par exemple \\x06 "
 "serait juste une espace vide, comme ceci : "
 
-#: func.py:98
+#: func.py:102
 msgid ""
 "What base would you like to use? \n"
 "Currently supported: 10 (base 10), e (natural)"
@@ -365,31 +369,31 @@ msgstr ""
 "Quelle base voulez-vous utiliser ? \n"
 "Options : 10 (décimal) ou e (naturel)"
 
-#: func.py:100
+#: func.py:104
 msgid "Using base 10"
 msgstr "Utilisation de la base 10"
 
-#: func.py:101 func.py:108
+#: func.py:105 func.py:112
 msgid "What is the number? "
 msgstr "Quel est le nombre ? "
 
-#: func.py:102
+#: func.py:106
 msgid "That equals:"
 msgstr "Le résultat est :"
 
-#: func.py:107
+#: func.py:111
 msgid "Using natural logarithm"
 msgstr "Utilisation du logarithme naturel"
 
-#: func.py:114
+#: func.py:118
 msgid "The logarithm you typed is not available."
 msgstr "Le logarithme que vous avez sélectionné n'est pas disponible."
 
-#: func.py:115
+#: func.py:119
 msgid "Try again."
 msgstr "Essayez encore."
 
-#: func.py:118
+#: func.py:122
 msgid ""
 "This is the memory function.\n"
 "It will save a number into a file that can be used later with Palc... Or you "
@@ -399,7 +403,7 @@ msgstr ""
 "Elle va enregistrer un nombre dans un fichier pour être utilisé plus tard "
 "avec Palc ou simplement lu avec un éditeur de texte."
 
-#: func.py:119
+#: func.py:123
 msgid ""
 "\n"
 "Please enter the number to be saved: "
@@ -407,7 +411,7 @@ msgstr ""
 "\n"
 "Saisissez le nombre à enregistrer : "
 
-#: func.py:120
+#: func.py:124
 msgid ""
 "What slot would you like to use? (Hint: you can use any integer you want as "
 "long as you remember it)\n"
@@ -417,7 +421,7 @@ msgstr ""
 "n'importe quel nombre entier tant que vous vous en souvenez)\n"
 "Saisie : "
 
-#: func.py:126
+#: func.py:130
 msgid ""
 "This is the remember function.\n"
 "It will read a number that was previously stored in a file."
@@ -425,16 +429,16 @@ msgstr ""
 "Il s'agit de la fonction de lecture de la mémoire.\n"
 "Elle permet de lire un nombre qui a été enregistré dans un fichier."
 
-#: func.py:128
+#: func.py:132
 msgid "What slot number did you use? "
 msgstr "Quel est le numéro de l'emplacement mémoire que vous souhaitez lire ? "
 
-#: func.py:131
+#: func.py:135
 #, python-format
 msgid "Number: %s"
 msgstr "Nombre : %s"
 
-#: func.py:135
+#: func.py:139
 msgid ""
 "There was an error reading the file. Did you save the number by using the "
 "save function? Did you accidentally rename the file?"
@@ -443,27 +447,27 @@ msgstr ""
 "nombre avec la fonction mémoire ? Avez-vous renommé par accident le "
 "fichier ? "
 
-#: func.py:139 func.py:150
+#: func.py:143 func.py:154
 msgid "Please do not type in a zero as the whole."
 msgstr "Le total ne peut être égal à zéro."
 
-#: func.py:142
+#: func.py:146
 msgid "what is the ORIGINAL NUMBER? "
 msgstr "Quel est le nombre d'origine ? "
 
-#: func.py:143
+#: func.py:147
 msgid "What is the PERCENTAGE? "
 msgstr "Quel est le POURCENTAGE ? "
 
-#: func.py:145
+#: func.py:149
 msgid "That equals..."
 msgstr "Le résultat est..."
 
-#: func.py:153
+#: func.py:157
 msgid "What is the number that would be 100%? "
 msgstr "Quelle est le nombre qui serait 100 % ? "
 
-#: func.py:154
+#: func.py:158
 msgid ""
 "What is the number that you want to convert to percentage (e.g. this number "
 "out of the number that would be 100%)? "
@@ -471,20 +475,20 @@ msgstr ""
 "Quel est le nombre que vous souhaitez convertir en pourcentage (par exemple, "
 "ce nombre sur le nombre qui serait 100%) ? "
 
-#: func.py:156
+#: func.py:160
 msgid "that equals:"
 msgstr "Le résultat est :"
 
-#: func.py:160
+#: func.py:164
 msgid "What is the original number? "
 msgstr "Quel est le nombre d'origine ? "
 
-#: func.py:161
+#: func.py:165
 msgid "What is the rate of interest in percentage (without the percent sign)? "
 msgstr ""
 "Quel est le taux d'intérêt en pourcentage (sans le signe pourcentage) ?"
 
-#: func.py:163
+#: func.py:167
 msgid ""
 "How many units of time would you like to calculate? \n"
 "Essentially, one unit of time could be one month, or one decade. It all "
@@ -511,7 +515,7 @@ msgstr ""
 "l'intérêt (le nombre d'unités de temps).\n"
 "Saisie : "
 
-#: func.py:172
+#: func.py:176
 #, python-format
 msgid ""
 "The answer is: \n"
@@ -520,15 +524,15 @@ msgstr ""
 "Le résultat est :\n"
 "%s"
 
-#: func.py:173
+#: func.py:177
 msgid "Would you like to do it again (Y/n)? "
 msgstr "Souhaitez-vous exécuter de nouveau cette fonction (O/n)? "
 
-#: func.py:178
+#: func.py:182
 msgid "Going back..."
 msgstr "Retour au menu..."
 
-#: func.py:181
+#: func.py:185
 msgid ""
 "1 - Ontario Sales Tax\n"
 "2 - Quebec Sales Tax\n"
@@ -548,16 +552,16 @@ msgstr ""
 "6 - Taxe de vente de la Saskatchewan \n"
 "7 - Taxe personnalisée"
 
-#: func.py:188
+#: func.py:192
 msgid "Choose one: "
 msgstr "Choisissez-en une : "
 
-#: func.py:190 func.py:197 func.py:204 func.py:211 func.py:218 func.py:225
+#: func.py:194 func.py:201 func.py:208 func.py:215 func.py:222 func.py:229
 msgid "What is the original price (before tax)? "
 msgstr "Quelle est le prix d'origine (hors taxe) ? "
 
-#: func.py:195 func.py:202 func.py:209 func.py:216 func.py:223 func.py:230
-#: func.py:236
+#: func.py:199 func.py:206 func.py:213 func.py:220 func.py:227 func.py:234
+#: func.py:240
 #, python-format
 msgid ""
 "After tax, the price is: \n"
@@ -566,20 +570,20 @@ msgstr ""
 "Après ajout de la taxe, le prix est : \n"
 "%s"
 
-#: func.py:232
+#: func.py:236
 msgid "OK, enter the original price: "
 msgstr "Ok, saisissez le prix d'origine : "
 
-#: func.py:233
+#: func.py:237
 msgid "Now enter the tax percentage without the percent sign: "
 msgstr ""
 "Saisissez le montant de la taxe en pourcentage (sans le signe pourcentage) : "
 
-#: func.py:239
+#: func.py:243
 msgid "You did not type answer. Abort."
 msgstr "Vous n'avez pas saisi une réponse valide."
 
-#: func.py:242
+#: func.py:246
 msgid ""
 "OPTIONS:\n"
 "    1 - Farenheit to Celsius\n"
@@ -599,19 +603,19 @@ msgstr ""
 "    6 - Kelvin en Fahrenheit\n"
 "Saisie : "
 
-#: func.py:251 func.py:264
+#: func.py:255 func.py:268
 msgid "Please enter the FAHRENHEIT temperature: "
 msgstr "Veuillez entrer la température en degré FARENHEIT: "
 
-#: func.py:258 func.py:272
+#: func.py:262 func.py:276
 msgid "Please enter the CELSIUS temperature: "
 msgstr "Veuillez entrer la température en degré CELSIUS :"
 
-#: func.py:276 func.py:280
+#: func.py:280 func.py:284
 msgid "Please enter the KELVIN temperature: "
 msgstr "Veuillez entrer la température en degré KELVIN : "
 
-#: func.py:287
+#: func.py:291
 msgid "Invalid response."
 msgstr "Saisie invalide."
 
@@ -741,7 +745,7 @@ msgstr "quitter"
 msgid "exit"
 msgstr "quitter"
 
-#: palc.py:220 palc.py:223 palc.py:226
+#: palc.py:227 palc.py:230 palc.py:233
 msgid "multiply a number"
 msgstr "multiplier un nombre"
 
@@ -776,8 +780,13 @@ msgid "Number to be rooted?"
 msgstr "Nombre dont vous souhaitez obtenir la racine ?"
 
 #: palc.py:246
-msgid "That equals.....\n"
-msgstr "Le résultat est...\n"
+#, python-format
+msgid ""
+"That equals.....\n"
+"%s"
+msgstr ""
+"Le résultat est...\n"
+"%s"
 
 #: palc.py:251
 msgid ""
@@ -1103,6 +1112,9 @@ msgstr ""
 "13 - Pyramide a base triangulaire\n"
 "14 - Pyramide a base pentagonale\n"
 "15 - Pyramide a base hexagonale"
+
+#~ msgid "That equals.....\n"
+#~ msgstr "Le résultat est...\n"
 
 #~ msgid "ord a number"
 #~ msgstr "'ord' un nombre"
