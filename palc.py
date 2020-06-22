@@ -67,8 +67,8 @@ else:
 try:
     lang_translations.install()
     _ = lang_translations.gettext
-except:
-    pass
+except Exception as ename:
+    logging.info("This is not necessary to be logged, but exception %s occured while installing Traductions" % ename)
 
 logging.info("Attempting to import func.py and basicfunc.py.")
 try:
