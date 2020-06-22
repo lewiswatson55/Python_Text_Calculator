@@ -61,7 +61,7 @@ def cu(): #backwards-compatibility
     curoot()
 
 def fib():
-    from fib import FibMain
+    from fibonacci import FibMain
     logging.info("About to run fibonacci")
     fib()
     logging.info("user ran fibonacci function")

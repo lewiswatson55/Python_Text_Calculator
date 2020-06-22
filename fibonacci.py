@@ -1,16 +1,19 @@
 #FIBONACCI
 import time
 import logging
-num0 = 0
-num1 = 1
-hi = 0
-def main(Comandeer):
-    global _
-    _ = Comandeer
+try:
+    def main(Comandeer):
+        global _
+        _ = Comandeer
+except Exception as ename:
+    logging.info("???fiberror %s" %ename)
 
 def FibMain():
     print(_("Press Control-C to stop."))
     try:
+        num0 = 0
+        num1 = 1
+        hi = 0
         while True:
             num = num0 + num1 #set variable num to the sum of num0 and num1.
             if hi == 0:
@@ -26,6 +29,7 @@ def FibMain():
     except Exception as e: #if an error occurs
         print(_("An error occured."))
         logging.err("Exception %s" % e)
+
 if __name__ == "__main__":
     def _(thestring):
         return thestring
