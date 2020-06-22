@@ -14,9 +14,10 @@ def getNum(): #ask for two numbers and then return to function
 def showUserWhatIThink(whatDOyouthink):
     cprint.ok(_("I think you want me to: "))
     cprint.ok(whatDOyouthink)
-    if _("y") in input(_("Is this correct? (Y/n)")).lower():
+    isItCorrect = input(_("Is this correct? (Y/n)")).lower():
+    if _("y") in isItCorrect:
         logging.info("Palc chose the right calculation (%s) for calc choice that (should be) shown above." % whatDOyouthink)
-    else:
+    elif "n" in isItCorrect:
         cprint.info(_("Try different wording. Or, if you want that calculation choice to be made right, file a ticket."))
         if _("y") in input(_("Would you like to file a ticket? (Y/n)\nType: ")).lower(): 
             import webbrowser
@@ -25,6 +26,9 @@ def showUserWhatIThink(whatDOyouthink):
             cprint.info(_("Proceeding with the function I thought it was."))
         else:
             cprint.info(_("OK, proceeding with the function I thought it was."))
+    else:
+        cprint.info(_("Defaulting to yes."))
+        logging.info("Defaulting to yes for right calc (%s) for calc choice that should be shown above" % whatDOyouthink)
 def power():
     showUserWhatIThink(_("use the exponent function"))
     origin = float(input(_("Original number?")))
