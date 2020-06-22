@@ -94,13 +94,14 @@ try:
         import fibonacci as fi
         fi.main(_)
         del fi
-finally:pass
+except Exception as ename:
+    logging.info("Errored Running *.main(_) (errid %s)" % ename)
 try:
     from basicfunc import *
 except Exception as e:
     logging.critical("Could Not Access basicfunc.py (%s)" % e)
     cprint.fatal(_("I can't access file basicfunc.py. This file is necessary for proper function of the Software."), interrupt=True)
-logging.info("Success import basicfunc.py !")
+logging.info("Successfully imported basicfunc.py!")
 cprint.ok(_("Loading...............\n"))
 time.sleep(2)
 def palc():
