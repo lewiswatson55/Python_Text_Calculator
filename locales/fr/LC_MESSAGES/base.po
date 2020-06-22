@@ -1,129 +1,129 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Palc\n"
-"POT-Creation-Date: 2020-06-22 14:15+0200\n"
-"PO-Revision-Date: 2020-06-22 15:03+0200\n"
+"POT-Creation-Date: 2020-06-22 09:44-0400\n"
+"PO-Revision-Date: 2020-06-22 09:45-0400\n"
 "Last-Translator: ittussarom\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: _\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: areaInteractive.py:6
+#: areaInteractive.py:10
 msgid "What length is the side of the triangle? "
 msgstr "Longueur du côté du triangle ? "
 
-#: areaInteractive.py:7 areaInteractive.py:11
+#: areaInteractive.py:11 areaInteractive.py:15
 #, python-format
 msgid "The area is: %s"
 msgstr "L'aire est : %s"
 
-#: areaInteractive.py:9
+#: areaInteractive.py:13
 msgid "What length is the base of the triangle? "
 msgstr "Longueur de la base du triangle ? "
 
-#: areaInteractive.py:10
+#: areaInteractive.py:14
 msgid "What length is the height of the triangle? "
 msgstr "Hauteur du triangle ? "
 
-#: areaInteractive.py:13 areaInteractive.py:19
+#: areaInteractive.py:17 areaInteractive.py:23
 msgid "What is the length of the first side? "
 msgstr "Longueur du premier côté ? "
 
-#: areaInteractive.py:14 areaInteractive.py:20
+#: areaInteractive.py:18 areaInteractive.py:24
 msgid "what is the length of the second side? "
 msgstr "longueur du second côté ? "
 
-#: areaInteractive.py:15 areaInteractive.py:21
+#: areaInteractive.py:19 areaInteractive.py:25
 msgid "What is the length of the third side? "
 msgstr "Longueur du troisième côté ? "
 
-#: areaInteractive.py:16 areaInteractive.py:22 areaInteractive.py:26
-#: areaInteractive.py:32 areaInteractive.py:38 areaInteractive.py:44
-#: areaInteractive.py:51 areaInteractive.py:56 areaInteractive.py:61
-#: areaInteractive.py:66 areaInteractive.py:72 areaInteractive.py:78
+#: areaInteractive.py:20 areaInteractive.py:26 areaInteractive.py:30
+#: areaInteractive.py:36 areaInteractive.py:42 areaInteractive.py:48
+#: areaInteractive.py:55 areaInteractive.py:60 areaInteractive.py:65
+#: areaInteractive.py:70 areaInteractive.py:76 areaInteractive.py:82
 msgid "The area is: "
 msgstr "L'aire est : "
 
-#: areaInteractive.py:25
+#: areaInteractive.py:29
 msgid "What is the length of the side of the square? "
 msgstr "Longueur du côté du carré ? "
 
-#: areaInteractive.py:30
+#: areaInteractive.py:34
 msgid "What is the length of the rectangle? "
 msgstr "Longueur du rectangle ? "
 
-#: areaInteractive.py:31
+#: areaInteractive.py:35
 msgid "What is the height of the rectangle? "
 msgstr "Hauteur du rectangle ? "
 
-#: areaInteractive.py:36
+#: areaInteractive.py:40
 msgid "What is the length of the base? "
 msgstr "Longueur de la base ? "
 
-#: areaInteractive.py:37
+#: areaInteractive.py:41
 msgid "What is the height of the shape? "
 msgstr "Hauteur de la forme ? "
 
-#: areaInteractive.py:42
+#: areaInteractive.py:46
 msgid "What is the length of the first diagonal? "
 msgstr "Longueur de la première diagonale ? "
 
-#: areaInteractive.py:43
+#: areaInteractive.py:47
 msgid "What is the length of the 2nd diagonal? "
 msgstr "Longueur de la seconde diagonale ? "
 
-#: areaInteractive.py:48
+#: areaInteractive.py:52
 msgid "What is the length of the 1st set of parallel sides? "
 msgstr "Longueur de la première paire de côtés parallèles ? "
 
-#: areaInteractive.py:49
+#: areaInteractive.py:53
 msgid "What is the length of the 2nd set of parallel sides? "
 msgstr "Longueur de la seconde paire de côtés parallèles ? "
 
-#: areaInteractive.py:50
+#: areaInteractive.py:54
 msgid "What is the height of the trapezium? "
 msgstr "Hauteur du trapèze ? "
 
-#: areaInteractive.py:55
+#: areaInteractive.py:59
 msgid "What is the radius of the circle? "
 msgstr "Rayon du cercle ? "
 
-#: areaInteractive.py:60
+#: areaInteractive.py:64
 msgid "What is the radius of the semicircle? "
 msgstr "Rayon du demi-cercle ? "
 
-#: areaInteractive.py:64
+#: areaInteractive.py:68
 msgid "What is the radius of the circular sector? "
 msgstr "Rayon du secteur circulaire ? "
 
-#: areaInteractive.py:65
+#: areaInteractive.py:69
 msgid "What is the angle of the circular sector *in degrees*? "
 msgstr "Quel est l'angle du secteur circulaire *en degrés* ?"
 
-#: areaInteractive.py:70
+#: areaInteractive.py:74
 msgid "What is the radius of the outer circle? "
 msgstr "Rayon du cercle extérieur ? "
 
-#: areaInteractive.py:71
+#: areaInteractive.py:75
 msgid "What is the radius of the inner circle? "
 msgstr "Rayon du cercle intérieur ? "
 
-#: areaInteractive.py:76
+#: areaInteractive.py:80
 msgid "What is the length of the major axis? "
 msgstr "Longueur de l'axe principal ? "
 
-#: areaInteractive.py:77
+#: areaInteractive.py:81
 msgid "What is the length of the minor axis? "
 msgstr "Longueur de l'axe secondaire ? "
 
-#: areaInteractive.py:80
+#: areaInteractive.py:86
 msgid ""
 "Options:\n"
 "1 - Equilateral triangle\n"
@@ -157,27 +157,27 @@ msgstr ""
 "14 - Anneau\n"
 "15 - Ellipse"
 
-#: areaInteractive.py:97 volInteractive.py:79
+#: areaInteractive.py:103 volInteractive.py:85
 msgid "Please type one: "
 msgstr "Choisissez une option : "
 
-#: areaInteractive.py:99
+#: areaInteractive.py:105
 msgid "Please type an integer"
 msgstr "Merci d'entrer un nombre entier"
 
-#: areaInteractive.py:102
+#: areaInteractive.py:108
 msgid "I was too lazy to change 7."
 msgstr "7 n'existe pas !"
 
-#: basicfunc.py:7 func.py:6
+#: basicfunc.py:14 func.py:10
 msgid "Please enter the first number: "
 msgstr "Premier nombre ? "
 
-#: basicfunc.py:8 func.py:7
+#: basicfunc.py:15 func.py:11
 msgid "Please enter the second number: "
 msgstr "Deuxième nombre ? "
 
-#: basicfunc.py:14 basicfunc.py:19 basicfunc.py:29 basicfunc.py:33 func.py:43
+#: basicfunc.py:21 basicfunc.py:27 basicfunc.py:37 basicfunc.py:41 func.py:53
 #, python-format
 msgid ""
 "\n"
@@ -188,43 +188,43 @@ msgstr ""
 "Le résultat est...\n"
 "%s"
 
-#: basicfunc.py:22
+#: basicfunc.py:30
 msgid "Do not divide by zero!"
 msgstr "Ne divisez pas par zéro !"
 
-#: basicfunc.py:25
+#: basicfunc.py:33
 msgid "There was an unknown issue dividing your Numbers..."
 msgstr "Il y a eu un problème inconnu en divisant vos nombres..."
 
-#: basicfunc.py:51
+#: basicfunc.py:57
 msgid "Number to be rooted? "
 msgstr "Nombre ? "
 
-#: fibonacci.py:7
+#: fibonacci.py:12
 msgid "Press Control-C to stop."
 msgstr "Appuyez sur Ctrl-C pour arrêter."
 
-#: fibonacci.py:20
+#: fibonacci.py:28
 msgid "Thanks for using Palc's FIBONACCI function!"
 msgstr "Merci d'utiliser la fonction Fibonacci de Palc !"
 
-#: fibonacci.py:22
+#: fibonacci.py:30
 msgid "An error occured."
 msgstr "Une erreur est survenue."
 
-#: func.py:11
+#: func.py:15
 msgid "I think you want me to: "
 msgstr "Je pense que vous voulez : "
 
-#: func.py:13 func.py:17 func.py:165
+#: func.py:17 func.py:21 func.py:175
 msgid "y"
 msgstr "o"
 
-#: func.py:13
+#: func.py:17
 msgid "Is this correct? (Y/n)"
 msgstr "Est-ce correct ? (O/n)"
 
-#: func.py:16
+#: func.py:20
 msgid ""
 "Try different wording. Or, if you want that calculation choice to be made "
 "right, file a ticket."
@@ -232,7 +232,7 @@ msgstr ""
 "Essayez un libellé différent. Ou, si vous voulez que ce choix de calcul soit "
 "implémenté, soumettez un billet."
 
-#: func.py:17
+#: func.py:21
 msgid ""
 "Would you like to file a ticket? (Y/n)\n"
 "Type: "
@@ -240,15 +240,27 @@ msgstr ""
 "Souhaitez-vous soumettre un billet? (O/n)\n"
 "Saisie : "
 
-#: func.py:21
+#: func.py:25
 msgid "Proceeding with the function I thought it was."
 msgstr "Utilisation de la fonction initialement détectée."
 
-#: func.py:23
+#: func.py:27
 msgid "OK, proceeding with the function I thought it was."
 msgstr "Ok, utilisation de la fonction initialement détectée."
 
-#: func.py:25
+#: func.py:29
+msgid "use the exponent function"
+msgstr "utiliser la fonction exposant"
+
+#: func.py:30
+msgid "Original number?"
+msgstr "Saisissez le nombre d'origine :"
+
+#: func.py:31
+msgid "Exponent? "
+msgstr "Saisissez l'exposant : "
+
+#: func.py:35
 msgid ""
 "\n"
 "Current list of commands: multiplication, division, addition, square, "
@@ -270,7 +282,7 @@ msgstr ""
 "(IMPORTANT : N'AJOUTEZ PAS LES ACCENTS AUX COMMANDES, AUTREMENT CELA NE "
 "FONCTIONNERA PAS)\n"
 
-#: func.py:32
+#: func.py:42
 msgid ""
 "\n"
 "Type the first number (greater): "
@@ -278,11 +290,11 @@ msgstr ""
 "\n"
 "Saisissez le premier nombre (le plus grand) : "
 
-#: func.py:33
+#: func.py:43
 msgid "Type the second number (smaller): "
 msgstr "Saisissez le second nombre (le plus petit) : "
 
-#: func.py:35 func.py:39
+#: func.py:45 func.py:49
 msgid ""
 "\n"
 "Error!"
@@ -290,19 +302,19 @@ msgstr ""
 "\n"
 "Une erreur est survenue !"
 
-#: func.py:36
+#: func.py:46
 msgid "Invalid input (code 1)\n"
 msgstr "Saisie invalide (code 1)\n"
 
-#: func.py:40
+#: func.py:50
 msgid "The second number entered is greater than the first number (code 2)\n"
 msgstr "Le second nombre est plus grand que le premier (code 2)\n"
 
-#: func.py:51 func.py:56 func.py:81
+#: func.py:61 func.py:66 func.py:91
 msgid "Type the original number: "
 msgstr "Saisissez le nombre d'origine : "
 
-#: func.py:61
+#: func.py:71
 msgid ""
 "Converting from a base to decimal (normal).\n"
 "Example bases:\n"
@@ -320,13 +332,13 @@ msgstr ""
 "Saisissez 1 pour ord. \n"
 "Saisie : "
 
-#: func.py:72
+#: func.py:82
 #, python-format
 msgid "Please enter the number to be converted from %s: "
 msgstr "Veuillez entrer le nombre à convertir depuis une %s : "
 
-#: func.py:78 func.py:245 func.py:251 func.py:260 func.py:264 func.py:268
-#: func.py:274
+#: func.py:88 func.py:255 func.py:261 func.py:270 func.py:274 func.py:278
+#: func.py:284
 #, python-format
 msgid ""
 "That equals...\n"
@@ -335,7 +347,7 @@ msgstr ""
 "Le résultat est...\n"
 "%s"
 
-#: func.py:79
+#: func.py:89
 msgid ""
 "TIP: If you got no answer, it might be that it was a Unicode character that "
 "it can't render. E.g. \\x06 would just be a blank space, like so: "
@@ -344,7 +356,7 @@ msgstr ""
 "d'un caractère Unicode qui ne peux pas être affiché. Par exemple \\x06 "
 "serait juste une espace vide, comme ceci : "
 
-#: func.py:88
+#: func.py:98
 msgid ""
 "What base would you like to use? \n"
 "Currently supported: 10 (base 10), e (natural)"
@@ -352,31 +364,31 @@ msgstr ""
 "Quelle base voulez-vous utiliser ? \n"
 "Options : 10 (décimal) ou e (naturel)"
 
-#: func.py:90
+#: func.py:100
 msgid "Using base 10"
 msgstr "Utilisation de la base 10"
 
-#: func.py:91 func.py:98
+#: func.py:101 func.py:108
 msgid "What is the number? "
 msgstr "Quel est le nombre ? "
 
-#: func.py:92
+#: func.py:102
 msgid "That equals:"
 msgstr "Le résultat est :"
 
-#: func.py:97
+#: func.py:107
 msgid "Using natural logarithm"
 msgstr "Utilisation du logarithme naturel"
 
-#: func.py:104
+#: func.py:114
 msgid "The logarithm you typed is not available."
 msgstr "Le logarithme que vous avez sélectionné n'est pas disponible."
 
-#: func.py:105
+#: func.py:115
 msgid "Try again."
 msgstr "Essayez encore."
 
-#: func.py:108
+#: func.py:118
 msgid ""
 "This is the memory function.\n"
 "It will save a number into a file that can be used later with Palc... Or you "
@@ -386,7 +398,7 @@ msgstr ""
 "Elle va enregistrer un nombre dans un fichier pour être utilisé plus tard "
 "avec Palc ou simplement lu avec un éditeur de texte."
 
-#: func.py:109
+#: func.py:119
 msgid ""
 "\n"
 "Please enter the number to be saved: "
@@ -394,7 +406,7 @@ msgstr ""
 "\n"
 "Saisissez le nombre à enregistrer : "
 
-#: func.py:110
+#: func.py:120
 msgid ""
 "What slot would you like to use? (Hint: you can use any integer you want as "
 "long as you remember it)\n"
@@ -404,7 +416,7 @@ msgstr ""
 "n'importe quel nombre entier tant que vous vous en souvenez)\n"
 "Saisie : "
 
-#: func.py:116
+#: func.py:126
 msgid ""
 "This is the remember function.\n"
 "It will read a number that was previously stored in a file."
@@ -412,16 +424,16 @@ msgstr ""
 "Il s'agit de la fonction de lecture de la mémoire.\n"
 "Elle permet de lire un nombre qui a été enregistré dans un fichier."
 
-#: func.py:118
+#: func.py:128
 msgid "What slot number did you use? "
 msgstr "Quel est le numéro de l'emplacement mémoire que vous souhaitez lire ? "
 
-#: func.py:121
+#: func.py:131
 #, python-format
 msgid "Number: %s"
 msgstr "Nombre : %s"
 
-#: func.py:125
+#: func.py:135
 msgid ""
 "There was an error reading the file. Did you save the number by using the "
 "save function? Did you accidentally rename the file?"
@@ -430,27 +442,27 @@ msgstr ""
 "nombre avec la fonction mémoire ? Avez-vous renommé par accident le "
 "fichier ? "
 
-#: func.py:129 func.py:140
+#: func.py:139 func.py:150
 msgid "Please do not type in a zero as the whole."
 msgstr "Le total ne peut être égal à zéro."
 
-#: func.py:132
+#: func.py:142
 msgid "what is the ORIGINAL NUMBER? "
 msgstr "Quel est le nombre d'origine ? "
 
-#: func.py:133
+#: func.py:143
 msgid "What is the PERCENTAGE? "
 msgstr "Quel est le POURCENTAGE ? "
 
-#: func.py:135
+#: func.py:145
 msgid "That equals..."
 msgstr "Le résultat est..."
 
-#: func.py:143
+#: func.py:153
 msgid "What is the number that would be 100%? "
 msgstr "Quelle est le nombre qui serait 100 % ? "
 
-#: func.py:144
+#: func.py:154
 msgid ""
 "What is the number that you want to convert to percentage (e.g. this number "
 "out of the number that would be 100%)? "
@@ -458,20 +470,20 @@ msgstr ""
 "Quel est le nombre que vous souhaitez convertir en pourcentage (par exemple, "
 "ce nombre sur le nombre qui serait 100%) ? "
 
-#: func.py:146
+#: func.py:156
 msgid "that equals:"
 msgstr "Le résultat est :"
 
-#: func.py:150
+#: func.py:160
 msgid "What is the original number? "
 msgstr "Quel est le nombre d'origine ? "
 
-#: func.py:151
+#: func.py:161
 msgid "What is the rate of interest in percentage (without the percent sign)? "
 msgstr ""
 "Quel est le taux d'intérêt en pourcentage (sans le signe pourcentage) ?"
 
-#: func.py:153
+#: func.py:163
 msgid ""
 "How many units of time would you like to calculate? \n"
 "Essentially, one unit of time could be one month, or one decade. It all "
@@ -498,7 +510,7 @@ msgstr ""
 "l'intérêt (le nombre d'unités de temps).\n"
 "Saisie : "
 
-#: func.py:162
+#: func.py:172
 #, python-format
 msgid ""
 "The answer is: \n"
@@ -507,15 +519,15 @@ msgstr ""
 "Le résultat est :\n"
 "%s"
 
-#: func.py:163
+#: func.py:173
 msgid "Would you like to do it again (Y/n)? "
 msgstr "Souhaitez-vous exécuter de nouveau cette fonction (O/n)? "
 
-#: func.py:168
+#: func.py:178
 msgid "Going back..."
 msgstr "Retour au menu..."
 
-#: func.py:171
+#: func.py:181
 msgid ""
 "1 - Ontario Sales Tax\n"
 "2 - Quebec Sales Tax\n"
@@ -535,16 +547,16 @@ msgstr ""
 "6 - Taxe de vente de la Saskatchewan \n"
 "7 - Taxe personnalisée"
 
-#: func.py:178
+#: func.py:188
 msgid "Choose one: "
 msgstr "Choisissez-en une : "
 
-#: func.py:180 func.py:187 func.py:194 func.py:201 func.py:208 func.py:215
+#: func.py:190 func.py:197 func.py:204 func.py:211 func.py:218 func.py:225
 msgid "What is the original price (before tax)? "
 msgstr "Quelle est le prix d'origine (hors taxe) ? "
 
-#: func.py:185 func.py:192 func.py:199 func.py:206 func.py:213 func.py:220
-#: func.py:226
+#: func.py:195 func.py:202 func.py:209 func.py:216 func.py:223 func.py:230
+#: func.py:236
 #, python-format
 msgid ""
 "After tax, the price is: \n"
@@ -553,20 +565,20 @@ msgstr ""
 "Après ajout de la taxe, le prix est : \n"
 "%s"
 
-#: func.py:222
+#: func.py:232
 msgid "OK, enter the original price: "
 msgstr "Ok, saisissez le prix d'origine : "
 
-#: func.py:223
+#: func.py:233
 msgid "Now enter the tax percentage without the percent sign: "
 msgstr ""
 "Saisissez le montant de la taxe en pourcentage (sans le signe pourcentage) : "
 
-#: func.py:229
+#: func.py:239
 msgid "You did not type answer. Abort."
 msgstr "Vous n'avez pas saisi une réponse valide."
 
-#: func.py:232
+#: func.py:242
 msgid ""
 "OPTIONS:\n"
 "    1 - Farenheit to Celsius\n"
@@ -586,23 +598,23 @@ msgstr ""
 "    6 - Kelvin en Fahrenheit\n"
 "Saisie : "
 
-#: func.py:241 func.py:254
+#: func.py:251 func.py:264
 msgid "Please enter the FAHRENHEIT temperature: "
 msgstr "Veuillez entrer la température en degré FARENHEIT: "
 
-#: func.py:248 func.py:262
+#: func.py:258 func.py:272
 msgid "Please enter the CELSIUS temperature: "
 msgstr "Veuillez entrer la température en degré CELSIUS :"
 
-#: func.py:266 func.py:270
+#: func.py:276 func.py:280
 msgid "Please enter the KELVIN temperature: "
 msgstr "Veuillez entrer la température en degré KELVIN : "
 
-#: func.py:277
+#: func.py:287
 msgid "Invalid response."
 msgstr "Saisie invalide."
 
-#: palc.py:47
+#: palc.py:78
 msgid ""
 "I can't access the file func.py. This file is necessary for proper function "
 "of the Software."
@@ -610,7 +622,7 @@ msgstr ""
 "Impossible d'accéder au fichier func.py. Ce fichier est nécessaire pour le "
 "bon fonctionnement du logiciel."
 
-#: palc.py:53
+#: palc.py:103
 msgid ""
 "I can't access file basicfunc.py. This file is necessary for proper function "
 "of the Software."
@@ -618,15 +630,15 @@ msgstr ""
 "Impossible d'accéder au fichier basicfunc.py. Ce fichier est nécessaire pour "
 "le bon fonctionnement du logiciel."
 
-#: palc.py:55
+#: palc.py:105
 msgid "Loading...............\n"
 msgstr "Chargement...\n"
 
-#: palc.py:59
+#: palc.py:109
 msgid "Press any key to continue..."
 msgstr "Appuyer sur une touche pour continuer…"
 
-#: palc.py:74
+#: palc.py:124
 msgid ""
 "What calculation do you wish to do? (Type `?' for a list of commands)\n"
 "Type: "
@@ -636,76 +648,76 @@ msgstr ""
 "Saisie : "
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:81
+#: palc.py:131
 msgid "help"
 msgstr "aide"
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:85
+#: palc.py:135
 msgid "tax"
 msgstr "taxe"
 
-#: palc.py:86
+#: palc.py:136
 msgid "calculate tax"
 msgstr "calculer une taxe"
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:89
+#: palc.py:139
 msgid "sq"
 msgstr "carre"
 
-#: palc.py:90 palc.py:95
+#: palc.py:140 palc.py:145
 msgid "square a number"
 msgstr "élever un nombre au carré"
 
-#: palc.py:91 palc.py:96
+#: palc.py:141 palc.py:146
 msgid "Number to square? "
 msgstr "Nombre à mettre au carré? "
 
-#: palc.py:101 palc.py:104
+#: palc.py:151 palc.py:154
 msgid "divide a number"
 msgstr "diviser un nombre"
 
-#: palc.py:108 palc.py:111 palc.py:114
+#: palc.py:158 palc.py:161 palc.py:164
 msgid "subtract a number from a number"
 msgstr "soustraire un nombre par un nombre"
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:110
+#: palc.py:160
 msgid "sub"
 msgstr "sous"
 
-#: palc.py:118 palc.py:121 palc.py:124
+#: palc.py:168 palc.py:171 palc.py:174
 msgid "add two numbers"
 msgstr "additionne deux nombres"
 
-#: palc.py:128 palc.py:131
+#: palc.py:178 palc.py:181
 msgid "find the remainder of two numbers after division"
 msgstr "trouver le reste de deux numéros après la division"
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:134
+#: palc.py:184
 msgid "area"
 msgstr "aire"
 
-#: palc.py:135 palc.py:138
+#: palc.py:185 palc.py:188
 msgid "calculate area"
 msgstr "calculer une aire"
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:141
+#: palc.py:191
 msgid "vol"
 msgstr "vol"
 
-#: palc.py:142
+#: palc.py:192
 msgid "use the volume calculator"
 msgstr "utiliser la calculatrice volume"
 
-#: palc.py:146 palc.py:153
+#: palc.py:196 palc.py:203
 msgid "cube a number"
 msgstr "élever un nombre au cube"
 
-#: palc.py:147 palc.py:154
+#: palc.py:197 palc.py:204
 msgid ""
 "\n"
 "Type the number to be cubed: "
@@ -714,50 +726,38 @@ msgstr ""
 "Saisissez le nombre à mettre au cube : "
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:152
+#: palc.py:202
 msgid "cube"
 msgstr "cube"
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:160 palc.py:161
+#: palc.py:210 palc.py:211
 msgid "quit"
 msgstr "quitter"
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:165
+#: palc.py:215
 msgid "exit"
 msgstr "quitter"
 
-#: palc.py:170 palc.py:173 palc.py:176
+#: palc.py:220 palc.py:223 palc.py:226
 msgid "multiply a number"
 msgstr "multiplier un nombre"
 
-#: palc.py:180 palc.py:186
-msgid "use the exponent function"
-msgstr "utiliser la fonction exposant"
-
-#: palc.py:181 palc.py:187
-msgid "Original number?"
-msgstr "Saisissez le nombre d'origine :"
-
-#: palc.py:182 palc.py:188
-msgid "Exponent? "
-msgstr "Saisissez l'exposant : "
-
-#: palc.py:193
+#: palc.py:237
 msgid "The \" CUBE TWICE \" feature was discontinued."
 msgstr "La fonctionnalité \"CUBE DEUX FOIS\" a été supprimée."
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:196
+#: palc.py:240
 msgid "root"
 msgstr "racine"
 
-#: palc.py:197
+#: palc.py:241
 msgid "use the root function (opposite of exponents)"
 msgstr "utiliser la fonction racine (opposé d'exposant)"
 
-#: palc.py:198
+#: palc.py:242
 msgid ""
 "Square root or cube root? (square/cube)\n"
 "Type: "
@@ -766,30 +766,30 @@ msgstr ""
 "Saisie : "
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:200
+#: palc.py:244
 msgid "square"
 msgstr "carre"
 
-#: palc.py:201
+#: palc.py:245
 msgid "Number to be rooted?"
 msgstr "Nombre dont vous souhaitez obtenir la racine ?"
 
-#: palc.py:202
+#: palc.py:246
 msgid "That equals.....\n"
 msgstr "Le résultat est...\n"
 
-#: palc.py:207
+#: palc.py:251
 msgid ""
 "Currently I don't support the root you chose. Hopefully this will change :)"
 msgstr ""
 "Pour le moment je ne supporte pas la racine que vous voulez. J'espère que ça "
 "va changer :)"
 
-#: palc.py:211
+#: palc.py:255
 msgid "use the equals function (completely useless)"
 msgstr "utiliser la fonction égale (complètement inutile)"
 
-#: palc.py:212
+#: palc.py:256
 msgid ""
 "\n"
 "Type in a number: "
@@ -797,41 +797,41 @@ msgstr ""
 "\n"
 "Saisissez un nombre : "
 
-#: palc.py:214
+#: palc.py:258
 msgid "=42 -- the answer to life, the universe, and everything"
 msgstr ""
 "=42 -- la réponse de la grande question sur la vie, l'univers et le reste"
 
-#: palc.py:217
+#: palc.py:261
 msgid "Do you really need a calculator for this?"
 msgstr "Vous avez vraiment besoin d'une calculatrice pour ça ?"
 
-#: palc.py:221
+#: palc.py:265
 msgid "convert number systems"
 msgstr "convertir les systèmes de bases numérique"
 
-#: palc.py:225
+#: palc.py:269
 msgid "ord a number"
 msgstr "'ord' un nombre"
 
-#: palc.py:226
+#: palc.py:270
 msgid "Type in the number to ord: "
 msgstr "Saisissez le nombre à 'ord' : "
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:230
+#: palc.py:274
 msgid "log"
 msgstr "log"
 
-#: palc.py:231
+#: palc.py:275
 msgid "use the logarithm function"
 msgstr "utiliser la fonction logarithme"
 
-#: palc.py:235
+#: palc.py:279
 msgid "use the memory function"
 msgstr "utiliser la fonction mémoire"
 
-#: palc.py:236
+#: palc.py:280
 msgid ""
 "Would you like to set the memory or recall? (set / recall)\n"
 "Type: "
@@ -841,39 +841,39 @@ msgstr ""
 "Saisie : "
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:237
+#: palc.py:281
 msgid "set"
 msgstr "ecrire"
 
 # This is a translated if statement. DO NOT ADD ACCENTS (as some people dont add them), and make sure to keep a key word inside.
-#: palc.py:239
+#: palc.py:283
 msgid "recall"
 msgstr "lire"
 
-#: palc.py:242
+#: palc.py:286
 msgid ""
 "You did not type an answer.\n"
 "Abort."
 msgstr "Vous n'avez pas saisi une réponse valide. Annulation."
 
-#: palc.py:246
+#: palc.py:290
 msgid "use the fibonacci calculator"
 msgstr "utiliser la fonction fibonacci"
 
-#: palc.py:247
+#: palc.py:291
 msgid "Starting fibonacci sequence. Please wait."
 msgstr "Démarrage de la séquence Fibonacci. Veuillez patienter."
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:250
+#: palc.py:294
 msgid "percent"
 msgstr "pourcent"
 
-#: palc.py:251
+#: palc.py:295
 msgid "use the percentage function"
 msgstr "utiliser la fonction pourcentage"
 
-#: palc.py:252
+#: palc.py:296
 #, python-format
 msgid ""
 "1 - Calculate \"What is x% of y?\"\n"
@@ -884,28 +884,28 @@ msgstr ""
 "2 - Convertir un nombre en pourcentage.\n"
 "Saisie : "
 
-#: palc.py:260
+#: palc.py:304
 msgid "You didn't type a valid answer. Abort."
 msgstr "Vous n'avez pas saisi une réponse valide. Annulation."
 
 # This is a translated if statement. DO NOT ADD ACCENTS, and make sure to keep a key word inside.
-#: palc.py:263
+#: palc.py:307
 msgid "interest"
 msgstr "interet"
 
-#: palc.py:264
+#: palc.py:308
 msgid "use the interest calculator"
 msgstr "utiliser le calculateur d'intérêt"
 
-#: palc.py:268
+#: palc.py:312
 msgid "use the temperature converter"
 msgstr "utiliser le convertisseur de température"
 
-#: palc.py:272
+#: palc.py:316
 msgid "use the converter functions"
 msgstr "utiliser les convertisseurs"
 
-#: palc.py:273
+#: palc.py:317
 msgid ""
 "1 - Convert temperature units\n"
 "Type: "
@@ -913,11 +913,11 @@ msgstr ""
 "1 - Convertir les unités de température\n"
 "Saisie : "
 
-#: palc.py:279 palc.py:282
+#: palc.py:323 palc.py:326
 msgid "Type something!"
 msgstr "Saisissez quelque chose !"
 
-#: palc.py:285
+#: palc.py:329
 msgid ""
 "\n"
 "I don't understand your request. Here are the currently supported "
@@ -937,11 +937,11 @@ msgstr ""
 "(IMPORTANT : N'AJOUTEZ PAS LES ACCENTS AUX COMMANDES, AUTREMENT CELA NE "
 "FONCTIONNERA PAS)\n"
 
-#: palc.py:293
+#: palc.py:337
 msgid "Welcome to Palc!"
 msgstr "Bienvenue dans Palc !"
 
-#: palc.py:301
+#: palc.py:345
 msgid ""
 "\n"
 "Note that you CAN type `quit' instead of pressing the interrupt key"
@@ -949,7 +949,7 @@ msgstr ""
 "\n"
 "Vous pouvez saisir `quitter' plutôt que ^C..."
 
-#: palc.py:305
+#: palc.py:349
 msgid ""
 "\n"
 "Why ^D? Why not just type `quit'?"
@@ -957,11 +957,11 @@ msgstr ""
 "\n"
 "Pourquoi ^D ? Pourquoi pas juste `quitter' ?"
 
-#: palc.py:313
+#: palc.py:357
 msgid "\aERROR!"
 msgstr "\aERREUR !"
 
-#: palc.py:317
+#: palc.py:361
 msgid ""
 "You typed in an invalid integer or float. Or maybe the program needs "
 "debugging. Either way, it's a pretty big error."
@@ -969,19 +969,19 @@ msgstr ""
 "Soit vous avez entré un nombre invalide, soit le logiciel a besoin d'être "
 "débogué. En tout cas, il s'agit d'une une erreur importante."
 
-#: palc.py:318
+#: palc.py:362
 msgid "Details are in the log."
 msgstr "Les détails sont dans le journal."
 
-#: palc.py:321
+#: palc.py:365
 msgid "Looks like you exited."
 msgstr "Vous quittez Palc."
 
-#: palc.py:328
+#: palc.py:372
 msgid "Unknown Error!"
 msgstr "Erreur inconnue !"
 
-#: palc.py:333
+#: palc.py:377
 msgid ""
 "An unknown error occured. Please file an Issue at github.com/thetechrobo/"
 "support."
@@ -989,75 +989,75 @@ msgstr ""
 "Une erreur s'est produite. Veuillez soumettre un billet sur github.com/"
 "thetechrobo/support."
 
-#: volInteractive.py:6
+#: volInteractive.py:10
 msgid "What length is the side of the cube? "
 msgstr "Quelle est le longueur de l'arrête du cube ? "
 
-#: volInteractive.py:7 volInteractive.py:12 volInteractive.py:16
-#: volInteractive.py:21 volInteractive.py:25 volInteractive.py:28
-#: volInteractive.py:33 volInteractive.py:37 volInteractive.py:41
-#: volInteractive.py:45 volInteractive.py:49 volInteractive.py:53
-#: volInteractive.py:57 volInteractive.py:61
+#: volInteractive.py:11 volInteractive.py:16 volInteractive.py:20
+#: volInteractive.py:25 volInteractive.py:29 volInteractive.py:32
+#: volInteractive.py:37 volInteractive.py:41 volInteractive.py:45
+#: volInteractive.py:49 volInteractive.py:53 volInteractive.py:57
+#: volInteractive.py:61 volInteractive.py:65
 #, python-format
 msgid "The volume is: %s"
 msgstr "Le volume est : %s"
 
-#: volInteractive.py:9
+#: volInteractive.py:13
 msgid "What length is the breadth of the cuboid? "
 msgstr "Largeur du parallélépipède rectangle ? "
 
-#: volInteractive.py:10
+#: volInteractive.py:14
 msgid "What length is the height of the cuboid? "
 msgstr "Hauteur du parallélépipède rectangle ? "
 
-#: volInteractive.py:11
+#: volInteractive.py:15
 msgid "What length is the cuboid? "
 msgstr "Longueur du parallélépipède rectangle ? "
 
-#: volInteractive.py:14 volInteractive.py:19
+#: volInteractive.py:18 volInteractive.py:23
 msgid "What is the radius of the cylinder? "
 msgstr "Rayon du cylindre ? "
 
-#: volInteractive.py:15
+#: volInteractive.py:19
 msgid "what is the height of the cylinder? "
 msgstr "Hauteur du cylindre ?"
 
-#: volInteractive.py:18 volInteractive.py:32
+#: volInteractive.py:22 volInteractive.py:36
 msgid "What is the radius of the hollow space? "
 msgstr "Rayon de l'espace creux ? "
 
-#: volInteractive.py:20
+#: volInteractive.py:24
 msgid "What is the height of the cylinder? "
 msgstr "Hauteur du cylindre ? "
 
-#: volInteractive.py:23
+#: volInteractive.py:27
 msgid "What is the radius of the cone? "
 msgstr "Rayon du cône ? "
 
-#: volInteractive.py:24
+#: volInteractive.py:28
 msgid "What is the height of the cone? "
 msgstr "Hauteur du cône ? "
 
-#: volInteractive.py:27 volInteractive.py:31
+#: volInteractive.py:31 volInteractive.py:35
 msgid "What is the radius of the sphere? "
 msgstr "Rayon de la sphère ? "
 
-#: volInteractive.py:35 volInteractive.py:39 volInteractive.py:43
-#: volInteractive.py:47 volInteractive.py:51 volInteractive.py:55
-#: volInteractive.py:59
+#: volInteractive.py:39 volInteractive.py:43 volInteractive.py:47
+#: volInteractive.py:51 volInteractive.py:55 volInteractive.py:59
+#: volInteractive.py:63
 msgid "What is the length of the side of the base? "
 msgstr "Longueur du côté de la base ? "
 
-#: volInteractive.py:36 volInteractive.py:40 volInteractive.py:44
+#: volInteractive.py:40 volInteractive.py:44 volInteractive.py:48
 msgid "What is the height of the prism? "
 msgstr "Hauteur du prisme ? "
 
-#: volInteractive.py:48 volInteractive.py:52 volInteractive.py:56
-#: volInteractive.py:60
+#: volInteractive.py:52 volInteractive.py:56 volInteractive.py:60
+#: volInteractive.py:64
 msgid "What is the height of the pyramid? "
 msgstr "Hauteur de la pyramide ? "
 
-#: volInteractive.py:62
+#: volInteractive.py:68
 msgid ""
 "Options:\n"
 "1 - Cube\n"
