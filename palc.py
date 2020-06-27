@@ -7,6 +7,7 @@
 # THANKS TO https://stackoverflow.com/questions/33594958/is-it-possible-to-align-a-print-statement-to-the-center-in-python FOR showing how to ALIGN the PRINT STATEMENT
 
 # IMPORTS
+import gc
 import gettext #to translate Palc
 from sys import exit as e #so that we can exit later on
 from cprint import cprint #printing in colour
