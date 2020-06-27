@@ -26,5 +26,5 @@ Bug reports and questions belong at my [Support repo](https://github.com/thetech
 Thank you for your cooperation -- I get too much spam :wink:
 
 
-###### Current Release: v.0.9-stable
+###### Current Release: v.0.9.1-stable
 ###### There are currently no previews available for testing
