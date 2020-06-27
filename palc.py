@@ -7,6 +7,7 @@
 # THANKS TO https://stackoverflow.com/questions/33594958/is-it-possible-to-align-a-print-statement-to-the-center-in-python FOR showing how to ALIGN the PRINT STATEMENT
 
 # IMPORTS
+import stackimpact #to test performance
 import gettext #to translate Palc
 from sys import exit as e #so that we can exit later on
 from cprint import cprint #printing in colour
@@ -69,7 +70,7 @@ try:
     _ = lang_translations.gettext
 except Exception as ename:
     logging.info("This is not necessary to be logged, but exception %s occured while installing Traductions" % ename)
-
+#import func and basicfunc
 logging.info("Attempting to import func.py and basicfunc.py.")
 try:
     from func import *
@@ -104,6 +105,9 @@ except Exception as e:
 logging.info("Successfully imported basicfunc.py!")
 cprint.ok(_("Loading...............\n"))
 time.sleep(2)
+agent = stackimpact.start(
+    agent_key = 'cbb1c4f64e4ff14f497418d19a60c382681898a3',
+    app_name = 'Palc')
 def palc():
     while True:
        print(_("Press any key to continue..."), end="", flush=True)
