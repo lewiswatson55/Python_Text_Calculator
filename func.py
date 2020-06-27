@@ -14,7 +14,7 @@ def getNum(): #ask for two numbers and then return to function
 def showUserWhatIThink(whatDOyouthink):
     cprint.ok(_("I think you want me to: "))
     cprint.ok(whatDOyouthink)
-    isItCorrect = input(_("Is this correct? (Y/n)")).lower():
+    isItCorrect = input(_("Is this correct? (Y/n)")).lower()
     if _("y") in isItCorrect:
         logging.info("Palc chose the right calculation (%s) for calc choice that (should be) shown above." % whatDOyouthink)
     elif "n" in isItCorrect:
