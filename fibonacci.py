@@ -6,9 +6,7 @@ try:
         global _
         _ = Comandeer
 except Exception as ename:
-    logging.info("??? MISSING TRANSLATION FIBO ERROR %s" % ename)
-
-
+    logging.info("??? MISSING TRANSLATION _ DEFINE FIBO ERROR %s" % ename)
 
 def FibMain():
     print(_("Press Control-C to stop."))
@@ -31,7 +29,7 @@ def FibMain():
         print(_("Thanks for using Palc's FIBONACCI function!"))
     except Exception as e: #if an error occurs
         print(_("An error occured."))
-        logging.err("Exception %s" % e)
+        logging.err("Exception %s in FIBONACCI" % e)
 
 if __name__ == "__main__":
     def _(thestring):
