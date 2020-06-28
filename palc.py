@@ -6,6 +6,10 @@
 
 # THANKS TO https://stackoverflow.com/questions/33594958/is-it-possible-to-align-a-print-statement-to-the-center-in-python FOR showing how to ALIGN the PRINT STATEMENT
 
+import six
+if not six.PY3:
+    print("You are using a currently unsupported version of Python. Your mileage may vary.")
+
 # IMPORTS
 import gettext #to translate Palc
 from sys import exit as e #so that we can exit later on
