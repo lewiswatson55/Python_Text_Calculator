@@ -6,10 +6,13 @@ try:
         global _
         _ = Comandeer
 except Exception as ename:
-    logging.info("???fiberror %s" %ename)
+    logging.info("??? MISSING TRANSLATION FIBO ERROR %s" % ename)
+
+
 
 def FibMain():
     print(_("Press Control-C to stop."))
+    print("0, 1", end=", ")
     try:
         num0 = 0
         num1 = 1
