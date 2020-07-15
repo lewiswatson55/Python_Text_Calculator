@@ -7,7 +7,7 @@
 
 This is a Python script I forked when I wanted to learn math in Python.
 
-Learning this has been very interesting. 
+Learning this has been very interesting and educational. 
 
 I always make my forked repositories better — and this one is no exception!  
 
