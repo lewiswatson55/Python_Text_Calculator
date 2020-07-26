@@ -6,7 +6,7 @@ try:
         global _
         _ = Comandeer
 except Exception as ename:
-    logging.info("??? MISSING TRANSLATION _ DEFINE FIBO ERROR %s" % ename)
+    logging.info("During the definition of _ (due to missing translations), this error occured: %s" % ename)
 
 def FibMain():
     print(_("Press Control-C to stop."))
