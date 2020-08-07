@@ -179,8 +179,26 @@ def palc():
             add()
 #MODULO
        elif "%" in calc:
-            showUserWhatIThink(_("find the remainder of two numbers after division"))
-            mod()
+            print(_("1 - Find the remainder of two numbers after division\n\
+2 - Use the percentage calculator."\n\
+Anything else - Back to menu."))
+            pOrMod = input(_("Type: "))
+            if pOrMod == "1":
+                mod()
+            elif pOrMod == "2":
+                whichOne = int(input(_('''1 - Calculate "What is x% of y?"
+2 - Convert a number to percentage.
+Type: ''')))
+                if whichOne == 1:
+                    whatIsPercent()
+                elif whichOne == 2:
+                    getPercentageRN()
+                else:
+                    cprint.err(_("You didn't type a valid answer. Abort."))
+                    logging.info("User did not answer correct percentage interpretation")
+            else:
+                cprint.info(_("going back."))
+                logging.info("going back."))
        elif "mod" in calc:
             showUserWhatIThink(_("find the remainder of two numbers after division"))
             mod()
