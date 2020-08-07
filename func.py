@@ -143,8 +143,8 @@ def percentage(percent, whole):
         return (_("Please do not type in a zero as the whole."))
     return (percent * whole) / 100.0
 def whatIsPercent():
-    origin = int(input(_("what is the ORIGINAL NUMBER? ")))
-    percent = int(input(_("What is the PERCENTAGE? ")))
+    origin = float(input(_("what is the ORIGINAL NUMBER? ")))
+    percent = float(input(_("What is the PERCENTAGE? ")))
     logging.info("Got percentage RN origin %s percent %s" % (origin, percent))
     cprint.info(_("That equals..."))
     cprint.info(percentage(percent, origin))
@@ -154,8 +154,8 @@ def getPercentage(part, whole):
         return (_("Please do not type in a zero as the whole."))
     return 100 * float(part)/float(whole)
 def getPercentageRN():
-    origin = int(input(_("What is the number that would be 100%? ")))
-    part = int(input(_("What is the number that you want to convert to percentage (e.g. this number out of the number that would be 100%)? ")))
+    origin = float(input(_("What is the number that would be 100%? ")))
+    part = float(input(_("What is the number that you want to convert to percentage (e.g. this number out of the number that would be 100%)? ")))
     logging.info("Got percentage RN origin %s and %s" % (origin, part))
     cprint.info(_("that equals:"))
     cprint.info(getPercentage(part, origin))
