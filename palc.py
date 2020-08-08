@@ -180,7 +180,7 @@ def palc():
 #MODULO
        elif "%" in calc:
             print(_("1 - Find the remainder of two numbers after division\n\
-2 - Use the percentage calculator."\n\
+2 - Use the percentage calculator.\n\
 Anything else - Back to menu."))
             pOrMod = input(_("Type: "))
             if pOrMod == "1":
@@ -198,7 +198,7 @@ Type: ''')))
                     logging.info("User did not answer correct percentage interpretation")
             else:
                 cprint.info(_("going back."))
-                logging.info("going back."))
+                logging.info("going back.")
        elif "mod" in calc:
             showUserWhatIThink(_("find the remainder of two numbers after division"))
             mod()
