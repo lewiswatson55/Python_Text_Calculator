@@ -343,7 +343,7 @@ Type: ''')))
        elif calc == "":
             logging.error("User attempted to type nothing as a command")
             cprint.err(_("I can't heeeeaaaarrrrrr yooooouuuuuuuu"))
-       elif calc == " "
+       elif calc == " ":
             logging.error("user said nothing")
             cprint.err(_("You speak quietly"))
        elif calc is None:
