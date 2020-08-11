@@ -1,3 +1,6 @@
+# For clearing the screen and press any key to continue.md
+**Note. This file was directly imported from an answer I put on SO. The question was later deleted by the Community bot.**
+
 As @esqew and @CoryKramer said, it is only an issue if it responds to user input. Thanks the both of you :)
 
 @ErdoğanOnal suggested some very useful code, thanks so much :)
