@@ -342,10 +342,13 @@ Type: ''')))
 #OTHERWISE
        elif calc == "":
             logging.error("User attempted to type nothing as a command")
-            cprint.err(_("Type something!"))
+            cprint.err(_("I can't heeeeaaaarrrrrr yooooouuuuuuuu"))
+       elif calc == " "
+            logging.error("user said nothing")
+            cprint.err(_("You speak quietly"))
        elif calc is None:
             logging.error("User attempted to type nothing as a command")
-            cprint.err(_("Type something!"))
+            cprint.err(_("I can't heeeaaaarrrrr youuuuuuuu"))
        else:
             logging.error("User typed an invalid command (%s)" % calc)
             cprint.err(_('''
