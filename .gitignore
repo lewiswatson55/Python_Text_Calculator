@@ -2,6 +2,7 @@
 Thumbs.db
 palc.log
 palc.logv2
+modules/__pycache__/
 __pycache__/*
 __pycache__
 __pycache__/
