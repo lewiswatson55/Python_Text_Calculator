@@ -16,7 +16,7 @@ Thanks for visiting!
 **Note that ittussaromYno3 is me (TheTechRobo) on my MacBook Air.**  
 **And Retals is me on my [Elive](https://elivecd.org) PCs**  
 **Ittussarom is me on some other [Elive](https://elivecd.org) PCs**  
-**TheTechRobo is me on some -- have you guessed it? -- other [Elive](https://elivecd.org) PCs**
+**TheTechRobo (without the stick-man) is me on some -- have you guessed it? -- other [Elive](https://elivecd.org) PCs**
 
 
 PLEASE, leave feature requests in the [Issues section](https://github.com/thetechrobo/python-text-calculator/issues), even if you know my email.
